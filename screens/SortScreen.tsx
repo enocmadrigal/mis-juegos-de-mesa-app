@@ -1,4 +1,5 @@
-import { Platform, View, Text, StyleSheet, Image, Pressable } from "react-native";
+import React, { useState, useEffect } from "react";
+import { Platform, View, Text, StyleSheet, Image, Pressable, Dimensions } from "react-native";
 import GoToHomeButton from "../componentes/GoToHomeButton";
 import SortButton from "../componentes/SortButton";
 import { globalStyles } from '../GlobalStyles';
@@ -13,6 +14,23 @@ export default function SortScreen({
     onSort: (filter: 'recent' | 'oldest' | 'az' | 'za') => void,
     onGoToHomeButtonPress: () => void
 }) {
+    // Hook para flexDirection responsivo
+    type FlexDirectionType = 'column' | 'row' | 'row-reverse' | 'column-reverse';
+    const [flexDirection, setFlexDirection] = useState<FlexDirectionType>(getFlexDirection());
+
+    useEffect(() => {
+        const handleChange = () => setFlexDirection(getFlexDirection());
+        const subscription = Dimensions.addEventListener('change', handleChange);
+
+        return () => {
+            subscription.remove();
+        };
+    }, []);
+
+    function getFlexDirection(): FlexDirectionType {
+        if (Platform.OS !== 'web') return 'column';
+        return Dimensions.get('window').width < 600 ? 'column' : 'row';
+    }
 
     const handleGoToHomeButtonPress = () => {
         onGoToHomeButtonPress();
@@ -29,7 +47,7 @@ export default function SortScreen({
             style={{ margin: 0 }}
         >
             <View style={styles.container}>
-                <View style={styles.twoBoxContainer}>
+                <View style={[styles.twoBoxContainer, { flexDirection }]}>
                     <Pressable style={styles.upperLeftBoxContainer} onPress={() => onSort('recent')}>
                         <Text style={styles.buttonText}>Ultimas compras primero</Text>
                     </Pressable>
@@ -37,7 +55,7 @@ export default function SortScreen({
                         <Text style={styles.buttonText}>Orden en que se fueron comprando</Text>
                     </Pressable>
                 </View>
-                <View style={styles.twoBoxContainer}>
+                <View style={[styles.twoBoxContainer, { flexDirection }]}>
                     <Pressable style={styles.downLeftBoxContainer} onPress={() => onSort('az')}>
                         <Text style={styles.buttonText}>A-Z</Text>
                     </Pressable>
@@ -74,7 +92,6 @@ const styles = StyleSheet.create({
     },
     twoBoxContainer: {
         flex: 1,
-        flexDirection: Platform.OS === 'web' ? 'row' : 'column',
         width: '100%',
     },
     upperLeftBoxContainer: {
@@ -88,7 +105,8 @@ const styles = StyleSheet.create({
         marginLeft: Platform.OS === 'web' ? 20 : 8,
         marginRight: Platform.OS === 'web' ? 8 : 8,
         marginBottom: Platform.OS === 'web' ? 8 : 8,
-    },upperRightBoxContainer: {
+    },
+    upperRightBoxContainer: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
@@ -99,7 +117,6 @@ const styles = StyleSheet.create({
         marginLeft: Platform.OS === 'web' ? 8 : 8,
         marginRight: Platform.OS === 'web' ? 20 : 8,
         marginBottom: Platform.OS === 'web' ? 8 : 8,
-   
     },
     downLeftBoxContainer: {
         flex: 1,
@@ -112,7 +129,8 @@ const styles = StyleSheet.create({
         marginLeft: Platform.OS === 'web' ? 20 : 8,
         marginRight: Platform.OS === 'web' ? 8 : 8,
         marginBottom: Platform.OS === 'web' ? 20 : 8,
-    },downRightBoxContainer: {
+    },
+    downRightBoxContainer: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
@@ -123,7 +141,8 @@ const styles = StyleSheet.create({
         marginLeft: Platform.OS === 'web' ? 8 : 8,
         marginRight: Platform.OS === 'web' ? 20 : 8,
         marginBottom: Platform.OS === 'web' ? 20 : 8,
-    },buttonText: {
+    },
+    buttonText: {
         color: '#d06666ff',
         fontSize: Platform.OS === 'web' ? 32 : 25,
         fontWeight: 'bold',

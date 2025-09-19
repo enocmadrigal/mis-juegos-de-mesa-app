@@ -25,6 +25,7 @@
     "web": {
       "favicon": "./assets/favicon.png",
       "publicPath": "/mis-juegos-de-mesa-app/"
-    }
+    },
+    "platforms": ["ios", "android", "web"]
   }
 }

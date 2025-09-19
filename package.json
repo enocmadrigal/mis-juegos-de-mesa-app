@@ -7,9 +7,10 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "web-build": "npx expo export:web",
-    "predeploy": "npm run web-build",
-    "deploy": "gh-pages -d web-build"
+    "export:web": "export NODE_OPTIONS=--openssl-legacy-provider && expo export:web",
+    "fix-paths": "find web-build -type f \\( -name \"*.html\" -o -name \"*.js\" \\) -exec sed -i '' 's|href=\"/|href=\"/mis-juegos-de-mesa-app/|g; s|src=\"/|src=\"/mis-juegos-de-mesa-app/|g; s|src=\\\"static/|src=\\\"/mis-juegos-de-mesa-app/static/|g; s|/static/media/|/mis-juegos-de-mesa-app/static/media/|g; s|s.p=\"/\"|s.p=\"/mis-juegos-de-mesa-app/\"|g' {} +",
+    "predeploy": "npm run export:web && npm run fix-paths",
+    "deploy": "npx gh-pages -d web-build"
   },
   "dependencies": {
     "@expo/metro-runtime": "~6.1.1",
@@ -17,7 +18,7 @@
     "expo": "~54.0.2",
     "expo-status-bar": "~3.0.8",
     "react": "19.1.0",
-    "react-dom": "^19.1.0",
+    "react-dom": "19.1.0",
     "react-native": "0.81.4",
     "react-native-modal": "^14.0.0-rc.1",
     "react-native-safe-area-context": "^5.6.1",
@@ -27,10 +28,12 @@
   },
   "private": true,
   "devDependencies": {
+    "@babel/core": "^7.28.4",
     "@types/react": "~19.1.10",
     "babel-preset-expo": "^54.0.2",
-    "expo-cli": "^5.5.1",
+    "expo-cli": "^5.6.0",
     "gh-pages": "^6.3.0",
     "typescript": "~5.9.2"
   }
 }
+

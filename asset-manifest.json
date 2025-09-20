@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.5b40d504.js",
+    "main.js": "/static/js/main.5ea9602b.js",
     "static/js/547.dd9bdbce.js": "/static/js/547.dd9bdbce.js",
     "static/media/monopolyGuy.png": "/static/media/monopolyGuy.75faa14413c2bdee2db5.png",
     "static/media/dominoResina.jpg": "/static/media/dominoResina.359572217cd1bb50741d.jpg",
@@ -78,11 +78,11 @@
     "favicon-16.png": "/favicon-16.png",
     "manifest.json": "/manifest.json",
     "serve.json": "/serve.json",
-    "main.5b40d504.js.map": "/static/js/main.5b40d504.js.map",
+    "main.5ea9602b.js.map": "/static/js/main.5ea9602b.js.map",
     "547.dd9bdbce.js.map": "/static/js/547.dd9bdbce.js.map"
   },
   "entrypoints": [
     "static/js/547.dd9bdbce.js",
-    "static/js/main.5b40d504.js"
+    "static/js/main.5ea9602b.js"
   ]
 }

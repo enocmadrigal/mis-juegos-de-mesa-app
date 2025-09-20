@@ -14,23 +14,43 @@ export default function SortScreen({
     onSort: (filter: 'recent' | 'oldest' | 'az' | 'za') => void,
     onGoToHomeButtonPress: () => void
 }) {
-    // Hook para flexDirection responsivo
-    type FlexDirectionType = 'column' | 'row' | 'row-reverse' | 'column-reverse';
-    const [flexDirection, setFlexDirection] = useState<FlexDirectionType>(getFlexDirection());
+    // Responsive config type
+    type ResponsiveConfig = {
+        flexDirection: 'column' | 'row' | 'row-reverse' | 'column-reverse';
+        borderRadius: number;
+        marginTop: number;
+        marginLeft: number;
+        marginRight: number;
+        marginBottom: number;
+        fontSize: number;
+        containerWidth: string;
+    };
+
+    function getResponsiveConfig(): ResponsiveConfig {
+        const width = Dimensions.get('window').width;
+        const isColumn = width < 600;
+        return {
+            flexDirection: isColumn ? 'column' : 'row',
+            borderRadius: isColumn ? 40 : 70,
+            marginTop: isColumn ? 8 : 20,
+            marginLeft: isColumn ? 8 : 20,
+            marginRight: isColumn ? 8 : 20,
+            marginBottom: isColumn ? 8 : 20,
+            fontSize: isColumn ? 25 : 32,
+            containerWidth: '70%',
+        };
+    }
+
+    const [responsiveConfig, setResponsiveConfig] = useState<ResponsiveConfig>(getResponsiveConfig());
 
     useEffect(() => {
-        const handleChange = () => setFlexDirection(getFlexDirection());
+        const handleChange = () => setResponsiveConfig(getResponsiveConfig());
         const subscription = Dimensions.addEventListener('change', handleChange);
 
         return () => {
             subscription.remove();
         };
     }, []);
-
-    function getFlexDirection(): FlexDirectionType {
-        if (Platform.OS !== 'web') return 'column';
-        return Dimensions.get('window').width < 600 ? 'column' : 'row';
-    }
 
     const handleGoToHomeButtonPress = () => {
         onGoToHomeButtonPress();
@@ -46,21 +66,57 @@ export default function SortScreen({
             animationOutTiming={900}
             style={{ margin: 0 }}
         >
-            <View style={styles.container}>
-                <View style={[styles.twoBoxContainer, { flexDirection }]}>
-                    <Pressable style={styles.upperLeftBoxContainer} onPress={() => onSort('recent')}>
-                        <Text style={styles.buttonText}>Ultimas compras primero</Text>
+            <View style={[styles.container, { width: responsiveConfig.containerWidth }]}>
+                <View style={[styles.twoBoxContainer, { flexDirection: responsiveConfig.flexDirection }]}>
+                    <Pressable style={[
+                        styles.upperLeftBoxContainer,
+                        {
+                            borderRadius: responsiveConfig.borderRadius,
+                            marginTop: responsiveConfig.marginTop,
+                            marginLeft: responsiveConfig.marginLeft,
+                            marginRight: 8,
+                            marginBottom: 8,
+                        }
+                    ]} onPress={() => onSort('recent')}>
+                        <Text style={[styles.buttonText, { fontSize: responsiveConfig.fontSize }]}>Ultimas compras primero</Text>
                     </Pressable>
-                    <Pressable style={styles.upperRightBoxContainer} onPress={() => onSort('oldest')}>
-                        <Text style={styles.buttonText}>Orden en que se fueron comprando</Text>
+                    <Pressable style={[
+                        styles.upperRightBoxContainer,
+                        {
+                            borderRadius: responsiveConfig.borderRadius,
+                            marginTop: responsiveConfig.marginTop,
+                            marginLeft: 8,
+                            marginRight: responsiveConfig.marginRight,
+                            marginBottom: 8,
+                        }
+                    ]} onPress={() => onSort('oldest')}>
+                        <Text style={[styles.buttonText, { fontSize: responsiveConfig.fontSize }]}>Orden en que se fueron comprando</Text>
                     </Pressable>
                 </View>
-                <View style={[styles.twoBoxContainer, { flexDirection }]}>
-                    <Pressable style={styles.downLeftBoxContainer} onPress={() => onSort('az')}>
-                        <Text style={styles.buttonText}>A-Z</Text>
+                <View style={[styles.twoBoxContainer, { flexDirection: responsiveConfig.flexDirection }]}>
+                    <Pressable style={[
+                        styles.downLeftBoxContainer,
+                        {
+                            borderRadius: responsiveConfig.borderRadius,
+                            marginTop: 8,
+                            marginLeft: responsiveConfig.marginLeft,
+                            marginRight: 8,
+                            marginBottom: responsiveConfig.marginBottom,
+                        }
+                    ]} onPress={() => onSort('az')}>
+                        <Text style={[styles.buttonText, { fontSize: responsiveConfig.fontSize }]}>A-Z</Text>
                     </Pressable>
-                    <Pressable style={styles.downRightBoxContainer} onPress={() => onSort('za')}>
-                        <Text style={styles.buttonText}>Z-A</Text>
+                    <Pressable style={[
+                        styles.downRightBoxContainer,
+                        {
+                            borderRadius: responsiveConfig.borderRadius,
+                            marginTop: 8,
+                            marginLeft: 8,
+                            marginRight: responsiveConfig.marginRight,
+                            marginBottom: responsiveConfig.marginBottom,
+                        }
+                    ]} onPress={() => onSort('za')}>
+                        <Text style={[styles.buttonText, { fontSize: responsiveConfig.fontSize }]}>Z-A</Text>
                     </Pressable>
                 </View>
             </View>
@@ -81,7 +137,6 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: 'white',
-        width: Platform.OS === 'web' ? '70%' : '70%',
         alignSelf: 'center',
         borderRadius: 8,
         padding: 10,
@@ -100,11 +155,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         borderColor: '#d06666ff',
         borderWidth: 2,
-        borderRadius: Platform.OS === 'web' ? 70 : 40,
-        marginTop: Platform.OS === 'web' ? 20 : 8,
-        marginLeft: Platform.OS === 'web' ? 20 : 8,
-        marginRight: Platform.OS === 'web' ? 8 : 8,
-        marginBottom: Platform.OS === 'web' ? 8 : 8,
+        // borderRadius, marginTop, marginLeft, marginRight, marginBottom serán dinámicos
     },
     upperRightBoxContainer: {
         flex: 1,
@@ -112,11 +163,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         borderColor: '#d06666ff',
         borderWidth: 2,
-        borderRadius: Platform.OS === 'web' ? 70 : 40,
-        marginTop: Platform.OS === 'web' ? 20 : 8,
-        marginLeft: Platform.OS === 'web' ? 8 : 8,
-        marginRight: Platform.OS === 'web' ? 20 : 8,
-        marginBottom: Platform.OS === 'web' ? 8 : 8,
+        // borderRadius, marginTop, marginLeft, marginRight, marginBottom serán dinámicos
     },
     downLeftBoxContainer: {
         flex: 1,
@@ -124,11 +171,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         borderColor: '#d06666ff',
         borderWidth: 2,
-        borderRadius: Platform.OS === 'web' ? 70 : 40,
-        marginTop: Platform.OS === 'web' ? 8 : 8,
-        marginLeft: Platform.OS === 'web' ? 20 : 8,
-        marginRight: Platform.OS === 'web' ? 8 : 8,
-        marginBottom: Platform.OS === 'web' ? 20 : 8,
+        // borderRadius, marginTop, marginLeft, marginRight, marginBottom serán dinámicos
     },
     downRightBoxContainer: {
         flex: 1,
@@ -136,16 +179,12 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         borderColor: '#d06666ff',
         borderWidth: 2,
-        borderRadius: Platform.OS === 'web' ? 70 : 40,
-        marginTop: Platform.OS === 'web' ? 8 : 8,
-        marginLeft: Platform.OS === 'web' ? 8 : 8,
-        marginRight: Platform.OS === 'web' ? 20 : 8,
-        marginBottom: Platform.OS === 'web' ? 20 : 8,
+        // borderRadius, marginTop, marginLeft, marginRight, marginBottom serán dinámicos
     },
     buttonText: {
         color: '#d06666ff',
-        fontSize: Platform.OS === 'web' ? 32 : 25,
         fontWeight: 'bold',
         textAlign: 'center',
+        // fontSize será dinámico
     },
 });

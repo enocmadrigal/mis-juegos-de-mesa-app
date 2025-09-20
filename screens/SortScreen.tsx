@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Platform, View, Text, StyleSheet, Image, Pressable, Dimensions } from "react-native";
+import { Platform, View, Text, StyleSheet, Image, Pressable, Dimensions, DimensionValue } from "react-native";
 import GoToHomeButton from "../componentes/GoToHomeButton";
 import SortButton from "../componentes/SortButton";
 import { globalStyles } from '../GlobalStyles';
@@ -23,7 +23,7 @@ export default function SortScreen({
         marginRight: number;
         marginBottom: number;
         fontSize: number;
-        containerWidth: string;
+        containerWidth: DimensionValue; // Cambiado de string a DimensionValue
     };
 
     function getResponsiveConfig(): ResponsiveConfig {
@@ -37,7 +37,7 @@ export default function SortScreen({
             marginRight: isLaptop ? 8 : 20,
             marginBottom: isLaptop ? 8 : 20,
             fontSize: isLaptop ? 25 : 32,
-            containerWidth: isLaptop ? '100%' : '100%',
+            containerWidth: isLaptop ? '70%' : '100%', // Asegúrate que sean strings con '%'
         };
     }
 

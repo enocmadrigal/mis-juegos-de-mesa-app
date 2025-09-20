@@ -8,12 +8,14 @@ import SortButton from "../componentes/SortButton";
 import { useState, useEffect } from "react";
 import SortScreen from "./SortScreen";
 import { globalStyles } from '../GlobalStyles';
+import DetailScreen from "./DetailScreen";
 
 export default function AllOurGamesScreen({isVisible, onGoToHomeButtonPress}: {isVisible: boolean, onGoToHomeButtonPress: () => void}) {
 
     const [isSortButtonVisible, setIsSortButtonVisible] = useState(false);
     const [filter, setFilter] = useState<'recent' | 'oldest' | 'az' | 'za'>('recent');
     const [games, setGames] = useState(allGames);
+    const [selectedGame, setSelectedGame] = useState<any | null>(null);
 
     const handleSortButtonPress = () => {
         setIsSortButtonVisible(!isSortButtonVisible);
@@ -63,25 +65,27 @@ export default function AllOurGamesScreen({isVisible, onGoToHomeButtonPress}: {i
                 keyExtractor={(item) => item.id.toString()}
                 contentContainerStyle={{ paddingBottom: 20 }}
                 renderItem={({item}) => (
-                    <View style={styles.container}>
-                        {item.mainImage && gameImages[item.mainImage] ? (
-                            <View style={styles.imageWrapper}>
-                                <Image source={gameImages[item.mainImage]} resizeMode="contain" style={styles.image} />
-                            </View>
-                        ) : (
-                            <View style={[styles.imageWrapper, {backgroundColor: '#ccc'}]}>
-                                <Text>Sin imagen</Text>
-                            </View>
-                        )}
-                        <Text
-                            style={[
-                                styles.gameName,
-                                item.name.length > 22 && { fontSize: 20 }
-                            ]}
-                        >
-                            {item.name}
-                        </Text>
-                    </View>
+                    <Pressable onPress={() => setSelectedGame(item)}>
+                        <View style={styles.container}>
+                            {item.mainImage && gameImages[item.mainImage] ? (
+                                <View style={styles.imageWrapper}>
+                                    <Image source={gameImages[item.mainImage]} resizeMode="contain" style={styles.image} />
+                                </View>
+                            ) : (
+                                <View style={[styles.imageWrapper, {backgroundColor: '#ccc'}]}>
+                                    <Text>Sin imagen</Text>
+                                </View>
+                            )}
+                            <Text
+                                style={[
+                                    styles.gameName,
+                                    item.name.length > 22 && { fontSize: 20 }
+                                ]}
+                            >
+                                {item.name}
+                            </Text>
+                        </View>
+                    </Pressable>
                 )}
             />
             <View style={globalStyles.buttonsContainer}>
@@ -95,6 +99,12 @@ export default function AllOurGamesScreen({isVisible, onGoToHomeButtonPress}: {i
                     isVisible={isSortButtonVisible}
                     onSort={handleSort}
                     onGoToHomeButtonPress={onGoToHomeButtonPress}
+                />
+                <DetailScreen
+                    isVisible={!!selectedGame}
+                    game={selectedGame}
+                    onGoToHomeButtonPress={onGoToHomeButtonPress}
+                    onClose={() => setSelectedGame(null)}
                 />
             </View>
         </Modal>

@@ -28,16 +28,16 @@ export default function SortScreen({
 
     function getResponsiveConfig(): ResponsiveConfig {
         const width = Dimensions.get('window').width;
-        const isColumn = width < 600;
+        const isLaptop = width < 600;
         return {
-            flexDirection: isColumn ? 'column' : 'row',
-            borderRadius: isColumn ? 40 : 70,
-            marginTop: isColumn ? 8 : 20,
-            marginLeft: isColumn ? 8 : 20,
-            marginRight: isColumn ? 8 : 20,
-            marginBottom: isColumn ? 8 : 20,
-            fontSize: isColumn ? 25 : 32,
-            containerWidth: '70%',
+            flexDirection: isLaptop ? 'column' : 'row',
+            borderRadius: isLaptop ? 40 : 70,
+            marginTop: isLaptop ? 8 : 20,
+            marginLeft: isLaptop ? 8 : 20,
+            marginRight: isLaptop ? 8 : 20,
+            marginBottom: isLaptop ? 8 : 20,
+            fontSize: isLaptop ? 25 : 32,
+            containerWidth: isLaptop ? '100%' : '100%',
         };
     }
 

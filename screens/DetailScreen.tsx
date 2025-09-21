@@ -1,5 +1,5 @@
-import React from "react";
-import { View, StyleSheet, Text, Image, ScrollView, Linking, Pressable, Platform } from "react-native";
+import React, { useState, useRef } from "react";
+import { View, StyleSheet, Text, Image, ScrollView, Linking, Pressable, Platform, Animated, TouchableOpacity } from "react-native";
 import Modal from "react-native-modal";
 import GoToHomeButton from "../componentes/GoToHomeButton";
 import SortButton from "../componentes/SortButton";
@@ -79,6 +79,40 @@ export default function DetailScreen({
     const folderName = getFolderName(game.mainImage);
     const images = gameDetailImages[folderName] || [];
 
+    // Carrusel de imágenes
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const fadeAnim = useRef(new Animated.Value(1)).current;
+
+    const handleChangeImage = (direction: "next" | "prev") => {
+        let newIndex = currentIndex;
+        if (direction === "next") {
+            newIndex = (currentIndex + 1) % images.length;
+        } else {
+            newIndex = (currentIndex - 1 + images.length) % images.length;
+        }
+        // Fade out, change image, then fade in (más suave)
+        Animated.timing(fadeAnim, { toValue: 0, duration: 250, useNativeDriver: true }).start(() => {
+            setCurrentIndex(newIndex);
+            Animated.timing(fadeAnim, { toValue: 1, duration: 350, useNativeDriver: true }).start();
+        });
+    };
+
+    // Helper para obtener el estilo del contenedor del video
+    const getVideoContainerStyle = () => {
+        return {
+            width: '100%',
+            maxWidth: 700,
+            aspectRatio: 16 / 9,
+            minHeight: 220,
+            maxHeight: 360,
+            alignSelf: 'center',
+            marginBottom: 18,
+            borderRadius: 12,
+            overflow: 'hidden',
+            backgroundColor: '#000',
+        };
+    };
+
     return (
         <Modal
             isVisible={isVisible}
@@ -92,16 +126,27 @@ export default function DetailScreen({
                 <ScrollView contentContainerStyle={styles.scrollContent}>
                     <Text style={styles.title}>{game.name}</Text>
                     {images.length > 0 ? (
-                        <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.imagesScroll}>
-                            {images.map((img, idx) => (
-                                <Image
-                                    key={idx}
-                                    source={img}
-                                    style={styles.image}
-                                    resizeMode="contain"
-                                />
-                            ))}
-                        </ScrollView>
+                        <View style={styles.carouselContainer}>
+                            <TouchableOpacity
+                                style={styles.arrowContainer}
+                                onPress={() => handleChangeImage("prev")}
+                                disabled={images.length <= 1}
+                            >
+                                <Text style={styles.arrow}>{'‹'}</Text>
+                            </TouchableOpacity>
+                            <Animated.Image
+                                source={images[currentIndex]}
+                                style={[styles.carouselImage, { opacity: fadeAnim }]}
+                                resizeMode="contain"
+                            />
+                            <TouchableOpacity
+                                style={styles.arrowContainer}
+                                onPress={() => handleChangeImage("next")}
+                                disabled={images.length <= 1}
+                            >
+                                <Text style={styles.arrow}>{'›'}</Text>
+                            </TouchableOpacity>
+                        </View>
                     ) : (
                         <View style={[styles.image, styles.noImage]}>
                             <Text>Sin imagen</Text>
@@ -232,7 +277,8 @@ const styles = StyleSheet.create({
         fontSize: 20,
         color: '#222',
         marginBottom: 18,
-        alignSelf: 'flex-start',
+        alignSelf: 'center',
+        textAlign: 'center', // Añadido para centrar el texto
     },
     videoText: {
         fontSize: 15,
@@ -294,5 +340,33 @@ const styles = StyleSheet.create({
         maxWidth: 700,
         alignSelf: 'center',
         marginBottom: 18,
+    },
+    carouselContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '100%',
+        maxWidth: 700,
+        marginBottom: 18,
+        minHeight: 220,
+        maxHeight: 300,
+    },
+    arrowContainer: {
+        paddingHorizontal: 12,
+        paddingVertical: 30,
+        zIndex: 2,
+    },
+    arrow: {
+        fontSize: 40,
+        color: '#d06666ff',
+        fontWeight: 'bold',
+        opacity: 0.7,
+    },
+    carouselImage: {
+        width: 220,
+        height: 220,
+        borderRadius: 12,
+        backgroundColor: '#fff',
+        marginHorizontal: 8,
     },
 });

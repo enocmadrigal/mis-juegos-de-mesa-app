@@ -278,7 +278,7 @@ const styles = StyleSheet.create({
         color: '#222',
         marginBottom: 18,
         alignSelf: 'center',
-        textAlign: 'center', // Añadido para centrar el texto
+        textAlign: 'justify', // Justifica el texto (alineado a ambos lados)
     },
     videoText: {
         fontSize: 15,

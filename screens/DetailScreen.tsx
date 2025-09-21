@@ -6,6 +6,7 @@ import SortButton from "../componentes/SortButton";
 import { globalStyles } from '../GlobalStyles';
 import { gameImages } from "../data/gameImages";
 import { WebView } from 'react-native-webview';
+import { gameDetailImages } from "../data/gameDetailImages";
 
 // Helper para importar íconos dinámicamente
 const iconMap: Record<string, any> = {
@@ -25,6 +26,12 @@ function InfoItem({ icon, text }: { icon: string, text: string }) {
             <Text style={styles.infoValue}>{text}</Text>
         </View>
     );
+}
+
+function getFolderName(mainImage: string): string {
+    // assets/img/ajedrez/ajedrez.jpg => ajedrez
+    const parts = mainImage.split("/");
+    return parts.length >= 3 ? parts[2] : "";
 }
 
 export default function DetailScreen({
@@ -69,6 +76,9 @@ export default function DetailScreen({
         return url;
     }
 
+    const folderName = getFolderName(game.mainImage);
+    const images = gameDetailImages[folderName] || [];
+
     return (
         <Modal
             isVisible={isVisible}
@@ -81,12 +91,17 @@ export default function DetailScreen({
             <View style={styles.container}>
                 <ScrollView contentContainerStyle={styles.scrollContent}>
                     <Text style={styles.title}>{game.name}</Text>
-                    {game.mainImage && gameImages[game.mainImage] ? (
-                        <Image
-                            source={gameImages[game.mainImage]}
-                            style={styles.image}
-                            resizeMode="contain"
-                        />
+                    {images.length > 0 ? (
+                        <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.imagesScroll}>
+                            {images.map((img, idx) => (
+                                <Image
+                                    key={idx}
+                                    source={img}
+                                    style={styles.image}
+                                    resizeMode="contain"
+                                />
+                            ))}
+                        </ScrollView>
                     ) : (
                         <View style={[styles.image, styles.noImage]}>
                             <Text>Sin imagen</Text>
@@ -273,5 +288,11 @@ const styles = StyleSheet.create({
         borderRadius: 12,
         overflow: 'hidden',
         backgroundColor: '#000',
+    },
+    imagesScroll: {
+        width: '100%',
+        maxWidth: 700,
+        alignSelf: 'center',
+        marginBottom: 18,
     },
 });

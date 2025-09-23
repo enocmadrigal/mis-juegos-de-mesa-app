@@ -31,34 +31,36 @@ export default function SearchGameScreen({ isVisible, onGoToHomeButtonPress }: {
             style={modalStyles.modalArea}
         >
             <View style={modalStyles.modalContent}>
-                <View style={modalStyles.searchRow}>
-                    <TextInput
-                        style={modalStyles.input}
-                        placeholder="Buscar juego..."
-                        value={query}
-                        onChangeText={setQuery}
-                        autoFocus
-                    />
-                    <TouchableOpacity onPress={handleGoToHomeButtonPress} style={modalStyles.goHomeButton}>
-                        <GoToHomeButton />
-                    </TouchableOpacity>
-                </View>
-                {filteredGames.length > 0 && (
-                    <View style={modalStyles.suggestionsContainer}>
-                        <FlatList
-                            data={filteredGames}
-                            keyExtractor={item => item.id.toString()}
-                            style={modalStyles.suggestions}
-                            keyboardShouldPersistTaps="handled"
-                            renderItem={({ item }) => (
-                                <TouchableOpacity style={modalStyles.suggestionItem} onPress={() => setSelectedGame(item)}>
-                                    <Image source={item.mainImage as ImageSourcePropType} style={modalStyles.thumbnail} />
-                                    <Text style={modalStyles.suggestionText}>{item.name}</Text>
-                                </TouchableOpacity>
-                            )}
+                <View style={{ width: '100%', alignItems: 'center', position: 'relative' }}>
+                    <View style={modalStyles.searchRow}>
+                        <TextInput
+                            style={modalStyles.input}
+                            placeholder="Buscar juego..."
+                            value={query}
+                            onChangeText={setQuery}
+                            autoFocus
                         />
+                        <TouchableOpacity onPress={handleGoToHomeButtonPress} style={modalStyles.goHomeButton}>
+                            <GoToHomeButton />
+                        </TouchableOpacity>
                     </View>
-                )}
+                    {filteredGames.length > 0 && (
+                        <View style={modalStyles.suggestionsContainer}>
+                            <FlatList
+                                data={filteredGames}
+                                keyExtractor={item => item.id.toString()}
+                                style={modalStyles.suggestions}
+                                keyboardShouldPersistTaps="handled"
+                                renderItem={({ item }) => (
+                                    <TouchableOpacity style={modalStyles.suggestionItem} onPress={() => setSelectedGame(item)}>
+                                        <Image source={item.mainImage as ImageSourcePropType} style={modalStyles.thumbnail} />
+                                        <Text style={modalStyles.suggestionText}>{item.name}</Text>
+                                    </TouchableOpacity>
+                                )}
+                            />
+                        </View>
+                    )}
+                </View>
             </View>
             {/* Modal de detalle del juego */}
             <DetailScreen
@@ -109,7 +111,8 @@ export default function SearchGameScreen({ isVisible, onGoToHomeButtonPress }: {
         },
         suggestionsContainer: {
             position: 'absolute',
-            top: '100%',
+            top: '100%', // Justo debajo de la searchRow
+            marginTop: -10, // o el valor que prefieras
             left: 0,
             width: '100%',
             zIndex: 100,

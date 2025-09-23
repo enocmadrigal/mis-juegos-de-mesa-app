@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { View, StyleSheet, Text, Image, ScrollView, Linking, Pressable, Platform, Animated, TouchableOpacity, Dimensions } from "react-native";
+import { View, StyleSheet, Text, Image, ScrollView, Linking, Pressable, Platform, Animated, TouchableOpacity, Dimensions, PanResponder } from "react-native";
 import Modal from "react-native-modal";
 import GoToHomeButton from "../componentes/GoToHomeButton";
 import SortButton from "../componentes/SortButton";
@@ -90,6 +90,27 @@ export default function DetailScreen({
     const [currentIndex, setCurrentIndex] = useState(0);
     const fadeAnim = useRef(new Animated.Value(1)).current;
 
+    // --- SWIPE SUPPORT ---
+    const panResponder = useRef(
+        Platform.OS !== 'web'
+            ? PanResponder.create({
+                onMoveShouldSetPanResponder: (_, gestureState) => {
+                    // Solo responder si el movimiento horizontal es significativo
+                    return Math.abs(gestureState.dx) > 20;
+                },
+                onPanResponderRelease: (_, gestureState) => {
+                    if (gestureState.dx > 40) {
+                        // Swipe derecha (anterior)
+                        handleChangeImage("prev");
+                    } else if (gestureState.dx < -40) {
+                        // Swipe izquierda (siguiente)
+                        handleChangeImage("next");
+                    }
+                },
+            })
+            : null
+    ).current;
+
     const handleChangeImage = (direction: "next" | "prev") => {
         let newIndex = currentIndex;
         if (direction === "next") {
@@ -133,10 +154,12 @@ export default function DetailScreen({
                 <ScrollView contentContainerStyle={styles.scrollContent}>
                     <Text style={styles.title}>{game.name}</Text>
                     {images.length > 0 ? (
-                        <View style={[
-                            styles.carouselContainer,
-                            { marginTop: carouselContainerMarginTop, marginBottom: carouselContainerMarginBottom }
-                        ]}>
+                        <View
+                            style={[
+                                styles.carouselContainer,
+                                { marginTop: carouselContainerMarginTop, marginBottom: carouselContainerMarginBottom }
+                            ]}
+                        >
                             <TouchableOpacity
                                 style={styles.arrowContainer}
                                 onPress={() => handleChangeImage("prev")}
@@ -144,18 +167,25 @@ export default function DetailScreen({
                             >
                                 <Text style={styles.arrow}>{'‹'}</Text>
                             </TouchableOpacity>
-                            <Animated.Image
-                                source={images[currentIndex]}
+                            <Animated.View
                                 style={[
-                                    styles.carouselImage,
-                                    {
-                                        opacity: fadeAnim,
-                                        width: carouselImageSize,
-                                        height: carouselImageSize
-                                    }
+                                    { opacity: fadeAnim },
+                                    // Solo agrega panHandlers en móvil
+                                    {...(Platform.OS !== 'web' && panResponder ? panResponder.panHandlers : {})}
                                 ]}
-                                resizeMode="contain"
-                            />
+                            >
+                                <Image
+                                    source={images[currentIndex]}
+                                    style={[
+                                        styles.carouselImage,
+                                        {
+                                            width: carouselImageSize,
+                                            height: carouselImageSize
+                                        }
+                                    ]}
+                                    resizeMode="contain"
+                                />
+                            </Animated.View>
                             <TouchableOpacity
                                 style={styles.arrowContainer}
                                 onPress={() => handleChangeImage("next")}

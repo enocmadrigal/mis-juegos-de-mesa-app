@@ -90,20 +90,21 @@ export default function DetailScreen({
     const [currentIndex, setCurrentIndex] = useState(0);
     const fadeAnim = useRef(new Animated.Value(1)).current;
 
-    // --- SWIPE SUPPORT ---
+    // --- SWIPE SUPPORT EN CELULAR (APP Y WEB) ---
+    const isMobile =
+        Platform.OS !== 'web' ||
+        (Platform.OS === 'web' && windowWidth < 900);
+
     const panResponder = useRef(
-        Platform.OS !== 'web'
+        isMobile
             ? PanResponder.create({
                 onMoveShouldSetPanResponder: (_, gestureState) => {
-                    // Solo responder si el movimiento horizontal es significativo
                     return Math.abs(gestureState.dx) > 20;
                 },
                 onPanResponderRelease: (_, gestureState) => {
                     if (gestureState.dx > 40) {
-                        // Swipe derecha (anterior)
                         handleChangeImage("prev");
                     } else if (gestureState.dx < -40) {
-                        // Swipe izquierda (siguiente)
                         handleChangeImage("next");
                     }
                 },
@@ -170,9 +171,9 @@ export default function DetailScreen({
                             <Animated.View
                                 style={[
                                     { opacity: fadeAnim },
-                                    // Solo agrega panHandlers en móvil
-                                    {...(Platform.OS !== 'web' && panResponder ? panResponder.panHandlers : {})}
+                                    // ...existing code...
                                 ]}
+                                {...(isMobile && panResponder ? panResponder.panHandlers : {})}
                             >
                                 <Image
                                     source={images[currentIndex]}

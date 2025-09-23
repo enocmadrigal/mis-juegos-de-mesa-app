@@ -11,6 +11,9 @@
     "fix-paths": "find web-build -type f \\( -name \"*.html\" -o -name \"*.js\" \\) -exec sed -i '' 's|href=\"/|href=\"/mis-juegos-de-mesa-app/|g; s|src=\"/|src=\"/mis-juegos-de-mesa-app/|g; s|src=\\\"static/|src=\\\"/mis-juegos-de-mesa-app/static/|g; s|/static/media/|/mis-juegos-de-mesa-app/static/media/|g; s|s.p=\"/\"|s.p=\"/mis-juegos-de-mesa-app/\"|g' {} +",
     "predeploy": "npm run export:web && npm run fix-paths",
     "deploy": "npx gh-pages -d web-build"
+    ,
+    "deploy:static-root": "sh ./scripts/deploy-static-root.sh",
+    "deploy:all": "sh ./scripts/deploy-all.sh"
   },
   "dependencies": {
     "@expo/metro-runtime": "~6.1.1",

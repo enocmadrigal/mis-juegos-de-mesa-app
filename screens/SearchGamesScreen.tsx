@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { TextInput, View, FlatList, Text, Image, TouchableOpacity, StyleSheet, Platform, ImageSourcePropType, Dimensions } from "react-native";
 import Modal from "react-native-modal";
 import GoToHomeButton from "../componentes/GoToHomeButton";
@@ -8,6 +8,14 @@ import DetailScreen from "./DetailScreen";
 export default function SearchGameScreen({ isVisible, onGoToHomeButtonPress }: { isVisible: boolean, onGoToHomeButtonPress: () => void }) {
     const [query, setQuery] = useState("");
     const [selectedGame, setSelectedGame] = useState<any | null>(null);
+    const [inputFocused, setInputFocused] = useState(false);
+    // Cuando el modal se abre, reinicia el focus y placeholder
+    useEffect(() => {
+        if (isVisible) {
+            setInputFocused(false);
+        }
+    }, [isVisible]);
+    const inputRef = useRef<TextInput>(null);
 
     const handleGoToHomeButtonPress = () => {
         setQuery("");
@@ -20,6 +28,8 @@ export default function SearchGameScreen({ isVisible, onGoToHomeButtonPress }: {
         ? []
         : games.filter(g => g.name.toLowerCase().includes(query.trim().toLowerCase()));
 
+    const isLaptop = Platform.OS === 'web' && screenWidth > 900;
+
     return (
         <Modal
             isVisible={isVisible}
@@ -27,22 +37,43 @@ export default function SearchGameScreen({ isVisible, onGoToHomeButtonPress }: {
             animationOut="fadeOut"
             animationInTiming={900}
             animationOutTiming={900}
-            backdropOpacity={0}
+            backdropOpacity={isLaptop ? 0 : 0.4}
             style={modalStyles.modalArea}
+            onBackdropPress={!isLaptop ? handleGoToHomeButtonPress : undefined}
         >
             <View style={modalStyles.modalContent}>
                 <View style={{ width: '100%', alignItems: 'center', position: 'relative' }}>
                     <View style={modalStyles.searchRow}>
-                        <TextInput
-                            style={modalStyles.input}
-                            placeholder="Buscar juego..."
-                            value={query}
-                            onChangeText={setQuery}
-                            autoFocus
-                        />
-                        <TouchableOpacity onPress={handleGoToHomeButtonPress} style={modalStyles.goHomeButton}>
-                            <GoToHomeButton />
+                        <TouchableOpacity
+                            activeOpacity={1}
+                            style={{ flex: 1 }}
+                            onPress={() => {
+                                setInputFocused(true);
+                                setTimeout(() => inputRef.current?.focus(), 10);
+                            }}
+                        >
+                            <TextInput
+                                ref={inputRef}
+                                style={modalStyles.input}
+                                placeholder={inputFocused ? '' : 'Buscar juego...'}
+                                value={query}
+                                onChangeText={setQuery}
+                                onFocus={() => setInputFocused(true)}
+                                onBlur={() => setInputFocused(false)}
+                                selectionColor="#333"
+                                textAlign="center"
+                                showSoftInputOnFocus={true}
+                                autoFocus={false}
+                                // Mantener el cursor centrado aunque esté vacío
+                                textAlignVertical="center"
+                                caretHidden={false}
+                            />
                         </TouchableOpacity>
+                        {isLaptop && (
+                            <TouchableOpacity onPress={handleGoToHomeButtonPress} style={modalStyles.goHomeButton}>
+                                <GoToHomeButton />
+                            </TouchableOpacity>
+                        )}
                     </View>
                     {filteredGames.length > 0 && (
                         <View style={modalStyles.suggestionsContainer}>
@@ -194,7 +225,7 @@ export default function SearchGameScreen({ isVisible, onGoToHomeButtonPress }: {
             }
             : {
                 // --- PARA CELULAR (APP O WEB) ---
-                width: '70%',
+                width: '85%',
                 minWidth: 0,
                 maxWidth: 300,
                 alignSelf: 'center',

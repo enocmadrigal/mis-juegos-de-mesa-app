@@ -90,26 +90,20 @@ export default function DetailScreen({
     const [currentIndex, setCurrentIndex] = useState(0);
     const fadeAnim = useRef(new Animated.Value(1)).current;
 
-    // --- SWIPE SUPPORT EN CELULAR (APP Y WEB) ---
-    const isMobile =
-        Platform.OS !== 'web' ||
-        (Platform.OS === 'web' && windowWidth < 900);
-
+    // --- SWIPE SUPPORT EN TODAS LAS PLATAFORMAS ---
     const panResponder = useRef(
-        isMobile
-            ? PanResponder.create({
-                onMoveShouldSetPanResponder: (_, gestureState) => {
-                    return Math.abs(gestureState.dx) > 20;
-                },
-                onPanResponderRelease: (_, gestureState) => {
-                    if (gestureState.dx > 40) {
-                        handleChangeImage("prev");
-                    } else if (gestureState.dx < -40) {
-                        handleChangeImage("next");
-                    }
-                },
-            })
-            : null
+        PanResponder.create({
+            onMoveShouldSetPanResponder: (_, gestureState) => {
+                return Math.abs(gestureState.dx) > 20;
+            },
+            onPanResponderRelease: (_, gestureState) => {
+                if (gestureState.dx > 40) {
+                    handleChangeImage("prev");
+                } else if (gestureState.dx < -40) {
+                    handleChangeImage("next");
+                }
+            },
+        })
     ).current;
 
     const handleChangeImage = (direction: "next" | "prev") => {
@@ -173,7 +167,7 @@ export default function DetailScreen({
                                     { opacity: fadeAnim },
                                     // ...existing code...
                                 ]}
-                                {...(isMobile && panResponder ? panResponder.panHandlers : {})}
+                                {...panResponder.panHandlers}
                             >
                                 <Image
                                     source={images[currentIndex]}

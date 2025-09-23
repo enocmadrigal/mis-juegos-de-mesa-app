@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.f8f09214.js",
+    "main.js": "/static/js/main.93d1753e.js",
     "static/js/856.09d3e094.js": "/static/js/856.09d3e094.js",
     "static/media/sharingan.png": "/static/media/sharingan.79816b622865f8c8b1c2.png",
     "static/media/monopolyGuy.png": "/static/media/monopolyGuy.75faa14413c2bdee2db5.png",
@@ -10,6 +10,7 @@
     "static/media/okBoomer2.jpg": "/static/media/okBoomer2.84e8902b8bfcea305819.jpg",
     "static/media/rummy.jpg": "/static/media/rummy.694bba4de6abfaadf742.jpg",
     "static/media/pinturaColores.png": "/static/media/pinturaColores.6403b3d8d7855ddc09e8.png",
+    "static/media/returnRedButton.png": "/static/media/returnRedButton.d2e404a3cacadfa09aff.png",
     "static/media/niSiNiNo1.jpg": "/static/media/niSiNiNo1.b616395ec203aa9b7abe.jpg",
     "static/media/specialOfferRojo.png": "/static/media/specialOfferRojo.092ccb3033a8352a3443.png",
     "static/media/mejorPeorAmigo2.jpg": "/static/media/mejorPeorAmigo2.886011d4a637bcc08270.jpg",
@@ -120,11 +121,11 @@
     "favicon-16.png": "/favicon-16.png",
     "manifest.json": "/manifest.json",
     "serve.json": "/serve.json",
-    "main.f8f09214.js.map": "/static/js/main.f8f09214.js.map",
+    "main.93d1753e.js.map": "/static/js/main.93d1753e.js.map",
     "856.09d3e094.js.map": "/static/js/856.09d3e094.js.map"
   },
   "entrypoints": [
     "static/js/856.09d3e094.js",
-    "static/js/main.f8f09214.js"
+    "static/js/main.93d1753e.js"
   ]
 }

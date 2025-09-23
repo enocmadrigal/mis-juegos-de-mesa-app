@@ -1,4 +1,91 @@
+
+
 import { Game } from "../models/Game";
+import ajedrezImg from '../assets/img/ajedrez/ajedrez.jpg';
+import turistaDragonBallImg1 from '../assets/img/turistaDragonBall/turistaDragonBall1.jpg';
+import turistaDragonBallImg2 from '../assets/img/turistaDragonBall/turistaDragonBall2.jpg';
+import mexicanosDijeronImg from '../assets/img/100mexicanosDijeron/100mexicanosDijeron1.jpg';
+import casinoFabulosoImg1 from '../assets/img/casinoFabuloso/casinoFabuloso1.jpg';
+import casinoFabulosoImg2 from '../assets/img/casinoFabuloso/casinoFabuloso2.jpg';
+import divertilandiaExtremaImg1 from '../assets/img/divertilandiaExtrema/divertilandiaExtrema1.jpg';
+import divertilandiaExtremaImg2 from '../assets/img/divertilandiaExtrema/divertilandiaExtrema2.jpg';
+import maratonClasicoImg from '../assets/img/maratonClasico/maratonClasico.jpg';
+import mejorPeorAmigoImg1 from '../assets/img/mejorPeorAmigo/mejorPeorAmigo1.jpg';
+import mejorPeorAmigoImg2 from '../assets/img/mejorPeorAmigo/mejorPeorAmigo2.jpg';
+import strategoImg1 from '../assets/img/stratego/stratego1.jpg';
+import strategoImg2 from '../assets/img/stratego/stratego2.jpeg';
+import turistaDeLaSuerteImg1 from '../assets/img/turistaDeLaSuerte/turistaDeLaSuerte1.jpg';
+import turistaDeLaSuerteImg2 from '../assets/img/turistaDeLaSuerte/turistaDeLaSuerte2.jpg';
+import catanPlusImg1 from '../assets/img/catanPlus/catanPlus1.jpg';
+import catanPlusImg2 from '../assets/img/catanPlus/catanPlus2.jpg';
+import barajaPokerDoradaImg from '../assets/img/barajaPokerDorada/barajaPokerDorada1.jpg';
+import barajaPokerPlateadaImg from '../assets/img/barajaPokerPlateada/barajaPokerPlateada1.jpg';
+import exitImg from '../assets/img/exit/exit.jpg';
+import rummyImg from '../assets/img/rummy/rummy.jpg';
+import hedbanzImg from '../assets/img/hedbanz/hedbanz.jpg';
+import backgammonImg from '../assets/img/backgammon/backgammon.jpg';
+import hitsterImg1 from '../assets/img/hitster/hitster1.jpg';
+import hitsterImg2 from '../assets/img/hitster/hitster2.jpg';
+import risasFotograficasImg from '../assets/img/risasFotograficas/risasFotograficas.jpg';
+import temasDeSobremesaImg1 from '../assets/img/temasDeSobremesa/temasDeSobremesa1.jpg';
+import temasDeSobremesaImg2 from '../assets/img/temasDeSobremesa/temasDeSobremesa2.jpg';
+import scrabbleStarWarsImg1 from '../assets/img/scrabbleStarWars/scrabbleStarWars1.jpg';
+import scrabbleStarWarsImg2 from '../assets/img/scrabbleStarWars/scrabbleStarWars2.jpeg';
+import scrabbleStarWarsImg3 from '../assets/img/scrabbleStarWars/scrabbleStarWars3.jpg';
+import sequenceImg1 from '../assets/img/sequence/sequence1.jpg';
+import sequenceImg2 from '../assets/img/sequence/sequence2.jpg';
+import unoImg from '../assets/img/uno/uno.jpg';
+import catanNavegantesImg1 from '../assets/img/catanNavegantes/catanNavegantes1.jpg';
+import catanNavegantesImg2 from '../assets/img/catanNavegantes/catanNavegantes2.jpg';
+import damasChinasImg from '../assets/img/damasChinas/damasChinas.jpg';
+import cincoSegundosImg from '../assets/img/5segundosParaGanarSinCensura/5segundosParaGanarSinCensura.jpg';
+import twisterAirImg from '../assets/img/twisterAir/twisterAir.jpg';
+import carasYGestosImg1 from '../assets/img/carasYGestos/carasYGestos1.jpg';
+import carasYGestosImg2 from '../assets/img/carasYGestos/carasYGestos2.jpg';
+import unoFlipImg from '../assets/img/unoFlip/unoFlip.jpg';
+import barajaEspanolaImg from '../assets/img/barajaEspañola/barajaEspañola1.jpg';
+import dominoClasicoImg from '../assets/img/dominoClasico/dominoClasico.jpg';
+import loteriaMillenialImg from '../assets/img/loteriaMillenial/loteriaMillenial.jpg';
+import triviaChavosVsRucosImg1 from '../assets/img/triviaChavosVsRucos/triviaChavosVsRucos1.jpg';
+import triviaChavosVsRucosImg2 from '../assets/img/triviaChavosVsRucos/triviaChavosVsRucos2.jpg';
+import turistaDisneylandImg1 from '../assets/img/turistaDisneyland/turistaDisneyland1.jpg';
+import turistaDisneylandImg2 from '../assets/img/turistaDisneyland/turistaDisneyland2.jpeg';
+import yugiohImg from '../assets/img/yuGiOh/yuGiOh1.jpg';
+import bastaOriginalImg from '../assets/img/bastaOriginal/bastaOriginal.jpg';
+import marvelLuchaLibreImg1 from '../assets/img/marvelLuchaLibre/marvelLuchaLibre1.jpg';
+import marvelLuchaLibreImg2 from '../assets/img/marvelLuchaLibre/marvelLuchaLibre2.jpg';
+import niSiNiNoImg from '../assets/img/niSiNiNo/niSiNiNo1.jpg';
+import aSusMarcasImg from '../assets/img/aSusMarcas/aSusMarcas1.jpg';
+import techDeckImg from '../assets/img/techDeck/techDeck.jpg';
+import blockbusterImg from '../assets/img/blockbuster/blockbuster1.jpg';
+import disneyManiaImg from '../assets/img/disneyMania/disneyMania1.jpg';
+import liarImg from '../assets/img/liar/liar1.jpg';
+import thatsNotAHatImg from '../assets/img/thatsNotAHat/thatsNotAHat1.jpg';
+import amongUsImg from '../assets/img/amongUs/amongUs.jpg';
+import alChileImg from '../assets/img/alChile/alChile.jpg';
+import dominoResinaImg from '../assets/img/dominoResina/dominoResina.jpg';
+import clueImg from '../assets/img/clue/clue1.jpg';
+import candyLandImg from '../assets/img/candyLand/candyLand1.jpg';
+import historyChannelImg from '../assets/img/historyChannel/historyChannel1.jpg';
+import lifeMarioImg from '../assets/img/lifeMario/lifeMario1.jpg';
+import tetrisImg from '../assets/img/tetris/tetris1.jpg';
+import weAreNotReallyStrangersImg from '../assets/img/weAreNotReallyStrangers/weAreNotReallyStrangers1.jpg';
+import cuboRubikImg from '../assets/img/cuboRubik3x3/cuboRubik3x3.jpg';
+import canicasImg1 from '../assets/img/canicas/canicas1.jpg';
+import canicasImg2 from '../assets/img/canicas/canicas2.jpg';
+import canicasImg3 from '../assets/img/canicas/canicas3.jpg';
+import phase10Img from '../assets/img/phase10/phase10.jpg';
+import tiroAlBlancoImg from '../assets/img/tiroAlBlanco/tiroAlBlanco1.jpg';
+import pokemonTCGImg from '../assets/img/pokemonTCG/pokemonTCG.jpg';
+import mindBugImg from '../assets/img/mindBug/mindBug.jpg';
+import magneticChessImg from '../assets/img/magneticChess/magneticChess.jpg';
+import okBoomerImg from '../assets/img/okBoomer/okBoomer.jpg';
+import catchTheVibeImg from '../assets/img/catchTheVibe/catchTheVibe.jpg';
+import virusImg from '../assets/img/virus/virus.jpg';
+import narutoNinjaBattleImg from '../assets/img/narutoNinjaBattle/narutoNinjaBattle.jpg';
+import polillaTramposaImg from '../assets/img/polillaTramposa/polillaTramposa.jpg';
+import explodingKittensImg from '../assets/img/explodingKittens/explodingKittens.jpg';
+import explodingKittensElBienContraElMalImg from '../assets/img/explodingKittensElBienContraElMal/explodingKittensElBienContraElMal.jpg';
 
 export const games: Game[] = [
   {
@@ -13,7 +100,7 @@ export const games: Game[] = [
     description: "Juego de estrategia clásico donde dos jugadores intentan dar jaque mate al rey rival.",
     rules: "Cada jugador mueve sus piezas por turnos según las reglas del ajedrez. Gana quien da jaque mate.",
     videoUrl: "https://www.youtube.com/watch?v=G7iGNPzaQIY",
-    mainImage: "assets/img/ajedrez/ajedrez.jpg",
+    mainImage: ajedrezImg,
     secondaryImages: [],
     rankValue: 100,
     acquisitionDate: "01/01/2007",
@@ -31,8 +118,8 @@ export const games: Game[] = [
     description: "Versión de Turista con temática de Dragon Ball.",
     rules: "Compra propiedades y recorre el mundo de Dragon Ball.",
     videoUrl: "assets/video/turistaDragonBall.mp4",
-    mainImage: "assets/img/turistaDragonBall/turistaDragonBall1.jpg",
-    secondaryImages: ["turistaDragonBall2.jpg"],
+    mainImage: turistaDragonBallImg1,
+    secondaryImages: [turistaDragonBallImg2],
     rankValue: 99,
     acquisitionDate: "14/12/2022",
     aproxDate: false
@@ -49,7 +136,7 @@ export const games: Game[] = [
     description: "Versión de mesa del popular programa de televisión donde los equipos intentan adivinar las respuestas más populares.",
     rules: "Responde preguntas basadas en encuestas. Gana el equipo con más puntos.",
     videoUrl: "",
-    mainImage: "assets/img/100mexicanosDijeron/100mexicanosDijeron1.jpg",
+    mainImage: mexicanosDijeronImg,
     secondaryImages: [],
     rankValue: 53,
     acquisitionDate: "14/12/2022",
@@ -67,8 +154,8 @@ export const games: Game[] = [
     description: "Juego de cartas y apuestas con temática de casino.",
     rules: "Depende de la variante jugada.",
     videoUrl: "assets/video/casinoFabuloso.mp4",
-    mainImage: "assets/img/casinoFabuloso/casinoFabuloso1.jpg",
-    secondaryImages: ["casinoFabuloso2.jpg"],
+    mainImage: casinoFabulosoImg1,
+    secondaryImages: [casinoFabulosoImg2],
     rankValue: 98,
     acquisitionDate: "24/12/2022",
     aproxDate: false
@@ -85,8 +172,8 @@ export const games: Game[] = [
     description: "Juego de trivia y retos para toda la familia.",
     rules: "Responde preguntas y supera retos para avanzar.",
     videoUrl: "assets/video/divertilandiaExtrema.mp4",
-    mainImage: "assets/img/divertilandiaExtrema/divertilandiaExtrema1.jpg",
-    secondaryImages: ["divertilandiaExtrema2.jpg"],
+    mainImage: divertilandiaExtremaImg1,
+    secondaryImages: [divertilandiaExtremaImg2],
     rankValue: 97,
     acquisitionDate: "01/03/2023",
     aproxDate: true
@@ -103,8 +190,8 @@ export const games: Game[] = [
     description: "Juego de trivia mexicano con preguntas de cultura general.",
     rules: "Responde preguntas correctamente para avanzar en el tablero.",
     videoUrl: "assets/video/maratonClasico.mp4",
-    mainImage: "assets/img/maratonClasico/maratonClasico.jpg",
-    secondaryImages: [],
+  mainImage: maratonClasicoImg,
+  secondaryImages: [],
     rankValue: 96,
     acquisitionDate: "01/03/2023",
     aproxDate: true
@@ -121,8 +208,8 @@ export const games: Game[] = [
     description: "Juego de preguntas para descubrir cuánto conoces a tus amigos.",
     rules: "Responde preguntas sobre los demás jugadores.",
     videoUrl: "assets/video/mejorPeorAmigo.mp4",
-    mainImage: "assets/img/mejorPeorAmigo/mejorPeorAmigo1.jpg",
-    secondaryImages: ["mejorPeorAmigo2.jpg"],
+  mainImage: mejorPeorAmigoImg1,
+  secondaryImages: [mejorPeorAmigoImg2],
     rankValue: 95,
     acquisitionDate: "01/03/2023",
     aproxDate: true
@@ -139,8 +226,8 @@ export const games: Game[] = [
     description: "Juego de estrategia donde debes capturar la bandera del oponente.",
     rules: "Coloca tus piezas estratégicamente y ataca las del rival.",
     videoUrl: "assets/video/stratego.mp4",
-    mainImage: "assets/img/stratego/stratego1.jpg",
-    secondaryImages: ["stratego2.jpeg"],
+  mainImage: strategoImg1,
+  secondaryImages: [strategoImg2],
     rankValue: 94,
     acquisitionDate: "01/03/2023",
     aproxDate: true
@@ -157,8 +244,8 @@ export const games: Game[] = [
     description: "Versión mexicana del clásico Monopoly.",
     rules: "Compra propiedades, cobra rentas y evita la bancarrota.",
     videoUrl: "assets/video/turistaDeLaSuerte.mp4",
-    mainImage: "assets/img/turistaDeLaSuerte/turistaDeLaSuerte1.jpg",
-    secondaryImages: ["turistaDeLaSuerte2.jpg"],
+  mainImage: turistaDeLaSuerteImg1,
+  secondaryImages: [turistaDeLaSuerteImg2],
     rankValue: 93,
     acquisitionDate: "01/03/2023",
     aproxDate: true
@@ -175,8 +262,8 @@ export const games: Game[] = [
     description: "Edición especial de Catan que incluye expansiones y minijuegos.",
     rules: "Incluye reglas del juego base y de las expansiones incluidas.",
     videoUrl: "assets/video/catanPlus.mp4",
-    mainImage: "assets/img/catanPlus/catanPlus1.jpg",
-    secondaryImages: ["catanPlus2.jpg"],
+  mainImage: catanPlusImg1,
+  secondaryImages: [catanPlusImg2],
     rankValue: 92,
     acquisitionDate: "03/07/2023",
     aproxDate: false
@@ -193,8 +280,8 @@ export const games: Game[] = [
     description: "Baraja de poker dorada para juegos como Poker, Blackjack, etc.",
     rules: "Depende del juego jugado.",
     videoUrl: "assets/video/barajaPokerDorada.mp4",
-    mainImage: "assets/img/barajaPokerDorada/barajaPokerDorada1.jpg",
-    secondaryImages: [],
+  mainImage: barajaPokerDoradaImg,
+  secondaryImages: [],
     rankValue: 91,
     acquisitionDate: "15/08/2023",
     aproxDate: false
@@ -211,8 +298,8 @@ export const games: Game[] = [
     description: "Baraja de poker plateada para juegos como Poker, Blackjack, etc.",
     rules: "Depende del juego jugado.",
     videoUrl: "assets/video/barajaPokerPlateada.mp4",
-    mainImage: "assets/img/barajaPokerPlateada/barajaPokerPlateada1.jpg",
-    secondaryImages: [],
+  mainImage: barajaPokerPlateadaImg,
+  secondaryImages: [],
     rankValue: 90,
     acquisitionDate: "06/09/2023",
     aproxDate: false
@@ -229,8 +316,8 @@ export const games: Game[] = [
     description: "Juego de escape room de mesa donde los jugadores resuelven acertijos para escapar.",
     rules: "Resuelve los acertijos y sigue la historia para completar el reto.",
     videoUrl: "assets/video/exit.mp4",
-    mainImage: "assets/img/exit/exit.jpg",
-    secondaryImages: [],
+  mainImage: exitImg,
+  secondaryImages: [],
     rankValue: 88,
     acquisitionDate: "27/09/2023",
     aproxDate: false
@@ -247,8 +334,8 @@ export const games: Game[] = [
     description: "Juego de cartas clásico donde los jugadores forman combinaciones de cartas.",
     rules: "Forma tríos, escaleras y gana puntos.",
     videoUrl: "assets/video/rummy.mp4",
-    mainImage: "assets/img/rummy/rummy.jpg",
-    secondaryImages: [],
+  mainImage: rummyImg,
+  secondaryImages: [],
     rankValue: 87,
     acquisitionDate: "27/09/2023",
     aproxDate: false
@@ -265,8 +352,8 @@ export const games: Game[] = [
     description: "Juego de adivinanzas donde cada jugador lleva una tarjeta en la cabeza y debe adivinar qué es haciendo preguntas.",
     rules: "Haz preguntas de sí/no para descubrir tu carta antes que los demás.",
     videoUrl: "https://www.youtube.com/watch?v=6QkqKQwQw2w",
-    mainImage: "assets/img/hedbanz/hedbanz.jpg",
-    secondaryImages: [],
+  mainImage: hedbanzImg,
+  secondaryImages: [],
     rankValue: 52,
     acquisitionDate: "27/09/2023",
     aproxDate: false
@@ -283,8 +370,8 @@ export const games: Game[] = [
     description: "Juego de mesa clásico donde los jugadores mueven sus fichas según el resultado de los dados.",
     rules: "El objetivo es sacar todas tus fichas del tablero antes que tu oponente.",
     videoUrl: "assets/video/backgammon.mp4",
-    mainImage: "assets/img/backgammon/backgammon.jpg",
-    secondaryImages: [],
+  mainImage: backgammonImg,
+  secondaryImages: [],
     rankValue: 89,
     acquisitionDate: "01/10/2023",
     aproxDate: true
@@ -301,8 +388,8 @@ export const games: Game[] = [
     description: "Juego de mesa musical donde debes adivinar canciones y ordenarlas cronológicamente.",
     rules: "Escucha fragmentos de canciones y colócalas en la línea de tiempo.",
     videoUrl: "assets/video/hitster.mp4",
-    mainImage: "assets/img/hitster/hitster1.jpg",
-    secondaryImages: ["hitster2.jpg"],
+  mainImage: hitsterImg1,
+  secondaryImages: [hitsterImg2],
     rankValue: 86,
     acquisitionDate: "15/11/2023",
     aproxDate: true
@@ -319,8 +406,8 @@ export const games: Game[] = [
     description: "Juego de mesa donde los jugadores deben imitar fotos divertidas.",
     rules: "Imita la foto que te toque y gana puntos por creatividad.",
     videoUrl: "assets/video/risasFotograficas.mp4",
-    mainImage: "assets/img/risasFotograficas/risasFotograficas.jpg",
-    secondaryImages: [],
+  mainImage: risasFotograficasImg,
+  secondaryImages: [],
     rankValue: 83,
     acquisitionDate: "23/12/2023",
     aproxDate: false
@@ -337,8 +424,8 @@ export const games: Game[] = [
     description: "Juego de cartas con temas para conversar y debatir.",
     rules: "Saca una carta y conversa sobre el tema propuesto.",
     videoUrl: "assets/video/temasDeSobremesa.mp4",
-    mainImage: "assets/img/temasDeSobremesa/temasDeSobremesa1.jpg",
-    secondaryImages: ["temasDeSobremesa2.jpg"],
+  mainImage: temasDeSobremesaImg1,
+  secondaryImages: [temasDeSobremesaImg2],
     rankValue: 82,
     acquisitionDate: "23/12/2023",
     aproxDate: false
@@ -355,8 +442,8 @@ export const games: Game[] = [
     description: "Versión de Star Wars del clásico juego de palabras Scrabble.",
     rules: "Forma palabras en el tablero para ganar puntos.",
     videoUrl: "assets/video/scrabbleStarWars.mp4",
-    mainImage: "assets/img/scrabbleStarWars/scrabbleStarWars1.jpg",
-    secondaryImages: ["scrabbleStarWars2.jpeg", "scrabbleStarWars3.jpg"],
+  mainImage: scrabbleStarWarsImg1,
+  secondaryImages: [scrabbleStarWarsImg2, scrabbleStarWarsImg3],
     rankValue: 81,
     acquisitionDate: "24/12/2023",
     aproxDate: false
@@ -373,8 +460,8 @@ export const games: Game[] = [
     description: "Juego de cartas y tablero donde debes formar líneas de cinco fichas.",
     rules: "Coloca fichas en el tablero según las cartas jugadas. Gana quien forme dos secuencias.",
     videoUrl: "assets/video/sequence.mp4",
-    mainImage: "assets/img/sequence/sequence1.jpg",
-    secondaryImages: ["sequence2.jpg"],
+  mainImage: sequenceImg1,
+  secondaryImages: [sequenceImg2],
     rankValue: 80,
     acquisitionDate: "24/12/2023",
     aproxDate: false
@@ -391,8 +478,8 @@ export const games: Game[] = [
     description: "Juego de cartas donde debes deshacerte de todas tus cartas antes que los demás.",
     rules: "Juega cartas del mismo color o número y usa cartas especiales para cambiar el juego.",
     videoUrl: "assets/video/uno.mp4",
-    mainImage: "assets/img/uno/uno.jpg",
-    secondaryImages: [],
+  mainImage: unoImg,
+  secondaryImages: [],
     rankValue: 79,
     acquisitionDate: "24/12/2023",
     aproxDate: false
@@ -409,8 +496,8 @@ export const games: Game[] = [
     description: "Expansión de Catan que añade navegación y nuevas islas para explorar.",
     rules: "Incluye reglas de navegación y escenarios adicionales. Requiere el juego base.",
     videoUrl: "assets/video/catanNavegantes.mp4",
-    mainImage: "assets/img/catanNavegantes/catanNavegantes1.jpg",
-    secondaryImages: ["catanNavegantes2.jpg"],
+  mainImage: catanNavegantesImg1,
+  secondaryImages: [catanNavegantesImg2],
     rankValue: 85,
     acquisitionDate: "25/12/2023",
     aproxDate: false
@@ -427,8 +514,8 @@ export const games: Game[] = [
     description: "Juego clásico donde los jugadores intentan mover todas sus piezas al lado opuesto del tablero.",
     rules: "Mueve tus piezas saltando sobre otras para llegar al lado opuesto.",
     videoUrl: "assets/video/damasChinas.mp4",
-    mainImage: "assets/img/damasChinas/damasChinas.jpg",
-    secondaryImages: [],
+  mainImage: damasChinasImg,
+  secondaryImages: [],
     rankValue: 84,
     acquisitionDate: "25/12/2023",
     aproxDate: false
@@ -445,8 +532,8 @@ export const games: Game[] = [
     description: "Versión para adultos del juego 5 segundos para ganar, donde debes responder preguntas atrevidas en solo 5 segundos.",
     rules: "Responde rápidamente a preguntas sin censura antes de que acabe el tiempo.",
     videoUrl: "",
-    mainImage: "assets/img/5segundosParaGanarSinCensura/5segundosParaGanarSinCensura.jpg",
-    secondaryImages: [],
+  mainImage: cincoSegundosImg,
+  secondaryImages: [],
     rankValue: 51,
     acquisitionDate: "31/12/2023",
     aproxDate: false
@@ -463,8 +550,8 @@ export const games: Game[] = [
     description: "Versión digital de Twister que utiliza una app y sensores para seguir tus movimientos en el aire.",
     rules: "Sigue las indicaciones de la app y coloca tus manos y pies en el aire según los colores.",
     videoUrl: "https://www.youtube.com/watch?v=7Qn3kQv5QwA",
-    mainImage: "assets/img/twisterAir/twisterAir.jpg",
-    secondaryImages: [],
+  mainImage: twisterAirImg,
+  secondaryImages: [],
     rankValue: 50,
     acquisitionDate: "31/12/2023",
     aproxDate: false
@@ -481,8 +568,8 @@ export const games: Game[] = [
     description: "Juego de mímica donde los jugadores deben adivinar palabras o frases.",
     rules: "Un jugador actúa y su equipo debe adivinar la palabra antes de que se acabe el tiempo.",
     videoUrl: "assets/video/carasYGestos.mp4",
-    mainImage: "assets/img/carasYGestos/carasYGestos1.jpg",
-    secondaryImages: ["carasYGestos1.jpg", "carasYGestos2.jpg"],
+  mainImage: carasYGestosImg1,
+  secondaryImages: [carasYGestosImg1, carasYGestosImg2],
     rankValue: 78,
     acquisitionDate: "2/01/2024",
     aproxDate: false
@@ -499,8 +586,8 @@ export const games: Game[] = [
     description: "Versión de UNO con cartas de doble cara y reglas especiales para cambiar el juego.",
     rules: "Juega cartas normales o voltea el mazo para cambiar a las reglas del lado oscuro.",
     videoUrl: "https://www.youtube.com/watch?v=QwQwQwQwQwQ",
-    mainImage: "assets/img/unoFlip/unoFlip.jpg",
-    secondaryImages: [],
+  mainImage: unoFlipImg,
+  secondaryImages: [],
     rankValue: 36,
     acquisitionDate: "24/01/2024",
     aproxDate: false
@@ -517,8 +604,8 @@ export const games: Game[] = [
     description: "Baraja tradicional española para juegos como Brisca, Mus, Tute, etc.",
     rules: "Depende del juego jugado.",
     videoUrl: "assets/video/barajaEspanola.mp4",
-    mainImage: "assets/img/barajaEspañola/barajaEspañola1.jpg",
-    secondaryImages: [],
+  mainImage: barajaEspanolaImg,
+  secondaryImages: [],
     rankValue: 77,
     acquisitionDate: "01/03/2024",
     aproxDate: true
@@ -535,8 +622,8 @@ export const games: Game[] = [
     description: "Juego clásico de fichas donde los jugadores deben emparejar los números.",
     rules: "Coloca fichas emparejando los números en los extremos. Gana quien se quede sin fichas primero.",
     videoUrl: "assets/video/dominoClasico.mp4",
-    mainImage: "assets/img/dominoClasico/dominoClasico.jpg",
-    secondaryImages: [],
+  mainImage: dominoClasicoImg,
+  secondaryImages: [],
     rankValue: 76,
     acquisitionDate: "01/03/2024",
     aproxDate: true
@@ -553,8 +640,8 @@ export const games: Game[] = [
     description: "Versión moderna del clásico juego de lotería mexicana.",
     rules: "Marca las cartas que salgan y completa tu tabla para ganar.",
     videoUrl: "assets/video/loteriaMillenial.mp4",
-    mainImage: "assets/img/loteriaMillenial/loteriaMillenial.jpg",
-    secondaryImages: [],
+  mainImage: loteriaMillenialImg,
+  secondaryImages: [],
     rankValue: 75,
     acquisitionDate: "01/03/2024",
     aproxDate: true
@@ -571,8 +658,8 @@ export const games: Game[] = [
     description: "Juego de trivia donde compiten generaciones jóvenes contra mayores.",
     rules: "Responde preguntas de cultura general y gana puntos para tu equipo.",
     videoUrl: "assets/video/triviaChavosVsRucos.mp4",
-    mainImage: "assets/img/triviaChavosVsRucos/triviaChavosVsRucos1.jpg",
-    secondaryImages: ["triviaChavosVsRucos2.jpg"],
+  mainImage: triviaChavosVsRucosImg1,
+  secondaryImages: [triviaChavosVsRucosImg2],
     rankValue: 72,
     acquisitionDate: "01/09/2024",
     aproxDate: true
@@ -589,8 +676,8 @@ export const games: Game[] = [
     description: "Versión de Turista con temática de Disneyland.",
     rules: "Compra propiedades y recorre Disneyland para ganar.",
     videoUrl: "assets/video/turistaDisneyland.mp4",
-    mainImage: "assets/img/turistaDisneyland/turistaDisneyland1.jpg",
-    secondaryImages: ["turistaDisneyland2.jpeg"],
+  mainImage: turistaDisneylandImg1,
+  secondaryImages: [turistaDisneylandImg2],
     rankValue: 71,
     acquisitionDate: "01/09/2024",
     aproxDate: true
@@ -607,8 +694,8 @@ export const games: Game[] = [
     description: "Juego de cartas coleccionables donde los jugadores invocan monstruos y lanzan hechizos para derrotar a su oponente.",
     rules: "Construye tu mazo y reduce los puntos de vida del rival a cero.",
     videoUrl: "assets/video/yuGiOh.mp4",
-    mainImage: "assets/img/yuGiOh/yuGiOh1.jpg",
-    secondaryImages: [],
+  mainImage: yugiohImg,
+  secondaryImages: [],
     rankValue: 70,
     acquisitionDate: "05/09/2024",
     aproxDate: false
@@ -625,8 +712,8 @@ export const games: Game[] = [
     description: "Juego de palabras donde los jugadores deben escribir palabras que empiecen con una letra determinada.",
     rules: "Se elige una letra y los jugadores deben escribir palabras en diferentes categorías lo más rápido posible.",
     videoUrl: "assets/video/bastaOriginal.mp4",
-    mainImage: "assets/img/bastaOriginal/bastaOriginal.jpg",
-    secondaryImages: [],
+  mainImage: bastaOriginalImg,
+  secondaryImages: [],
     rankValue: 74,
     acquisitionDate: "10/09/2024",
     aproxDate: false
@@ -643,8 +730,8 @@ export const games: Game[] = [
     description: "Juego de cartas con temática de lucha libre y superhéroes de Marvel.",
     rules: "Juega cartas para atacar y defender, gana quien quede en pie.",
     videoUrl: "assets/video/marvelLuchaLibre.mp4",
-    mainImage: "assets/img/marvelLuchaLibre/marvelLuchaLibre1.jpg",
-    secondaryImages: ["marvelLuchaLibre2.jpg"],
+  mainImage: marvelLuchaLibreImg1,
+  secondaryImages: [marvelLuchaLibreImg2],
     rankValue: 54,
     acquisitionDate: "10/09/2024",
     aproxDate: false
@@ -661,8 +748,8 @@ export const games: Game[] = [
     description: "Juego de preguntas donde no puedes responder ni 'sí' ni 'no'.",
     rules: "Responde preguntas sin decir 'sí' o 'no'.",
     videoUrl: "assets/video/niSiNiNo.mp4",
-    mainImage: "assets/img/niSiNiNo/niSiNiNo1.jpg",
-    secondaryImages: [],
+  mainImage: niSiNiNoImg,
+  secondaryImages: [],
     rankValue: 69,
     acquisitionDate: "27/09/2024",
     aproxDate: false
@@ -679,8 +766,8 @@ export const games: Game[] = [
     description: "Juego de rapidez visual y reflejos donde debes encontrar y tomar cartas antes que los demás.",
     rules: "Sigue las instrucciones de la carta y sé el más rápido en cumplir el reto.",
     videoUrl: "",
-    mainImage: "assets/img/aSusMarcas/aSusMarcas1.jpg",
-    secondaryImages: [],
+  mainImage: aSusMarcasImg,
+  secondaryImages: [],
     rankValue: 49,
     acquisitionDate: "27/09/2024",
     aproxDate: false
@@ -697,8 +784,8 @@ export const games: Game[] = [
     description: "Mini patinetas de dedo para hacer trucos y competencias de habilidad.",
     rules: "Realiza trucos y compite por la mejor puntuación.",
     videoUrl: "",
-    mainImage: "assets/img/techDeck/techDeck.jpg",
-    secondaryImages: [],
+  mainImage: techDeckImg,
+  secondaryImages: [],
     rankValue: 37,
     acquisitionDate: "15/10/2024",
     aproxDate: true
@@ -715,8 +802,8 @@ export const games: Game[] = [
     description: "Juego de adivinanza y mímica sobre películas, ideal para fiestas.",
     rules: "Los equipos compiten adivinando películas a través de mímica, frases y palabras clave.",
     videoUrl: "assets/video/blockbuster.mp4",
-    mainImage: "assets/img/blockbuster/blockbuster1.jpg",
-    secondaryImages: [],
+  mainImage: blockbusterImg,
+  secondaryImages: [],
     rankValue: 67,
     acquisitionDate: "15/11/2024",
     aproxDate: false
@@ -733,8 +820,8 @@ export const games: Game[] = [
     description: "Juego de trivia con preguntas sobre películas y personajes de Disney.",
     rules: "Responde preguntas de trivia para avanzar en el tablero.",
     videoUrl: "assets/video/disneyMania.mp4",
-    mainImage: "assets/img/disneyMania/disneyMania1.jpg",
-    secondaryImages: [],
+  mainImage: disneyManiaImg,
+  secondaryImages: [],
     rankValue: 66,
     acquisitionDate: "15/11/2024",
     aproxDate: false
@@ -751,8 +838,8 @@ export const games: Game[] = [
     description: "Juego de cartas donde debes engañar a los demás sobre las cartas que juegas.",
     rules: "Juega cartas boca abajo y declara su valor. Los demás pueden creer o dudar.",
     videoUrl: "assets/video/liar.mp4",
-    mainImage: "assets/img/liar/liar1.jpg",
-    secondaryImages: [],
+  mainImage: liarImg,
+  secondaryImages: [],
     rankValue: 65,
     acquisitionDate: "15/11/2024",
     aproxDate: false
@@ -769,8 +856,8 @@ export const games: Game[] = [
     description: "Juego de memoria y engaño donde debes recordar qué objeto tiene cada jugador.",
     rules: "Pasa cartas y recuerda qué objeto tiene cada uno.",
     videoUrl: "assets/video/thatsNotAHat.mp4",
-    mainImage: "assets/img/thatsNotAHat/thatsNotAHat1.jpg",
-    secondaryImages: [],
+  mainImage: thatsNotAHatImg,
+  secondaryImages: [],
     rankValue: 64,
     acquisitionDate: "15/11/2024",
     aproxDate: false
@@ -787,8 +874,8 @@ export const games: Game[] = [
     description: "Versión de mesa del popular videojuego donde los jugadores deben descubrir al impostor entre ellos.",
     rules: "Cumple tareas y vota para expulsar al impostor antes de que acabe con la tripulación.",
     videoUrl: "",
-    mainImage: "assets/img/amongUs/amongUs.jpg",
-    secondaryImages: [],
+  mainImage: amongUsImg,
+  secondaryImages: [],
     rankValue: 48,
     acquisitionDate: "15/11/2024",
     aproxDate: false
@@ -805,8 +892,8 @@ export const games: Game[] = [
     description: "Juego de cartas mexicano donde debes responder preguntas incómodas o atreverte a retos.",
     rules: "Responde sinceramente o cumple el reto indicado en la carta.",
     videoUrl: "",
-    mainImage: "assets/img/alChile/alChile.jpg",
-    secondaryImages: [],
+  mainImage: alChileImg,
+  secondaryImages: [],
     rankValue: 47,
     acquisitionDate: "15/11/2024",
     aproxDate: false
@@ -823,8 +910,8 @@ export const games: Game[] = [
     description: "Versión de dominó con fichas de resina.",
     rules: "Coloca fichas emparejando los números en los extremos. Gana quien se quede sin fichas primero.",
     videoUrl: "assets/video/dominoResina.mp4",
-    mainImage: "assets/img/dominoResina/dominoResina.jpg",
-    secondaryImages: [],
+  mainImage: dominoResinaImg,
+  secondaryImages: [],
     rankValue: 68,
     acquisitionDate: "16/11/2024",
     aproxDate: false
@@ -841,8 +928,8 @@ export const games: Game[] = [
     description: "Juego de deducción donde los jugadores intentan resolver un asesinato.",
     rules: "Los jugadores hacen preguntas y deducen quién, con qué arma y en qué lugar ocurrió el crimen.",
     videoUrl: "assets/video/clue.mp4",
-    mainImage: "assets/img/clue/clue1.jpg",
-    secondaryImages: [],
+  mainImage: clueImg,
+  secondaryImages: [],
     rankValue: 63,
     acquisitionDate: "18/11/2024",
     aproxDate: false
@@ -859,8 +946,8 @@ export const games: Game[] = [
     description: "Juego de mesa clásico para niños donde avanzas por un tablero de caramelos.",
     rules: "Los jugadores avanzan según las cartas de colores, el primero en llegar al final gana.",
     videoUrl: "assets/video/candyLand.mp4",
-    mainImage: "assets/img/candyLand/candyLand1.jpg",
-    secondaryImages: [],
+  mainImage: candyLandImg,
+  secondaryImages: [],
     rankValue: 62,
     acquisitionDate: "18/11/2024",
     aproxDate: false
@@ -877,8 +964,8 @@ export const games: Game[] = [
     description: "Juego de trivia con preguntas sobre historia mundial.",
     rules: "Responde preguntas de historia para avanzar en el tablero.",
     videoUrl: "assets/video/historyChannel.mp4",
-    mainImage: "assets/img/historyChannel/historyChannel1.jpg",
-    secondaryImages: [],
+  mainImage: historyChannelImg,
+  secondaryImages: [],
     rankValue: 61,
     acquisitionDate: "18/11/2024",
     aproxDate: false
@@ -895,8 +982,8 @@ export const games: Game[] = [
     description: "Versión de Mario Bros del clásico Juego de la Vida.",
     rules: "Avanza por el tablero tomando decisiones y recolectando monedas.",
     videoUrl: "assets/video/lifeMario.mp4",
-    mainImage: "assets/img/lifeMario/lifeMario1.jpg",
-    secondaryImages: [],
+  mainImage: lifeMarioImg,
+  secondaryImages: [],
     rankValue: 60,
     acquisitionDate: "18/11/2024",
     aproxDate: false
@@ -913,8 +1000,8 @@ export const games: Game[] = [
     description: "Versión de mesa del clásico videojuego Tetris.",
     rules: "Coloca piezas para completar líneas y ganar puntos.",
     videoUrl: "assets/video/tetris.mp4",
-    mainImage: "assets/img/tetris/tetris1.jpg",
-    secondaryImages: [],
+  mainImage: tetrisImg,
+  secondaryImages: [],
     rankValue: 59,
     acquisitionDate: "18/11/2024",
     aproxDate: false
@@ -931,8 +1018,8 @@ export const games: Game[] = [
     description: "Juego de cartas para profundizar relaciones y conocerse mejor.",
     rules: "Responde preguntas personales y reflexiona con los demás jugadores.",
     videoUrl: "assets/video/weAreNotReallyStrangers.mp4",
-    mainImage: "assets/img/weAreNotReallyStrangers/weAreNotReallyStrangers1.jpg",
-    secondaryImages: [],
+  mainImage: weAreNotReallyStrangersImg,
+  secondaryImages: [],
     rankValue: 58,
     acquisitionDate: "18/11/2024",
     aproxDate: false
@@ -949,8 +1036,8 @@ export const games: Game[] = [
     description: "El clásico cubo de Rubik 3x3 para resolver rompecabezas.",
     rules: "Gira las caras del cubo hasta que cada una tenga un solo color.",
     videoUrl: "assets/video/cuboRubik3x3.mp4",
-    mainImage: "assets/img/cuboRubik3x3/cuboRubik3x3.jpg",
-    secondaryImages: [],
+  mainImage: cuboRubikImg,
+  secondaryImages: [],
     rankValue: 57,
     acquisitionDate: "07/12/2024",
     aproxDate: false
@@ -967,8 +1054,8 @@ export const games: Game[] = [
     description: "Juego tradicional de habilidad con canicas.",
     rules: "Los jugadores lanzan canicas para sacar las de los demás de un círculo.",
     videoUrl: "assets/video/canicas.mp4",
-    mainImage: "assets/img/canicas/canicas1.jpg",
-    secondaryImages: ["canicas2.jpg", "canicas3.jpg"],
+  mainImage: canicasImg1,
+  secondaryImages: [canicasImg2, canicasImg3],
     rankValue: 73,
     acquisitionDate: "07/12/2024",
     aproxDate: false
@@ -985,8 +1072,8 @@ export const games: Game[] = [
     description: "Juego de cartas donde los jugadores deben completar fases específicas antes que los demás.",
     rules: "Completa las fases en orden antes que los demás jugadores.",
     videoUrl: "assets/video/phase10.mp4",
-    mainImage: "assets/img/phase10/phase10.jpg",
-    secondaryImages: [],
+  mainImage: phase10Img,
+  secondaryImages: [],
     rankValue: 56,
     acquisitionDate: "07/12/2024",
     aproxDate: false
@@ -1003,8 +1090,8 @@ export const games: Game[] = [
     description: "Juego de puntería donde debes acertar a un blanco con dardos o pelotas.",
     rules: "Lanza y suma puntos según el lugar donde aciertes.",
     videoUrl: "assets/video/tiroAlBlanco.mp4",
-    mainImage: "assets/img/tiroAlBlanco/tiroAlBlanco1.jpg",
-    secondaryImages: [],
+  mainImage: tiroAlBlancoImg,
+  secondaryImages: [],
     rankValue: 55,
     acquisitionDate: "07/12/2024",
     aproxDate: false
@@ -1021,8 +1108,8 @@ export const games: Game[] = [
     description: "Juego de cartas coleccionables donde los jugadores usan Pokémon para combatir y ganar medallas.",
     rules: "Construye tu mazo y derrota a tu oponente usando ataques y habilidades de Pokémon.",
     videoUrl: "https://www.youtube.com/watch?v=QwQwQwQwQwQ",
-    mainImage: "assets/img/pokemonTCG/pokemonTCG.jpg",
-    secondaryImages: [],
+  mainImage: pokemonTCGImg,
+  secondaryImages: [],
     rankValue: 38,
     acquisitionDate: "15/12/2024",
     aproxDate: false
@@ -1039,8 +1126,8 @@ export const games: Game[] = [
     description: "Juego de cartas estratégico donde puedes controlar criaturas del rival usando cartas de Mind Bug.",
     rules: "Juega criaturas y usa Mind Bugs para tomar el control de las del oponente.",
     videoUrl: "https://www.youtube.com/watch?v=F6n2k6n8Q8w",
-    mainImage: "assets/img/mindBug/mindBug.jpg",
-    secondaryImages: [],
+  mainImage: mindBugImg,
+  secondaryImages: [],
     rankValue: 46,
     acquisitionDate: "25/12/2024",
     aproxDate: false
@@ -1057,8 +1144,8 @@ export const games: Game[] = [
     description: "Versión portátil del ajedrez con piezas magnéticas para jugar en cualquier lugar.",
     rules: "Juega ajedrez normalmente, pero con piezas magnéticas.",
     videoUrl: "",
-    mainImage: "assets/img/magneticChess/magneticChess.jpg",
-    secondaryImages: [],
+  mainImage: magneticChessImg,
+  secondaryImages: [],
     rankValue: 35,
     acquisitionDate: "14/01/2025",
     aproxDate: false
@@ -1075,8 +1162,8 @@ export const games: Game[] = [
     description: "Juego de trivia generacional donde equipos de diferentes edades compiten respondiendo preguntas de su época.",
     rules: "Responde preguntas de cultura pop y gana puntos para tu generación.",
     videoUrl: "",
-    mainImage: "assets/img/okBoomer/okBoomer.jpg",
-    secondaryImages: [],
+  mainImage: okBoomerImg,
+  secondaryImages: [],
     rankValue: 45,
     acquisitionDate: "22/04/2025",
     aproxDate: false
@@ -1093,8 +1180,8 @@ export const games: Game[] = [
     description: "Juego de cartas para romper el hielo y conocer mejor a tus amigos a través de preguntas y retos.",
     rules: "Saca una carta y sigue la instrucción para animar la conversación.",
     videoUrl: "",
-    mainImage: "assets/img/catchTheVibe/catchTheVibe.jpg",
-    secondaryImages: [],
+  mainImage: catchTheVibeImg,
+  secondaryImages: [],
     rankValue: 44,
     acquisitionDate: "22/04/2025",
     aproxDate: false
@@ -1111,8 +1198,8 @@ export const games: Game[] = [
     description: "Juego de cartas donde debes conseguir un cuerpo sano antes que los demás, evitando virus y usando medicinas.",
     rules: "Juega cartas para infectar, curar o proteger órganos. Gana quien complete su cuerpo sano.",
     videoUrl: "https://www.youtube.com/watch?v=6kK6wQwQwQw",
-    mainImage: "assets/img/virus/virus.jpg",
-    secondaryImages: [],
+  mainImage: virusImg,
+  secondaryImages: [],
     rankValue: 43,
     acquisitionDate: "05/09/2025",
     aproxDate: false
@@ -1129,8 +1216,8 @@ export const games: Game[] = [
     description: "Juego de cartas basado en el anime Naruto, donde los jugadores luchan usando personajes y técnicas ninja.",
     rules: "Construye tu mazo y derrota a tus oponentes usando cartas de ataque y defensa.",
     videoUrl: "",
-    mainImage: "assets/img/narutoNinjaBattle/narutoNinjaBattle.jpg",
-    secondaryImages: [],
+  mainImage: narutoNinjaBattleImg,
+  secondaryImages: [],
     rankValue: 42,
     acquisitionDate: "05/09/2025",
     aproxDate: false
@@ -1147,8 +1234,8 @@ export const games: Game[] = [
     description: "Juego de cartas donde hacer trampa está permitido, pero cuidado con el vigilante.",
     rules: "Deshazte de tus cartas haciendo trampa sin que te atrapen.",
     videoUrl: "https://www.youtube.com/watch?v=QwQwQwQwQwQ",
-    mainImage: "assets/img/polillaTramposa/polillaTramposa.jpg",
-    secondaryImages: [],
+  mainImage: polillaTramposaImg,
+  secondaryImages: [],
     rankValue: 41,
     acquisitionDate: "05/09/2025",
     aproxDate: false
@@ -1165,8 +1252,8 @@ export const games: Game[] = [
     description: "Juego de cartas rápido y divertido donde debes evitar explotar con un gatito explosivo.",
     rules: "Roba cartas y usa acciones para evitar explotar. El último en pie gana.",
     videoUrl: "https://www.youtube.com/watch?v=QwQwQwQwQwQ",
-    mainImage: "assets/img/explodingKittens/explodingKittens.jpg",
-    secondaryImages: [],
+  mainImage: explodingKittensImg,
+  secondaryImages: [],
     rankValue: 40,
     acquisitionDate: "05/09/2025",
     aproxDate: false
@@ -1183,8 +1270,8 @@ export const games: Game[] = [
     description: "Versión especial de Exploding Kittens con cartas y poderes de 'El Bien' y 'El Mal'.",
     rules: "Juega como en Exploding Kittens, pero usando cartas especiales de cada bando.",
     videoUrl: "",
-    mainImage: "assets/img/explodingKittensElBienContraElMal/explodingKittensElBienContraElMal.jpg",
-    secondaryImages: [],
+  mainImage: explodingKittensElBienContraElMalImg,
+  secondaryImages: [],
     rankValue: 39,
     acquisitionDate: "05/09/2025",
     aproxDate: false

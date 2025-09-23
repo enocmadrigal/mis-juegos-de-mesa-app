@@ -28,11 +28,6 @@ function InfoItem({ icon, text }: { icon: string, text: string }) {
     );
 }
 
-function getFolderName(mainImage: string): string {
-    // assets/img/ajedrez/ajedrez.jpg => ajedrez
-    const parts = mainImage.split("/");
-    return parts.length >= 3 ? parts[2] : "";
-}
 
 export default function DetailScreen({
     isVisible,
@@ -76,8 +71,7 @@ export default function DetailScreen({
         return url;
     }
 
-    const folderName = getFolderName(game.mainImage);
-    const images = gameDetailImages[folderName] || [];
+    const images = gameDetailImages[game.id] || [];
 
     // Carrusel de imágenes
     const [currentIndex, setCurrentIndex] = useState(0);

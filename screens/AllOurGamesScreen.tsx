@@ -67,9 +67,9 @@ export default function AllOurGamesScreen({isVisible, onGoToHomeButtonPress}: {i
                 renderItem={({item}) => (
                     <Pressable onPress={() => setSelectedGame(item)}>
                         <View style={styles.container}>
-                            {item.mainImage && gameImages[item.mainImage] ? (
+                            {item.mainImage ? (
                                 <View style={styles.imageWrapper}>
-                                    <Image source={gameImages[item.mainImage]} resizeMode="contain" style={styles.image} />
+                                    <Image source={item.mainImage} resizeMode="contain" style={styles.image} />
                                 </View>
                             ) : (
                                 <View style={[styles.imageWrapper, {backgroundColor: '#ccc'}]}>

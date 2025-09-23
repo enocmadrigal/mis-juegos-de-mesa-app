@@ -86,7 +86,13 @@ export default function SearchGameScreen({ isVisible, onGoToHomeButtonPress }: {
                                 style={modalStyles.suggestions}
                                 keyboardShouldPersistTaps="handled"
                                 renderItem={({ item }) => (
-                                    <TouchableOpacity style={modalStyles.suggestionItem} onPress={() => setSelectedGame(item)}>
+                                    <TouchableOpacity
+                                        style={modalStyles.suggestionItem}
+                                        onPress={() => {
+                                            setSelectedGame(item);
+                                            setQuery(""); // Limpiar búsqueda al abrir detalle
+                                        }}
+                                    >
                                         <Image source={item.mainImage as ImageSourcePropType} style={modalStyles.thumbnail} />
                                         <Text style={modalStyles.suggestionText}>{item.name}</Text>
                                     </TouchableOpacity>
@@ -107,78 +113,80 @@ export default function SearchGameScreen({ isVisible, onGoToHomeButtonPress }: {
     );
 }
 
-    const { width: screenWidth } = Dimensions.get('window');
+const { width: screenWidth } = Dimensions.get('window');
+const ITEM_HEIGHT = 56; // Aproximado: paddingVertical(8*2) + fontSize + imagen
 
-    const modalStyles = StyleSheet.create({
-        modalArea: {
-            justifyContent: 'center',
-            alignItems: 'center',
-            margin: 0,
-        },
-        modalContent: Platform.OS === 'web' && screenWidth > 900
-            ? {
-                // --- SOLO PARA WEB EN LAPTOP ---
-                width: '70%',
-                alignSelf: 'center',
-                position: 'absolute',
-                top: '51.3%', // Ajusta este valor para que el modal cubra exactamente los botones
-                height: 195, // o el valor que necesites, en px
-                backgroundColor: '#fff',
-                borderRadius: 18,
-                paddingVertical: 10,
-                shadowColor: '#000',
-                shadowOpacity: 0.12,
-                shadowRadius: 8,
-                elevation: 4,
-                zIndex: 20,
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-            }
-            : {
-                // --- PARA CELULAR (APP O WEB) ---
-                width: '70%',
-                alignSelf: 'center',
-                position: 'absolute',
-                top: '50%', // Ajusta este valor para móvil
-                height: 196, // Ajusta este valor para móvil
-                backgroundColor: '#fff',
-                borderRadius: 18,
-                paddingVertical: 10,
-                shadowColor: '#000',
-                shadowOpacity: 0.12,
-                shadowRadius: 8,
-                elevation: 4,
-                zIndex: 20,
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-            },
-        searchRow: {
-            flexDirection: 'row',
-            alignItems: 'center', // centra verticalmente los hijos
-            width: '100%',
-            justifyContent: 'center',
-            marginBottom: 16,
-        },
-        goHomeButton: {
-            marginLeft: 0,
+const modalStyles = StyleSheet.create({
+    modalArea: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        margin: 0,
+    },
+    modalContent: Platform.OS === 'web' && screenWidth > 900
+        ? {
+            // --- SOLO PARA WEB EN LAPTOP ---
+            width: '70%',
             alignSelf: 'center',
-            position: 'relative',
-        },
-        suggestionsContainer: {
             position: 'absolute',
-            top: '100%', // Justo debajo de la searchRow
-            marginTop: -10, // o el valor que prefieras
-            left: 0,
-            width: '100%',
-            zIndex: 100,
-            elevation: 10,
+            top: '51.3%', // Ajusta este valor para que el modal cubra exactamente los botones
+            height: 195, // o el valor que necesites, en px
+            backgroundColor: '#fff',
+            borderRadius: 18,
+            paddingVertical: 10,
+            shadowColor: '#000',
+            shadowOpacity: 0.12,
+            shadowRadius: 8,
+            elevation: 4,
+            zIndex: 20,
+            display: 'flex',
+            flexDirection: 'column',
             alignItems: 'center',
+            justifyContent: 'center',
+        }
+        : {
+            // --- PARA CELULAR (APP O WEB) ---
+            width: '70%',
+            alignSelf: 'center',
+            position: 'absolute',
+            top: '50%', // Ajusta este valor para móvil
+            height: 196, // Ajusta este valor para móvil
+            backgroundColor: '#fff',
+            borderRadius: 18,
+            paddingVertical: 10,
+            shadowColor: '#000',
+            shadowOpacity: 0.12,
+            shadowRadius: 8,
+            elevation: 4,
+            zIndex: 20,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
         },
-        suggestions: {
+    searchRow: {
+        flexDirection: 'row',
+        alignItems: 'center', // centra verticalmente los hijos
+        width: '100%',
+        justifyContent: 'center',
+        marginBottom: 16,
+    },
+    goHomeButton: {
+        marginLeft: 0,
+        alignSelf: 'center',
+        position: 'relative',
+    },
+    suggestionsContainer: {
+        position: 'absolute',
+        top: '100%', // Justo debajo de la searchRow
+        marginTop: -10, // o el valor que prefieras
+        left: 0,
+        width: '100%',
+        zIndex: 100,
+        elevation: 10,
+        alignItems: 'center',
+    },
+    suggestions: Platform.OS === 'web' && screenWidth > 900
+        ? {
             width: '90%',
             maxWidth: 400,
             backgroundColor: '#fff',
@@ -190,57 +198,71 @@ export default function SearchGameScreen({ isVisible, onGoToHomeButtonPress }: {
             shadowOpacity: 0.08,
             shadowRadius: 4,
             elevation: 2,
+        }
+        : {
+            width: '90%',
+            maxWidth: 400,
+            backgroundColor: '#fff',
+            borderRadius: 12,
+            marginTop: 8,
+            // Limita a 4 ítems visibles en móvil/app
+            maxHeight: ITEM_HEIGHT * 4,
+            alignSelf: 'center',
+            shadowColor: '#000',
+            shadowOpacity: 0.08,
+            shadowRadius: 4,
+            elevation: 2,
         },
-        suggestionItem: {
-            flexDirection: 'row',
-            alignItems: 'center',
-            paddingVertical: 8,
-            paddingHorizontal: 10,
-            borderBottomWidth: 1,
-            borderBottomColor: '#eee',
+    suggestionItem: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        paddingVertical: 8,
+        paddingHorizontal: 10,
+        borderBottomWidth: 1,
+        borderBottomColor: '#eee',
+    },
+    thumbnail: {
+        width: 40,
+        height: 40,
+        borderRadius: 8,
+        marginRight: 12,
+        backgroundColor: '#eee',
+    },
+    suggestionText: {
+        fontSize: 18,
+        color: '#333',
+    },
+    input: Platform.OS === 'web' && screenWidth > 900
+        ? {
+            // --- SOLO PARA WEB EN LAPTOP ---
+            width: '95%',
+            //minWidth: 320,
+            //maxWidth: 600,
+            alignSelf: 'center',
+            borderWidth: 1,
+            borderColor: '#d06666ff',
+            borderRadius: 18,
+            paddingVertical: 10,
+            paddingHorizontal: 16,
+            fontSize: 26,
+            marginBottom: 0,
+            backgroundColor: '#f8f8f8',
+            textAlign: 'center',
+        }
+        : {
+            // --- PARA CELULAR (APP O WEB) ---
+            width: '85%',
+            minWidth: 0,
+            maxWidth: 300,
+            alignSelf: 'center',
+            borderWidth: 1,
+            borderColor: '#d06666ff',
+            borderRadius: 18,
+            paddingVertical: 10,
+            paddingHorizontal: 12,
+            fontSize: 24,
+            marginBottom: 0,
+            backgroundColor: '#f8f8f8',
+            textAlign: 'center',
         },
-        thumbnail: {
-            width: 40,
-            height: 40,
-            borderRadius: 8,
-            marginRight: 12,
-            backgroundColor: '#eee',
-        },
-        suggestionText: {
-            fontSize: 18,
-            color: '#333',
-        },
-        input: Platform.OS === 'web' && screenWidth > 900
-            ? {
-                // --- SOLO PARA WEB EN LAPTOP ---
-                width: '95%',
-                //minWidth: 320,
-                //maxWidth: 600,
-                alignSelf: 'center',
-                borderWidth: 1,
-                borderColor: '#d06666ff',
-                borderRadius: 18,
-                paddingVertical: 10,
-                paddingHorizontal: 16,
-                fontSize: 26,
-                marginBottom: 0,
-                backgroundColor: '#f8f8f8',
-                textAlign: 'center',
-            }
-            : {
-                // --- PARA CELULAR (APP O WEB) ---
-                width: '85%',
-                minWidth: 0,
-                maxWidth: 300,
-                alignSelf: 'center',
-                borderWidth: 1,
-                borderColor: '#d06666ff',
-                borderRadius: 18,
-                paddingVertical: 10,
-                paddingHorizontal: 12,
-                fontSize: 24,
-                marginBottom: 0,
-                backgroundColor: '#f8f8f8',
-                textAlign: 'center',
-            },
-    });
+});

@@ -149,7 +149,7 @@ const modalStyles = StyleSheet.create({
             alignSelf: 'center',
             position: 'absolute',
             top: '50%', // Ajusta este valor para móvil
-            height: 200, // Ajusta este valor para móvil
+            height: 202, // Ajusta este valor para móvil
             backgroundColor: '#fff',
             borderRadius: 18,
             paddingVertical: 10,

@@ -59,7 +59,6 @@ export default function AllOurGamesScreen({isVisible, onGoToHomeButtonPress}: {i
             animationOutTiming={900}
             style={{margin: 0}}
         >
-            <TextInput placeholder="Buscar juego..." />
             <FlatList
                 data={games}
                 keyExtractor={(item) => item.id.toString()}

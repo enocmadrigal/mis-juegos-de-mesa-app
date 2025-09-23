@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { View, StyleSheet, Text, Image, ScrollView, Linking, Pressable, Platform, Animated, TouchableOpacity } from "react-native";
+import { View, StyleSheet, Text, Image, ScrollView, Linking, Pressable, Platform, Animated, TouchableOpacity, Dimensions } from "react-native";
 import Modal from "react-native-modal";
 import GoToHomeButton from "../componentes/GoToHomeButton";
 import SortButton from "../componentes/SortButton";
@@ -73,6 +73,18 @@ export default function DetailScreen({
 
     const images = gameDetailImages[game.id] || [];
 
+        // Tamaño responsivo para la imagen del carrusel
+        const isWeb = Platform.OS === 'web';
+        let windowWidth = Dimensions.get('window').width;
+        if (isWeb && typeof window !== 'undefined') {
+            windowWidth = window.innerWidth;
+        }
+        const isLargeWeb = isWeb && windowWidth > 800;
+        const carouselImageSize = isLargeWeb ? 400 : 220;
+        // Márgenes grandes solo en web desktop para el contenedor del carrusel
+        const carouselContainerMarginTop = isLargeWeb ? 56 : 0;
+        const carouselContainerMarginBottom = isLargeWeb ? 56 : 0;
+
     // Carrusel de imágenes
     const [currentIndex, setCurrentIndex] = useState(0);
     const fadeAnim = useRef(new Animated.Value(1)).current;
@@ -120,7 +132,10 @@ export default function DetailScreen({
                 <ScrollView contentContainerStyle={styles.scrollContent}>
                     <Text style={styles.title}>{game.name}</Text>
                     {images.length > 0 ? (
-                        <View style={styles.carouselContainer}>
+                        <View style={[
+                            styles.carouselContainer,
+                            { marginTop: carouselContainerMarginTop, marginBottom: carouselContainerMarginBottom }
+                        ]}>
                             <TouchableOpacity
                                 style={styles.arrowContainer}
                                 onPress={() => handleChangeImage("prev")}
@@ -130,7 +145,14 @@ export default function DetailScreen({
                             </TouchableOpacity>
                             <Animated.Image
                                 source={images[currentIndex]}
-                                style={[styles.carouselImage, { opacity: fadeAnim }]}
+                                style={[
+                                    styles.carouselImage,
+                                    {
+                                        opacity: fadeAnim,
+                                        width: carouselImageSize,
+                                        height: carouselImageSize
+                                    }
+                                ]}
                                 resizeMode="contain"
                             />
                             <TouchableOpacity
@@ -234,7 +256,7 @@ const styles = StyleSheet.create({
         fontSize: 35,
         fontWeight: 'bold',
         color: '#d06666ff',
-        marginBottom: 16,
+        marginBottom: 32, // Más espacio para imagen grande
         textAlign: 'center',
     },
     image: {
@@ -292,6 +314,7 @@ const styles = StyleSheet.create({
         flexWrap: 'wrap',
         justifyContent: 'center',
         marginBottom: 18,
+        marginTop: 24, // Más espacio arriba de los iconos
         gap: 8,
     },
     infoItem: {
@@ -357,8 +380,6 @@ const styles = StyleSheet.create({
         opacity: 0.7,
     },
     carouselImage: {
-        width: 220,
-        height: 220,
         borderRadius: 12,
         backgroundColor: '#fff',
         marginHorizontal: 8,

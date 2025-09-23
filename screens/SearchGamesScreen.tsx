@@ -44,36 +44,39 @@ export default function SearchGameScreen({ isVisible, onGoToHomeButtonPress }: {
             <View style={modalStyles.modalContent}>
                 <View style={{ width: '100%', alignItems: 'center', position: 'relative' }}>
                     <View style={modalStyles.searchRow}>
-                        <TouchableOpacity
-                            activeOpacity={1}
-                            style={{ flex: 1 }}
-                            onPress={() => {
-                                setInputFocused(true);
-                                setTimeout(() => inputRef.current?.focus(), 10);
-                            }}
-                        >
-                            <TextInput
-                                ref={inputRef}
-                                style={modalStyles.input}
-                                placeholder={inputFocused ? '' : 'Buscar juego...'}
-                                value={query}
-                                onChangeText={setQuery}
-                                onFocus={() => setInputFocused(true)}
-                                onBlur={() => setInputFocused(false)}
-                                selectionColor="#333"
-                                textAlign="center"
-                                showSoftInputOnFocus={true}
-                                autoFocus={false}
-                                // Mantener el cursor centrado aunque esté vacío
-                                textAlignVertical="center"
-                                caretHidden={false}
-                            />
-                        </TouchableOpacity>
-                        {isLaptop && (
-                            <TouchableOpacity onPress={handleGoToHomeButtonPress} style={modalStyles.goHomeButton}>
-                                <GoToHomeButton />
-                            </TouchableOpacity>
-                        )}
+                        <View style={{ flexDirection: 'row', alignItems: 'center', width: '100%', justifyContent: 'center' }}>
+                            <View style={{ flexDirection: 'row', alignItems: 'center', width: isLaptop ? '90%' : '100%' }}>
+                                <TouchableOpacity
+                                    activeOpacity={1}
+                                    style={{ flex: 1 }}
+                                    onPress={() => {
+                                        setInputFocused(true);
+                                        setTimeout(() => inputRef.current?.focus(), 10);
+                                    }}
+                                >
+                                    <TextInput
+                                        ref={inputRef}
+                                        style={modalStyles.input}
+                                        placeholder={inputFocused ? '' : 'Buscar juego...'}
+                                        value={query}
+                                        onChangeText={setQuery}
+                                        onFocus={() => setInputFocused(true)}
+                                        onBlur={() => setInputFocused(false)}
+                                        selectionColor="#333"
+                                        textAlign="center"
+                                        showSoftInputOnFocus={true}
+                                        autoFocus={false}
+                                        textAlignVertical="center"
+                                        caretHidden={false}
+                                    />
+                                </TouchableOpacity>
+                                {isLaptop && (
+                                    <TouchableOpacity onPress={handleGoToHomeButtonPress} style={modalStyles.goHomeButton}>
+                                        <GoToHomeButton />
+                                    </TouchableOpacity>
+                                )}
+                            </View>
+                        </View>
                     </View>
                     {filteredGames.length > 0 && (
                         <View style={modalStyles.suggestionsContainer}>
@@ -161,8 +164,9 @@ export default function SearchGameScreen({ isVisible, onGoToHomeButtonPress }: {
             marginBottom: 16,
         },
         goHomeButton: {
-            marginLeft: 12,
+            marginLeft: 0,
             alignSelf: 'center',
+            position: 'relative',
         },
         suggestionsContainer: {
             position: 'absolute',
@@ -209,9 +213,9 @@ export default function SearchGameScreen({ isVisible, onGoToHomeButtonPress }: {
         input: Platform.OS === 'web' && screenWidth > 900
             ? {
                 // --- SOLO PARA WEB EN LAPTOP ---
-                width: '90%',
-                minWidth: 320,
-                maxWidth: 600,
+                width: '95%',
+                //minWidth: 320,
+                //maxWidth: 600,
                 alignSelf: 'center',
                 borderWidth: 1,
                 borderColor: '#d06666ff',

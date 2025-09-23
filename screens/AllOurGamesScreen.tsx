@@ -3,7 +3,6 @@ import Modal from "react-native-modal";
 import GoToHomeButton from "../componentes/GoToHomeButton";
 import { Pressable } from 'react-native';
 import { games as allGames } from "../data/games";
-import { gameImages } from "../data/gameImages";
 import SortButton from "../componentes/SortButton";
 import { useState, useEffect } from "react";
 import SortScreen from "./SortScreen";

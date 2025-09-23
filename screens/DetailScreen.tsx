@@ -7,6 +7,7 @@ import { globalStyles } from '../GlobalStyles';
 import { gameImages } from "../data/gameImages";
 import { WebView } from 'react-native-webview';
 import { gameDetailImages } from "../data/gameDetailImages";
+import ReturnRedButton from "../componentes/ReturnRedButton";
 
 // Helper para importar íconos dinámicamente
 const iconMap: Record<string, any> = {
@@ -232,8 +233,8 @@ export default function DetailScreen({
                 <Pressable style={globalStyles.GoToHomeButtonContainer} onPress={onGoToHomeButtonPress}>
                     <GoToHomeButton />
                 </Pressable>
-                <Pressable style={globalStyles.sortButtonContainer} onPress={onClose}>
-                    <SortButton />
+                <Pressable style={styles.sortButtonContainer} onPress={onClose}>
+                    <ReturnRedButton />
                 </Pressable>
             </View>
         </Modal>
@@ -383,5 +384,15 @@ const styles = StyleSheet.create({
         borderRadius: 12,
         backgroundColor: '#fff',
         marginHorizontal: 8,
+    },sortButtonContainer: {
+        flex: 1,
+        alignItems: 'center',
+        // borderLeftColor: '#d06666ff',
+       // borderLeftWidth: 2,
+        borderColor: '#d06666ff',
+        borderWidth: 2,
+        borderRadius: 50,
+        marginLeft: 8,
+        backgroundColor: '#140606ff',
     },
 });

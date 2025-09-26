@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.3319d83f.js",
+    "main.js": "/static/js/main.1432dcbe.js",
     "static/js/856.09d3e094.js": "/static/js/856.09d3e094.js",
     "static/media/sharingan.png": "/static/media/sharingan.79816b622865f8c8b1c2.png",
     "static/media/monopolyGuy.png": "/static/media/monopolyGuy.75faa14413c2bdee2db5.png",
@@ -119,14 +119,13 @@
     "static/media/ajedrez4.jpg": "/static/media/ajedrez4.5e6a95e664da4f318aca.jpg",
     "favicon-32.png": "/favicon-32.png",
     "favicon-16.png": "/favicon-16.png",
-    "static/media/LatestAcquisitionsScreen": "/static/media/LatestAcquisitionsScreen.d731c24952b04dc08510",
     "manifest.json": "/manifest.json",
     "serve.json": "/serve.json",
-    "main.3319d83f.js.map": "/static/js/main.3319d83f.js.map",
+    "main.1432dcbe.js.map": "/static/js/main.1432dcbe.js.map",
     "856.09d3e094.js.map": "/static/js/856.09d3e094.js.map"
   },
   "entrypoints": [
     "static/js/856.09d3e094.js",
-    "static/js/main.3319d83f.js"
+    "static/js/main.1432dcbe.js"
   ]
 }

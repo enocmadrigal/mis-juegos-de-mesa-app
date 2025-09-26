@@ -28,6 +28,11 @@ function InfoItem({ icon, text }: { icon: string, text: string }) {
     );
 }
 
+// Helper para obtener miniatura de TikTok
+function getTiktokThumbnail(): any {
+    // Usa el logo local de assets
+    return require("../assets/tikTokLogoCuadrado.png");
+}
 
 export default function DetailScreen({
     isVisible,
@@ -139,6 +144,9 @@ export default function DetailScreen({
         };
     };
 
+    // Agrega esta línea:
+    const isTiktokUrl = isWebUrl && typeof game.videoUrl === "string" && game.videoUrl.includes("tiktok.com");
+
     return (
         <Modal
             isVisible={isVisible}
@@ -205,11 +213,23 @@ export default function DetailScreen({
                         <InfoItem icon="publisher" text={game.publisher} />
                         <InfoItem icon="acquisitionDate" text={game.acquisitionDate} />
                     </View>
-                    <Text style={styles.subtitle}>Resumen del juego</Text>
-                    <Text style={styles.description}>{game.description}</Text>
-                    <Text style={styles.subtitle}>Tutorial</Text>
+                    <Text style={styles.subtitle}>¿De qué va el juego?</Text>
                     {game.videoUrl ? (
-                        canEmbed ? (
+                        isTiktokUrl ? (
+                            <Pressable
+                                style={styles.tiktokThumbContainer}
+                                onPress={() => Linking.openURL(game.videoUrl)}
+                            >
+                                <View style={styles.tiktokThumbWrapper}>
+                                    <Image
+                                        source={getTiktokThumbnail()}
+                                        style={styles.tiktokThumb}
+                                        resizeMode="contain"
+                                    />
+                                </View>
+                                <Text style={styles.tiktokLabel}>Ver en TikTok</Text>
+                            </Pressable>
+                        ) : canEmbed ? (
                             Platform.OS === 'web' ? (
                                 <View style={styles.videoContainer}>
                                     <iframe
@@ -422,5 +442,45 @@ const styles = StyleSheet.create({
         borderRadius: 50,
         marginLeft: 8,
         backgroundColor: '#140606ff',
+    },
+    tiktokThumbContainer: {
+        alignItems: 'center',
+        marginBottom: 18,
+    },
+    tiktokThumbWrapper: {
+        width: 180,
+        height: 180,
+        borderRadius: 24,
+        backgroundColor: '#000',
+        marginBottom: 8,
+        overflow: 'hidden',
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'relative',
+    },
+    tiktokThumb: {
+        width: 180,
+        height: 180,
+    },
+    playOverlay: {
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: 120,
+        height: 120,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'rgba(0,0,0,0.15)',
+    },
+    playIcon: {
+        fontSize: 38,
+        color: '#fff',
+        opacity: 0.85,
+    },
+    tiktokLabel: {
+        fontSize: 18,
+        color: '#1e90ff',
+        fontWeight: 'bold',
+        textAlign: 'center',
     },
 });

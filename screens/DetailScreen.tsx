@@ -67,6 +67,10 @@ export default function DetailScreen({
             const videoId = url.split("youtu.be/")[1].split("?")[0];
             return `https://www.youtube.com/embed/${videoId}`;
         }
+        if (url.includes("youtube.com/shorts/")) {
+            const videoId = url.split("youtube.com/shorts/")[1].split(/[?&]/)[0];
+            return `https://www.youtube.com/embed/${videoId}`;
+        }
         // Puedes agregar más reglas para otras plataformas si lo deseas
         return url;
     }

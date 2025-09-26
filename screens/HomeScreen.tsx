@@ -4,7 +4,6 @@ import LatestAcquisitionsButton from '../componentes/LatestAcquisitionsButton';
 import AllOurGamesButton from '../componentes/AllOurGamesButton';
 import SearchGameScreen from './SearchGamesScreen';
 import AllOurGamesScreen from './AllOurGamesScreen';
-import LatestAcquisitionsScreen from './LatestAcquisitionsScreen';
 import React, { useState } from 'react';
 import HomeImage from '../componentes/HomeImage';
 
@@ -47,9 +46,9 @@ export default function HomeScreen() {
         <AllOurGamesScreen isVisible={isAllOurGamesButtonVisible} onGoToHomeButtonPress={handleGoToHomeButtonPress} />
         <SearchGameButton onPress={handleSearchGameButtonPress} />
         <SearchGameScreen isVisible={isSearchGameButtonVisible} onGoToHomeButtonPress={handleGoToHomeButtonPress} />
-        <LatestAcquisitionsButton onPress={handleLatestAcquisitionsButtonPress} />
+       {/* <LatestAcquisitionsButton onPress={handleLatestAcquisitionsButtonPress} />
         <LatestAcquisitionsScreen isVisible={isLatestAcquisitionsButtonVisible} onGoToHomeButtonPress={handleGoToHomeButtonPress} />
-
+*/}
       </View>
     </ImageBackground>
   );

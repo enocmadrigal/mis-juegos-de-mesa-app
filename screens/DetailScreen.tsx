@@ -4,7 +4,6 @@ import Modal from "react-native-modal";
 import GoToHomeButton from "../componentes/GoToHomeButton";
 import SortButton from "../componentes/SortButton";
 import { globalStyles } from '../GlobalStyles';
-import { gameImages } from "../data/gameImages";
 import { WebView } from 'react-native-webview';
 import { gameDetailImages } from "../data/gameDetailImages";
 import ReturnRedButton from "../componentes/ReturnRedButton";

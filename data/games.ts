@@ -117,7 +117,7 @@ export const games: Game[] = [
     mode: "Competitivo",
     description: "Versión de Turista con temática de Dragon Ball.",
     rules: "Compra propiedades y recorre el mundo de Dragon Ball.",
-    videoUrl: "https://vt.tiktok.com/ZSDChu324/",
+    videoUrl: "https://vt.tiktok.com/ZSDChu324",
     mainImage: turistaDragonBallImg1,
     secondaryImages: [turistaDragonBallImg2],
     rankValue: 99,

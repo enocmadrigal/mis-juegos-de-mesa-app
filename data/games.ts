@@ -1,5 +1,3 @@
-
-
 import { Game } from "../models/Game";
 import ajedrezImg from '../assets/img/ajedrez/ajedrez.jpg';
 import turistaDragonBallImg1 from '../assets/img/turistaDragonBall/turistaDragonBall1.jpg';
@@ -86,6 +84,16 @@ import narutoNinjaBattleImg from '../assets/img/narutoNinjaBattle/narutoNinjaBat
 import polillaTramposaImg from '../assets/img/polillaTramposa/polillaTramposa.jpg';
 import explodingKittensImg from '../assets/img/explodingKittens/explodingKittens.jpg';
 import explodingKittensElBienContraElMalImg from '../assets/img/explodingKittensElBienContraElMal/explodingKittensElBienContraElMal.jpg';
+import artSocietyImg from '../assets/img/artSociety/artSociety1.jpg';
+import thatsNotAHatIncognitoImg from '../assets/img/thatsNotAHatIncognito/thatsNotAHatIncognito1.jpg';
+import pandaPandaImg from '../assets/img/pandaPanda/pandaPanda1.jpg';
+import virus2Img from '../assets/img/virus2/virus2_1.jpg';
+import fantasmaBlitzImg from '../assets/img/fantasmaBlitz/fantasmaBlitz1.jpg';
+import deepSeaAdventureImg from '../assets/img/deepSeaAdventure/deepSeaAdventure1.jpg';
+import secretHitlerImg from '../assets/img/secretHitler/secretHitler1.jpg';
+import traitorsAboardImg from '../assets/img/traitorsAboard/traitorsAboard1.jpg';
+import scoutImg from '../assets/img/scout/scout1.jpg';
+import magicNumberElevenImg from '../assets/img/magicNumberEleven/magicNumberEleven1.jpg';
 
 export const games: Game[] = [
   {
@@ -1275,5 +1283,185 @@ export const games: Game[] = [
     rankValue: 39,
     acquisitionDate: "05/09/2025",
     aproxDate: false
-    }
+  },
+  {
+    id: 67,
+    purchaseOrder: 67,
+    name: "Art Society",
+    publisher: "Pegasus Spiele",
+    categories: ["Estrategia", "Subastas", "Arte"],
+    players: "2-4",
+    duration: "45-60 min",
+    mode: "Competitivo",
+    description: "En Art Society, los jugadores compiten como coleccionistas de arte, pujando por obras y decorando sus mansiones para impresionar a la alta sociedad.",
+    rules: "Puja por obras de arte, colócalas en tu mansión y equilibra el valor y el espacio disponible. Gana quien logre la colección más prestigiosa.",
+    videoUrl: "",
+    mainImage: artSocietyImg,
+    secondaryImages: [],
+    rankValue: 8,
+    acquisitionDate: "11/09/2025",
+    aproxDate: false
+  },
+  {
+    id: 68,
+    purchaseOrder: 68,
+    name: "Thats Not A Hat Incognito",
+    publisher: "Ravensburger",
+    categories: ["Party", "Memoria", "Bluff"],
+    players: "3-8",
+    duration: "15-20 min",
+    mode: "Competitivo",
+    description: "Versión Incógnito del popular juego de memoria y engaño, donde los jugadores deben recordar y pasar objetos sin revelar su identidad.",
+    rules: "Pasa cartas boca abajo y declara el objeto. Los demás pueden dudar o aceptar. Gana quien logre engañar y recordar mejor.",
+    videoUrl: "",
+    mainImage: thatsNotAHatIncognitoImg,
+    secondaryImages: [],
+    rankValue: 7,
+    acquisitionDate: "18/09/2025",
+    aproxDate: false
+  },
+  {
+    id: 69,
+    purchaseOrder: 69,
+    name: "Panda Panda",
+    publisher: "Lúdilo",
+    categories: ["Familiar", "Puzzle", "Colocación de losetas"],
+    players: "2-4",
+    duration: "20-30 min",
+    mode: "Competitivo",
+    description: "Juego familiar donde los jugadores deben colocar losetas para crear hábitats y atraer pandas, compitiendo por completar objetivos.",
+    rules: "Coloca losetas para formar hábitats, coloca pandas y cumple objetivos secretos. Gana quien obtenga más puntos.",
+    videoUrl: "",
+    mainImage: pandaPandaImg,
+    secondaryImages: [],
+    rankValue: 6,
+    acquisitionDate: "18/09/2025",
+    aproxDate: false
+  },
+  {
+    id: 70,
+    purchaseOrder: 70,
+    name: "Virus 2",
+    publisher: "Tranjis Games",
+    categories: ["Cartas", "Expansión", "Familiar"],
+    players: "2-6",
+    duration: "20 min",
+    mode: "Competitivo",
+    description: "Expansión para el exitoso juego Virus! que añade nuevas cartas, efectos y mecánicas para mayor interacción y caos.",
+    rules: "Se juega junto al juego base Virus! Añade cartas de mutación, nuevas medicinas y virus especiales. El objetivo sigue siendo completar un cuerpo sano.",
+    videoUrl: "",
+    mainImage: virus2Img,
+    secondaryImages: [],
+    rankValue: 9,
+    acquisitionDate: "26/09/2025",
+    aproxDate: false
+  },
+  {
+    id: 71,
+    purchaseOrder: 71,
+    name: "Fantasma Blitz",
+    publisher: "Zoch Verlag",
+    categories: ["Reflejos", "Familiar", "Party"],
+    players: "2-8",
+    duration: "20 min",
+    mode: "Competitivo",
+    description: "Un juego de reflejos donde los jugadores deben ser los más rápidos en coger el objeto correcto según la carta revelada.",
+    rules: "Revela una carta y toma el objeto que coincida en color y forma, o el que no aparece en la carta. Gana quien consiga más cartas.",
+    videoUrl: "",
+    mainImage: fantasmaBlitzImg,
+    secondaryImages: [],
+    rankValue: 8,
+    acquisitionDate: "26/09/2025",
+    aproxDate: false
+  },
+  {
+    id: 72,
+    purchaseOrder: 72,
+    name: "Deep Sea Adventure",
+    publisher: "Oink Games",
+    categories: ["Push Your Luck", "Familiar", "Aventura"],
+    players: "2-6",
+    duration: "30 min",
+    mode: "Competitivo",
+    description: "Los jugadores son exploradores submarinos que comparten oxígeno mientras buscan tesoros en las profundidades, arriesgándose a quedarse sin aire.",
+    rules: "Lanza dados para avanzar, recoge tesoros y regresa al submarino antes de que se acabe el oxígeno común. Gana quien obtenga más tesoros.",
+    videoUrl: "",
+    mainImage: deepSeaAdventureImg,
+    secondaryImages: [],
+    rankValue: 7,
+    acquisitionDate: "26/09/2025",
+    aproxDate: false
+  },
+  {
+    id: 73,
+    purchaseOrder: 73,
+    name: "Secret Hitler",
+    publisher: "Goat, Wolf & Cabbage",
+    categories: ["Bluff", "Deducción social", "Party"],
+    players: "5-10",
+    duration: "45 min",
+    mode: "Equipos",
+    description: "Juego de deducción social donde los jugadores son liberales o fascistas, y deben descubrir (o proteger) al jugador que es Hitler.",
+    rules: "Los jugadores eligen gobiernos y aprueban leyes. Los liberales ganan si aprueban 5 leyes liberales o eliminan a Hitler; los fascistas ganan si aprueban 6 leyes fascistas o Hitler es elegido canciller en el momento adecuado.",
+    videoUrl: "",
+    mainImage: secretHitlerImg,
+    secondaryImages: [],
+    rankValue: 10,
+    acquisitionDate: "26/09/2025",
+    aproxDate: false
+  },
+  {
+    id: 74,
+    purchaseOrder: 74,
+    name: "Traitors Aboard",
+    publisher: "Lost Games Entertainment",
+    categories: ["Deducción social", "Bluff", "Cooperativo"],
+    players: "4-8",
+    duration: "30-60 min",
+    mode: "Equipos",
+    description: "Juego de roles ocultos en el que los jugadores son tripulantes de un barco, pero algunos son traidores que intentan sabotear la misión.",
+    rules: "Completa misiones cooperativas mientras intentas descubrir a los traidores. Los traidores ganan si sabotean con éxito, los leales si completan la misión.",
+    videoUrl: "",
+    mainImage: traitorsAboardImg,
+    secondaryImages: [],
+    rankValue: 6,
+    acquisitionDate: "26/09/2025",
+    aproxDate: false
+  },
+  {
+    id: 75,
+    purchaseOrder: 75,
+    name: "Scout",
+    publisher: "Oink Games",
+    categories: ["Cartas", "Escalera", "Familiar"],
+    players: "2-5",
+    duration: "20 min",
+    mode: "Competitivo",
+    description: "Juego de cartas en el que los jugadores intentan jugar combinaciones más fuertes que las de sus oponentes, con la particularidad de que las cartas no se pueden reorganizar en la mano.",
+    rules: "Juega combinaciones o toma cartas de la mesa. Gana quien obtenga más puntos al final de la partida.",
+    videoUrl: "",
+    mainImage: scoutImg,
+    secondaryImages: [],
+    rankValue: 8,
+    acquisitionDate: "26/09/2025",
+    aproxDate: false
+  },
+  {
+    id: 76,
+    purchaseOrder: 76,
+    name: "Magic Number Eleven",
+    publisher: "Game Factory",
+    categories: ["Cartas", "Matemáticas", "Familiar"],
+    players: "2-6",
+    duration: "20 min",
+    mode: "Competitivo",
+    description: "Juego de cartas donde los jugadores deben sumar exactamente once con las cartas jugadas para ganar cartas del centro.",
+    rules: "Juega cartas de tu mano para sumar once y recoge cartas del centro. Gana quien tenga más cartas al final.",
+    videoUrl: "",
+    mainImage: magicNumberElevenImg,
+    secondaryImages: [],
+    rankValue: 7,
+    acquisitionDate: "26/09/2025",
+    aproxDate: false
+  },
 ];

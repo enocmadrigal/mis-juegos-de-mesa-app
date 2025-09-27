@@ -2,7 +2,7 @@ import { TextInput, FlatList, View, Text, StyleSheet, Image } from "react-native
 import Modal from "react-native-modal";
 import GoToHomeButton from "../componentes/GoToHomeButton";
 import { Pressable } from 'react-native';
-import { games as allGames } from "../data/games";
+import { games } from "../data/games";
 import SortButton from "../componentes/SortButton";
 import { useState, useEffect } from "react";
 import SortScreen from "./SortScreen";
@@ -12,8 +12,7 @@ import DetailScreen from "./DetailScreen";
 export default function AllOurGamesScreen({isVisible, onGoToHomeButtonPress}: {isVisible: boolean, onGoToHomeButtonPress: () => void}) {
 
     const [isSortButtonVisible, setIsSortButtonVisible] = useState(false);
-    const [filter, setFilter] = useState<'recent' | 'oldest' | 'az' | 'za'>('recent');
-    const [games, setGames] = useState(allGames);
+    const [sortFilter, setSortFilter] = useState<'recent' | 'oldest' | 'az' | 'za'>('recent');
     const [selectedGame, setSelectedGame] = useState<any | null>(null);
 
     const handleSortButtonPress = () => {
@@ -24,30 +23,29 @@ export default function AllOurGamesScreen({isVisible, onGoToHomeButtonPress}: {i
         onGoToHomeButtonPress();
     }
 
-    const handleSort = (filtro: 'recent' | 'oldest' | 'az' | 'za') => {
-        setFilter(filtro);
+    const handleSort = (filter: 'recent' | 'oldest' | 'az' | 'za') => {
+        setSortFilter(filter);
         setIsSortButtonVisible(false);
     }
 
-    useEffect(() => {
-        let sortedGames = [...allGames];
-        if (filter === 'recent') {
-            sortedGames.sort((a, b) =>
-                new Date(b.acquisitionDate.split('/').reverse().join('-')).getTime() -
-                new Date(a.acquisitionDate.split('/').reverse().join('-')).getTime()
-            );
-        } else if (filter === 'oldest') {
-            sortedGames.sort((a, b) =>
-                new Date(a.acquisitionDate.split('/').reverse().join('-')).getTime() -
-                new Date(b.acquisitionDate.split('/').reverse().join('-')).getTime()
-            );
-        } else if (filter === 'az') {
-            sortedGames.sort((a, b) => a.name.localeCompare(b.name));
-        } else if (filter === 'za') {
-            sortedGames.sort((a, b) => b.name.localeCompare(a.name));
+    // Ordenamiento centralizado por purchaseOrder
+    function getSortedGames() {
+        if (sortFilter === 'recent') {
+            // Más recientes primero (mayor purchaseOrder primero)
+            return [...games].sort((a, b) => b.purchaseOrder - a.purchaseOrder);
         }
-        setGames(sortedGames);
-    }, [filter]);
+        if (sortFilter === 'oldest') {
+            // Más antiguos primero (menor purchaseOrder primero)
+            return [...games].sort((a, b) => a.purchaseOrder - b.purchaseOrder);
+        }
+        if (sortFilter === 'az') {
+            return [...games].sort((a, b) => a.name.localeCompare(b.name));
+        }
+        if (sortFilter === 'za') {
+            return [...games].sort((a, b) => b.name.localeCompare(a.name));
+        }
+        return games;
+    }
 
     return (
         <Modal
@@ -59,7 +57,7 @@ export default function AllOurGamesScreen({isVisible, onGoToHomeButtonPress}: {i
             style={{margin: 0}}
         >
             <FlatList
-                data={games}
+                data={getSortedGames()}
                 keyExtractor={(item) => item.id.toString()}
                 contentContainerStyle={{ paddingBottom: 20 }}
                 renderItem={({item}) => (

@@ -111,6 +111,80 @@ import img_virus_1 from "../assets/img/virus/virus.jpg";
 import img_weAreNotReallyStrangers_1 from "../assets/img/weAreNotReallyStrangers/weAreNotReallyStrangers1.jpg";
 import img_yuGiOh_1 from "../assets/img/yuGiOh/yuGiOh1.jpg";
 
+// Art Society
+import artSociety1 from '../assets/img/artSociety/artSociety1.jpg';
+import artSociety2 from '../assets/img/artSociety/artSociety2.jpg';
+import artSociety3 from '../assets/img/artSociety/artSociety3.jpg';
+import artSociety4 from '../assets/img/artSociety/artSociety4.jpg';
+import artSociety5 from '../assets/img/artSociety/artSociety5.jpg';
+
+// Thats Not A Hat Incognito
+import thatsNotAHatIncognito1 from '../assets/img/thatsNotAHatIncognito/thatsNotAHatIncognito1.jpg';
+import thatsNotAHatIncognito2 from '../assets/img/thatsNotAHatIncognito/thatsNotAHatIncognito2.jpg';
+import thatsNotAHatIncognito3 from '../assets/img/thatsNotAHatIncognito/thatsNotAHatIncognito3.jpg';
+import thatsNotAHatIncognito4 from '../assets/img/thatsNotAHatIncognito/thatsNotAHatIncognito4.jpg';
+import thatsNotAHatIncognito5 from '../assets/img/thatsNotAHatIncognito/thatsNotAHatIncognito5.jpg';
+
+// Panda Panda
+import pandaPanda1 from '../assets/img/pandaPanda/pandaPanda1.jpg';
+import pandaPanda2 from '../assets/img/pandaPanda/pandaPanda2.jpg';
+import pandaPanda3 from '../assets/img/pandaPanda/pandaPanda3.jpg';
+import pandaPanda4 from '../assets/img/pandaPanda/pandaPanda4.jpg';
+
+// Virus 2
+import virus2_1 from '../assets/img/virus2/virus2_1.jpg';
+import virus2_2 from '../assets/img/virus2/virus2_2.jpg';
+import virus2_3 from '../assets/img/virus2/virus2_3.jpg';
+import virus2_4 from '../assets/img/virus2/virus2_4.jpg';
+import virus2_5 from '../assets/img/virus2/virus2_5.jpg';
+
+// Fantasma Blitz
+import fantasmaBlitz1 from '../assets/img/fantasmaBlitz/fantasmaBlitz1.jpg';
+import fantasmaBlitz2 from '../assets/img/fantasmaBlitz/fantasmaBlitz2.jpg';
+import fantasmaBlitz3 from '../assets/img/fantasmaBlitz/fantasmaBlitz3.jpg';
+import fantasmaBlitz4 from '../assets/img/fantasmaBlitz/fantasmaBlitz4.jpg';
+
+// Deep Sea Adventure
+import deepSeaAdventure1 from '../assets/img/deepSeaAdventure/deepSeaAdventure1.jpg';
+import deepSeaAdventure2 from '../assets/img/deepSeaAdventure/deepSeaAdventure2.jpg';
+import deepSeaAdventure3 from '../assets/img/deepSeaAdventure/deepSeaAdventure3.jpg';
+import deepSeaAdventure4 from '../assets/img/deepSeaAdventure/deepSeaAdventure4.jpg';
+import deepSeaAdventure5 from '../assets/img/deepSeaAdventure/deepSeaAdventure5.jpg';
+
+// Secret Hitler
+import secretHitler1 from '../assets/img/secretHitler/secretHitler1.jpg';
+import secretHitler2 from '../assets/img/secretHitler/secretHitler2.jpg';
+import secretHitler3 from '../assets/img/secretHitler/secretHitler3.jpg';
+import secretHitler4 from '../assets/img/secretHitler/secretHitler4.jpg';
+import secretHitler5 from '../assets/img/secretHitler/secretHitler5.jpg';
+
+// Traitors Aboard
+import traitorsAboard1 from '../assets/img/traitorsAboard/traitorsAboard1.jpg';
+import traitorsAboard2 from '../assets/img/traitorsAboard/traitorsAboard2.jpg';
+import traitorsAboard3 from '../assets/img/traitorsAboard/traitorsAboard3.jpg';
+import traitorsAboard4 from '../assets/img/traitorsAboard/traitorsAboard4.jpg';
+import traitorsAboard5 from '../assets/img/traitorsAboard/traitorsAboard5.jpg';
+import traitorsAboard6 from '../assets/img/traitorsAboard/traitorsAboard6.jpg';
+import traitorsAboard7 from '../assets/img/traitorsAboard/traitorsAboard7.jpg';
+
+// Scout
+import scout1 from '../assets/img/scout/scout1.jpg';
+import scout2 from '../assets/img/scout/scout2.jpg';
+import scout3 from '../assets/img/scout/scout3.jpg';
+import scout4 from '../assets/img/scout/scout4.jpg';
+import scout5 from '../assets/img/scout/scout5.jpg';
+import scout6 from '../assets/img/scout/scout6.jpg';
+
+// Magic Number Eleven
+import magicNumberEleven1 from '../assets/img/magicNumberEleven/magicNumberEleven1.jpg';
+import magicNumberEleven2 from '../assets/img/magicNumberEleven/magicNumberEleven2.jpg';
+import magicNumberEleven3 from '../assets/img/magicNumberEleven/magicNumberEleven3.jpg';
+import magicNumberEleven4 from '../assets/img/magicNumberEleven/magicNumberEleven4.jpg';
+import magicNumberEleven5 from '../assets/img/magicNumberEleven/magicNumberEleven5.jpg';
+import magicNumberEleven6 from '../assets/img/magicNumberEleven/magicNumberEleven6.jpg';
+import magicNumberEleven7 from '../assets/img/magicNumberEleven/magicNumberEleven7.jpg';
+import magicNumberEleven8 from '../assets/img/magicNumberEleven/magicNumberEleven8.jpg';
+
 export const gameDetailImages: { [key: number]: any[] } = {
   1: [img_ajedrez_1, img_ajedrez_2, img_ajedrez_3, img_ajedrez_4],
   2: [img_turistaDragonBall_1, img_turistaDragonBall_2],
@@ -178,4 +252,14 @@ export const gameDetailImages: { [key: number]: any[] } = {
   64: [img_polillaTramposa_1],
   65: [img_explodingKittens_1],
   66: [img_explodingKittensElBienContraElMal_1, img_explodingKittensElBienContraElMal_2, img_explodingKittensElBienContraElMal_3],
+  67: [artSociety1, artSociety2, artSociety3, artSociety4, artSociety5],
+  68: [thatsNotAHatIncognito1, thatsNotAHatIncognito2, thatsNotAHatIncognito3, thatsNotAHatIncognito4, thatsNotAHatIncognito5],
+  69: [pandaPanda1, pandaPanda2, pandaPanda3, pandaPanda4],
+  70: [virus2_1, virus2_2, virus2_3, virus2_4, virus2_5],
+  71: [fantasmaBlitz1, fantasmaBlitz2, fantasmaBlitz3, fantasmaBlitz4],
+  72: [deepSeaAdventure1, deepSeaAdventure2, deepSeaAdventure3, deepSeaAdventure4, deepSeaAdventure5],
+  73: [secretHitler1, secretHitler2, secretHitler3, secretHitler4, secretHitler5],
+  74: [traitorsAboard1, traitorsAboard2, traitorsAboard3, traitorsAboard4, traitorsAboard5, traitorsAboard6, traitorsAboard7],
+  75: [scout1, scout2, scout3, scout4, scout5, scout6],
+  76: [magicNumberEleven1, magicNumberEleven2, magicNumberEleven3, magicNumberEleven4, magicNumberEleven5, magicNumberEleven6, magicNumberEleven7, magicNumberEleven8],
 };

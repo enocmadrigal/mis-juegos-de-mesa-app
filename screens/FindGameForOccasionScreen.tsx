@@ -38,10 +38,11 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     backgroundColor: "rgba(255,255,255,0.92)",
     borderRadius: 8,
-    overflow: "hidden",
-    maxHeight: "50%",
-    marginTop: 16,
-    marginBottom: 16,
+    overflow: "visible",
+    maxHeight: "30%",
+    // Ajusta estos valores para controlar la distancia desde arriba y abajo:
+    marginTop: 200,    // <-- Aumenta o disminuye para separar más/menos del tope superior
+    marginBottom: 16, // <-- Puedes ajustar también el margen inferior si lo deseas
     shadowColor: "#000",
     shadowOpacity: 0.12,
     shadowRadius: 8,

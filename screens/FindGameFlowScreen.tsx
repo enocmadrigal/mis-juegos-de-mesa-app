@@ -37,7 +37,8 @@ export default function FindGameFlowScreen({
           maxLength={2}
           value={players}
           onChangeText={setPlayers}
-          placeholder="1-99"
+          placeholder="Jugadores"
+          placeholderTextColor="#aaa"
         />
         <TouchableOpacity
           style={styles.button}
@@ -55,37 +56,49 @@ export default function FindGameFlowScreen({
     return (
       <View style={styles.container}>
         <Text style={styles.question}>¿Cuánto tiempo máximo tienen?</Text>
-        <TouchableOpacity
-          style={styles.input}
-          onPress={() => setShowDurationMenu(!showDurationMenu)}
-        >
-          <Text style={{ color: duration ? "#222" : "#aaa" }}>
-            {duration ? `${duration} mins` : "Selecciona tiempo"}
-          </Text>
-        </TouchableOpacity>
-        {showDurationMenu && (
-          <ScrollView style={styles.menu}>
-            {durationOptions.map(opt => (
-              <TouchableOpacity
-                key={opt}
-                style={styles.menuItem}
-                onPress={() => {
-                  setDuration(opt);
-                  setShowDurationMenu(false);
-                }}
+        <View style={styles.inputMenuWrapper}>
+          <TouchableOpacity
+            style={styles.input}
+            onPress={() => setShowDurationMenu(!showDurationMenu)}
+          >
+            <Text style={{ color: duration ? "#222" : "#aaa" }}>
+              {duration ? `${duration} mins` : "Selecciona tiempo"}
+            </Text>
+          </TouchableOpacity>
+          {/* Menú absolutamente posicionado y centrado respecto al input */}
+          {showDurationMenu && (
+            <View style={styles.menuOverlay} pointerEvents="box-none">
+              <ScrollView
+                style={styles.menu}
+                contentContainerStyle={{ alignItems: 'center' }}
+                persistentScrollbar
+                showsVerticalScrollIndicator
               >
-                <Text style={styles.menuItemText}>{opt} mins</Text>
-              </TouchableOpacity>
-            ))}
-          </ScrollView>
-        )}
-        <TouchableOpacity
-          style={styles.button}
-          disabled={!duration}
-          onPress={() => setStep("categories")}
-        >
-          <Text style={styles.buttonText}>Siguiente pregunta</Text>
-        </TouchableOpacity>
+                {durationOptions.map(opt => (
+                  <TouchableOpacity
+                    key={opt}
+                    style={styles.menuItem}
+                    onPress={() => {
+                      setDuration(opt);
+                      setShowDurationMenu(false);
+                    }}
+                  >
+                    <Text style={styles.menuItemText}>{opt} mins</Text>
+                  </TouchableOpacity>
+                ))}
+              </ScrollView>
+            </View>
+          )}
+        </View>
+        <View style={styles.buttonWrapper}>
+          <TouchableOpacity
+            style={styles.button}
+            disabled={!duration}
+            onPress={() => setStep("categories")}
+          >
+            <Text style={styles.buttonText}>Siguiente pregunta</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     );
   }
@@ -221,7 +234,7 @@ const styles = StyleSheet.create({
     fontSize: 28,
     fontWeight: "bold",
     color: "#d06666ff",
-    marginBottom: 32,
+    marginBottom: 16, // antes 32, reduce espacio debajo de la pregunta
     textAlign: "center"
   },
   input: {
@@ -230,9 +243,11 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     padding: 12,
     fontSize: 22,
-    width: 120,
+    width: 220,
     textAlign: "center",
-    marginBottom: 32
+    marginBottom: 1, // antes 32, reduce espacio debajo del input
+    backgroundColor: "#fff",
+    zIndex: 1,
   },
   button: {
     backgroundColor: "#d06666ff",
@@ -246,15 +261,39 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 20
   },
+  inputMenuWrapper: {
+    width: 220,
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    position: 'relative',
+    zIndex: 10,
+  },
+  buttonWrapper: {
+    width: '100%',
+    alignItems: 'center',
+    marginTop: 0,
+    zIndex: 1, // El botón queda debajo del menú
+  },
+  menuOverlay: {
+    position: 'absolute',
+    top: 56,
+    left: 0,
+    width: 220,
+    zIndex: 9999,
+    elevation: 30,
+    // El menú se centra respecto al input y puede salirse del modal si el modal tiene overflow: 'visible'
+  },
   menu: {
-    maxHeight: 200,
-    width: 180,
-    alignSelf: "center",
+    maxHeight: 120,
+    width: 220,
     backgroundColor: "#fff",
     borderWidth: 1,
     borderColor: "#d06666ff",
     borderRadius: 12,
-    marginBottom: 16
+    marginBottom: 0,
+    zIndex: 10,
+    elevation: 10,
+    overflow: 'hidden', // <-- Asegura que los valores no se salgan del menú
   },
   menuItem: {
     padding: 14,

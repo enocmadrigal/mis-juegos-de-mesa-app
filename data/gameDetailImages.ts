@@ -184,6 +184,10 @@ import magicNumberEleven5 from '../assets/img/magicNumberEleven/magicNumberEleve
 import magicNumberEleven6 from '../assets/img/magicNumberEleven/magicNumberEleven6.jpg';
 import magicNumberEleven7 from '../assets/img/magicNumberEleven/magicNumberEleven7.jpg';
 import magicNumberEleven8 from '../assets/img/magicNumberEleven/magicNumberEleven8.jpg';
+import catanMercaderesYBarbaros1 from "../assets/img/catanMercaderesYBarbaros/catanMercaderesYBarbaros1.jpg";
+import catanMercaderesYBarbaros2 from "../assets/img/catanMercaderesYBarbaros/catanMercaderesYBarbaros2.jpg";
+import catanMercaderesYBarbaros3 from "../assets/img/catanMercaderesYBarbaros/catanMercaderesYBarbaros3.jpg";
+import catanMercaderesYBarbaros4 from "../assets/img/catanMercaderesYBarbaros/catanMercaderesYBarbaros4.jpg";
 
 export const gameDetailImages: { [key: number]: any[] } = {
   1: [img_ajedrez_1, img_ajedrez_2, img_ajedrez_3, img_ajedrez_4],
@@ -255,11 +259,12 @@ export const gameDetailImages: { [key: number]: any[] } = {
   67: [artSociety1, artSociety2, artSociety3, artSociety4, artSociety5],
   68: [thatsNotAHatIncognito1, thatsNotAHatIncognito2, thatsNotAHatIncognito3, thatsNotAHatIncognito4, thatsNotAHatIncognito5],
   69: [pandaPanda1, pandaPanda2, pandaPanda3, pandaPanda4],
-  70: [virus2_1, virus2_2, virus2_3, virus2_4, virus2_5],
-  71: [fantasmaBlitz1, fantasmaBlitz2, fantasmaBlitz3, fantasmaBlitz4],
-  72: [deepSeaAdventure1, deepSeaAdventure2, deepSeaAdventure3, deepSeaAdventure4, deepSeaAdventure5],
-  73: [secretHitler1, secretHitler2, secretHitler3, secretHitler4, secretHitler5],
-  74: [traitorsAboard1, traitorsAboard2, traitorsAboard3, traitorsAboard4, traitorsAboard5, traitorsAboard6, traitorsAboard7],
-  75: [scout1, scout2, scout3, scout4, scout5, scout6],
-  76: [magicNumberEleven1, magicNumberEleven2, magicNumberEleven3, magicNumberEleven4, magicNumberEleven5, magicNumberEleven6, magicNumberEleven7, magicNumberEleven8],
+  70: [catanMercaderesYBarbaros1, catanMercaderesYBarbaros2, catanMercaderesYBarbaros3, catanMercaderesYBarbaros4],
+  71: [virus2_1, virus2_2, virus2_3, virus2_4, virus2_5],
+  72: [fantasmaBlitz1, fantasmaBlitz2, fantasmaBlitz3, fantasmaBlitz4],
+  73: [deepSeaAdventure1, deepSeaAdventure2, deepSeaAdventure3, deepSeaAdventure4, deepSeaAdventure5],
+  74: [secretHitler1, secretHitler2, secretHitler3, secretHitler4, secretHitler5],
+  75: [traitorsAboard1, traitorsAboard2, traitorsAboard3, traitorsAboard4, traitorsAboard5, traitorsAboard6, traitorsAboard7],
+  76: [scout1, scout2, scout3, scout4, scout5, scout6],
+  77: [magicNumberEleven1, magicNumberEleven2, magicNumberEleven3, magicNumberEleven4, magicNumberEleven5, magicNumberEleven6, magicNumberEleven7, magicNumberEleven8],
 };

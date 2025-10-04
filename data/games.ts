@@ -94,6 +94,7 @@ import secretHitlerImg from '../assets/img/secretHitler/secretHitler1.jpg';
 import traitorsAboardImg from '../assets/img/traitorsAboard/traitorsAboard1.jpg';
 import scoutImg from '../assets/img/scout/scout1.jpg';
 import magicNumberElevenImg from '../assets/img/magicNumberEleven/magicNumberEleven1.jpg';
+import catanMercaderesYBarbarosImg1 from '../assets/img/catanMercaderesYBarbaros/catanMercaderesYBarbaros1.jpg';
 
 export const games: Game[] = [
   {
@@ -1350,7 +1351,7 @@ export const games: Game[] = [
     description: "Juego de estrategia donde los jugadores colonizan una isla, construyendo caminos y asentamientos mientras gestionan recursos.",
     rules: "Recoge y gestiona recursos para construir caminos, asentamientos y ciudades. Gana quien obtenga más puntos de victoria.",
     videoUrl: "",
-    mainImage: catanImg,
+    mainImage: catanMercaderesYBarbarosImg1,
     secondaryImages: [],
     rankValue: 6,
     acquisitionDate: "27/09/2025",

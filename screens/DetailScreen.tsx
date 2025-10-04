@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { View, StyleSheet, Text, Image, ScrollView, Linking, Pressable, Platform, Animated, TouchableOpacity, Dimensions, PanResponder } from "react-native";
 import Modal from "react-native-modal";
+import { Modal as RNModal } from "react-native"; // Importa el modal nativo para la imagen grande
 import GoToHomeButton from "../componentes/GoToHomeButton";
 import SortButton from "../componentes/SortButton";
 import { globalStyles } from '../GlobalStyles';
@@ -147,6 +148,23 @@ export default function DetailScreen({
     // Agrega esta línea:
     const isTiktokUrl = isWebUrl && typeof game.videoUrl === "string" && game.videoUrl.includes("tiktok.com");
 
+    // Estado para la vista de imagen grande
+    const [isImageModalVisible, setIsImageModalVisible] = useState(false);
+
+    // Swipe para la imagen grande
+    const imageModalPanResponder = useRef(
+        PanResponder.create({
+            onMoveShouldSetPanResponder: (_, gestureState) => Math.abs(gestureState.dx) > 20,
+            onPanResponderRelease: (_, gestureState) => {
+                if (gestureState.dx > 40) {
+                    handleChangeImage("prev");
+                } else if (gestureState.dx < -40) {
+                    handleChangeImage("next");
+                }
+            },
+        })
+    ).current;
+
     return (
         <Modal
             isVisible={isVisible}
@@ -180,17 +198,22 @@ export default function DetailScreen({
                                 ]}
                                 {...panResponder.panHandlers}
                             >
-                                <Image
-                                    source={images[currentIndex]}
-                                    style={[
-                                        styles.carouselImage,
-                                        {
-                                            width: carouselImageSize,
-                                            height: carouselImageSize
-                                        }
-                                    ]}
-                                    resizeMode="contain"
-                                />
+                                <TouchableOpacity
+                                    activeOpacity={0.85}
+                                    onPress={() => setIsImageModalVisible(true)}
+                                >
+                                    <Image
+                                        source={images[currentIndex]}
+                                        style={[
+                                            styles.carouselImage,
+                                            {
+                                                width: carouselImageSize,
+                                                height: carouselImageSize
+                                            }
+                                        ]}
+                                        resizeMode="contain"
+                                    />
+                                </TouchableOpacity>
                             </Animated.View>
                             <TouchableOpacity
                                 style={styles.arrowContainer}
@@ -287,6 +310,48 @@ export default function DetailScreen({
                     <ReturnRedButton />
                 </Pressable>
             </View>
+            {/* Modal para imagen grande */}
+            <RNModal
+                visible={isImageModalVisible}
+                transparent
+                animationType="fade"
+                onRequestClose={() => setIsImageModalVisible(false)}
+            >
+                <View style={styles.fullscreenOverlay}>
+                    <Pressable
+                        style={StyleSheet.absoluteFill}
+                        onPress={() => setIsImageModalVisible(false)}
+                    />
+                    <View style={styles.fullscreenImageContainer} pointerEvents="box-none">
+                        <Animated.View
+                            style={{
+                                flex: 1,
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                                width: '100%',
+                                height: '100%',
+                                position: 'absolute',
+                                top: 0,
+                                left: 0,
+                            }}
+                            {...imageModalPanResponder.panHandlers}
+                        >
+                            {images[currentIndex] && (
+                                <Pressable
+                                    style={{ width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center' }}
+                                    onPress={() => setIsImageModalVisible(false)}
+                                >
+                                    <Image
+                                        source={images[currentIndex]}
+                                        style={styles.fullscreenImage}
+                                        resizeMode="contain"
+                                    />
+                                </Pressable>
+                            )}
+                        </Animated.View>
+                    </View>
+                </View>
+            </RNModal>
         </Modal>
     );
 }
@@ -484,5 +549,24 @@ const styles = StyleSheet.create({
         color: '#1e90ff',
         fontWeight: 'bold',
         textAlign: 'center',
+    },
+    fullscreenOverlay: {
+        flex: 1,
+        backgroundColor: 'rgba(0,0,0,0.95)',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    fullscreenImageContainer: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: '100%',
+        height: '100%',
+    },
+    fullscreenImage: {
+        width: '100%',
+        height: '100%',
+        maxWidth: 900,
+        maxHeight: 900,
     },
 });

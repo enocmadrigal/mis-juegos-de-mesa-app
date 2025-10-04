@@ -6,35 +6,49 @@ import SearchGameScreen from './SearchGamesScreen';
 import AllOurGamesScreen from './AllOurGamesScreen';
 import React, { useState } from 'react';
 import HomeImage from '../componentes/HomeImage';
+import FindGameForOccasionButton from '../componentes/FindGameForOccasionButton';
+import FindGameForOccasionScreen from './FindGameForOccasionScreen';
 
 
 export default function HomeScreen() {
   const [isAllOurGamesButtonVisible, setIsAllOurGamesButtonVisible] = useState(false);
   const [isSearchGameButtonVisible, setIsSearchGameButtonVisible] = useState(false);
   const [isLatestAcquisitionsButtonVisible, setIsLatestAcquisitionsButtonVisible] = useState(false);
+  const [isFindGameForOccasionVisible, setIsFindGameForOccasionVisible] = useState(false);
 
   const handleAllOurGamesButtonPress = () => {
     setIsAllOurGamesButtonVisible(true);
     setIsSearchGameButtonVisible(false);
     setIsLatestAcquisitionsButtonVisible(false);
+    setIsFindGameForOccasionVisible(false);
   };
 
   const handleSearchGameButtonPress = () => {
     setIsAllOurGamesButtonVisible(false);
     setIsSearchGameButtonVisible(true);
     setIsLatestAcquisitionsButtonVisible(false);
+    setIsFindGameForOccasionVisible(false);
   };
 
   const handleLatestAcquisitionsButtonPress = () => {
     setIsAllOurGamesButtonVisible(false);
     setIsSearchGameButtonVisible(false);
     setIsLatestAcquisitionsButtonVisible(true);
+    setIsFindGameForOccasionVisible(false);
+  };
+
+  const handleFindGameForOccasionPress = () => {
+    setIsAllOurGamesButtonVisible(false);
+    setIsSearchGameButtonVisible(false);
+    setIsLatestAcquisitionsButtonVisible(false);
+    setIsFindGameForOccasionVisible(true);
   };
 
   const handleGoToHomeButtonPress = () => {
     setIsAllOurGamesButtonVisible(false);
     setIsSearchGameButtonVisible(false);
     setIsLatestAcquisitionsButtonVisible(false);
+    setIsFindGameForOccasionVisible(false);
   }
 
   return (
@@ -46,9 +60,10 @@ export default function HomeScreen() {
         <AllOurGamesScreen isVisible={isAllOurGamesButtonVisible} onGoToHomeButtonPress={handleGoToHomeButtonPress} />
         <SearchGameButton onPress={handleSearchGameButtonPress} />
         <SearchGameScreen isVisible={isSearchGameButtonVisible} onGoToHomeButtonPress={handleGoToHomeButtonPress} />
-       {/* <LatestAcquisitionsButton onPress={handleLatestAcquisitionsButtonPress} />
-        <LatestAcquisitionsScreen isVisible={isLatestAcquisitionsButtonVisible} onGoToHomeButtonPress={handleGoToHomeButtonPress} />
-*/}
+        {/* <LatestAcquisitionsButton onPress={handleLatestAcquisitionsButtonPress} />
+        <LatestAcquisitionsScreen isVisible={isLatestAcquisitionsButtonVisible} onGoToHomeButtonPress={handleGoToHomeButtonPress} /> */}
+        <FindGameForOccasionButton onPress={handleFindGameForOccasionPress} />
+        <FindGameForOccasionScreen isVisible={isFindGameForOccasionVisible} onGoToHomeButtonPress={handleGoToHomeButtonPress} />
       </View>
     </ImageBackground>
   );

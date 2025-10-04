@@ -213,6 +213,8 @@ export default function DetailScreen({
                         <InfoItem icon="publisher" text={game.publisher} />
                         <InfoItem icon="acquisitionDate" text={game.acquisitionDate} />
                     </View>
+                    <Text style={styles.subtitle}>Descripción</Text>
+                    <Text style={styles.description}>{game.description}</Text>
                     <Text style={styles.subtitle}>¿De qué va el juego?</Text>
                     {game.videoUrl ? (
                         isTiktokUrl ? (

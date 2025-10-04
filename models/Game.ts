@@ -1,18 +1,20 @@
 export interface Game {
   id: number;
-  rankValue: number;
+  purchaseOrder: number;
   name: string;
   publisher: string;
   categories: string[];
-  players: string; // Ejemplo: "2-4"
-  duration: string; // Ejemplo: "30-60 min"
-  mode: string; // "Individual" o "En equipos"
+  minPlayers: number;
+  maxPlayers: number;
+  minDuration: number; // minutos
+  maxDuration: number; // minutos
+  mode: string;
   description: string;
   rules: string;
   videoUrl: string;
-  mainImage: string;
-  secondaryImages: string[];
-  purchaseOrder: number; // Orden de compra, entero único consecutivo
-  acquisitionDate: string; // Fecha de adquisición, formato "dd/mm/yyyy"
-  aproxDate: boolean; // Indica si la fecha es aproximada
+  mainImage: any;
+  secondaryImages: any[];
+  rankValue: number;
+  acquisitionDate: string;
+  aproxDate: boolean;
 }

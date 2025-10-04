@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.js": "/static/js/main.756c828e.js",
+    "main.js": "/static/js/main.16087b29.js",
     "static/js/856.09d3e094.js": "/static/js/856.09d3e094.js",
     "static/media/sharingan.png": "/static/media/sharingan.79816b622865f8c8b1c2.png",
     "static/media/monopolyGuy.png": "/static/media/monopolyGuy.75faa14413c2bdee2db5.png",
     "static/media/dominoResina.jpg": "/static/media/dominoResina.359572217cd1bb50741d.jpg",
     "static/media/dinamitaTiempo.png": "/static/media/dinamitaTiempo.9ccf69c97af08b29e5bc.png",
+    "static/media/catanMercaderesYBarbaros1.jpg": "/static/media/catanMercaderesYBarbaros1.71e9ce3105698acdb7d5.jpg",
     "static/media/crayonRojo.png": "/static/media/crayonRojo.ba84f3b36def6c1b632f.png",
     "static/media/okBoomer2.jpg": "/static/media/okBoomer2.84e8902b8bfcea305819.jpg",
     "static/media/rummy.jpg": "/static/media/rummy.694bba4de6abfaadf742.jpg",
@@ -106,6 +107,7 @@
     "static/media/traitorsAboard2.jpg": "/static/media/traitorsAboard2.f99b47700241160de027.jpg",
     "static/media/tiroAlBlanco1.jpg": "/static/media/tiroAlBlanco1.b5308e5d09a100a38c4b.jpg",
     "static/media/carasYGestos2.jpg": "/static/media/carasYGestos2.15c73beedaad7b7e3656.jpg",
+    "static/media/catanMercaderesYBarbaros2.jpg": "/static/media/catanMercaderesYBarbaros2.0d7699841996038b1583.jpg",
     "static/media/virus.jpg": "/static/media/virus.f7a84142a899da2860c7.jpg",
     "static/media/phase10.jpg": "/static/media/phase10.4ad7fa03051ddab738cf.jpg",
     "static/media/clue1.jpg": "/static/media/clue1.3a9ddb240f9c26664b17.jpg",
@@ -132,6 +134,7 @@
     "static/media/ajedrez.jpg": "/static/media/ajedrez.8b5e0f39f7718605562c.jpg",
     "static/media/okBoomer.jpg": "/static/media/okBoomer.c53d10d53eff9fe28380.jpg",
     "static/media/historyChannel1.jpg": "/static/media/historyChannel1.463e7d3c836bf65fa9ca.jpg",
+    "static/media/catanMercaderesYBarbaros4.jpg": "/static/media/catanMercaderesYBarbaros4.2d4514cf16809b8de9d5.jpg",
     "static/media/magicNumberEleven5.jpg": "/static/media/magicNumberEleven5.d3b295cfeb116b451ba8.jpg",
     "static/media/amongUs.jpg": "/static/media/amongUs.4da92e2b3459022d8930.jpg",
     "static/media/traitorsAboard4.jpg": "/static/media/traitorsAboard4.db33fece3f460cf6f2c8.jpg",
@@ -158,6 +161,7 @@
     "static/media/catchTheVibe.jpg": "/static/media/catchTheVibe.03e57663321a3031a4f0.jpg",
     "static/media/amongUs1.jpg": "/static/media/amongUs1.c57470c1f81778235f34.jpg",
     "static/media/deepSeaAdventure3.jpg": "/static/media/deepSeaAdventure3.fab53aa3330ff04cfceb.jpg",
+    "static/media/catanMercaderesYBarbaros3.jpg": "/static/media/catanMercaderesYBarbaros3.07f7d545aa0b96d57e06.jpg",
     "static/media/weAreNotReallyStrangers1.jpg": "/static/media/weAreNotReallyStrangers1.9f3605be0d086917a2a5.jpg",
     "static/media/yuGiOh1.jpg": "/static/media/yuGiOh1.e19a472446da55421e5b.jpg",
     "static/media/deepSeaAdventure4.jpg": "/static/media/deepSeaAdventure4.e033f8696e574155d6f0.jpg",
@@ -176,11 +180,11 @@
     "favicon-16.png": "/favicon-16.png",
     "manifest.json": "/manifest.json",
     "serve.json": "/serve.json",
-    "main.756c828e.js.map": "/static/js/main.756c828e.js.map",
+    "main.16087b29.js.map": "/static/js/main.16087b29.js.map",
     "856.09d3e094.js.map": "/static/js/856.09d3e094.js.map"
   },
   "entrypoints": [
     "static/js/856.09d3e094.js",
-    "static/js/main.756c828e.js"
+    "static/js/main.16087b29.js"
   ]
 }

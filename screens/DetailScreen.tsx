@@ -51,6 +51,17 @@ export default function DetailScreen({
     // Helper para mostrar categorías como string
     const categories = Array.isArray(game.categories) ? game.categories.join(', ') : game.categories;
 
+    // Helper para mostrar jugadores y duración correctamente
+    const playersText =
+        game.minPlayers === game.maxPlayers
+            ? `${game.minPlayers} jugadores`
+            : `${game.minPlayers}-${game.maxPlayers} jugadores`;
+
+    const durationText =
+        game.minDuration === game.maxDuration
+            ? `${game.minDuration} mins`
+            : `${game.minDuration}-${game.maxDuration} mins`;
+
     // Helper para videoUrl: si es un link, abrirlo; si es local, mostrar texto
     const isWebUrl = typeof game.videoUrl === 'string' && (game.videoUrl.startsWith('http://') || game.videoUrl.startsWith('https://'));
 
@@ -229,8 +240,8 @@ export default function DetailScreen({
                         </View>
                     )}
                     <View style={styles.infoRow}>
-                        <InfoItem icon="players" text={game.players + " jugadores"} />
-                        <InfoItem icon="duration" text={game.duration} />
+                        <InfoItem icon="players" text={playersText} />
+                        <InfoItem icon="duration" text={durationText} />
                         <InfoItem icon="mode" text={game.mode} />
                         <InfoItem icon="categories" text={categories} />
                         <InfoItem icon="publisher" text={game.publisher} />

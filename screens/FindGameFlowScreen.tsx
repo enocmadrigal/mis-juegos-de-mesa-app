@@ -181,6 +181,26 @@ export default function FindGameFlowScreen({
       );
     }
 
+    // Si no hay juegos, muestra mensaje en pantalla blanca
+    if (filtered.length === 0) {
+      return (
+        <View style={styles.container}>
+          <Text style={styles.question}>
+            No tenemos juegos que hagan match con esos criterios :(
+          </Text>
+          <Text style={styles.tryOtherText}>
+            Intenta con otros criterios
+          </Text>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => navigation.goBack()}
+          >
+            <Text style={styles.buttonText}>Volver al menú</Text>
+          </TouchableOpacity>
+        </View>
+      );
+    }
+
     // Mostrar el modal de AllOurGamesScreen con los juegos filtrados
     if (!showFilteredModal) {
       setFilteredGames(filtered);
@@ -328,6 +348,13 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "#444",
     marginTop: 4
-  }
+  },
+  tryOtherText: {
+    fontSize: 24,
+    color: "#d06666ff",
+    textAlign: "center",
+    marginTop: 24,
+    fontWeight: "bold",
+  },
 });
 

@@ -1,6 +1,5 @@
 import { View, StyleSheet, Image, ImageBackground } from 'react-native';
 import SearchGameButton from '../componentes/SearchGameButton';
-import LatestAcquisitionsButton from '../componentes/LatestAcquisitionsButton';
 import AllOurGamesButton from '../componentes/AllOurGamesButton';
 import SearchGameScreen from './SearchGamesScreen';
 import AllOurGamesScreen from './AllOurGamesScreen';
@@ -60,8 +59,6 @@ export default function HomeScreen() {
         <AllOurGamesScreen isVisible={isAllOurGamesButtonVisible} onGoToHomeButtonPress={handleGoToHomeButtonPress} />
         <SearchGameButton onPress={handleSearchGameButtonPress} />
         <SearchGameScreen isVisible={isSearchGameButtonVisible} onGoToHomeButtonPress={handleGoToHomeButtonPress} />
-        {/* <LatestAcquisitionsButton onPress={handleLatestAcquisitionsButtonPress} />
-        <LatestAcquisitionsScreen isVisible={isLatestAcquisitionsButtonVisible} onGoToHomeButtonPress={handleGoToHomeButtonPress} /> */}
         <FindGameForOccasionButton onPress={handleFindGameForOccasionPress} />
         <FindGameForOccasionScreen isVisible={isFindGameForOccasionVisible} onGoToHomeButtonPress={handleGoToHomeButtonPress} />
       </View>

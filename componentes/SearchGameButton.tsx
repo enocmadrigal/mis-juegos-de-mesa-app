@@ -9,7 +9,7 @@ export default function SearchGameButton({ onPress }) {
 
   return (
     <Pressable style={globalStyles.botonCajaJuego} onPress={handleSearchGameButtonPress}>
-      <Text style={globalStyles.botonTextoJuego}>Buscar juego 🔎</Text>
+      <Text style={globalStyles.botonTextoJuego}>Buscar juego por nombre 🔎</Text>
     </Pressable>
   );
 }

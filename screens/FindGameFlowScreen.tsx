@@ -172,11 +172,12 @@ export default function FindGameFlowScreen({
     let filtered = games.filter(g =>
       g.minPlayers <= numPlayers &&
       g.maxPlayers >= numPlayers &&
-      g.averageDuration <= (duration ?? 999) // Cambiado: solo juegos cuyo tiempo promedio es menor o igual al filtro
+      g.averageDuration <= (duration ?? 999)
     );
     if (filterCategories && selectedCategories.length > 0) {
+      // OR: al menos una categoría debe coincidir
       filtered = filtered.filter(g =>
-        selectedCategories.every(cat => g.categories.includes(cat))
+        g.categories.some(cat => selectedCategories.includes(cat))
       );
     }
 
@@ -378,15 +379,16 @@ Lógica aplicada en cada paso/pregunta del flujo:
 
 5. Paso "result":
    - Lógica de filtrado:
-     - Se filtran los juegos de acuerdo a:
-       a) Que el número de jugadores esté dentro del rango permitido por el juego.
-       b) Que la duración máxima seleccionada esté dentro del rango de duración del juego.
-       c) Si se seleccionaron categorías, que el juego incluya todas las categorías seleccionadas.
+     a) El número de jugadores debe estar dentro del rango permitido por el juego (`minPlayers` y `maxPlayers`).
+     b) El tiempo promedio del juego (`averageDuration`) debe ser menor o igual al tiempo máximo seleccionado por el usuario.
+     c) Si se seleccionaron categorías, el juego debe incluir al menos una de las categorías seleccionadas (OR).
    - Si hay coincidencias, se muestran los juegos filtrados en el modal de AllOurGamesScreen.
    - Si no hay coincidencias, se muestra un mensaje indicando que no hay juegos que hagan match con esos criterios y se ofrece volver al menú.
 
-En resumen:
+Resumen:
 - Cada paso recolecta un criterio de filtrado.
 - El filtrado final aplica todos los criterios juntos para mostrar solo los juegos que cumplen con todo.
+- El campo de duración ahora es `averageDuration` y la comparación es directa contra el filtro de tiempo máximo.
+- El filtrado por categorías ahora es OR (al menos una categoría debe coincidir).
 */
 

@@ -9,11 +9,26 @@ import SortScreen from "./SortScreen";
 import { globalStyles } from '../GlobalStyles';
 import DetailScreen from "./DetailScreen";
 
-export default function AllOurGamesScreen({isVisible, onGoToHomeButtonPress}: {isVisible: boolean, onGoToHomeButtonPress: () => void}) {
+export default function AllOurGamesScreen({
+    isVisible,
+    onGoToHomeButtonPress,
+    filteredGames
+}: {
+    isVisible: boolean,
+    onGoToHomeButtonPress: () => void,
+    filteredGames?: any[]
+}) {
 
     const [isSortButtonVisible, setIsSortButtonVisible] = useState(false);
     const [sortFilter, setSortFilter] = useState<'recent' | 'oldest' | 'az' | 'za'>('recent');
     const [selectedGame, setSelectedGame] = useState<any | null>(null);
+
+    // Reinicia el detalle cuando se cierra el modal
+    useEffect(() => {
+        if (!isVisible) {
+            setSelectedGame(null);
+        }
+    }, [isVisible]);
 
     const handleSortButtonPress = () => {
         setIsSortButtonVisible(!isSortButtonVisible);
@@ -28,23 +43,24 @@ export default function AllOurGamesScreen({isVisible, onGoToHomeButtonPress}: {i
         setIsSortButtonVisible(false);
     }
 
-    // Ordenamiento centralizado por purchaseOrder
+    // Usar los juegos filtrados si existen, si no, usar todos
     function getSortedGames() {
+        const data = filteredGames ?? games;
         if (sortFilter === 'recent') {
             // Más recientes primero (mayor purchaseOrder primero)
-            return [...games].sort((a, b) => b.purchaseOrder - a.purchaseOrder);
+            return [...data].sort((a, b) => b.purchaseOrder - a.purchaseOrder);
         }
         if (sortFilter === 'oldest') {
             // Más antiguos primero (menor purchaseOrder primero)
-            return [...games].sort((a, b) => a.purchaseOrder - b.purchaseOrder);
+            return [...data].sort((a, b) => a.purchaseOrder - b.purchaseOrder);
         }
         if (sortFilter === 'az') {
-            return [...games].sort((a, b) => a.name.localeCompare(b.name));
+            return [...data].sort((a, b) => a.name.localeCompare(b.name));
         }
         if (sortFilter === 'za') {
-            return [...games].sort((a, b) => b.name.localeCompare(a.name));
+            return [...data].sort((a, b) => b.name.localeCompare(a.name));
         }
-        return games;
+        return data;
     }
 
     return (

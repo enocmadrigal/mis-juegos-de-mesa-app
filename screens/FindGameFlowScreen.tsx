@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { View, Text, TextInput, Button, StyleSheet, TouchableOpacity, ScrollView, Platform } from "react-native";
+import { View, Text, TextInput, StyleSheet, TouchableOpacity, ScrollView, Platform } from "react-native";
+import AllOurGamesScreen from "./AllOurGamesScreen";
 import { games } from "../data/games";
 
 type Step = "players" | "duration" | "categories" | "result";
@@ -19,6 +20,8 @@ export default function FindGameFlowScreen({
   const [showDurationMenu, setShowDurationMenu] = useState(false);
   const [filterCategories, setFilterCategories] = useState<null | boolean>(null);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+  const [filteredGames, setFilteredGames] = useState<any[] | null>(null);
+  const [showFilteredModal, setShowFilteredModal] = useState(false);
 
   // Opciones de duración (en minutos)
   const durationOptions = [
@@ -177,45 +180,24 @@ export default function FindGameFlowScreen({
         selectedCategories.every(cat => g.categories.includes(cat))
       );
     }
+
+    // Mostrar el modal de AllOurGamesScreen con los juegos filtrados
+    if (!showFilteredModal) {
+      setFilteredGames(filtered);
+      setShowFilteredModal(true);
+      return null;
+    }
+
     return (
-      <View style={styles.container}>
-        <Text style={styles.question}>Juegos recomendados:</Text>
-        <ScrollView style={{ width: "100%" }}>
-          {filtered.length === 0 && (
-            <Text style={{ margin: 24, textAlign: "center" }}>No se encontraron juegos con esos criterios.</Text>
-          )}
-          {filtered.map(game => (
-            <View
-              key={game.id}
-              style={styles.resultBox}
-            >
-              <Text style={styles.resultTitle}>{game.name}</Text>
-              <Text style={styles.resultSubtitle}>
-                {game.minPlayers === game.maxPlayers
-                  ? `${game.minPlayers} jugadores`
-                  : `${game.minPlayers}-${game.maxPlayers} jugadores`}
-                {" · "}
-                {game.minDuration === game.maxDuration
-                  ? `${game.minDuration} mins`
-                  : `${game.minDuration}-${game.maxDuration} mins`}
-              </Text>
-              <Text style={styles.resultSubtitle}>{game.categories.join(", ")}</Text>
-              <TouchableOpacity
-                style={styles.button}
-                onPress={() => navigation.goBack()}
-              >
-                <Text style={styles.buttonText}>Ver detalle</Text>
-              </TouchableOpacity>
-            </View>
-          ))}
-        </ScrollView>
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => navigation.goBack()}
-        >
-          <Text style={styles.buttonText}>Volver al menú</Text>
-        </TouchableOpacity>
-      </View>
+      <AllOurGamesScreen
+        isVisible={showFilteredModal}
+        onGoToHomeButtonPress={() => {
+          setShowFilteredModal(false);
+          setFilteredGames(null);
+          navigation.goBack();
+        }}
+        filteredGames={filteredGames}
+      />
     );
   }
 
@@ -348,3 +330,4 @@ const styles = StyleSheet.create({
     marginTop: 4
   }
 });
+

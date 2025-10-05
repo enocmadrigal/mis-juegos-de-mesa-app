@@ -37,12 +37,11 @@ const styles = StyleSheet.create({
     flex: 1,
     alignSelf: "center",
     backgroundColor: "rgba(255,255,255,0.92)",
-    borderRadius: 8,
+    borderRadius: 24, // Aumenta el valor para que las esquinas sean más redondeadas
     overflow: "visible",
     maxHeight: "40%",
-    // Ajusta estos valores para controlar la distancia desde arriba y abajo:
-    marginTop: 200,    // <-- Aumenta o disminuye para separar más/menos del tope superior
-    marginBottom: 16, // <-- Puedes ajustar también el margen inferior si lo deseas
+    marginTop: 200,
+    marginBottom: 16,
     shadowColor: "#000",
     shadowOpacity: 0.12,
     shadowRadius: 8,

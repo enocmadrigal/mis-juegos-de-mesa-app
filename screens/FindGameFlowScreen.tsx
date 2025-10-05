@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Text, TextInput, StyleSheet, TouchableOpacity, ScrollView, Platform } from "react-native";
+import { View, Text, TextInput, StyleSheet, TouchableOpacity, ScrollView, Platform, useWindowDimensions } from "react-native";
 import AllOurGamesScreen from "./AllOurGamesScreen";
 import { games } from "../data/games";
 
@@ -14,7 +14,7 @@ export default function FindGameFlowScreen({
 }: {
   navigation: { goBack: () => void }
 }) {
-  const [step, setStep] = useState<Step>("players");
+  const [step, setStep] = useState<Step | "entry">("entry");
   const [players, setPlayers] = useState<string>("");
   const [duration, setDuration] = useState<number | null>(null);
   const [showDurationMenu, setShowDurationMenu] = useState(false);
@@ -23,13 +23,70 @@ export default function FindGameFlowScreen({
   const [filteredGames, setFilteredGames] = useState<any[] | null>(null);
   const [showFilteredModal, setShowFilteredModal] = useState(false);
 
+  const { width } = useWindowDimensions();
+  const isDesktop = width > 700;
+
   // Opciones de duración (en minutos)
   const durationOptions = [
     10, 15, 20, 30, 40, 45, 50, 60, 75, 90, 120, 180
   ];
 
-  // Paso 1: ¿Cuántos jugadores?
-  if (step === "players") {
+  // Pantalla de entrada: dos botones de filtro
+  if (step === "entry") {
+    // Cambia la lógica: en desktop (width > 700) usa row, en móvil usa column
+    const BUTTON_GAP = 16;
+    const BUTTON_PERCENT = 0.9;
+    const isDesktop = width > 700;
+    const containerStyle = isDesktop
+      ? { flexDirection: "row", justifyContent: "center", alignItems: "center", height: "100%" }
+      : { flexDirection: "column", justifyContent: "center", alignItems: "center", width: "100%", height: "100%" };
+
+    return (
+      <View style={[styles.entryBg, { flex: 1 }]}>
+        <View style={[styles.entryContainer, containerStyle]}>
+          <TouchableOpacity
+            style={[
+              styles.entryBox,
+              {
+                width: isDesktop ? `${BUTTON_PERCENT * 100 / 2}%` : `${BUTTON_PERCENT * 100}%`,
+                height: isDesktop ? `${BUTTON_PERCENT * 100}%` : `${BUTTON_PERCENT * 100 / 2}%`,
+                marginRight: isDesktop ? BUTTON_GAP : 0,
+                marginBottom: !isDesktop ? BUTTON_GAP : 0,
+              }
+            ]}
+            onPress={() => {
+              setFilterCategories(false);
+              setStep("players");
+            }}
+          >
+            <Text style={styles.entryTitle}>Filtrar por num. jugadores y tiempo</Text>
+            <Text style={styles.entryDesc}>Encuentra juegos según cuántos son y el tiempo disponible</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={[
+              styles.entryBox,
+              {
+                width: isDesktop ? `${BUTTON_PERCENT * 100 / 2}%` : `${BUTTON_PERCENT * 100}%`,
+                height: isDesktop ? `${BUTTON_PERCENT * 100}%` : `${BUTTON_PERCENT * 100 / 2}%`,
+                marginRight: 0,
+                marginBottom: 0,
+              }
+            ]}
+            onPress={() => {
+              setFilterCategories(true);
+              setStep("categories");
+            }}
+          >
+            <Text style={styles.entryTitle}>Filtrar por categoría</Text>
+            <Text style={styles.entryDesc}>Encuentra juegos por tipo, temática o mecánica</Text>
+          </TouchableOpacity>
+        </View>
+      </View>
+    );
+  }
+
+  // Paso 1: ¿Cuántos jugadores? (solo si filterCategories === false)
+  if (step === "players" && filterCategories === false) {
     return (
       <View style={styles.container}>
         <Text style={styles.question}>¿Cuántos jugadores son?</Text>
@@ -54,8 +111,8 @@ export default function FindGameFlowScreen({
     );
   }
 
-  // Paso 2: ¿Cuánto tiempo máximo tienen?
-  if (step === "duration") {
+  // Paso 2: ¿Cuánto tiempo máximo tienen? (solo si filterCategories === false)
+  if (step === "duration" && filterCategories === false) {
     return (
       <View style={styles.container}>
         <Text style={styles.question}>¿Cuánto tiempo máximo tienen?</Text>
@@ -97,9 +154,9 @@ export default function FindGameFlowScreen({
           <TouchableOpacity
             style={styles.button}
             disabled={!duration}
-            onPress={() => setStep("categories")}
+            onPress={() => setStep("result")}
           >
-            <Text style={styles.buttonText}>Siguiente pregunta</Text>
+            <Text style={styles.buttonText}>Ver juegos</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -108,28 +165,11 @@ export default function FindGameFlowScreen({
 
   // Paso 3: ¿Filtrar por categorías?
   if (step === "categories" && filterCategories === null) {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.question}>¿Quieres filtrar por categorías?</Text>
-        <View style={{ flexDirection: "row", marginTop: 24 }}>
-          <TouchableOpacity
-            style={[styles.button, { marginRight: 12 }]}
-            onPress={() => setFilterCategories(true)}
-          >
-            <Text style={styles.buttonText}>SI</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={styles.button}
-            onPress={() => setStep("result")}
-          >
-            <Text style={styles.buttonText}>NO</Text>
-          </TouchableOpacity>
-        </View>
-      </View>
-    );
+    // Nunca se mostrará porque ahora siempre es true/false según el botón de entrada
+    return null;
   }
 
-  // Paso 4: Selección de categorías
+  // Paso 4: Selección de categorías (solo si filterCategories === true)
   if (step === "categories" && filterCategories === true) {
     return (
       <View style={styles.container}>
@@ -167,21 +207,25 @@ export default function FindGameFlowScreen({
 
   // Paso final: mostrar juegos filtrados
   if (step === "result") {
-    // Filtrado
     const numPlayers = Number(players);
-    let filtered = games.filter(g =>
-      g.minPlayers <= numPlayers &&
-      g.maxPlayers >= numPlayers &&
-      g.averageDuration <= (duration ?? 999)
-    );
-    if (filterCategories && selectedCategories.length > 0) {
-      // OR: al menos una categoría debe coincidir
+    let filtered = games;
+
+    // Si filtro por jugadores/tiempo
+    if (filterCategories === false) {
+      filtered = filtered.filter(g =>
+        g.minPlayers <= numPlayers &&
+        g.maxPlayers >= numPlayers &&
+        g.averageDuration <= (duration ?? 999)
+      );
+    }
+
+    // Si filtro por categorías
+    if (filterCategories === true && selectedCategories.length > 0) {
       filtered = filtered.filter(g =>
         g.categories.some(cat => selectedCategories.includes(cat))
       );
     }
 
-    // Si no hay juegos, muestra mensaje en pantalla blanca
     if (filtered.length === 0) {
       return (
         <View style={styles.container}>
@@ -201,7 +245,6 @@ export default function FindGameFlowScreen({
       );
     }
 
-    // Mostrar el modal de AllOurGamesScreen con los juegos filtrados
     if (!showFilteredModal) {
       setFilteredGames(filtered);
       setShowFilteredModal(true);
@@ -355,6 +398,45 @@ const styles = StyleSheet.create({
     textAlign: "center",
     marginTop: 24,
     fontWeight: "bold",
+  },
+  entryBg: {
+    flex: 1,
+    backgroundColor: "#d06666", // rojo de la letra
+    width: "100%",
+    height: "100%",
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  entryContainer: {
+    flex: 1,
+    width: "100%",
+    height: "100%",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  entryBox: {
+    backgroundColor: "#fff",
+    borderRadius: 18,
+    alignItems: "center",
+    justifyContent: "center",
+    elevation: 4,
+    shadowColor: "#000",
+    shadowOpacity: 0.08,
+    shadowRadius: 8,
+    shadowOffset: { width: 0, height: 2 },
+    // width y height se calculan dinámicamente
+  },
+  entryTitle: {
+    fontSize: 22,
+    fontWeight: "bold",
+    color: "#d06666ff",
+    marginBottom: 8,
+    textAlign: "center",
+  },
+  entryDesc: {
+    fontSize: 16,
+    color: "#444",
+    textAlign: "center",
   },
 });
 

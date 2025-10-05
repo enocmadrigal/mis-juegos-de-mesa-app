@@ -1,9 +1,11 @@
+import type { Category } from "../data/categories";
+
 export interface Game {
   id: number;
   purchaseOrder: number;
-  name: string;
+  name: string; //- Esto es un string[] y no un enum
   publisher: string;
-  categories: string[];
+  categories: Category[];
   minPlayers: number;
   maxPlayers: number;
   averageDuration: number; // minutos

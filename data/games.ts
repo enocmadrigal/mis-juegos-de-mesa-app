@@ -558,7 +558,7 @@ export const games: Game[] = [
     purchaseOrder: 25,
     name: "5 Segundos Para Ganar Sin Censura",
     publisher: "PlayMonster",
-    categories: ["Party", "Adultos"],
+    categories: ["Party"],
     minPlayers: 3,
     maxPlayers: 6,
     averageDuration: 25, // antes min:20, max:30
@@ -577,7 +577,7 @@ export const games: Game[] = [
     purchaseOrder: 26,
     name: "Twister Air",
     publisher: "Hasbro",
-    categories: ["Habilidad", "Tecnología"],
+    categories: ["Habilidad"],
     minPlayers: 1,
     maxPlayers: 4,
     averageDuration: 25, // antes min:20, max:30
@@ -843,7 +843,7 @@ export const games: Game[] = [
     purchaseOrder: 40,
     name: "Blockbuster",
     publisher: "Big Potato Games",
-    categories: ["Party", "Películas"],
+    categories: ["Party"],
     minPlayers: 4,
     maxPlayers: 12,
     averageDuration: 30, // antes min:30, max:30
@@ -976,7 +976,7 @@ export const games: Game[] = [
     purchaseOrder: 47,
     name: "Clue",
     publisher: "Hasbro",
-    categories: ["Misterio", "Deducción"],
+    categories: ["Deduction"],
     minPlayers: 2,
     maxPlayers: 6,
     averageDuration: 52.5, // antes min:45, max:60
@@ -995,7 +995,7 @@ export const games: Game[] = [
     purchaseOrder: 48,
     name: "Candy Land",
     publisher: "Hasbro",
-    categories: ["Infantil", "Clásico"],
+    categories: ["Familiar", "Clásico"],
     minPlayers: 2,
     maxPlayers: 4,
     averageDuration: 22.5, // antes min:15, max:30
@@ -1489,7 +1489,7 @@ export const games: Game[] = [
     purchaseOrder: 74,
     name: "Secret Hitler",
     publisher: "Goat, Wolf & Cabbage",
-    categories: ["Bluff", "Deducción social", "Party"],
+    categories: ["Bluff","Deduction", "Party"],
     minPlayers: 5,
     maxPlayers: 10,
     averageDuration: 45, // antes min:45, max:45
@@ -1508,7 +1508,7 @@ export const games: Game[] = [
     purchaseOrder: 75,
     name: "Traitors Aboard",
     publisher: "Lost Games Entertainment",
-    categories: ["Deducción social", "Bluff", "Cooperativo"],
+    categories: ["Deduction", "Bluff", "Cooperativo"],
     minPlayers: 4,
     maxPlayers: 8,
     averageDuration: 45, // antes min:30, max:60

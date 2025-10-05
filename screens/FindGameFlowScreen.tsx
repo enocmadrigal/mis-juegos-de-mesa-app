@@ -172,8 +172,7 @@ export default function FindGameFlowScreen({
     let filtered = games.filter(g =>
       g.minPlayers <= numPlayers &&
       g.maxPlayers >= numPlayers &&
-      g.minDuration <= (duration ?? 999) &&
-      g.maxDuration >= (duration ?? 0)
+      g.averageDuration <= (duration ?? 999) // Cambiado: solo juegos cuyo tiempo promedio es menor o igual al filtro
     );
     if (filterCategories && selectedCategories.length > 0) {
       filtered = filtered.filter(g =>
@@ -357,4 +356,37 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
 });
+
+/*
+Lógica aplicada en cada paso/pregunta del flujo:
+
+1. Paso "players":
+   - Pregunta: ¿Cuántos jugadores son?
+   - Lógica: El usuario ingresa un número de jugadores. Solo permite avanzar si el valor es un número válido mayor a 0.
+
+2. Paso "duration":
+   - Pregunta: ¿Cuánto tiempo máximo tienen?
+   - Lógica: El usuario selecciona el tiempo máximo disponible para jugar (en minutos) de una lista de opciones. Solo permite avanzar si se selecciona una opción.
+
+3. Paso "categories" (primera parte):
+   - Pregunta: ¿Quieres filtrar por categorías?
+   - Lógica: El usuario elige SI o NO. Si elige NO, pasa directo al filtrado final. Si elige SI, pasa a seleccionar categorías.
+
+4. Paso "categories" (segunda parte):
+   - Pregunta: Selecciona las categorías
+   - Lógica: El usuario puede seleccionar una o varias categorías de la lista. Al presionar "Ver juegos", se realiza el filtrado final.
+
+5. Paso "result":
+   - Lógica de filtrado:
+     - Se filtran los juegos de acuerdo a:
+       a) Que el número de jugadores esté dentro del rango permitido por el juego.
+       b) Que la duración máxima seleccionada esté dentro del rango de duración del juego.
+       c) Si se seleccionaron categorías, que el juego incluya todas las categorías seleccionadas.
+   - Si hay coincidencias, se muestran los juegos filtrados en el modal de AllOurGamesScreen.
+   - Si no hay coincidencias, se muestra un mensaje indicando que no hay juegos que hagan match con esos criterios y se ofrece volver al menú.
+
+En resumen:
+- Cada paso recolecta un criterio de filtrado.
+- El filtrado final aplica todos los criterios juntos para mostrar solo los juegos que cumplen con todo.
+*/
 

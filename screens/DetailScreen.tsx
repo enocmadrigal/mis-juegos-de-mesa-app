@@ -57,10 +57,8 @@ export default function DetailScreen({
             ? `${game.minPlayers} jugadores`
             : `${game.minPlayers}-${game.maxPlayers} jugadores`;
 
-    const durationText =
-        game.minDuration === game.maxDuration
-            ? `${game.minDuration} mins`
-            : `${game.minDuration}-${game.maxDuration} mins`;
+    // Cambia aquí para mostrar solo averageDuration
+    const durationText = `${game.averageDuration} mins`;
 
     // Helper para videoUrl: si es un link, abrirlo; si es local, mostrar texto
     const isWebUrl = typeof game.videoUrl === 'string' && (game.videoUrl.startsWith('http://') || game.videoUrl.startsWith('https://'));

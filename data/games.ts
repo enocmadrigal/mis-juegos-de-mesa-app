@@ -105,8 +105,7 @@ export const games: Game[] = [
     categories: ["Estrategia", "Clásico"],
     minPlayers: 2,
     maxPlayers: 2,
-    minDuration: 10,
-    maxDuration: 60,
+    averageDuration: 35, // antes min:10, max:60
     mode: "Competitivo",
     description: "Juego de estrategia clásico donde dos jugadores intentan dar jaque mate al rey rival.",
     rules: "Cada jugador mueve sus piezas por turnos según las reglas del ajedrez. Gana quien da jaque mate.",
@@ -125,8 +124,7 @@ export const games: Game[] = [
     categories: ["Estrategia", "Familiar"],
     minPlayers: 2,
     maxPlayers: 6,
-    minDuration: 60,
-    maxDuration: 120,
+    averageDuration: 90, // antes min:60, max:120
     mode: "Competitivo",
     description: "Versión de Turista con temática de Dragon Ball.",
     rules: "Compra propiedades y recorre el mundo de Dragon Ball.",
@@ -145,8 +143,7 @@ export const games: Game[] = [
     categories: ["Trivia", "Familiar"],
     minPlayers: 3,
     maxPlayers: 10,
-    minDuration: 30,
-    maxDuration: 60,
+    averageDuration: 45, // antes min:30, max:60
     mode: "Equipos",
     description: "Versión de mesa del popular programa de televisión donde los equipos intentan adivinar las respuestas más populares.",
     rules: "Responde preguntas basadas en encuestas. Gana el equipo con más puntos.",
@@ -165,8 +162,7 @@ export const games: Game[] = [
     categories: ["Cartas", "Apuestas"],
     minPlayers: 2,
     maxPlayers: 6,
-    minDuration: 30,
-    maxDuration: 60,
+    averageDuration: 45, // antes min:30, max:60
     mode: "Competitivo",
     description: "Juego de cartas y apuestas con temática de casino.",
     rules: "Depende de la variante jugada.",
@@ -185,8 +181,7 @@ export const games: Game[] = [
     categories: ["Trivia", "Familiar"],
     minPlayers: 2,
     maxPlayers: 6,
-    minDuration: 30,
-    maxDuration: 60,
+    averageDuration: 45, // antes min:30, max:60
     mode: "Competitivo",
     description: "Juego de trivia y retos para toda la familia.",
     rules: "Responde preguntas y supera retos para avanzar.",
@@ -205,8 +200,7 @@ export const games: Game[] = [
     categories: ["Trivia", "Familiar"],
     minPlayers: 2,
     maxPlayers: 6,
-    minDuration: 60,
-    maxDuration: 90,
+    averageDuration: 75, // antes min:60, max:90
     mode: "Competitivo",
     description: "Juego de trivia mexicano con preguntas de cultura general.",
     rules: "Responde preguntas correctamente para avanzar en el tablero.",
@@ -225,8 +219,7 @@ export const games: Game[] = [
     categories: ["Party", "Preguntas"],
     minPlayers: 3,
     maxPlayers: 10,
-    minDuration: 20,
-    maxDuration: 40,
+    averageDuration: 30, // antes min:20, max:40
     mode: "Competitivo",
     description: "Juego de preguntas para descubrir cuánto conoces a tus amigos.",
     rules: "Responde preguntas sobre los demás jugadores.",
@@ -245,8 +238,7 @@ export const games: Game[] = [
     categories: ["Estrategia", "Clásico"],
     minPlayers: 2,
     maxPlayers: 2,
-    minDuration: 45,
-    maxDuration: 45,
+    averageDuration: 45, // antes min:45, max:45
     mode: "Competitivo",
     description: "Juego de estrategia donde debes capturar la bandera del oponente.",
     rules: "Coloca tus piezas estratégicamente y ataca las del rival.",
@@ -265,8 +257,7 @@ export const games: Game[] = [
     categories: ["Estrategia", "Familiar"],
     minPlayers: 2,
     maxPlayers: 6,
-    minDuration: 60,
-    maxDuration: 120,
+    averageDuration: 90, // antes min:60, max:120
     mode: "Competitivo",
     description: "Versión mexicana del clásico Monopoly.",
     rules: "Compra propiedades, cobra rentas y evita la bancarrota.",
@@ -285,8 +276,7 @@ export const games: Game[] = [
     categories: ["Estrategia", "Expansión"],
     minPlayers: 3,
     maxPlayers: 6,
-    minDuration: 90,
-    maxDuration: 120,
+    averageDuration: 105, // antes min:90, max:120
     mode: "Competitivo",
     description: "Edición especial de Catan que incluye expansiones y minijuegos.",
     rules: "Incluye reglas del juego base y de las expansiones incluidas.",
@@ -305,8 +295,7 @@ export const games: Game[] = [
     categories: ["Cartas", "Clásico"],
     minPlayers: 2,
     maxPlayers: 10,
-    minDuration: 10,
-    maxDuration: 60,
+    averageDuration: 35, // antes min:10, max:60
     mode: "Competitivo",
     description: "Baraja de poker dorada para juegos como Poker, Blackjack, etc.",
     rules: "Depende del juego jugado.",
@@ -325,8 +314,7 @@ export const games: Game[] = [
     categories: ["Cartas", "Clásico"],
     minPlayers: 2,
     maxPlayers: 10,
-    minDuration: 10,
-    maxDuration: 60,
+    averageDuration: 35, // antes min:10, max:60
     mode: "Competitivo",
     description: "Baraja de poker plateada para juegos como Poker, Blackjack, etc.",
     rules: "Depende del juego jugado.",
@@ -345,8 +333,7 @@ export const games: Game[] = [
     categories: ["Escape Room", "Cooperativo"],
     minPlayers: 1,
     maxPlayers: 4,
-    minDuration: 45,
-    maxDuration: 90,
+    averageDuration: 67.5, // antes min:45, max:90
     mode: "Cooperativo",
     description: "Juego de escape room de mesa donde los jugadores resuelven acertijos para escapar.",
     rules: "Resuelve los acertijos y sigue la historia para completar el reto.",
@@ -365,8 +352,7 @@ export const games: Game[] = [
     categories: ["Cartas", "Clásico"],
     minPlayers: 2,
     maxPlayers: 6,
-    minDuration: 30,
-    maxDuration: 60,
+    averageDuration: 45, // antes min:30, max:60
     mode: "Competitivo",
     description: "Juego de cartas clásico donde los jugadores forman combinaciones de cartas.",
     rules: "Forma tríos, escaleras y gana puntos.",
@@ -385,8 +371,7 @@ export const games: Game[] = [
     categories: ["Party", "Familiar"],
     minPlayers: 2,
     maxPlayers: 6,
-    minDuration: 15,
-    maxDuration: 30,
+    averageDuration: 22.5, // antes min:15, max:30
     mode: "Competitivo",
     description: "Juego de adivinanzas donde cada jugador lleva una tarjeta en la cabeza y debe adivinar qué es haciendo preguntas.",
     rules: "Haz preguntas de sí/no para descubrir tu carta antes que los demás.",
@@ -405,8 +390,7 @@ export const games: Game[] = [
     categories: ["Clásico", "Estrategia"],
     minPlayers: 2,
     maxPlayers: 2,
-    minDuration: 30,
-    maxDuration: 60,
+    averageDuration: 45, // antes min:30, max:60
     mode: "Competitivo",
     description: "Juego de mesa clásico donde los jugadores mueven sus fichas según el resultado de los dados.",
     rules: "El objetivo es sacar todas tus fichas del tablero antes que tu oponente.",
@@ -425,8 +409,7 @@ export const games: Game[] = [
     categories: ["Música", "Party"],
     minPlayers: 2,
     maxPlayers: 10,
-    minDuration: 30,
-    maxDuration: 30,
+    averageDuration: 30, // antes min:30, max:30
     mode: "Competitivo",
     description: "Juego de mesa musical donde debes adivinar canciones y ordenarlas cronológicamente.",
     rules: "Escucha fragmentos de canciones y colócalas en la línea de tiempo.",
@@ -445,8 +428,7 @@ export const games: Game[] = [
     categories: ["Party", "Familiar"],
     minPlayers: 3,
     maxPlayers: 10,
-    minDuration: 20,
-    maxDuration: 40,
+    averageDuration: 30, // antes min:20, max:40
     mode: "Competitivo",
     description: "Juego de mesa donde los jugadores deben imitar fotos divertidas.",
     rules: "Imita la foto que te toque y gana puntos por creatividad.",
@@ -465,8 +447,7 @@ export const games: Game[] = [
     categories: ["Party", "Conversación"],
     minPlayers: 2,
     maxPlayers: 99,
-    minDuration: 1,
-    maxDuration: 999,
+    averageDuration: 30, // antes min:1, max:999
     mode: "Competitivo",
     description: "Juego de cartas con temas para conversar y debatir.",
     rules: "Saca una carta y conversa sobre el tema propuesto.",
@@ -485,8 +466,7 @@ export const games: Game[] = [
     categories: ["Palabras", "Familiar"],
     minPlayers: 2,
     maxPlayers: 4,
-    minDuration: 60,
-    maxDuration: 60,
+    averageDuration: 60, // antes min:60, max:60
     mode: "Competitivo",
     description: "Versión de Star Wars del clásico juego de palabras Scrabble.",
     rules: "Forma palabras en el tablero para ganar puntos.",
@@ -505,8 +485,7 @@ export const games: Game[] = [
     categories: ["Cartas", "Estrategia"],
     minPlayers: 2,
     maxPlayers: 12,
-    minDuration: 30,
-    maxDuration: 60,
+    averageDuration: 45, // antes min:30, max:60
     mode: "Equipos",
     description: "Juego de cartas y tablero donde debes formar líneas de cinco fichas.",
     rules: "Coloca fichas en el tablero según las cartas jugadas. Gana quien forme dos secuencias.",
@@ -525,8 +504,7 @@ export const games: Game[] = [
     categories: ["Cartas", "Familiar"],
     minPlayers: 2,
     maxPlayers: 10,
-    minDuration: 15,
-    maxDuration: 30,
+    averageDuration: 22.5, // antes min:15, max:30
     mode: "Competitivo",
     description: "Juego de cartas donde debes deshacerte de todas tus cartas antes que los demás.",
     rules: "Juega cartas del mismo color o número y usa cartas especiales para cambiar el juego.",
@@ -545,8 +523,7 @@ export const games: Game[] = [
     categories: ["Estrategia", "Expansión"],
     minPlayers: 3,
     maxPlayers: 4,
-    minDuration: 90,
-    maxDuration: 120,
+    averageDuration: 105, // antes min:90, max:120
     mode: "Competitivo",
     description: "Expansión de Catan que añade navegación y nuevas islas para explorar.",
     rules: "Incluye reglas de navegación y escenarios adicionales. Requiere el juego base.",
@@ -565,8 +542,7 @@ export const games: Game[] = [
     categories: ["Clásico", "Estrategia"],
     minPlayers: 2,
     maxPlayers: 6,
-    minDuration: 30,
-    maxDuration: 60,
+    averageDuration: 45, // antes min:30, max:60
     mode: "Competitivo",
     description: "Juego clásico donde los jugadores intentan mover todas sus piezas al lado opuesto del tablero.",
     rules: "Mueve tus piezas saltando sobre otras para llegar al lado opuesto.",
@@ -585,8 +561,7 @@ export const games: Game[] = [
     categories: ["Party", "Adultos"],
     minPlayers: 3,
     maxPlayers: 6,
-    minDuration: 20,
-    maxDuration: 30,
+    averageDuration: 25, // antes min:20, max:30
     mode: "Competitivo",
     description: "Versión para adultos del juego 5 segundos para ganar, donde debes responder preguntas atrevidas en solo 5 segundos.",
     rules: "Responde rápidamente a preguntas sin censura antes de que acabe el tiempo.",
@@ -605,8 +580,7 @@ export const games: Game[] = [
     categories: ["Habilidad", "Tecnología"],
     minPlayers: 1,
     maxPlayers: 4,
-    minDuration: 20,
-    maxDuration: 30,
+    averageDuration: 25, // antes min:20, max:30
     mode: "Competitivo",
     description: "Versión digital de Twister que utiliza una app y sensores para seguir tus movimientos en el aire.",
     rules: "Sigue las indicaciones de la app y coloca tus manos y pies en el aire según los colores.",
@@ -625,8 +599,7 @@ export const games: Game[] = [
     categories: ["Party", "Mímica"],
     minPlayers: 4,
     maxPlayers: 16,
-    minDuration: 20,
-    maxDuration: 30,
+    averageDuration: 25, // antes min:20, max:30
     mode: "Equipos",
     description: "Juego de mímica donde los jugadores deben adivinar palabras o frases.",
     rules: "Un jugador actúa y su equipo debe adivinar la palabra antes de que se acabe el tiempo.",
@@ -645,8 +618,7 @@ export const games: Game[] = [
     categories: ["Cartas", "Familiar"],
     minPlayers: 2,
     maxPlayers: 10,
-    minDuration: 15,
-    maxDuration: 30,
+    averageDuration: 22.5, // antes min:15, max:30
     mode: "Competitivo",
     description: "Versión de UNO con cartas de doble cara y reglas especiales para cambiar el juego.",
     rules: "Juega cartas normales o voltea el mazo para cambiar a las reglas del lado oscuro.",
@@ -665,8 +637,7 @@ export const games: Game[] = [
     categories: ["Cartas", "Clásico"],
     minPlayers: 2,
     maxPlayers: 6,
-    minDuration: 10,
-    maxDuration: 60,
+    averageDuration: 35, // antes min:10, max:60
     mode: "Competitivo",
     description: "Baraja tradicional española para juegos como Brisca, Mus, Tute, etc.",
     rules: "Depende del juego jugado.",
@@ -685,8 +656,7 @@ export const games: Game[] = [
     categories: ["Clásico", "Familiar"],
     minPlayers: 2,
     maxPlayers: 4,
-    minDuration: 20,
-    maxDuration: 40,
+    averageDuration: 30, // antes min:20, max:40
     mode: "Competitivo",
     description: "Juego clásico de fichas donde los jugadores deben emparejar los números.",
     rules: "Coloca fichas emparejando los números en los extremos. Gana quien se quede sin fichas primero.",
@@ -705,8 +675,7 @@ export const games: Game[] = [
     categories: ["Cartas", "Familiar"],
     minPlayers: 2,
     maxPlayers: 10,
-    minDuration: 20,
-    maxDuration: 40,
+    averageDuration: 30, // antes min:20, max:40
     mode: "Competitivo",
     description: "Versión moderna del clásico juego de lotería mexicana.",
     rules: "Marca las cartas que salgan y completa tu tabla para ganar.",
@@ -725,8 +694,7 @@ export const games: Game[] = [
     categories: ["Trivia", "Familiar"],
     minPlayers: 2,
     maxPlayers: 10,
-    minDuration: 30,
-    maxDuration: 60,
+    averageDuration: 45, // antes min:30, max:60
     mode: "Equipos",
     description: "Juego de trivia donde compiten generaciones jóvenes contra mayores.",
     rules: "Responde preguntas de cultura general y gana puntos para tu equipo.",
@@ -745,8 +713,7 @@ export const games: Game[] = [
     categories: ["Estrategia", "Familiar"],
     minPlayers: 2,
     maxPlayers: 6,
-    minDuration: 60,
-    maxDuration: 120,
+    averageDuration: 90, // antes min:60, max:120
     mode: "Competitivo",
     description: "Versión de Turista con temática de Disneyland.",
     rules: "Compra propiedades y recorre Disneyland para ganar.",
@@ -765,8 +732,7 @@ export const games: Game[] = [
     categories: ["Cartas", "Estrategia"],
     minPlayers: 2,
     maxPlayers: 2,
-    minDuration: 30,
-    maxDuration: 60,
+    averageDuration: 45, // antes min:30, max:60
     mode: "Competitivo",
     description: "Juego de cartas coleccionables donde los jugadores invocan monstruos y lanzan hechizos para derrotar a su oponente.",
     rules: "Construye tu mazo y reduce los puntos de vida del rival a cero.",
@@ -785,8 +751,7 @@ export const games: Game[] = [
     categories: ["Party", "Palabras"],
     minPlayers: 2,
     maxPlayers: 99,
-    minDuration: 10,
-    maxDuration: 30,
+    averageDuration: 20, // antes min:10, max:30
     mode: "Competitivo",
     description: "Juego de palabras donde los jugadores deben escribir palabras que empiecen con una letra determinada.",
     rules: "Se elige una letra y los jugadores deben escribir palabras en diferentes categorías lo más rápido posible.",
@@ -805,8 +770,7 @@ export const games: Game[] = [
     categories: ["Cartas", "Familiar"],
     minPlayers: 2,
     maxPlayers: 6,
-    minDuration: 30,
-    maxDuration: 60,
+    averageDuration: 45, // antes min:30, max:60
     mode: "Competitivo",
     description: "Juego de cartas con temática de lucha libre y superhéroes de Marvel.",
     rules: "Juega cartas para atacar y defender, gana quien quede en pie.",
@@ -825,8 +789,7 @@ export const games: Game[] = [
     categories: ["Party", "Preguntas"],
     minPlayers: 3,
     maxPlayers: 10,
-    minDuration: 20,
-    maxDuration: 40,
+    averageDuration: 30, // antes min:20, max:40
     mode: "Competitivo",
     description: "Juego de preguntas donde no puedes responder ni 'sí' ni 'no'.",
     rules: "Responde preguntas sin decir 'sí' o 'no'.",
@@ -845,8 +808,7 @@ export const games: Game[] = [
     categories: ["Habilidad", "Familiar"],
     minPlayers: 2,
     maxPlayers: 6,
-    minDuration: 15,
-    maxDuration: 30,
+    averageDuration: 22.5, // antes min:15, max:30
     mode: "Competitivo",
     description: "Juego de rapidez visual y reflejos donde debes encontrar y tomar cartas antes que los demás.",
     rules: "Sigue las instrucciones de la carta y sé el más rápido en cumplir el reto.",
@@ -865,8 +827,7 @@ export const games: Game[] = [
     categories: ["Habilidad", "Coleccionable"],
     minPlayers: 1,
     maxPlayers: 1,
-    minDuration: 1,
-    maxDuration: 999,
+    averageDuration: 30, // antes min:1, max:999
     mode: "Individual",
     description: "Mini patinetas de dedo para hacer trucos y competencias de habilidad.",
     rules: "Realiza trucos y compite por la mejor puntuación.",
@@ -885,8 +846,7 @@ export const games: Game[] = [
     categories: ["Party", "Películas"],
     minPlayers: 4,
     maxPlayers: 12,
-    minDuration: 30,
-    maxDuration: 30,
+    averageDuration: 30, // antes min:30, max:30
     mode: "Equipos",
     description: "Juego de adivinanza y mímica sobre películas, ideal para fiestas.",
     rules: "Los equipos compiten adivinando películas a través de mímica, frases y palabras clave.",
@@ -905,8 +865,7 @@ export const games: Game[] = [
     categories: ["Trivia", "Familiar"],
     minPlayers: 2,
     maxPlayers: 6,
-    minDuration: 30,
-    maxDuration: 60,
+    averageDuration: 45, // antes min:30, max:60
     mode: "Competitivo",
     description: "Juego de trivia con preguntas sobre películas y personajes de Disney.",
     rules: "Responde preguntas de trivia para avanzar en el tablero.",
@@ -925,8 +884,7 @@ export const games: Game[] = [
     categories: ["Cartas", "Bluff"],
     minPlayers: 3,
     maxPlayers: 6,
-    minDuration: 20,
-    maxDuration: 40,
+    averageDuration: 30, // antes min:20, max:40
     mode: "Competitivo",
     description: "Juego de cartas donde debes engañar a los demás sobre las cartas que juegas.",
     rules: "Juega cartas boca abajo y declara su valor. Los demás pueden creer o dudar.",
@@ -945,8 +903,7 @@ export const games: Game[] = [
     categories: ["Party", "Memoria"],
     minPlayers: 3,
     maxPlayers: 8,
-    minDuration: 15,
-    maxDuration: 20,
+    averageDuration: 17.5, // antes min:15, max:20
     mode: "Competitivo",
     description: "Juego de memoria y engaño donde debes recordar qué objeto tiene cada jugador.",
     rules: "Pasa cartas y recuerda qué objeto tiene cada uno.",
@@ -965,8 +922,7 @@ export const games: Game[] = [
     categories: ["Party", "Deduction"],
     minPlayers: 4,
     maxPlayers: 10,
-    minDuration: 20,
-    maxDuration: 40,
+    averageDuration: 30, // antes min:20, max:40
     mode: "Competitivo",
     description: "Versión de mesa del popular videojuego donde los jugadores deben descubrir al impostor entre ellos.",
     rules: "Cumple tareas y vota para expulsar al impostor antes de que acabe con la tripulación.",
@@ -985,8 +941,7 @@ export const games: Game[] = [
     categories: ["Party", "Preguntas"],
     minPlayers: 3,
     maxPlayers: 10,
-    minDuration: 20,
-    maxDuration: 40,
+    averageDuration: 30, // antes min:20, max:40
     mode: "Competitivo",
     description: "Juego de cartas mexicano donde debes responder preguntas incómodas o atreverte a retos.",
     rules: "Responde sinceramente o cumple el reto indicado en la carta.",
@@ -1005,8 +960,7 @@ export const games: Game[] = [
     categories: ["Clásico", "Familiar"],
     minPlayers: 2,
     maxPlayers: 4,
-    minDuration: 20,
-    maxDuration: 40,
+    averageDuration: 30, // antes min:20, max:40
     mode: "Competitivo",
     description: "Versión de dominó con fichas de resina.",
     rules: "Coloca fichas emparejando los números en los extremos. Gana quien se quede sin fichas primero.",
@@ -1025,8 +979,7 @@ export const games: Game[] = [
     categories: ["Misterio", "Deducción"],
     minPlayers: 2,
     maxPlayers: 6,
-    minDuration: 45,
-    maxDuration: 60,
+    averageDuration: 52.5, // antes min:45, max:60
     mode: "Competitivo",
     description: "Juego de deducción donde los jugadores intentan resolver un asesinato.",
     rules: "Los jugadores hacen preguntas y deducen quién, con qué arma y en qué lugar ocurrió el crimen.",
@@ -1045,8 +998,7 @@ export const games: Game[] = [
     categories: ["Infantil", "Clásico"],
     minPlayers: 2,
     maxPlayers: 4,
-    minDuration: 15,
-    maxDuration: 30,
+    averageDuration: 22.5, // antes min:15, max:30
     mode: "Competitivo",
     description: "Juego de mesa clásico para niños donde avanzas por un tablero de caramelos.",
     rules: "Los jugadores avanzan según las cartas de colores, el primero en llegar al final gana.",
@@ -1065,8 +1017,7 @@ export const games: Game[] = [
     categories: ["Trivia", "Historia"],
     minPlayers: 2,
     maxPlayers: 6,
-    minDuration: 30,
-    maxDuration: 60,
+    averageDuration: 45, // antes min:30, max:60
     mode: "Competitivo",
     description: "Juego de trivia con preguntas sobre historia mundial.",
     rules: "Responde preguntas de historia para avanzar en el tablero.",
@@ -1085,8 +1036,7 @@ export const games: Game[] = [
     categories: ["Familiar", "Aventura"],
     minPlayers: 2,
     maxPlayers: 4,
-    minDuration: 60,
-    maxDuration: 60,
+    averageDuration: 60, // antes min:60, max:60
     mode: "Competitivo",
     description: "Versión de Mario Bros del clásico Juego de la Vida.",
     rules: "Avanza por el tablero tomando decisiones y recolectando monedas.",
@@ -1105,8 +1055,7 @@ export const games: Game[] = [
     categories: ["Puzzle", "Habilidad"],
     minPlayers: 2,
     maxPlayers: 2,
-    minDuration: 20,
-    maxDuration: 40,
+    averageDuration: 25, // antes min:20, max:40
     mode: "Competitivo",
     description: "Versión de mesa del clásico videojuego Tetris.",
     rules: "Coloca piezas para completar líneas y ganar puntos.",
@@ -1125,8 +1074,7 @@ export const games: Game[] = [
     categories: ["Conversación", "Party"],
     minPlayers: 2,
     maxPlayers: 99,
-    minDuration: 1,
-    maxDuration: 999,
+    averageDuration: 30, // antes min:1, max:999
     mode: "Cooperativo",
     description: "Juego de cartas para profundizar relaciones y conocerse mejor.",
     rules: "Responde preguntas personales y reflexiona con los demás jugadores.",
@@ -1145,8 +1093,7 @@ export const games: Game[] = [
     categories: ["Habilidad", "Puzzle"],
     minPlayers: 1,
     maxPlayers: 1,
-    minDuration: 1,
-    maxDuration: 999,
+    averageDuration: 30, // antes min:1, max:999
     mode: "Individual",
     description: "El clásico cubo de Rubik 3x3 para resolver rompecabezas.",
     rules: "Gira las caras del cubo hasta que cada una tenga un solo color.",
@@ -1165,8 +1112,7 @@ export const games: Game[] = [
     categories: ["Clásico", "Habilidad"],
     minPlayers: 2,
     maxPlayers: 2,
-    minDuration: 10,
-    maxDuration: 30,
+    averageDuration: 20, // antes min:10, max:30
     mode: "Competitivo",
     description: "Juego tradicional de habilidad con canicas.",
     rules: "Los jugadores lanzan canicas para sacar las de los demás de un círculo.",
@@ -1185,8 +1131,7 @@ export const games: Game[] = [
     categories: ["Cartas", "Familiar"],
     minPlayers: 2,
     maxPlayers: 6,
-    minDuration: 30,
-    maxDuration: 60,
+    averageDuration: 45, // antes min:30, max:60
     mode: "Competitivo",
     description: "Juego de cartas donde los jugadores deben completar fases específicas antes que los demás.",
     rules: "Completa las fases en orden antes que los demás jugadores.",
@@ -1205,8 +1150,7 @@ export const games: Game[] = [
     categories: ["Habilidad", "Clásico"],
     minPlayers: 2,
     maxPlayers: 2,
-    minDuration: 10,
-    maxDuration: 30,
+    averageDuration: 20, // antes min:10, max:30
     mode: "Competitivo",
     description: "Juego de puntería donde debes acertar a un blanco con dardos o pelotas.",
     rules: "Lanza y suma puntos según el lugar donde aciertes.",
@@ -1225,8 +1169,7 @@ export const games: Game[] = [
     categories: ["Cartas", "Coleccionable"],
     minPlayers: 2,
     maxPlayers: 2,
-    minDuration: 20,
-    maxDuration: 60,
+    averageDuration: 40, // antes min:20, max:60
     mode: "Competitivo",
     description: "Juego de cartas coleccionables donde los jugadores usan Pokémon para combatir y ganar medallas.",
     rules: "Construye tu mazo y derrota a tu oponente usando ataques y habilidades de Pokémon.",
@@ -1245,8 +1188,7 @@ export const games: Game[] = [
     categories: ["Cartas", "Estrategia"],
     minPlayers: 2,
     maxPlayers: 2,
-    minDuration: 15,
-    maxDuration: 25,
+    averageDuration: 20, // antes min:15, max:25
     mode: "Competitivo",
     description: "Juego de cartas estratégico donde puedes controlar criaturas del rival usando cartas de Mind Bug.",
     rules: "Juega criaturas y usa Mind Bugs para tomar el control de las del oponente.",
@@ -1265,8 +1207,7 @@ export const games: Game[] = [
     categories: ["Estrategia", "Clásico"],
     minPlayers: 2,
     maxPlayers: 2,
-    minDuration: 10,
-    maxDuration: 60,
+    averageDuration: 35, // antes min:10, max:60
     mode: "Competitivo",
     description: "Versión portátil del ajedrez con piezas magnéticas para jugar en cualquier lugar.",
     rules: "Juega ajedrez normalmente, pero con piezas magnéticas.",
@@ -1285,8 +1226,7 @@ export const games: Game[] = [
     categories: ["Trivia", "Familiar"],
     minPlayers: 2,
     maxPlayers: 8,
-    minDuration: 30,
-    maxDuration: 60,
+    averageDuration: 45, // antes min:30, max:60
     mode: "Equipos",
     description: "Juego de trivia generacional donde equipos de diferentes edades compiten respondiendo preguntas de su época.",
     rules: "Responde preguntas de cultura pop y gana puntos para tu generación.",
@@ -1305,8 +1245,7 @@ export const games: Game[] = [
     categories: ["Party", "Conversación"],
     minPlayers: 3,
     maxPlayers: 10,
-    minDuration: 20,
-    maxDuration: 40,
+    averageDuration: 30, // antes min:20, max:40
     mode: "Competitivo",
     description: "Juego de cartas para romper el hielo y conocer mejor a tus amigos a través de preguntas y retos.",
     rules: "Saca una carta y sigue la instrucción para animar la conversación.",
@@ -1325,8 +1264,7 @@ export const games: Game[] = [
     categories: ["Cartas", "Familiar"],
     minPlayers: 2,
     maxPlayers: 6,
-    minDuration: 20,
-    maxDuration: 20,
+    averageDuration: 20, // antes min:20, max:20
     mode: "Competitivo",
     description: "Juego de cartas donde debes conseguir un cuerpo sano antes que los demás, evitando virus y usando medicinas.",
     rules: "Juega cartas para infectar, curar o proteger órganos. Gana quien complete su cuerpo sano.",
@@ -1345,8 +1283,7 @@ export const games: Game[] = [
     categories: ["Cartas", "Estrategia"],
     minPlayers: 2,
     maxPlayers: 4,
-    minDuration: 30,
-    maxDuration: 60,
+    averageDuration: 45, // antes min:30, max:60
     mode: "Competitivo",
     description: "Juego de cartas basado en el anime Naruto, donde los jugadores luchan usando personajes y técnicas ninja.",
     rules: "Construye tu mazo y derrota a tus oponentes usando cartas de ataque y defensa.",
@@ -1365,8 +1302,7 @@ export const games: Game[] = [
     categories: ["Cartas", "Bluff"],
     minPlayers: 3,
     maxPlayers: 5,
-    minDuration: 20,
-    maxDuration: 30,
+    averageDuration: 25, // antes min:20, max:30
     mode: "Competitivo",
     description: "Juego de cartas donde hacer trampa está permitido, pero cuidado con el vigilante.",
     rules: "Deshazte de tus cartas haciendo trampa sin que te atrapen.",
@@ -1385,8 +1321,7 @@ export const games: Game[] = [
     categories: ["Cartas", "Party"],
     minPlayers: 2,
     maxPlayers: 5,
-    minDuration: 15,
-    maxDuration: 15,
+    averageDuration: 15, // antes min:15, max:15
     mode: "Competitivo",
     description: "Juego de cartas rápido y divertido donde debes evitar explotar con un gatito explosivo.",
     rules: "Roba cartas y usa acciones para evitar explotar. El último en pie gana.",
@@ -1405,8 +1340,7 @@ export const games: Game[] = [
     categories: ["Cartas", "Party"],
     minPlayers: 2,
     maxPlayers: 5,
-    minDuration: 15,
-    maxDuration: 15,
+    averageDuration: 15, // antes min:15, max:15
     mode: "Competitivo",
     description: "Versión especial de Exploding Kittens con cartas y poderes de 'El Bien' y 'El Mal'.",
     rules: "Juega como en Exploding Kittens, pero usando cartas especiales de cada bando.",
@@ -1425,8 +1359,7 @@ export const games: Game[] = [
     categories: ["Estrategia", "Subastas", "Arte"],
     minPlayers: 2,
     maxPlayers: 4,
-    minDuration: 45,
-    maxDuration: 60,
+    averageDuration: 52.5, // antes min:45, max:60
     mode: "Competitivo",
     description: "En Art Society, los jugadores compiten como coleccionistas de arte, pujando por obras y decorando sus mansiones para impresionar a la alta sociedad.",
     rules: "Puja por obras de arte, colócalas en tu mansión y equilibra el valor y el espacio disponible. Gana quien logre la colección más prestigiosa.",
@@ -1445,8 +1378,7 @@ export const games: Game[] = [
     categories: ["Party", "Memoria", "Bluff"],
     minPlayers: 3,
     maxPlayers: 8,
-    minDuration: 15,
-    maxDuration: 20,
+    averageDuration: 17.5, // antes min:15, max:20
     mode: "Competitivo",
     description: "Versión Incógnito del popular juego de memoria y engaño, donde los jugadores deben recordar y pasar objetos sin revelar su identidad.",
     rules: "Pasa cartas boca abajo y declara el objeto. Los demás pueden dudar o aceptar. Gana quien logre engañar y recordar mejor.",
@@ -1465,8 +1397,7 @@ export const games: Game[] = [
     categories: ["Familiar", "Puzzle", "Colocación de losetas"],
     minPlayers: 2,
     maxPlayers: 4,
-    minDuration: 20,
-    maxDuration: 30,
+    averageDuration: 25, // antes min:20, max:30
     mode: "Competitivo",
     description: "Juego familiar donde los jugadores deben colocar losetas para crear hábitats y atraer pandas, compitiendo por completar objetivos.",
     rules: "Coloca losetas para formar hábitats, coloca pandas y cumple objetivos secretos. Gana quien obtenga más puntos.",
@@ -1485,8 +1416,7 @@ export const games: Game[] = [
     categories: ["Estrategia", "Recursos", "Interacción"],
     minPlayers: 3,
     maxPlayers: 4,
-    minDuration: 60,
-    maxDuration: 120,
+    averageDuration: 90, // antes min:60, max:120
     mode: "Competitivo",
     description: "Juego de estrategia donde los jugadores colonizan una isla, construyendo caminos y asentamientos mientras gestionan recursos.",
     rules: "Recoge y gestiona recursos para construir caminos, asentamientos y ciudades. Gana quien obtenga más puntos de victoria.",
@@ -1505,8 +1435,7 @@ export const games: Game[] = [
     categories: ["Cartas", "Expansión", "Familiar"],
     minPlayers: 2,
     maxPlayers: 6,
-    minDuration: 20,
-    maxDuration: 20,
+    averageDuration: 20, // antes min:20, max:20
     mode: "Competitivo",
     description: "Expansión para el exitoso juego Virus! que añade nuevas cartas, efectos y mecánicas para mayor interacción y caos.",
     rules: "Se juega junto al juego base Virus! Añade cartas de mutación, nuevas medicinas y virus especiales. El objetivo sigue siendo completar un cuerpo sano.",
@@ -1525,8 +1454,7 @@ export const games: Game[] = [
     categories: ["Reflejos", "Familiar", "Party"],
     minPlayers: 2,
     maxPlayers: 8,
-    minDuration: 20,
-    maxDuration: 20,
+    averageDuration: 20, // antes min:20, max:20
     mode: "Competitivo",
     description: "Un juego de reflejos donde los jugadores deben ser los más rápidos en coger el objeto correcto según la carta revelada.",
     rules: "Revela una carta y toma el objeto que coincida en color y forma, o el que no aparece en la carta. Gana quien consiga más cartas.",
@@ -1545,8 +1473,7 @@ export const games: Game[] = [
     categories: ["Push Your Luck", "Familiar", "Aventura"],
     minPlayers: 2,
     maxPlayers: 6,
-    minDuration: 30,
-    maxDuration: 30,
+    averageDuration: 30, // antes min:30, max:30
     mode: "Competitivo",
     description: "Los jugadores son exploradores submarinos que comparten oxígeno mientras buscan tesoros en las profundidades, arriesgándose a quedarse sin aire.",
     rules: "Lanza dados para avanzar, recoge tesoros y regresa al submarino antes de que se acabe el oxígeno común. Gana quien obtenga más tesoros.",
@@ -1565,8 +1492,7 @@ export const games: Game[] = [
     categories: ["Bluff", "Deducción social", "Party"],
     minPlayers: 5,
     maxPlayers: 10,
-    minDuration: 45,
-    maxDuration: 45,
+    averageDuration: 45, // antes min:45, max:45
     mode: "Equipos",
     description: "Juego de deducción social donde los jugadores son liberales o fascistas, y deben descubrir (o proteger) al jugador que es Hitler.",
     rules: "Los jugadores eligen gobiernos y aprueban leyes. Los liberales ganan si aprueban 5 leyes liberales o eliminan a Hitler; los fascistas ganan si aprueban 6 leyes fascistas o Hitler es elegido canciller en el momento adecuado.",
@@ -1585,8 +1511,7 @@ export const games: Game[] = [
     categories: ["Deducción social", "Bluff", "Cooperativo"],
     minPlayers: 4,
     maxPlayers: 8,
-    minDuration: 30,
-    maxDuration: 60,
+    averageDuration: 45, // antes min:30, max:60
     mode: "Equipos",
     description: "Juego de roles ocultos en el que los jugadores son tripulantes de un barco, pero algunos son traidores que intentan sabotear la misión.",
     rules: "Completa misiones cooperativas mientras intentas descubrir a los traidores. Los traidores ganan si sabotean con éxito, los leales si completan la misión.",
@@ -1605,8 +1530,7 @@ export const games: Game[] = [
     categories: ["Cartas", "Escalera", "Familiar"],
     minPlayers: 2,
     maxPlayers: 5,
-    minDuration: 20,
-    maxDuration: 20,
+    averageDuration: 20, // antes min:20, max:20
     mode: "Competitivo",
     description: "Juego de cartas en el que los jugadores intentan jugar combinaciones más fuertes que las de sus oponentes, con la particularidad de que las cartas no se pueden reorganizar en la mano.",
     rules: "Juega combinaciones o toma cartas de la mesa. Gana quien obtenga más puntos al final de la partida.",
@@ -1625,8 +1549,7 @@ export const games: Game[] = [
     categories: ["Cartas", "Matemáticas", "Familiar"],
     minPlayers: 2,
     maxPlayers: 6,
-    minDuration: 20,
-    maxDuration: 20,
+    averageDuration: 20, // antes min:20, max:20
     mode: "Competitivo",
     description: "Juego de cartas donde los jugadores deben sumar exactamente once con las cartas jugadas para ganar cartas del centro.",
     rules: "Juega cartas de tu mano para sumar once y recoge cartas del centro. Gana quien tenga más cartas al final.",

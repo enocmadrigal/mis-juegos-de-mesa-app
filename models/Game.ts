@@ -6,8 +6,7 @@ export interface Game {
   categories: string[];
   minPlayers: number;
   maxPlayers: number;
-  minDuration: number; // minutos
-  maxDuration: number; // minutos
+  averageDuration: number; // minutos
   mode: string;
   description: string;
   rules: string;

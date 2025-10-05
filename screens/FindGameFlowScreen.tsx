@@ -133,7 +133,7 @@ export default function FindGameFlowScreen({
   if (step === "categories" && filterCategories === true) {
     return (
       <View style={styles.container}>
-        <Text style={styles.question}>Selecciona las categorías</Text>
+        <Text style={styles.question}>Categorías</Text>
         <ScrollView contentContainerStyle={styles.categoriesContainer}>
           {allCategories.map(cat => (
             <TouchableOpacity

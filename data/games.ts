@@ -95,6 +95,8 @@ import traitorsAboardImg from '../assets/img/traitorsAboard/traitorsAboard1.jpg'
 import scoutImg from '../assets/img/scout/scout1.jpg';
 import magicNumberElevenImg from '../assets/img/magicNumberEleven/magicNumberEleven1.jpg';
 import catanMercaderesYBarbarosImg1 from '../assets/img/catanMercaderesYBarbaros/catanMercaderesYBarbaros1.jpg';
+import tacoGatoCabraQuesoPizza1 from '../assets/img/tacoGatoCabraQuesoPizza/tacoGatoCabraQuesoPizza1.jpg';
+
 
 export const games: Game[] = [
   {
@@ -1558,6 +1560,24 @@ export const games: Game[] = [
     secondaryImages: [],
     rankValue: 7,
     acquisitionDate: "29/09/2025",
+    aproxDate: false
+  },{
+    id: 78,
+    purchaseOrder: 78,
+    name: "Taco, Gato, Cabra, Queso, Pizza",
+    publisher: "Blue Orange",
+    categories: ["Cartas"],
+    minPlayers: 2,
+    maxPlayers: 8,
+    averageDuration: 20, // antes min:20, max:20
+    mode: "Competitivo",
+    description: "Es un juego de cartas de reacción rápida donde el objetivo es ser el primero en quedarse sin cartas. Los jugadores descartan cartas por turnos diciendo en voz alta y en secuencia taco, gato, cabra, queso, pizza. Cuando la palabra que se dice coincide con la imagen de la carta que se está jugando, todos deben poner la mano sobre la pila central, y el último en hacerlo se lleva todas las cartas. ",
+    rules: "Es un juego de cartas de reacción rápida donde el objetivo es ser el primero en quedarse sin cartas. Los jugadores descartan cartas por turnos diciendo en voz alta y en secuencia taco, gato, cabra, queso, pizza. Cuando la palabra que se dice coincide con la imagen de la carta que se está jugando, todos deben poner la mano sobre la pila central, y el último en hacerlo se lleva todas las cartas. ",
+    videoUrl: "",
+    mainImage: tacoGatoCabraQuesoPizza1,
+    secondaryImages: [],
+    rankValue: 87,
+    acquisitionDate: "04/10/2025",
     aproxDate: false
   },
 ];

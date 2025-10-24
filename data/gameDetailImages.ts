@@ -189,6 +189,15 @@ import catanMercaderesYBarbaros2 from "../assets/img/catanMercaderesYBarbaros/ca
 import catanMercaderesYBarbaros3 from "../assets/img/catanMercaderesYBarbaros/catanMercaderesYBarbaros3.jpg";
 import catanMercaderesYBarbaros4 from "../assets/img/catanMercaderesYBarbaros/catanMercaderesYBarbaros4.jpg";
 
+//Taco, Gato, Cabra, Queso, Pizza
+import tacoGatoCabraQuesoPizza1 from '../assets/img/tacoGatoCabraQuesoPizza/tacoGatoCabraQuesoPizza1.jpg';
+import tacoGatoCabraQuesoPizza2 from '../assets/img/tacoGatoCabraQuesoPizza/tacoGatoCabraQuesoPizza2.jpg';
+import tacoGatoCabraQuesoPizza3 from '../assets/img/tacoGatoCabraQuesoPizza/tacoGatoCabraQuesoPizza3.jpg';
+import tacoGatoCabraQuesoPizza4 from '../assets/img/tacoGatoCabraQuesoPizza/tacoGatoCabraQuesoPizza4.jpg';
+import tacoGatoCabraQuesoPizza5 from '../assets/img/tacoGatoCabraQuesoPizza/tacoGatoCabraQuesoPizza5.jpg';
+
+
+
 export const gameDetailImages: { [key: number]: any[] } = {
   1: [img_ajedrez_1, img_ajedrez_2, img_ajedrez_3, img_ajedrez_4],
   2: [img_turistaDragonBall_1, img_turistaDragonBall_2],
@@ -267,4 +276,6 @@ export const gameDetailImages: { [key: number]: any[] } = {
   75: [traitorsAboard1, traitorsAboard2, traitorsAboard3, traitorsAboard4, traitorsAboard5, traitorsAboard6, traitorsAboard7],
   76: [scout1, scout2, scout3, scout4, scout5, scout6],
   77: [magicNumberEleven1, magicNumberEleven2, magicNumberEleven3, magicNumberEleven4, magicNumberEleven5, magicNumberEleven6, magicNumberEleven7, magicNumberEleven8],
+  78: [tacoGatoCabraQuesoPizza1, tacoGatoCabraQuesoPizza2, tacoGatoCabraQuesoPizza3, tacoGatoCabraQuesoPizza4, tacoGatoCabraQuesoPizza5],
+
 };

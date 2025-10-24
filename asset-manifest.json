@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.8bf2d8ee.js",
+    "main.js": "/static/js/main.37e93580.js",
     "static/js/856.75379f01.js": "/static/js/856.75379f01.js",
     "static/media/sharingan.png": "/static/media/sharingan.79816b622865f8c8b1c2.png",
     "static/media/monopolyGuy.png": "/static/media/monopolyGuy.75faa14413c2bdee2db5.png",
@@ -111,6 +111,7 @@
     "static/media/virus.jpg": "/static/media/virus.f7a84142a899da2860c7.jpg",
     "static/media/phase10.jpg": "/static/media/phase10.4ad7fa03051ddab738cf.jpg",
     "static/media/clue1.jpg": "/static/media/clue1.3a9ddb240f9c26664b17.jpg",
+    "static/media/tacoGatoCabraQuesoPizza1.jpg": "/static/media/tacoGatoCabraQuesoPizza1.f941b17a8fe6bdd68dd2.jpg",
     "static/media/scout4.jpg": "/static/media/scout4.f8c62dfd30f0ecb7f707.jpg",
     "static/media/narutoNinjaBattle2.jpg": "/static/media/narutoNinjaBattle2.c194c46188dbdf85acfb.jpg",
     "static/media/magicNumberEleven1.jpg": "/static/media/magicNumberEleven1.54de29db289d37f5a5ef.jpg",
@@ -132,10 +133,12 @@
     "static/media/barajaPokerPlateada1.jpg": "/static/media/barajaPokerPlateada1.6a6e36ff8beb72f0fc15.jpg",
     "static/media/thatsNotAHat1.jpg": "/static/media/thatsNotAHat1.936ccec0ce9e5501efc9.jpg",
     "static/media/ajedrez.jpg": "/static/media/ajedrez.8b5e0f39f7718605562c.jpg",
+    "static/media/tacoGatoCabraQuesoPizza3.jpg": "/static/media/tacoGatoCabraQuesoPizza3.9084eba3ceeb6227844e.jpg",
     "static/media/okBoomer.jpg": "/static/media/okBoomer.c53d10d53eff9fe28380.jpg",
     "static/media/historyChannel1.jpg": "/static/media/historyChannel1.463e7d3c836bf65fa9ca.jpg",
     "static/media/catanMercaderesYBarbaros4.jpg": "/static/media/catanMercaderesYBarbaros4.2d4514cf16809b8de9d5.jpg",
     "static/media/magicNumberEleven5.jpg": "/static/media/magicNumberEleven5.d3b295cfeb116b451ba8.jpg",
+    "static/media/tacoGatoCabraQuesoPizza2.jpg": "/static/media/tacoGatoCabraQuesoPizza2.fcc8f5fc4769c8b73646.jpg",
     "static/media/amongUs.jpg": "/static/media/amongUs.4da92e2b3459022d8930.jpg",
     "static/media/traitorsAboard4.jpg": "/static/media/traitorsAboard4.db33fece3f460cf6f2c8.jpg",
     "static/media/deepSeaAdventure5.jpg": "/static/media/deepSeaAdventure5.61701cb9a420ff5d9047.jpg",
@@ -167,8 +170,10 @@
     "static/media/deepSeaAdventure4.jpg": "/static/media/deepSeaAdventure4.e033f8696e574155d6f0.jpg",
     "static/media/alChile2.jpg": "/static/media/alChile2.0a2dee6c48ca7aa9927c.jpg",
     "static/media/deepSeaAdventure2.jpg": "/static/media/deepSeaAdventure2.9f2d01efd3adb723e0d0.jpg",
+    "static/media/tacoGatoCabraQuesoPizza4.jpg": "/static/media/tacoGatoCabraQuesoPizza4.61abff835fe30c9ebf7e.jpg",
     "static/media/thatsNotAHatIncognito4.jpg": "/static/media/thatsNotAHatIncognito4.b3645e3a01f1e34cb62e.jpg",
     "static/media/alChile3.jpg": "/static/media/alChile3.880ce235083455bbd973.jpg",
+    "static/media/tacoGatoCabraQuesoPizza5.jpg": "/static/media/tacoGatoCabraQuesoPizza5.02a48df479c91f35db9f.jpg",
     "static/media/barajaEspañola1.jpg": "/static/media/barajaEspañola1.e482aa5574505427502b.jpg",
     "static/media/alChile1.jpg": "/static/media/alChile1.4859e5965c64fbe2af95.jpg",
     "static/media/pandaPanda1.jpg": "/static/media/pandaPanda1.c974f8fcaacd57e299b8.jpg",
@@ -180,11 +185,11 @@
     "favicon-16.png": "/favicon-16.png",
     "manifest.json": "/manifest.json",
     "serve.json": "/serve.json",
-    "main.8bf2d8ee.js.map": "/static/js/main.8bf2d8ee.js.map",
+    "main.37e93580.js.map": "/static/js/main.37e93580.js.map",
     "856.75379f01.js.map": "/static/js/856.75379f01.js.map"
   },
   "entrypoints": [
     "static/js/856.75379f01.js",
-    "static/js/main.8bf2d8ee.js"
+    "static/js/main.37e93580.js"
   ]
 }

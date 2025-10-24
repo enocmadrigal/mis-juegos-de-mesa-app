@@ -196,6 +196,27 @@ import tacoGatoCabraQuesoPizza3 from '../assets/img/tacoGatoCabraQuesoPizza/taco
 import tacoGatoCabraQuesoPizza4 from '../assets/img/tacoGatoCabraQuesoPizza/tacoGatoCabraQuesoPizza4.jpg';
 import tacoGatoCabraQuesoPizza5 from '../assets/img/tacoGatoCabraQuesoPizza/tacoGatoCabraQuesoPizza5.jpg';
 
+//Sea Salt & Paper
+import seaSaltAndPaper1 from '../assets/img/seaSaltAndPaper/seaSaltAndPaper1.jpg';
+import seaSaltAndPaper2 from '../assets/img/seaSaltAndPaper/seaSaltAndPaper2.jpg';
+import seaSaltAndPaper3 from '../assets/img/seaSaltAndPaper/seaSaltAndPaper3.jpg';
+import seaSaltAndPaper4 from '../assets/img/seaSaltAndPaper/seaSaltAndPaper4.jpg';
+import seaSaltAndPaper5 from '../assets/img/seaSaltAndPaper/seaSaltAndPaper5.jpg';
+
+//A fake artist goes to New York
+import aFakeArtistGoesToNewYork1 from '../assets/img/aFakeArtistGoesToNewYork/aFakeArtistGoesToNewYork1.jpg';
+import aFakeArtistGoesToNewYork2 from '../assets/img/aFakeArtistGoesToNewYork/aFakeArtistGoesToNewYork2.jpg';
+import aFakeArtistGoesToNewYork3 from '../assets/img/aFakeArtistGoesToNewYork/aFakeArtistGoesToNewYork3.jpg';
+import aFakeArtistGoesToNewYork4 from '../assets/img/aFakeArtistGoesToNewYork/aFakeArtistGoesToNewYork4.jpg';
+import aFakeArtistGoesToNewYork5 from '../assets/img/aFakeArtistGoesToNewYork/aFakeArtistGoesToNewYork5.jpg';
+
+//Startups
+import startups1 from '../assets/img/startups/startups1.jpg';
+import startups2 from '../assets/img/startups/startups2.jpg';
+import startups3 from '../assets/img/startups/startups3.jpg';
+import startups4 from '../assets/img/startups/startups4.jpg';
+import startups5 from '../assets/img/startups/startups5.jpg';
+
 
 
 export const gameDetailImages: { [key: number]: any[] } = {
@@ -277,5 +298,7 @@ export const gameDetailImages: { [key: number]: any[] } = {
   76: [scout1, scout2, scout3, scout4, scout5, scout6],
   77: [magicNumberEleven1, magicNumberEleven2, magicNumberEleven3, magicNumberEleven4, magicNumberEleven5, magicNumberEleven6, magicNumberEleven7, magicNumberEleven8],
   78: [tacoGatoCabraQuesoPizza1, tacoGatoCabraQuesoPizza2, tacoGatoCabraQuesoPizza3, tacoGatoCabraQuesoPizza4, tacoGatoCabraQuesoPizza5],
-
+  79: [seaSaltAndPaper1,seaSaltAndPaper2,seaSaltAndPaper3,seaSaltAndPaper4,seaSaltAndPaper5],
+  80: [aFakeArtistGoesToNewYork1,aFakeArtistGoesToNewYork2,aFakeArtistGoesToNewYork3,aFakeArtistGoesToNewYork4,aFakeArtistGoesToNewYork5],
+  81: [startups1,startups2,startups3,startups4,startups5],
 };

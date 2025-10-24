@@ -96,6 +96,10 @@ import scoutImg from '../assets/img/scout/scout1.jpg';
 import magicNumberElevenImg from '../assets/img/magicNumberEleven/magicNumberEleven1.jpg';
 import catanMercaderesYBarbarosImg1 from '../assets/img/catanMercaderesYBarbaros/catanMercaderesYBarbaros1.jpg';
 import tacoGatoCabraQuesoPizza1 from '../assets/img/tacoGatoCabraQuesoPizza/tacoGatoCabraQuesoPizza1.jpg';
+import seaSaltAndPaper1 from '../assets/img/seaSaltAndPaper/seaSaltAndPaper1.jpg';
+import aFakeArtistGoesToNewYork1 from '../assets/img/aFakeArtistGoesToNewYork/aFakeArtistGoesToNewYork1.jpg';
+import startups1 from '../assets/img/startups/startups1.jpg';
+
 
 
 export const games: Game[] = [
@@ -1569,7 +1573,7 @@ export const games: Game[] = [
     categories: ["Cartas"],
     minPlayers: 2,
     maxPlayers: 8,
-    averageDuration: 20, // antes min:20, max:20
+    averageDuration: 20, 
     mode: "Competitivo",
     description: "Es un juego de cartas de reacción rápida donde el objetivo es ser el primero en quedarse sin cartas. Los jugadores descartan cartas por turnos diciendo en voz alta y en secuencia taco, gato, cabra, queso, pizza. Cuando la palabra que se dice coincide con la imagen de la carta que se está jugando, todos deben poner la mano sobre la pila central, y el último en hacerlo se lleva todas las cartas. ",
     rules: "Es un juego de cartas de reacción rápida donde el objetivo es ser el primero en quedarse sin cartas. Los jugadores descartan cartas por turnos diciendo en voz alta y en secuencia taco, gato, cabra, queso, pizza. Cuando la palabra que se dice coincide con la imagen de la carta que se está jugando, todos deben poner la mano sobre la pila central, y el último en hacerlo se lleva todas las cartas. ",
@@ -1579,5 +1583,58 @@ export const games: Game[] = [
     rankValue: 87,
     acquisitionDate: "04/10/2025",
     aproxDate: false
+  },{
+    id: 79,
+    purchaseOrder: 79,
+    name: "Sea Salt & Paper",
+    publisher: "Bombyx",
+    categories: ["Cartas"],
+    minPlayers: 2,
+    maxPlayers: 4,
+    averageDuration: 35, 
+    mode: "Competitivo",
+    description: "Unos papeles delicadamente doblados y todo un universo marino cobra vida. Crea tu propio océano. Reúne tu mano, coloca las cartas según su efecto y decide si quieres terminar la ronda. Pero tienes que elegir: detener la ronda inmediatamente o dar a los demás un turno extra para intentar ampliar la diferencia. ¿Vale la pena correr el riesgo?",
+    rules: "Durante tu turno, preparas tu mano, quizás colocas cartas según su efecto y decides si quieres terminar la ronda. Pero ¿crees que eres quien tiene más puntos? Tendrás que elegir: ¿detener la ronda inmediatamente o dar a los demás un turno extra para intentar ampliar la diferencia? ¿Vale la pena arriesgarse? La partida termina al alcanzar 30/35/40 puntos (4/3/2 jugadores). La emoción de terminar la ronda pillando a tus oponentes desprevenidos. El placer de jugar tus cartas de efecto y hacer combos. Es un juego de cartas coleccionables, como el Rummy. El origami creado especialmente para el juego son solo las ilustraciones de las cartas",
+    videoUrl: "",
+    mainImage: seaSaltAndPaper1,
+    secondaryImages: [],
+    rankValue: 90,
+    acquisitionDate: "03/11/2025",
+    aproxDate: true
+  },{
+    id: 80,
+    purchaseOrder: 80,
+    name: "A fake artist goes to New York",
+    publisher: "Oink Games",
+    categories: ["Party", "Roles ocultos"],
+    minPlayers: 5,
+    maxPlayers: 10,
+    averageDuration: 20, 
+    mode: "Competitivo",
+    description: "Todos dibujan un mismo dibujo... y ni siquiera saben qué dibujan. Hay un artista falso escondido entre los artistas verdaderos. ¿Puedes averiguar quién es? El artista falso debe tener cuidado de no ser identificado y los artistas verdaderos deben tener cuidado de no ponérselo demasiado fácil al impostor.",    rules: "Los jugadores se turnan para ser el Maestro de Preguntas, cuya función es establecer una categoría, escribir una palabra dentro de esa categoría en tarjetas de borrado en seco y repartirlas a otros jugadores como artistas. Al mismo tiempo, un jugador solo tendrá una X escrita en su tarjeta: ¡es el artista falso! Los jugadores darán dos vueltas a la mesa, dibujando cada uno un trazo contiguo en un papel para dibujar la palabra establecida por el Maestro de Preguntas. Luego, deberán adivinar quién es el artista falso. Si no se descubre al artista falso, tanto él como el Maestro de Preguntas ganan puntos; si se descubre al artista falso y no logra adivinar la palabra, ambos ganan puntos.",
+    videoUrl: "",
+    mainImage: aFakeArtistGoesToNewYork1,
+    secondaryImages: [],
+    rankValue: 88,
+    acquisitionDate: "03/11/2025",
+    aproxDate: true
+  },{
+    id: 81,
+    purchaseOrder: 81,
+    name: "Startups",
+    publisher: "Oink Games",
+    categories: ["Cartas"],
+    minPlayers: 3,
+    maxPlayers: 7,
+    averageDuration: 20, // antes min:20, max:20
+    mode: "Competitivo",
+    description: "¡Hay seis empresas que cambiarán el mundo tal como lo conocemos! Tú puedes ser parte de su éxito y ser un inversionista. ¡Intenta hacerte rico tomando las decisiones correctas! Solo el mayor inversor puede obtener ganancias de cada empresa. Debes intentar predecir los próximos pasos de tus rivales y usar tu capital y tus tres cartas ocultas para vencerlos y convertirte en el mayor accionista. En este juego necesitas suerte, pero también debes pensar bien tus movimientos y analizar a tus rivales. Puedes jugar a este juego de cartas con pocos jugadores, ¡pero también con muchos!",
+    rules: "¡Hay seis empresas que cambiarán el mundo tal como lo conocemos! Tú puedes ser parte de su éxito y ser un inversionista. ¡Intenta hacerte rico tomando las decisiones correctas! Solo el mayor inversor puede obtener ganancias de cada empresa. Debes intentar predecir los próximos pasos de tus rivales y usar tu capital y tus tres cartas ocultas para vencerlos y convertirte en el mayor accionista. En este juego necesitas suerte, pero también debes pensar bien tus movimientos y analizar a tus rivales. Puedes jugar a este juego de cartas con pocos jugadores, ¡pero también con muchos!",
+    videoUrl: "",
+    mainImage: startups1,
+    secondaryImages: [],
+    rankValue: 87,
+    acquisitionDate: "03/11/2025",
+    aproxDate: true
   },
 ];

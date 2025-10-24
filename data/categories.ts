@@ -28,6 +28,7 @@ export const ALL_CATEGORIES = [
   "Reflejos",
   "Escalera",
   "Matemáticas",
+  "Roles ocultos",
   // ...agrega todas las que uses...
 ] as const;
 export type Category = typeof ALL_CATEGORIES[number];

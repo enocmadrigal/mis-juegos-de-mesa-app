@@ -1,4 +1,6 @@
 import type { Category } from "../data/categories";
+import type { Mode } from "../data/mode";
+
 
 export interface Game {
   id: number;
@@ -9,7 +11,7 @@ export interface Game {
   minPlayers: number;
   maxPlayers: number;
   averageDuration: number; // minutos
-  mode: string;
+  mode: Mode[];
   description: string;
   rules: string;
   videoUrl: string;
@@ -18,4 +20,5 @@ export interface Game {
   rankValue: number;
   acquisitionDate: string;
   aproxDate: boolean;
+  bgg: number;
 }

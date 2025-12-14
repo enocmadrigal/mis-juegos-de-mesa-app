@@ -74,7 +74,7 @@ export default function AllOurGamesScreen({
         >
             <FlatList
                 data={getSortedGames()}
-                keyExtractor={(item) => item.id.toString()}
+                keyExtractor={(item) => item?.id?.toString?.() ?? Math.random().toString()}
                 contentContainerStyle={{ paddingBottom: 20 }}
                 renderItem={({item}) => (
                     <Pressable onPress={() => setSelectedGame(item)}>

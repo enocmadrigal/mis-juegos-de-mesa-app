@@ -1284,7 +1284,7 @@ export const games: Game[] = [
   {
     id: 57,
     purchaseOrder: 57,
-    name: "Cartas Pokémon",
+    name: "Cartas Pokemon",
     publisher: "Pokemon: Trading Card Game",
     categories: ["Cartas", "Estrategia", "Clásico"],
     minPlayers: 2,

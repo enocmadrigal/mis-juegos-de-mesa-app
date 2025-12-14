@@ -99,7 +99,7 @@ import tacoGatoCabraQuesoPizza1 from '../assets/img/tacoGatoCabraQuesoPizza/taco
 import seaSaltAndPaper1 from '../assets/img/seaSaltAndPaper/seaSaltAndPaper1.jpg';
 import aFakeArtistGoesToNewYork1 from '../assets/img/aFakeArtistGoesToNewYork/aFakeArtistGoesToNewYork1.jpg';
 import startups1 from '../assets/img/startups/startups1.jpg';
-import monopolyEdicionPokemon1 from '../assets/img/monopolyEdicionPokemon/monopolyEdicionPokemon1.jpg';
+import monopolyEdicionPokemon1 from '../assets/img/monopolyPokemon/monopolyEdicionPokemon1.jpg';
 import pokemonBattleAcademy1 from '../assets/img/pokemonBattleAcademy/pokemonBattleAcademy1.jpg';
 import tiroAlBlancoTiroLibreSoccer1 from '../assets/img/tiroAlBlancoTiroLibreSoccer/tiroAlBlancoTiroLibreSoccer1.jpg';
 

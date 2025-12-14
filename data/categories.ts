@@ -28,7 +28,10 @@ export const ALL_CATEGORIES = [
   "Edición tematica",
   "Tablero",
   "Habilidad motriz",
-  "Puzzle"
+  "Puzzle",
+  "Peliculas",
+  "Dibujo",
+  "TCG"
   // ...agrega todas las que uses...
 ] as const;
 export type Category = typeof ALL_CATEGORIES[number];

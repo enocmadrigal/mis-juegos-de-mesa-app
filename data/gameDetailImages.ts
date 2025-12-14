@@ -196,6 +196,9 @@ import tacoGatoCabraQuesoPizza3 from '../assets/img/tacoGatoCabraQuesoPizza/taco
 import tacoGatoCabraQuesoPizza4 from '../assets/img/tacoGatoCabraQuesoPizza/tacoGatoCabraQuesoPizza4.jpg';
 import tacoGatoCabraQuesoPizza5 from '../assets/img/tacoGatoCabraQuesoPizza/tacoGatoCabraQuesoPizza5.jpg';
 
+//Tiro al blanco tiro libre soccer
+import tiroAlBlancoTiroLibreSoccer1 from '../assets/img/tiroAlBlancoTiroLibreSoccer/tiroAlBlancoTiroLibreSoccer1.jpg';
+
 //Sea Salt & Paper
 import seaSaltAndPaper1 from '../assets/img/seaSaltAndPaper/seaSaltAndPaper1.jpg';
 import seaSaltAndPaper2 from '../assets/img/seaSaltAndPaper/seaSaltAndPaper2.jpg';
@@ -216,6 +219,24 @@ import startups2 from '../assets/img/startups/startups2.jpg';
 import startups3 from '../assets/img/startups/startups3.jpg';
 import startups4 from '../assets/img/startups/startups4.jpg';
 import startups5 from '../assets/img/startups/startups5.jpg';
+
+//pokemon battle academy
+import pokemonBattleAcademy1 from '../assets/img/pokemonBattleAcademy/pokemonBattleAcademy1.jpg';
+import pokemonBattleAcademy2 from '../assets/img/pokemonBattleAcademy/pokemonBattleAcademy2.jpg';
+import pokemonBattleAcademy3 from '../assets/img/pokemonBattleAcademy/pokemonBattleAcademy3.jpg';
+import pokemonBattleAcademy4 from '../assets/img/pokemonBattleAcademy/pokemonBattleAcademy4.jpg';
+import pokemonBattleAcademy5 from '../assets/img/pokemonBattleAcademy/pokemonBattleAcademy5.jpg';
+import pokemonBattleAcademy6 from '../assets/img/pokemonBattleAcademy/pokemonBattleAcademy6.jpg';
+import pokemonBattleAcademy7 from '../assets/img/pokemonBattleAcademy/pokemonBattleAcademy7.jpg';
+
+//Monopoly pokemon
+import monopolyEdicionPokemon1 from '../assets/img/monopolyPokemon/monopolyEdicionPokemon1.jpg';
+import monopolyEdicionPokemon2 from '../assets/img/monopolyPokemon/monopolyEdicionPokemon2.jpg';
+import monopolyEdicionPokemon3 from '../assets/img/monopolyPokemon/monopolyEdicionPokemon3.jpg';
+import monopolyEdicionPokemon4 from '../assets/img/monopolyPokemon/monopolyEdicionPokemon4.jpg';
+import monopolyEdicionPokemon5 from '../assets/img/monopolyPokemon/monopolyEdicionPokemon5.jpg';
+import monopolyEdicionPokemon6 from '../assets/img/monopolyPokemon/monopolyEdicionPokemon6.jpg';
+import monopolyEdicionPokemon7 from '../assets/img/monopolyPokemon/monopolyEdicionPokemon7.jpg';
 
 
 
@@ -298,7 +319,10 @@ export const gameDetailImages: { [key: number]: any[] } = {
   76: [scout1, scout2, scout3, scout4, scout5, scout6],
   77: [magicNumberEleven1, magicNumberEleven2, magicNumberEleven3, magicNumberEleven4, magicNumberEleven5, magicNumberEleven6, magicNumberEleven7, magicNumberEleven8],
   78: [tacoGatoCabraQuesoPizza1, tacoGatoCabraQuesoPizza2, tacoGatoCabraQuesoPizza3, tacoGatoCabraQuesoPizza4, tacoGatoCabraQuesoPizza5],
-  79: [seaSaltAndPaper1,seaSaltAndPaper2,seaSaltAndPaper3,seaSaltAndPaper4,seaSaltAndPaper5],
-  80: [aFakeArtistGoesToNewYork1,aFakeArtistGoesToNewYork2,aFakeArtistGoesToNewYork3,aFakeArtistGoesToNewYork4,aFakeArtistGoesToNewYork5],
-  81: [startups1,startups2,startups3,startups4,startups5],
+  79: [tiroAlBlancoTiroLibreSoccer1],
+  80: [seaSaltAndPaper1,seaSaltAndPaper2,seaSaltAndPaper3,seaSaltAndPaper4,seaSaltAndPaper5],
+  81: [aFakeArtistGoesToNewYork1,aFakeArtistGoesToNewYork2,aFakeArtistGoesToNewYork3,aFakeArtistGoesToNewYork4,aFakeArtistGoesToNewYork5],
+  82: [startups1,startups2,startups3,startups4,startups5],
+  83: [pokemonBattleAcademy1, pokemonBattleAcademy2, pokemonBattleAcademy3, pokemonBattleAcademy4, pokemonBattleAcademy5, pokemonBattleAcademy6, pokemonBattleAcademy7],
+  84: [monopolyEdicionPokemon1, monopolyEdicionPokemon2, monopolyEdicionPokemon3, monopolyEdicionPokemon4, monopolyEdicionPokemon5, monopolyEdicionPokemon6, monopolyEdicionPokemon7],
 };

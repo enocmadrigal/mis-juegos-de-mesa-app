@@ -21,4 +21,5 @@ export interface Game {
   acquisitionDate: string;
   aproxDate: boolean;
   bgg: number;
+  complexity: string;
 }

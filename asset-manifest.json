@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.16898cc4.js",
+    "main.js": "/static/js/main.8059d190.js",
     "static/js/856.75379f01.js": "/static/js/856.75379f01.js",
     "static/media/sharingan.png": "/static/media/sharingan.79816b622865f8c8b1c2.png",
     "static/media/monopolyGuy.png": "/static/media/monopolyGuy.75faa14413c2bdee2db5.png",
@@ -215,11 +215,11 @@
     "favicon-16.png": "/favicon-16.png",
     "manifest.json": "/manifest.json",
     "serve.json": "/serve.json",
-    "main.16898cc4.js.map": "/static/js/main.16898cc4.js.map",
+    "main.8059d190.js.map": "/static/js/main.8059d190.js.map",
     "856.75379f01.js.map": "/static/js/856.75379f01.js.map"
   },
   "entrypoints": [
     "static/js/856.75379f01.js",
-    "static/js/main.16898cc4.js"
+    "static/js/main.8059d190.js"
   ]
 }

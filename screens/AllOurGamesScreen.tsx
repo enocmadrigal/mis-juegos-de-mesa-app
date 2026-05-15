@@ -1,10 +1,23 @@
+import { useEffect } from 'react';
+    // Log para detectar elementos undefined/null en el arreglo de juegos
+    useEffect(() => {
+        if (Array.isArray(games)) {
+            const invalidIndexes = games
+                .map((item, idx) => (item == null ? idx : null))
+                .filter(idx => idx !== null);
+            if (invalidIndexes.length > 0) {
+                console.warn(`⚠️ Hay ${invalidIndexes.length} juegos undefined/null en las posiciones: [${invalidIndexes.join(', ')}]`);
+            } else {
+                console.log('✅ Todos los juegos están definidos correctamente.');
+            }
+        }
+    }, [games]);
 import { TextInput, FlatList, View, Text, StyleSheet, Image } from "react-native";
 import Modal from "react-native-modal";
 import GoToHomeButton from "../componentes/GoToHomeButton";
 import { Pressable } from 'react-native';
 import { games } from "../data/games";
 import SortButton from "../componentes/SortButton";
-import { useState, useEffect } from "react";
 import SortScreen from "./SortScreen";
 import { globalStyles } from '../GlobalStyles';
 import DetailScreen from "./DetailScreen";
@@ -76,29 +89,32 @@ export default function AllOurGamesScreen({
                 data={getSortedGames()}
                 keyExtractor={(item) => item?.id?.toString?.() ?? Math.random().toString()}
                 contentContainerStyle={{ paddingBottom: 20 }}
-                renderItem={({item}) => (
-                    <Pressable onPress={() => setSelectedGame(item)}>
-                        <View style={styles.container}>
-                            {item.mainImage ? (
-                                <View style={styles.imageWrapper}>
-                                    <Image source={item.mainImage} resizeMode="contain" style={styles.image} />
-                                </View>
-                            ) : (
-                                <View style={[styles.imageWrapper, {backgroundColor: '#ccc'}]}>
-                                    <Text>Sin imagen</Text>
-                                </View>
-                            )}
-                            <Text
-                                style={[
-                                    styles.gameName,
-                                    item.name.length > 22 && { fontSize: 20 }
-                                ]}
-                            >
-                                {item.name}
-                            </Text>
-                        </View>
-                    </Pressable>
-                )}
+                renderItem={({item}) => {
+                    if (!item || typeof item !== 'object') return null;
+                    return (
+                        <Pressable onPress={() => setSelectedGame(item)}>
+                            <View style={styles.container}>
+                                {item.mainImage ? (
+                                    <View style={styles.imageWrapper}>
+                                        <Image source={item.mainImage} resizeMode="contain" style={styles.image} />
+                                    </View>
+                                ) : (
+                                    <View style={[styles.imageWrapper, {backgroundColor: '#ccc'}]}>
+                                        <Text>Sin imagen</Text>
+                                    </View>
+                                )}
+                                <Text
+                                    style={[
+                                        styles.gameName,
+                                        item.name && item.name.length > 22 && { fontSize: 20 }
+                                    ]}
+                                >
+                                    {item.name}
+                                </Text>
+                            </View>
+                        </Pressable>
+                    );
+                }}
             />
             <View style={globalStyles.buttonsContainer}>
                 <Pressable style={globalStyles.GoToHomeButtonContainer} onPress={handleGoToHomeButtonPress}>

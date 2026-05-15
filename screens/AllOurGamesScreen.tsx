@@ -1,18 +1,4 @@
-import { useEffect } from 'react';
-    // Log para detectar elementos undefined/null en el arreglo de juegos
-    useEffect(() => {
-        if (Array.isArray(games)) {
-            const invalidIndexes = games
-                .map((item, idx) => (item == null ? idx : null))
-                .filter(idx => idx !== null);
-            if (invalidIndexes.length > 0) {
-                console.warn(`⚠️ Hay ${invalidIndexes.length} juegos undefined/null en las posiciones: [${invalidIndexes.join(', ')}]`);
-            } else {
-                console.log('✅ Todos los juegos están definidos correctamente.');
-            }
-        }
-    }, [games])
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { TextInput, FlatList, View, Text, StyleSheet, Image } from "react-native";
 import Modal from "react-native-modal";
 import GoToHomeButton from "../componentes/GoToHomeButton";
@@ -33,6 +19,20 @@ export default function AllOurGamesScreen({
     filteredGames?: any[]
 }) {
 
+    // Log para detectar elementos undefined/null en el arreglo de juegos
+    useEffect(() => {
+        const data = filteredGames ?? games;
+        if (Array.isArray(data)) {
+            const invalidIndexes = data
+                .map((item, idx) => (item == null ? idx : null))
+                .filter(idx => idx !== null);
+            if (invalidIndexes.length > 0) {
+                console.warn(`⚠️ Hay ${invalidIndexes.length} juegos undefined/null en las posiciones: [${invalidIndexes.join(', ')}]`);
+            } else {
+                console.log('✅ Todos los juegos están definidos correctamente.');
+            }
+        }
+    }, [filteredGames]);
     const [isSortButtonVisible, setIsSortButtonVisible] = useState(false);
     const [sortFilter, setSortFilter] = useState<'recent' | 'oldest' | 'az' | 'za'>('recent');
     const [selectedGame, setSelectedGame] = useState<any | null>(null);

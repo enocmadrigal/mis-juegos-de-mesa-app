@@ -11,7 +11,8 @@ import { useEffect } from 'react';
                 console.log('✅ Todos los juegos están definidos correctamente.');
             }
         }
-    }, [games]);
+    }, [games])
+import { useState } from "react";
 import { TextInput, FlatList, View, Text, StyleSheet, Image } from "react-native";
 import Modal from "react-native-modal";
 import GoToHomeButton from "../componentes/GoToHomeButton";

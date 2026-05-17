@@ -271,8 +271,8 @@ import carcassonne4 from '../assets/img/carcassonne/carcassonne4.jpg';
 import carcassonne5 from '../assets/img/carcassonne/carcassonne5.jpg';
 
 //Hombres lobo de Castronegro
-import hombresLoboCastronegro1 from '../assets/img/hombresLoboCastronegro/hombresLobo1.jpg';
-import hombresLoboCastronegro2 from '../assets/img/hombresLoboCastronegro/hombresLobo2.jpg';
+import hombresLoboCastronegro1 from '../assets/img/hombresLoboCatronegro/hombresLobo1.jpg';
+import hombresLoboCastronegro2 from '../assets/img/hombresLoboCatronegro/hombresLobo2.jpg';
 
 //Flip 7
 import flip7_1 from '../assets/img/flip7/flip7-1.jpg';

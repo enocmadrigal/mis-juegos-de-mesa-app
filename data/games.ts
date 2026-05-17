@@ -2059,13 +2059,13 @@ export const games: Game[] = [
     purchaseOrder: 86,
     name: "UNO Teams!",
     publisher: "Mattel",
-    categories: ["Cartas", "Party", "Clásico","Equipos"],
+    categories: ["Cartas", "Party", "Clásico", "Equipos"],
     minPlayers: 4,
     maxPlayers: 8,
-    averageDuration: 15, 
+    averageDuration: 15,
     mode: ["Competitivo de equipos"],
     description: "UNO Teams es una nueva forma de jugar al clásico juego. Los jugadores siguen combinando color, número y símbolo, pero en lugar de jugar individualmente, forman equipos de dos y juegan juntos para ganar. Cartas y reglas especiales ayudan a los compañeros a colaborar, pero ambos jugadores deben deshacerse de todas las cartas de su mano para ganar. Y recuerda, cuando tú (¡o tu compañero!) solo quede una carta, ¡no olvides gritar «UNO»!",
-    rules: "Aquí tienes el string listo para tu JSON, basado en las instrucciones oficiales de Mattel:```"UNO Teams se juega igual que el UNO clásico: debes hacer coincidir cartas del mismo color, número o símbolo, pero en lugar de jugar individualmente, juegas en equipos de dos. Antes de empezar, cada jugador elige un compañero y juegan juntos durante todo el juego. Se reparten 7 cartas a cada jugador y, al inicio, todos pasan una carta de su mano a su compañero.\nEn tu turno, juga una carta que coincida en color, número o símbolo con la carta superior de la pila de descarte. Si no tienes ninguna que coincida, roba una carta de la pila. Las cartas especiales (Roba dos, Pierde el turno, Cambio de sentido) afectan al siguiente jugador. Los comodines permiten elegir el color con el que continúa el juego.\n🃏 Cartas exclusivas de equipos\nEl Comodín Juego en equipo salta el turno directamente a tu compañero; si él no puede jugar, tú robas 2 cartas como penalización. El Comodín El equipo roba cuatro hace que el siguiente jugador y su compañero roben 2 cartas cada uno. Algunas cartas tienen un símbolo de pasar: cuando las juegas, tú y tu compañero se intercambian una carta en secreto, sin dar pistas.\n⚠️ Salir y volver al juego\nSi te quedas sin cartas, tu compañero te pasa la mitad de las suyas y sigues jugando. Si estás fuera del juego y tu compañero roba cartas por cualquier razón, te pasa la mitad inmediatamente y vuelves a jugar.\n🏆 ¿Cómo se gana?\nGana el equipo cuyos dos integrantes se queden sin cartas primero. Recuerda: cuando a ti o a tu compañero les quede solo una carta, ¡cualquiera de los dos debe gritar UNO! Si nadie lo grita antes de que el siguiente jugador comience su turno, debes robar 2 cartas.\n💡 Consejo clave\nPueden hablar con su compañero durante el juego, pero está prohibido dar pistas sobre las cartas que tienen en la mano. La coordinación y la confianza son la clave para ganar."```",
+    rules: "Aquí tienes el string listo para tu JSON, basado en las instrucciones oficiales de Mattel: UNO Teams se juega igual que el UNO clásico: debes hacer coincidir cartas del mismo color, número o símbolo, pero en lugar de jugar individualmente, juegas en equipos de dos. Antes de empezar, cada jugador elige un compañero y juegan juntos durante todo el juego. Se reparten 7 cartas a cada jugador y, al inicio, todos pasan una carta de su mano a su compañero.\nEn tu turno, juga una carta que coincida en color, número o símbolo con la carta superior de la pila de descarte. Si no tienes ninguna que coincida, roba una carta de la pila. Las cartas especiales (Roba dos, Pierde el turno, Cambio de sentido) afectan al siguiente jugador. Los comodines permiten elegir el color con el que continúa el juego.\n🃏 Cartas exclusivas de equipos\nEl Comodín Juego en equipo salta el turno directamente a tu compañero; si él no puede jugar, tú robas 2 cartas como penalización. El Comodín El equipo roba cuatro hace que el siguiente jugador y su compañero roben 2 cartas cada uno. Algunas cartas tienen un símbolo de pasar: cuando las juegas, tú y tu compañero se intercambian una carta en secreto, sin dar pistas.\n⚠️ Salir y volver al juego\nSi te quedas sin cartas, tu compañero te pasa la mitad de las suyas y sigues jugando. Si estás fuera del juego y tu compañero roba cartas por cualquier razón, te pasa la mitad inmediatamente y vuelves a jugar.\n🏆 ¿Cómo se gana?\nGana el equipo cuyos dos integrantes se queden sin cartas primero. Recuerda: cuando a ti o a tu compañero les quede solo una carta, ¡cualquiera de los dos debe gritar UNO! Si nadie lo grita antes de que el siguiente jugador comience su turno, debes robar 2 cartas.\n💡 Consejo clave\nPueden hablar con su compañero durante el juego, pero está prohibido dar pistas sobre las cartas que tienen en la mano. La coordinación y la confianza son la clave para ganar.",
     videoUrl: "",
     mainImage: unoTeams1,
     secondaryImages: [],
@@ -2266,3 +2266,14 @@ export const games: Game[] = [
     bggLink: "https://boardgamegeek.com/boardgame/18803/black-stories" 
   }
 ];
+`,
+    videoUrl: "",
+    mainImage: undefined,
+    secondaryImages: [],
+    rankValue: 0,
+    acquisitionDate: "",
+    aproxDate: false,
+    bgg: null,
+    complexity: "",
+    bggLink: null
+  }

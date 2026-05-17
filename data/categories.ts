@@ -31,7 +31,16 @@ export const ALL_CATEGORIES = [
   "Puzzle",
   "Peliculas",
   "Dibujo",
-  "TCG"
+  "TCG",
+  "Conecta fichas",
+  "Colocación de losetas",
+  "Colocación de trabajadores",
+  "Construcción de mazos",
+  "Forzar la suerte",
+  "Filler",
+  "Carreras",
+  "Bazas",
+  "Ladder Climbing"
   // ...agrega todas las que uses...
 ] as const;
 export type Category = typeof ALL_CATEGORIES[number];

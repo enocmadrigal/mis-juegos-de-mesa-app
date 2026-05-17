@@ -238,7 +238,95 @@ import monopolyEdicionPokemon5 from '../assets/img/monopolyPokemon/monopolyEdici
 import monopolyEdicionPokemon6 from '../assets/img/monopolyPokemon/monopolyEdicionPokemon6.jpg';
 import monopolyEdicionPokemon7 from '../assets/img/monopolyPokemon/monopolyEdicionPokemon7.jpg';
 
+//Spectrum
+import spectrum1 from '../assets/img/spectrum/spectrum1.jpg';
+import spectrum2 from '../assets/img/spectrum/spectrum2.jpg';
+import spectrum3 from '../assets/img/spectrum/spectrum3.jpg';
 
+//Uno Teams
+import unoTeams1 from '../assets/img/unoTeams/unoTeams1.jpg';
+import unoTeams2 from '../assets/img/unoTeams/unoTeams2.jpg';
+import unoTeams3 from '../assets/img/unoTeams/unoTeams3.jpg';
+import unoTeams4 from '../assets/img/unoTeams/unoTeams4.jpg';
+import unoTeams5 from '../assets/img/unoTeams/unoTeams5.jpg';
+import unoTeams6 from '../assets/img/unoTeams/unoTeams6.jpg';
+
+//Coffee Rush
+import coffeeRush1 from '../assets/img/coffeeRush/coffeeRush1.jpg';
+import coffeeRush2 from '../assets/img/coffeeRush/coffeeRush2.jpg';
+import coffeeRush3 from '../assets/img/coffeeRush/coffeeRush3.jpg';
+import coffeeRush4 from '../assets/img/coffeeRush/coffeeRush4.jpg';
+import coffeeRush5 from '../assets/img/coffeeRush/coffeeRush5.jpg';
+import coffeeRush6 from '../assets/img/coffeeRush/coffeeRush6.jpg';
+import coffeeRush7 from '../assets/img/coffeeRush/coffeeRush7.jpg';
+import coffeeRush8 from '../assets/img/coffeeRush/coffeeRush8.jpg';
+import coffeeRush9 from '../assets/img/coffeeRush/coffeeRush9.jpg';
+
+
+//Carcassonne
+import carcassonne1 from '../assets/img/carcassonne/carcassonne1.jpg';
+import carcassonne2 from '../assets/img/carcassonne/carcassonne2.jpg';
+import carcassonne3 from '../assets/img/carcassonne/carcassonne3.jpg';
+import carcassonne4 from '../assets/img/carcassonne/carcassonne4.jpg';
+import carcassonne5 from '../assets/img/carcassonne/carcassonne5.jpg';
+
+//Hombres lobo de Castronegro
+import hombresLoboCastronegro1 from '../assets/img/hombresLoboCastronegro/hombresLobo1.jpg';
+import hombresLoboCastronegro2 from '../assets/img/hombresLoboCastronegro/hombresLobo2.jpg';
+
+//Flip 7
+import flip7_1 from '../assets/img/flip7/flip7-1.jpg';
+import flip7_2 from '../assets/img/flip7/flip7-2.jpg';
+import flip7_3 from '../assets/img/flip7/flip7-3.jpg';
+import flip7_4 from '../assets/img/flip7/flip7-4.jpg';
+import flip7_5 from '../assets/img/flip7/flip7-5.jpg';
+
+//Heat: Pedal to the Metal
+import heat1 from '../assets/img/heat/heat1.jpg';
+import heat2 from '../assets/img/heat/heat2.jpg';
+import heat3 from '../assets/img/heat/heat3.jpg';
+import heat4 from '../assets/img/heat/heat4.jpg';
+import heat5 from '../assets/img/heat/heat5.jpg';
+import heat6 from '../assets/img/heat/heat6.jpg';
+import heat7 from '../assets/img/heat/heat7.jpg';
+import heat8 from '../assets/img/heat/heat8.jpg';
+import heat9 from '../assets/img/heat/heat9.jpg';
+
+
+//Werewolf one night
+import werewolfOneNight1 from '../assets/img/werewolfOneNight/werewolfOneNight1.jpg';
+import werewolfOneNight2 from '../assets/img/werewolfOneNight/werewolfOneNight2.jpg';
+import werewolfOneNight3 from '../assets/img/werewolfOneNight/werewolfOneNight3.jpg';
+import werewolfOneNight4 from '../assets/img/werewolfOneNight/werewolfOneNight4.jpg';
+import werewolfOneNight5 from '../assets/img/werewolfOneNight/werewolfOneNight5.jpg';
+import werewolfOneNight6 from '../assets/img/werewolfOneNight/werewolfOneNight6.jpg';
+import werewolfOneNight7 from '../assets/img/werewolfOneNight/werewolfOneNight7.jpg';
+import werewolfOneNight8 from '../assets/img/werewolfOneNight/werewolfOneNight8.jpg';
+import werewolfOneNight9 from '../assets/img/werewolfOneNight/werewolfOneNight9.jpg';
+
+//Forest Shuffle
+import forestShuffle1 from '../assets/img/forestShuffle/forestShuffle1.jpg';
+import forestShuffle2 from '../assets/img/forestShuffle/forestShuffle2.jpg';
+import forestShuffle3 from '../assets/img/forestShuffle/forestShuffle3.jpg';
+import forestShuffle4 from '../assets/img/forestShuffle/forestShuffle4.jpg';
+import forestShuffle5 from '../assets/img/forestShuffle/forestShuffle5.jpg';
+import forestShuffle6 from '../assets/img/forestShuffle/forestShuffle6.jpg';
+import forestShuffle7 from '../assets/img/forestShuffle/forestShuffle7.jpg';
+
+//Skull King
+import skullKing1 from '../assets/img/skullKing/skullKing1.jpg';
+import skullKing2 from '../assets/img/skullKing/skullKing2.jpg';
+import skullKing3 from '../assets/img/skullKing/skullKing3.jpg';
+import skullKing4 from '../assets/img/skullKing/skullKing4.jpg';
+import skullKing5 from '../assets/img/skullKing/skullKing5.jpg';
+import skullKing6 from '../assets/img/skullKing/skullKing6.jpg';
+
+//Black Stories
+import blackStories1 from '../assets/img/blackStories/blackStories1.jpg';
+import blackStories2 from '../assets/img/blackStories/blackStories2.jpg';
+import blackStories3 from '../assets/img/blackStories/blackStories3.jpg';
+import blackStories4 from '../assets/img/blackStories/blackStories4.jpg';
+import blackStories5 from '../assets/img/blackStories/blackStories5.jpg';
 
 export const gameDetailImages: { [key: number]: any[] } = {
   1: [img_ajedrez_1, img_ajedrez_2, img_ajedrez_3, img_ajedrez_4],
@@ -325,4 +413,15 @@ export const gameDetailImages: { [key: number]: any[] } = {
   82: [startups1,startups2,startups3,startups4,startups5],
   83: [pokemonBattleAcademy1, pokemonBattleAcademy2, pokemonBattleAcademy3, pokemonBattleAcademy4, pokemonBattleAcademy5, pokemonBattleAcademy6, pokemonBattleAcademy7],
   84: [monopolyEdicionPokemon1, monopolyEdicionPokemon2, monopolyEdicionPokemon3, monopolyEdicionPokemon4, monopolyEdicionPokemon5, monopolyEdicionPokemon6, monopolyEdicionPokemon7],
+  85: [spectrum1, spectrum2, spectrum3],
+  86: [unoTeams1, unoTeams2, unoTeams3, unoTeams4, unoTeams5, unoTeams6],
+  87: [coffeeRush1, coffeeRush2, coffeeRush3, coffeeRush4, coffeeRush5, coffeeRush6, coffeeRush7, coffeeRush8, coffeeRush9],
+  88: [carcassonne1, carcassonne2, carcassonne3, carcassonne4, carcassonne5],
+  89: [hombresLoboCastronegro1, hombresLoboCastronegro2],
+  90: [flip7_1, flip7_2, flip7_3, flip7_4, flip7_5],
+  91: [heat1, heat2, heat3, heat4, heat5, heat6, heat7, heat8, heat9],
+  92: [werewolfOneNight1, werewolfOneNight2, werewolfOneNight3, werewolfOneNight4, werewolfOneNight5, werewolfOneNight6, werewolfOneNight7, werewolfOneNight8, werewolfOneNight9],
+  93: [forestShuffle1, forestShuffle2, forestShuffle3, forestShuffle4, forestShuffle5, forestShuffle6, forestShuffle7],
+  94: [skullKing1, skullKing2, skullKing3, skullKing4, skullKing5, skullKing6],
+  95: [blackStories1, blackStories2, blackStories3, blackStories4, blackStories5]
 };

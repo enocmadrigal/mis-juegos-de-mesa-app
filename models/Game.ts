@@ -20,6 +20,7 @@ export interface Game {
   rankValue: number;
   acquisitionDate: string;
   aproxDate: boolean;
-  bgg: number;
+  bgg: number | null;
   complexity: string;
+  bggLink: string | null;
 }

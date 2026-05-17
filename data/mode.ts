@@ -1,6 +1,6 @@
 export const ALL_MODES = [
   "Competitivo",
-  "Equipos",
+  "Competitivo de equipos",
   "Cooperativo",
   "Risas",
   "Conversacional",

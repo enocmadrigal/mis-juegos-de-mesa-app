@@ -102,7 +102,95 @@ import startups1 from '../assets/img/startups/startups1.jpg';
 import monopolyEdicionPokemon1 from '../assets/img/monopolyPokemon/monopolyEdicionPokemon1.jpg';
 import pokemonBattleAcademy1 from '../assets/img/pokemonBattleAcademy/pokemonBattleAcademy1.jpg';
 import tiroAlBlancoTiroLibreSoccer1 from '../assets/img/tiroAlBlancoTiroLibreSoccer/tiroAlBlancoTiroLibreSoccer1.jpg';
+//Spectrum
+import spectrum1 from '../assets/img/spectrum/spectrum1.jpg';
+import spectrum2 from '../assets/img/spectrum/spectrum2.jpg';
+import spectrum3 from '../assets/img/spectrum/spectrum3.jpg';
 
+//Uno Teams
+import unoTeams1 from '../assets/img/unoTeams/unoTeams1.jpg';
+import unoTeams2 from '../assets/img/unoTeams/unoTeams2.jpg';
+import unoTeams3 from '../assets/img/unoTeams/unoTeams3.jpg';
+import unoTeams4 from '../assets/img/unoTeams/unoTeams4.jpg';
+import unoTeams5 from '../assets/img/unoTeams/unoTeams5.jpg';
+import unoTeams6 from '../assets/img/unoTeams/unoTeams6.jpg';
+
+//Coffee Rush
+import coffeeRush1 from '../assets/img/coffeeRush/coffeeRush1.jpg';
+import coffeeRush2 from '../assets/img/coffeeRush/coffeeRush2.jpg';
+import coffeeRush3 from '../assets/img/coffeeRush/coffeeRush3.jpg';
+import coffeeRush4 from '../assets/img/coffeeRush/coffeeRush4.jpg';
+import coffeeRush5 from '../assets/img/coffeeRush/coffeeRush5.jpg';
+import coffeeRush6 from '../assets/img/coffeeRush/coffeeRush6.jpg';
+import coffeeRush7 from '../assets/img/coffeeRush/coffeeRush7.jpg';
+import coffeeRush8 from '../assets/img/coffeeRush/coffeeRush8.jpg';
+import coffeeRush9 from '../assets/img/coffeeRush/coffeeRush9.jpg';
+
+
+//Carcassonne
+import carcassonne1 from '../assets/img/carcassonne/carcassonne1.jpg';
+import carcassonne2 from '../assets/img/carcassonne/carcassonne2.jpg';
+import carcassonne3 from '../assets/img/carcassonne/carcassonne3.jpg';
+import carcassonne4 from '../assets/img/carcassonne/carcassonne4.jpg';
+import carcassonne5 from '../assets/img/carcassonne/carcassonne5.jpg';
+
+//Hombres lobo de Castronegro
+import hombresLoboCastronegro1 from '../assets/img/hombresLoboCastronegro/hombresLobo1.jpg';
+import hombresLoboCastronegro2 from '../assets/img/hombresLoboCastronegro/hombresLobo2.jpg';
+
+//Flip 7
+import flip7_1 from '../assets/img/flip7/flip7-1.jpg';
+import flip7_2 from '../assets/img/flip7/flip7-2.jpg';
+import flip7_3 from '../assets/img/flip7/flip7-3.jpg';
+import flip7_4 from '../assets/img/flip7/flip7-4.jpg';
+import flip7_5 from '../assets/img/flip7/flip7-5.jpg';
+
+//Heat: Pedal to the Metal
+import heat1 from '../assets/img/heat/heat1.jpg';
+import heat2 from '../assets/img/heat/heat2.jpg';
+import heat3 from '../assets/img/heat/heat3.jpg';
+import heat4 from '../assets/img/heat/heat4.jpg';
+import heat5 from '../assets/img/heat/heat5.jpg';
+import heat6 from '../assets/img/heat/heat6.jpg';
+import heat7 from '../assets/img/heat/heat7.jpg';
+import heat8 from '../assets/img/heat/heat8.jpg';
+import heat9 from '../assets/img/heat/heat9.jpg';
+
+
+//Werewolf one night
+import werewolfOneNight1 from '../assets/img/werewolfOneNight/werewolfOneNight1.jpg';
+import werewolfOneNight2 from '../assets/img/werewolfOneNight/werewolfOneNight2.jpg';
+import werewolfOneNight3 from '../assets/img/werewolfOneNight/werewolfOneNight3.jpg';
+import werewolfOneNight4 from '../assets/img/werewolfOneNight/werewolfOneNight4.jpg';
+import werewolfOneNight5 from '../assets/img/werewolfOneNight/werewolfOneNight5.jpg';
+import werewolfOneNight6 from '../assets/img/werewolfOneNight/werewolfOneNight6.jpg';
+import werewolfOneNight7 from '../assets/img/werewolfOneNight/werewolfOneNight7.jpg';
+import werewolfOneNight8 from '../assets/img/werewolfOneNight/werewolfOneNight8.jpg';
+import werewolfOneNight9 from '../assets/img/werewolfOneNight/werewolfOneNight9.jpg';
+
+//Forest Shuffle
+import forestShuffle1 from '../assets/img/forestShuffle/forestShuffle1.jpg';
+import forestShuffle2 from '../assets/img/forestShuffle/forestShuffle2.jpg';
+import forestShuffle3 from '../assets/img/forestShuffle/forestShuffle3.jpg';
+import forestShuffle4 from '../assets/img/forestShuffle/forestShuffle4.jpg';
+import forestShuffle5 from '../assets/img/forestShuffle/forestShuffle5.jpg';
+import forestShuffle6 from '../assets/img/forestShuffle/forestShuffle6.jpg';
+import forestShuffle7 from '../assets/img/forestShuffle/forestShuffle7.jpg';
+
+//Skull King
+import skullKing1 from '../assets/img/skullKing/skullKing1.jpg';
+import skullKing2 from '../assets/img/skullKing/skullKing2.jpg';
+import skullKing3 from '../assets/img/skullKing/skullKing3.jpg';
+import skullKing4 from '../assets/img/skullKing/skullKing4.jpg';
+import skullKing5 from '../assets/img/skullKing/skullKing5.jpg';
+import skullKing6 from '../assets/img/skullKing/skullKing6.jpg';
+
+//Black Stories
+import blackStories1 from '../assets/img/blackStories/blackStories1.jpg';
+import blackStories2 from '../assets/img/blackStories/blackStories2.jpg';
+import blackStories3 from '../assets/img/blackStories/blackStories3.jpg';
+import blackStories4 from '../assets/img/blackStories/blackStories4.jpg';
+import blackStories5 from '../assets/img/blackStories/blackStories5.jpg';
 
 export const games: Game[] = [
   {
@@ -124,7 +212,8 @@ export const games: Game[] = [
     acquisitionDate: "01/01/2007",
     aproxDate: true,
     bgg: 7.2,
-    complexity: "3.65/5"
+    complexity: "3.65/5",
+    bggLink: null
   },
   {
     id: 2,
@@ -145,7 +234,8 @@ export const games: Game[] = [
     acquisitionDate: "14/12/2022",
     aproxDate: false,
     bgg:6.0,//Turista normal
-    complexity: "1.0/5"
+    complexity: "1.0/5",
+    bggLink: null
   },
   {
     id: 3,
@@ -156,7 +246,7 @@ export const games: Game[] = [
     minPlayers: 2,
     maxPlayers: 10,
     averageDuration: 45, // antes min:30, max:60
-    mode: ["Equipos"],
+    mode: ["Competitivo de equipos"],
     description: "Basado en el clásico concurso televisivo del mismo nombre. Jugadores o equipos intentan encontrar las respuestas más populares según preguntas de una encuesta realizada a 100 personas.",    
     rules: "Responde preguntas basadas en encuestas. Gana el equipo con más puntos.",
     videoUrl: "https://vt.tiktok.com/ZSDChS5Av/",
@@ -166,7 +256,8 @@ export const games: Game[] = [
     acquisitionDate: "14/12/2022",
     aproxDate: false,
     bgg:5.5,
-    complexity: "1.14/5"
+    complexity: "1.14/5",
+    bggLink: null
   },
   {
     id: 4,
@@ -187,7 +278,8 @@ export const games: Game[] = [
     acquisitionDate: "24/12/2022",
     aproxDate: false,
     bgg:7.2, //Las Vegas (2012)
-    complexity: "1.17/5"
+    complexity: "1.17/5",
+    bggLink: null
   },
   {
     id: 5,
@@ -208,7 +300,8 @@ export const games: Game[] = [
     acquisitionDate: "01/03/2023",
     aproxDate: true,
     bgg:null,
-    complexity: "NA/5" //No aparece en BGG
+    complexity: "NA/5", //No aparece en BGG
+    bggLink: null
   },
   {
     id: 6,
@@ -229,7 +322,8 @@ export const games: Game[] = [
     acquisitionDate: "01/03/2023",
     aproxDate: true,
     bgg:6.3,
-    complexity: "1.33/5" 
+    complexity: "1.33/5",
+    bggLink: null
   },
   {
     id: 7,
@@ -250,7 +344,8 @@ export const games: Game[] = [
     acquisitionDate: "01/03/2023",
     aproxDate: true,
     bgg:null,
-    complexity: "NA/5" //No aparece en BGG
+    complexity: "NA/5", //No aparece en BGG
+    bggLink: null
   },
   {
     id: 8,
@@ -271,7 +366,8 @@ export const games: Game[] = [
     acquisitionDate: "01/03/2023",
     aproxDate: true,
     bgg:6.2,
-    complexity: "1.85/5"
+    complexity: "1.85/5",
+    bggLink: null
   },
   {
     id: 9,
@@ -292,7 +388,8 @@ export const games: Game[] = [
     acquisitionDate: "01/03/2023",
     aproxDate: true,
     bgg:6.0,//Turista normal
-    complexity: "1.0/5" 
+    complexity: "1.0/5",
+    bggLink: null
   },
   {
     id: 10,
@@ -313,7 +410,8 @@ export const games: Game[] = [
     acquisitionDate: "03/07/2023",
     aproxDate: false,
     bgg:7.6,
-    complexity: "2.1/5"
+    complexity: "2.1/5",
+    bggLink: null
   },
   {
     id: 11,
@@ -334,7 +432,8 @@ export const games: Game[] = [
     acquisitionDate: "15/08/2023",
     aproxDate: false,
     bgg:6.7,
-    complexity: "2.43/5"
+    complexity: "2.43/5",
+    bggLink: null
   },
   {
     id: 12,
@@ -355,7 +454,8 @@ export const games: Game[] = [
     acquisitionDate: "06/09/2023",
     aproxDate: false,
     bgg:6.7,
-    complexity: "2.43/5"
+    complexity: "2.43/5",
+    bggLink: null
   },
   {
     id: 13,
@@ -376,7 +476,8 @@ export const games: Game[] = [
     acquisitionDate: "27/09/2023",
     aproxDate: false,
     bgg:7.4,
-    complexity: "2.55/5"
+    complexity: "2.55/5",
+    bggLink: null
   },
   {
     id: 14,
@@ -397,7 +498,8 @@ export const games: Game[] = [
     acquisitionDate: "27/09/2023",
     aproxDate: false,
     bgg:5.9,
-    complexity: "1.4/5"
+    complexity: "1.4/5",
+    bggLink: null
   },
   {
     id: 15,
@@ -418,7 +520,8 @@ export const games: Game[] = [
     acquisitionDate: "27/09/2023",
     aproxDate: false,
     bgg:5.3,
-    complexity: "1.0/5"
+    complexity: "1.0/5",
+    bggLink: null
   },
   {
     id: 16,
@@ -439,7 +542,8 @@ export const games: Game[] = [
     acquisitionDate: "01/10/2023",
     aproxDate: true,
     bgg:6.6,
-    complexity: "2.01/5"
+    complexity: "2.01/5",
+    bggLink: null
   },
   {
     id: 17,
@@ -460,7 +564,8 @@ export const games: Game[] = [
     acquisitionDate: "15/11/2023",
     aproxDate: true,
     bgg:7.6,
-    complexity: "1.01/5"
+    complexity: "1.01/5",
+    bggLink: null
   },
   {
     id: 18,
@@ -481,7 +586,8 @@ export const games: Game[] = [
     acquisitionDate: "23/12/2023",
     aproxDate: false,
     bgg:null,
-    complexity: "NA/5" //No aparece en BGG
+    complexity: "NA/5", //No aparece en BGG
+    bggLink: null
   },
   {
     id: 19,
@@ -502,7 +608,8 @@ export const games: Game[] = [
     acquisitionDate: "23/12/2023",
     aproxDate: false,
     bgg:null,
-    complexity: "NA/5" //no aparece en BGG
+    complexity: "NA/5", //no aparece en BGG
+    bggLink: null
   },
   {
     id: 20,
@@ -523,7 +630,8 @@ export const games: Game[] = [
     acquisitionDate: "24/12/2023",
     aproxDate: false,
     bgg:6.4,
-    complexity: "2.0/5"
+    complexity: "2.0/5",
+    bggLink: null
   },
   {
     id: 21,
@@ -534,7 +642,7 @@ export const games: Game[] = [
     minPlayers: 2,
     maxPlayers: 12,
     averageDuration: 45, // antes min:30, max:60
-    mode: ["Equipos"],
+    mode: ["Competitivo de equipos","Competitivo"],
     description: "Sequence es un juego de mesa y cartas. El tablero muestra todas las cartas (excepto las jotas) de dos barajas estándar de 52 cartas, dispuestas en un patrón de 10 x 10. Las cuatro esquinas son espacios libres y cuentan por igual para todos los jugadores. \n Los jugadores compiten por crear filas, columnas o diagonales de 5 fichas conectadas colocadas sobre las cartas que han extendido. Las jotas de dos ojos son comodines, mientras que las jotas de un ojo permiten eliminar una ficha del oponente. La partida termina cuando un jugador alcanza un número determinado de conexiones. \n Nominado al premio al mejor juego japonés del Japan Boardgame Prize 2003",
     rules: "Coloca fichas en el tablero según las cartas jugadas. Gana quien forme dos secuencias de 5 fichas de su color. El juego se puede jugar perfectamente en equipos.",
     videoUrl: "https://vt.tiktok.com/ZSDCDGWn7/",
@@ -544,7 +652,8 @@ export const games: Game[] = [
     acquisitionDate: "24/12/2023",
     aproxDate: false,
     bgg:6.2,
-    complexity: "1.31/5" 
+    complexity: "1.31/5",
+    bggLink: null
   },
   {
     id: 22,
@@ -565,7 +674,8 @@ export const games: Game[] = [
     acquisitionDate: "24/12/2023",
     aproxDate: false,
     bgg:5.5,
-    complexity: "1.1/5"
+    complexity: "1.1/5",
+    bggLink: null
   },
   {
     id: 23,
@@ -586,7 +696,8 @@ export const games: Game[] = [
     acquisitionDate: "25/12/2023",
     aproxDate: false,
     bgg:7.2,
-    complexity: "2.38/5"
+    complexity: "2.38/5",
+    bggLink: null
   },
   {
     id: 24,
@@ -607,7 +718,8 @@ export const games: Game[] = [
     acquisitionDate: "25/12/2023",
     aproxDate: false,
     bgg:5.2,
-    complexity: "1.59/5"
+    complexity: "1.59/5",
+    bggLink: null
   },
   {
     id: 25,
@@ -628,7 +740,8 @@ export const games: Game[] = [
     acquisitionDate: "31/12/2023",
     aproxDate: false,
     bgg:5.5,
-    complexity: "1.1/5"
+    complexity: "1.1/5",
+    bggLink: null
   },
   {
     id: 26,
@@ -649,7 +762,8 @@ export const games: Game[] = [
     acquisitionDate: "31/12/2023",
     aproxDate: false,
     bgg:4.8,
-    complexity: "NA/5" //No caliificado en BGG
+    complexity: "NA/5", //No caliificado en BGG
+    bggLink: null
   },
   {
     id: 27,
@@ -660,7 +774,7 @@ export const games: Game[] = [
     minPlayers: 4,
     maxPlayers: 99,
     averageDuration: 45, 
-    mode: ["Equipos"],
+    mode: ["Competitivo de equipos"],
     description: "Juego de mímica donde los jugadores deben adivinar palabras o frases.",
     rules: "Un jugador actúa y su equipo debe adivinar la palabra antes de que se acabe el tiempo.",
     videoUrl: "https://vt.tiktok.com/ZSDCy8E68/",
@@ -670,7 +784,8 @@ export const games: Game[] = [
     acquisitionDate: "2/01/2024",
     aproxDate: false,
     bgg:5.9,
-    complexity: "1.18/5"
+    complexity: "1.18/5",
+    bggLink: null
   },
   {
     id: 28,
@@ -691,7 +806,8 @@ export const games: Game[] = [
     acquisitionDate: "24/01/2024",
     aproxDate: false,
     bgg:6.3,
-    complexity: "1.26/5" 
+    complexity: "1.26/5" ,
+    bggLink: null
   },
   {
     id: 29,
@@ -712,7 +828,8 @@ export const games: Game[] = [
     acquisitionDate: "01/03/2024",
     aproxDate: true,
     bgg:null,
-    complexity: "NA/5" //No aparece en BGG
+    complexity: "NA/5", //No aparece en BGG
+    bggLink: null
   },
   {
     id: 30,
@@ -733,7 +850,8 @@ export const games: Game[] = [
     acquisitionDate: "01/03/2024",
     aproxDate: true,
     bgg:5.6,
-    complexity: "1.37/5" 
+    complexity: "1.37/5",
+    bggLink: null
   },
   {
     id: 31,
@@ -754,7 +872,8 @@ export const games: Game[] = [
     acquisitionDate: "01/03/2024",
     aproxDate: true,
     bgg:6.1,
-    complexity: "NA/5" //No calificado en BGG
+    complexity: "NA/5", //No calificado en BGG
+    bggLink: null
   },
   {
     id: 32,
@@ -765,7 +884,7 @@ export const games: Game[] = [
     minPlayers: 2, //TODO
     maxPlayers: 10, //TODO
     averageDuration: 45, //TODO
-    mode: ["Equipos"],
+    mode: ["Competitivo de equipos"],
     description: "Juego de trivia donde compiten generaciones jóvenes contra mayores.",
     rules: "Responde preguntas de cultura general y gana puntos para tu equipo.",
     videoUrl: "https://vt.tiktok.com/ZSDCyscbr/",
@@ -775,7 +894,8 @@ export const games: Game[] = [
     acquisitionDate: "01/09/2024",
     aproxDate: true,
     bgg:5.5,
-    complexity: "1.5/5" //Trivia normal
+    complexity: "1.5/5", //Trivia normal
+    bggLink: null
   },
   {
     id: 33,
@@ -796,7 +916,8 @@ export const games: Game[] = [
     acquisitionDate: "01/09/2024",
     aproxDate: true,
     bgg:6.0, //Turista normal
-    complexity: "1.0/5" 
+    complexity: "1.0/5",
+    bggLink: null
   },
   {
     id: 34,
@@ -817,7 +938,8 @@ export const games: Game[] = [
     acquisitionDate: "05/09/2024",
     aproxDate: false,
     bgg:6.3,
-    complexity: "2.85/5"
+    complexity: "2.85/5",
+    bggLink: null
   },
   {
     id: 35,
@@ -838,7 +960,8 @@ export const games: Game[] = [
     acquisitionDate: "10/09/2024",
     aproxDate: false,
     bgg:6.5,
-    complexity: "1.02/5"
+    complexity: "1.02/5",
+    bggLink: null
   },
   {
     id: 36,
@@ -859,7 +982,8 @@ export const games: Game[] = [
     acquisitionDate: "10/09/2024",
     aproxDate: false,
     bgg:5.2,
-    complexity: "1.0/5"
+    complexity: "1.0/5",
+    bggLink: null
   },
   {
     id: 37,
@@ -880,7 +1004,8 @@ export const games: Game[] = [
     acquisitionDate: "27/09/2024",
     aproxDate: false,
     bgg:4.8,
-    complexity: "1.33/5"
+    complexity: "1.33/5",
+    bggLink: null
   },
   {
     id: 38,
@@ -901,7 +1026,8 @@ export const games: Game[] = [
     acquisitionDate: "27/09/2024",
     aproxDate: false,
     bgg:6.7,
-    complexity: "NA/5" //No calificado en BGG
+    complexity: "NA/5", //No calificado en BGG
+    bggLink: null
   },
   {
     id: 39,
@@ -922,7 +1048,8 @@ export const games: Game[] = [
     acquisitionDate: "15/10/2024",
     aproxDate: true,
     bgg:null,
-    complexity: "NA/5" //No aparece en BGG
+    complexity: "NA/5", //No aparece en BGG
+    bggLink: null
   },
   {
     id: 40,
@@ -933,7 +1060,7 @@ export const games: Game[] = [
     minPlayers: 4,
     maxPlayers: 12,
     averageDuration: 45, 
-    mode: ["Equipos"],
+    mode: ["Competitivo de equipos"],
     description: "Blockbuster regresa! Juego de adivinanza y mímica sobre películas, ideal para fiestas.",
     rules: "Primero, enfréntense en la ronda de Cara a Cara con pulsador. Un jugador de cada equipo debe pensar en un título de película que coincida con la descripción de la tarjeta de categoría Cara a Cara (por ejemplo, Películas donde alguien se pierde) antes de que se agoten los 15 segundos del cronómetro, pulsando el pulsador para que el turno pase al oponente. \n El primero en quedarse sin tiempo pierde esta ronda.\n A continuación, en Triple Charades Jeopardy, ¡es hora de demostrar cuánto sabes de cine! Cada jugador recibe tres tarjetas de películas y tiene 30 segundos para que su equipo adivine todas las películas usando uno de tres métodos: con una sola palabra, citando una frase de la película o representándola. Cuando un equipo acierta una, añade la tarjeta a su colección. ¡El primer equipo en conseguir dos tarjetas de cada una de las cuatro categorías gana! \n El juego incluye 100 cartas de películas, 30 cartas de duelo y un tablero. «Big Potato Buzzer» está disponible para su descarga gratuita en la App Store o Google Play.",
     videoUrl: "https://vt.tiktok.com/ZSDCaMKhC/",
@@ -943,7 +1070,8 @@ export const games: Game[] = [
     acquisitionDate: "15/11/2024",
     aproxDate: false,
     bgg:6.8,
-    complexity: "1.5/5"
+    complexity: "1.5/5",
+    bggLink: null
   },
   {
     id: 41,
@@ -964,7 +1092,8 @@ export const games: Game[] = [
     acquisitionDate: "15/11/2024",
     aproxDate: false,
     bgg:null,
-    complexity: "NA/5" //No aparece en BGG
+    complexity: "NA/5", //No aparece en BGG
+    bggLink: null
   },
   {
     id: 42,
@@ -985,7 +1114,8 @@ export const games: Game[] = [
     acquisitionDate: "15/11/2024",
     aproxDate: false,
     bgg:6.0,
-    complexity: "NA/5" //No calificado en BGG
+    complexity: "NA/5", //No calificado en BGG
+    bggLink: null
   },
   {
     id: 43,
@@ -1006,7 +1136,8 @@ export const games: Game[] = [
     acquisitionDate: "15/11/2024",
     aproxDate: false,
     bgg:7.0,
-    complexity: "1.06/5"
+    complexity: "1.06/5",
+    bggLink: null
   },
   {
     id: 44,
@@ -1017,7 +1148,7 @@ export const games: Game[] = [
     minPlayers: 4,
     maxPlayers: 20, //Todo
     averageDuration: 25,
-    mode: ["Competitivo"],
+    mode: ["Competitivo de equipos"],
     description: "Versión de mesa del popular videojuego donde los jugadores deben descubrir al impostor entre ellos.",
     rules: "Recibe tu rol oculto, si eres el impostor trata de matar a todos, si eres el cientifico trata de descubrir al impostor, si eres el angel trata de salvar a los demas.",
     videoUrl: "",
@@ -1027,7 +1158,8 @@ export const games: Game[] = [
     acquisitionDate: "15/11/2024",
     aproxDate: false,
     bgg:null,
-    complexity: "NA/5" //No aparece en BGG
+    complexity: "NA/5", //No aparece en BGG
+    bggLink: null
   },
   {
     id: 45,
@@ -1038,7 +1170,7 @@ export const games: Game[] = [
     minPlayers: 3,
     maxPlayers: 15,
     averageDuration: 30,
-    mode: ["Competitivo"],
+    mode: ["Competitivo","Risas"],
     description: "Al chile es un juego de fiesta que te permite desenmascarar a tus amigos y revelar lo que realmente piensan de ti.",
     rules: "Así funciona: un jugador elige una carta y la lee en voz alta. Luego, a la cuenta de tres, todos señalan a la persona que creen que mejor describe la carta. Sin embargo, cada vez que alguien señala, surgen diferentes situaciones en las que los jugadores ganan o pierden pimientos, que son pequeñas fichas con forma de pimiento. \n Si te señalas a ti mismo y la mayoría de los jugadores también te señalan, ganas 2 pimientos. \n Si no te señalas a ti mismo y la mayoría de los jugadores te señalan, pierdes 2 pimientos. \n Si te señalas a ti mismo y nadie más te señala, consigues el totopo (o nacho). Mientras tengas el totopo, no puedes conseguir pimientos. Para perderlo, otro jugador debe quitártelo o alguien debe señalarte mientras tú te señalas a ti mismo. \n Si decides no señalar a nadie, pierdes 1 pimiento. Si hay un empate en la votación mayoritaria, nadie gana ni pierde pimientos. \n \n El objetivo del juego es ser el primer jugador en alcanzar 25 pimientos o tener la mayor cantidad de pimientos cuando ya no haya más disponibles para tomar.",
     videoUrl: "https://vt.tiktok.com/ZSDCuPUbT/",
@@ -1048,7 +1180,8 @@ export const games: Game[] = [
     acquisitionDate: "15/11/2024",
     aproxDate: false,
     bgg:6.9,
-    complexity: "1.0/5"
+    complexity: "1.0/5",
+    bggLink: null
   },
   {
     id: 46,
@@ -1069,7 +1202,8 @@ export const games: Game[] = [
     acquisitionDate: "16/11/2024",
     aproxDate: false,
     bgg:5.6,
-    complexity: "1.37/5"
+    complexity: "1.37/5",
+    bggLink: null
   },
   {
     id: 47,
@@ -1090,7 +1224,8 @@ export const games: Game[] = [
     acquisitionDate: "18/11/2024",
     aproxDate: false,
     bgg:6.0,
-    complexity: "1.47/5" 
+    complexity: "1.47/5",
+    bggLink: null
   },
   {
     id: 48,
@@ -1111,7 +1246,8 @@ export const games: Game[] = [
     acquisitionDate: "18/11/2024",
     aproxDate: false,
     bgg:5.5,
-    complexity: "1.15/5"
+    complexity: "1.15/5",
+    bggLink: null
   },
   {
     id: 49,
@@ -1132,7 +1268,8 @@ export const games: Game[] = [
     acquisitionDate: "18/11/2024",
     aproxDate: false,
     bgg:7.0,
-    complexity: "1.0/5"
+    complexity: "1.0/5",
+    bggLink: null
   },
   {
     id: 50,
@@ -1153,7 +1290,8 @@ export const games: Game[] = [
     acquisitionDate: "18/11/2024",
     aproxDate: false,
     bgg:6.4,
-    complexity: "1.4/5"
+    complexity: "1.4/5",
+    bggLink: null
   },
   {
     id: 51,
@@ -1174,7 +1312,8 @@ export const games: Game[] = [
     acquisitionDate: "18/11/2024",
     aproxDate: false,
     bgg:6.4,
-    complexity: "1.47/5"
+    complexity: "1.47/5",
+    bggLink: null
   },
   {
     id: 52,
@@ -1195,7 +1334,8 @@ export const games: Game[] = [
     acquisitionDate: "18/11/2024",
     aproxDate: false,
     bgg:null,
-    complexity: "NA/5" //Todo
+    complexity: "NA/5", //Todo
+    bggLink: null
   },
   {
     id: 53,
@@ -1216,7 +1356,8 @@ export const games: Game[] = [
     acquisitionDate: "07/12/2024",
     aproxDate: false,
     bgg:null,
-    complexity: "NA/5" 
+    complexity: "NA/5",
+    bggLink: null 
   },
   {
     id: 54,
@@ -1237,7 +1378,8 @@ export const games: Game[] = [
     acquisitionDate: "07/12/2024",
     aproxDate: false,
     bgg:4.7,
-    complexity: "1.1/5" 
+    complexity: "1.1/5",
+    bggLink: null
   },
   {
     id: 55,
@@ -1258,7 +1400,8 @@ export const games: Game[] = [
     acquisitionDate: "07/12/2024",
     aproxDate: false,
     bgg:5.3,
-    complexity: "1.26/5" 
+    complexity: "1.26/5",
+    bggLink: null
   },
   {
     id: 56,
@@ -1279,7 +1422,8 @@ export const games: Game[] = [
     acquisitionDate: "07/12/2024",
     aproxDate: false,
     bgg:null,
-    complexity: "NA/5" //Todo
+    complexity: "NA/5", //Todo
+    bggLink: null
   },
   {
     id: 57,
@@ -1300,7 +1444,8 @@ export const games: Game[] = [
     acquisitionDate: "15/12/2024",
     aproxDate: false,
     bgg:6.4,
-    complexity: "2.03/5"
+    complexity: "2.03/5",
+    bggLink: null
   },
   {
     id: 58,
@@ -1321,7 +1466,8 @@ export const games: Game[] = [
     acquisitionDate: "25/12/2024",
     aproxDate: false,
     bgg:7.6,
-    complexity: "1.94/5"
+    complexity: "1.94/5",
+    bggLink: null
   },
   {
     id: 59,
@@ -1342,7 +1488,8 @@ export const games: Game[] = [
     acquisitionDate: "14/01/2025",
     aproxDate: false,
     bgg:null,
-    complexity: "NA/5"
+    complexity: "NA/5",
+    bggLink: null
   },
   {
     id: 60,
@@ -1353,8 +1500,8 @@ export const games: Game[] = [
     minPlayers: 2,
     maxPlayers: 8,
     averageDuration: 45,
-    mode: ["Equipos"],
-    description: "Juego de trivia generacional donde equipos de diferentes edades compiten respondiendo preguntas de su época.",
+    mode: ["Competitivo de equipos"],
+    description: "Juego de trivia generacional donde Competitivo de Competitivo de Competitivo de Competitivo de equipos de diferentes edades compiten respondiendo preguntas de su época.",
     rules: "Responde preguntas de cultura pop y gana puntos para tu generación.",
     videoUrl: "https://vt.tiktok.com/ZSDCucmNn/",
     mainImage: okBoomerImg,
@@ -1363,7 +1510,8 @@ export const games: Game[] = [
     acquisitionDate: "22/04/2025",
     aproxDate: false,
     bgg:4.7,
-    complexity: "1.0/5"
+    complexity: "1.0/5",
+    bggLink: null
   },
   {
     id: 61,
@@ -1384,7 +1532,8 @@ export const games: Game[] = [
     acquisitionDate: "22/04/2025",
     aproxDate: false,
     bgg:6.1,
-    complexity: "NA/5"
+    complexity: "NA/5",
+    bggLink: null
   },
   {
     id: 62,
@@ -1405,7 +1554,8 @@ export const games: Game[] = [
     acquisitionDate: "05/09/2025",
     aproxDate: false,
     bgg:6.7,
-    complexity: "1.06/5" //Todo
+    complexity: "1.06/5", //Todo
+    bggLink: null
   },
   {
     id: 63,
@@ -1426,7 +1576,8 @@ export const games: Game[] = [
     acquisitionDate: "05/09/2025",
     aproxDate: false,
     bgg:null,
-    complexity: "NA/5" 
+    complexity: "NA/5" ,
+    bggLink: null
   },
   {
     id: 64,
@@ -1447,7 +1598,8 @@ export const games: Game[] = [
     acquisitionDate: "05/09/2025",
     aproxDate: false,
     bgg:6.4,
-    complexity: "1.14/5"
+    complexity: "1.14/5",
+    bggLink: null
   },
   {
     id: 65,
@@ -1468,7 +1620,8 @@ export const games: Game[] = [
     acquisitionDate: "05/09/2025",
     aproxDate: false,
     bgg:6.1,
-    complexity: "1.08/5" 
+    complexity: "1.08/5",
+    bggLink: null 
   },
   {
     id: 66,
@@ -1489,7 +1642,8 @@ export const games: Game[] = [
     acquisitionDate: "05/09/2025",
     aproxDate: false,
     bgg:6.7,
-    complexity: "1.25/5" 
+    complexity: "1.25/5",
+    bggLink: null
   },
   {
     id: 67,
@@ -1510,7 +1664,8 @@ export const games: Game[] = [
     acquisitionDate: "11/09/2025",
     aproxDate: false,
     bgg:7.5,
-    complexity: "1.86/5" 
+    complexity: "1.86/5",
+    bggLink: null
   },
   {
     id: 68,
@@ -1531,7 +1686,8 @@ export const games: Game[] = [
     acquisitionDate: "18/09/2025",
     aproxDate: false,
     bgg:6.7,
-    complexity: "1.5/5"
+    complexity: "1.5/5",
+    bggLink: null
   },
   {
     id: 69,
@@ -1552,7 +1708,8 @@ export const games: Game[] = [
     acquisitionDate: "18/09/2025",
     aproxDate: false,
     bgg:6.7,
-    complexity: "1.08/5"
+    complexity: "1.08/5",
+    bggLink: null
   },
   {
     id: 70,
@@ -1573,7 +1730,8 @@ export const games: Game[] = [
     acquisitionDate: "27/09/2025",
     aproxDate: false,
     bgg:7.0,
-    complexity: "2.57/5"
+    complexity: "2.57/5",
+    bggLink: null
   },
   {
     id: 71,
@@ -1594,7 +1752,8 @@ export const games: Game[] = [
     acquisitionDate: "29/09/2025",
     aproxDate: false,
     bgg:7.0,
-    complexity: "1.35/5"
+    complexity: "1.35/5",
+    bggLink: null
   },
   {
     id: 72,
@@ -1615,7 +1774,8 @@ export const games: Game[] = [
     acquisitionDate: "29/09/2025",
     aproxDate: false,
     bgg:6.7,
-    complexity: "1.35/5"
+    complexity: "1.35/5",
+    bggLink: null
   },
   {
     id: 73,
@@ -1636,7 +1796,8 @@ export const games: Game[] = [
     acquisitionDate: "29/09/2025",
     aproxDate: false,
     bgg:6.9,
-    complexity: "1.18/5"
+    complexity: "1.18/5",
+    bggLink: null
   },
   {
     id: 74,
@@ -1647,7 +1808,7 @@ export const games: Game[] = [
     minPlayers: 5,
     maxPlayers: 10,
     averageDuration: 60,
-    mode: ["Equipos"],
+    mode: ["Competitivo de equipos"],
     description: "Juego de deducción social donde los jugadores son liberales o fascistas, y deben descubrir (o proteger) al jugador que es Hitler.",
     rules: "Secret Hitler es un juego dramático de intriga política y traición ambientado en la Alemania de los años 30. Cada jugador es asignado aleatoriamente y en secreto a ser liberal o fascista, y uno de ellos es Secret Hitler. Los fascistas se coordinan para sembrar la desconfianza e instalar a su líder despiadado; los liberales deben encontrar y detener a Secret Hitler antes de que sea demasiado tarde. El equipo liberal siempre tiene la mayoría. \n \n Al comienzo de la partida, los jugadores cierran los ojos y los fascistas se revelan entre sí. El Hitler secreto mantiene los ojos cerrados, pero levanta el pulgar para que los fascistas puedan reconocerlo. Los fascistas descubren quién es Hitler, pero él desconoce la identidad de sus compañeros, y los liberales no reconocen a nadie. \n \n En cada ronda, los jugadores eligen un Presidente y un Canciller que colaborarán para promulgar una ley de un mazo aleatorio. Si el gobierno aprueba una ley fascista, los jugadores deberán averiguar si fueron traicionados o simplemente tuvieron mala suerte. Secret Hitler también incluye poderes gubernamentales que entran en juego a medida que avanza el fascismo. Los fascistas usarán esos poderes para sembrar el caos a menos que los liberales logren evitar que la nación caiga en la guerra. \n \n El objetivo del equipo liberal es aprobar cinco políticas liberales o asesinar a Hitler Secreto. El objetivo del equipo fascista es aprobar seis políticas fascistas o elegir a Hitler Secreto como canciller después de que se hayan aprobado tres políticas fascistas.",
     videoUrl: "",
@@ -1657,7 +1818,8 @@ export const games: Game[] = [
     acquisitionDate: "29/09/2025",
     aproxDate: false,
     bgg:7.5,
-    complexity: "1.74/5"
+    complexity: "1.74/5",
+    bggLink: null
   },
   {
     id: 75,
@@ -1668,7 +1830,7 @@ export const games: Game[] = [
     minPlayers: 3,
     maxPlayers: 8,
     averageDuration: 20, 
-    mode: ["Equipos"],
+    mode: ["Competitivo de equipos"],
     description: "Juego de roles ocultos en el que los jugadores son tripulantes de un barco, pero algunos son traidores que intentan sabotear la misión.",
     rules: "Traitors Aboard es un juego de rol oculto para fiestas que combina estrategia, faroles e interacciones sociales. En Traitors Aboard , asumes el papel de un pirata que intentará llenar el cofre de la tripulación o de un amotinado que hará todo lo posible por sabotear discretamente la colección pirata y sembrar el caos a bordo. Durante la partida, asegúrate de dialogar, preguntar y compartir información (verdadera o falsa) con los demás jugadores para coordinar tus esfuerzos o traicionarlos en el momento oportuno. ¿Serás capaz de identificar a los miembros de tu equipo, ser astuto y usar estratégicamente los objetos a bordo para ganar? ¡El destino de la tripulación está ahora en tus manos!",
     videoUrl: "",
@@ -1678,14 +1840,15 @@ export const games: Game[] = [
     acquisitionDate: "29/09/2025",
     aproxDate: false,
     bgg:6.7,
-    complexity: "1.13/5"
+    complexity: "1.13/5",
+    bggLink: null
   },
   {
     id: 76,
     purchaseOrder: 76,
     name: "Scout",
     publisher: "Oink Games",
-    categories: ["Cartas", "Estrategia"],
+    categories: ["Cartas", "Estrategia", "Ladder Climbing"],
     minPlayers: 2,
     maxPlayers: 5,
     averageDuration: 60,
@@ -1699,7 +1862,8 @@ export const games: Game[] = [
     acquisitionDate: "29/09/2025",
     aproxDate: false,
     bgg:7.8,
-    complexity: "1.38/5" 
+    complexity: "1.38/5",
+    bggLink: null 
   },
   {
     id: 77,
@@ -1720,7 +1884,8 @@ export const games: Game[] = [
     acquisitionDate: "29/09/2025",
     aproxDate: false,
     bgg:7.6,
-    complexity: "2.25/5"
+    complexity: "2.25/5",
+    bggLink: null
   },{
     id: 78,
     purchaseOrder: 78,
@@ -1740,7 +1905,8 @@ export const games: Game[] = [
     acquisitionDate: "04/10/2025",
     aproxDate: false,
     bgg:6.5,
-    complexity: "1.04/5"
+    complexity: "1.04/5",
+    bggLink: null
   },{
     id: 79,
     purchaseOrder: 79,
@@ -1760,7 +1926,8 @@ export const games: Game[] = [
     acquisitionDate: "11/10/2025",
     aproxDate: false,
     bgg:null,
-    complexity: "NA/5" 
+    complexity: "NA/5",
+    bggLink: null 
   },{
     id: 80,
     purchaseOrder: 80,
@@ -1780,7 +1947,8 @@ export const games: Game[] = [
     acquisitionDate: "30/10/2025",
     aproxDate: false,
     bgg:7.5,
-    complexity: "1.48/5" 
+    complexity: "1.48/5",
+    bggLink: null
   },{
     id: 81,
     purchaseOrder: 81,
@@ -1800,7 +1968,8 @@ export const games: Game[] = [
     acquisitionDate: "30/10/2025",
     aproxDate: false,
     bgg:7.1,
-    complexity: "1.1/5" 
+    complexity: "1.1/5",
+    bggLink: null 
   },{
     id: 82,
     purchaseOrder: 82,
@@ -1820,8 +1989,9 @@ export const games: Game[] = [
     acquisitionDate: "30/10/2025",
     aproxDate: false,
     bgg:7.2,
-    complexity: "1.6/5" 
-  },,{
+    complexity: "1.6/5",
+    bggLink: null
+  },{
     id: 83,
     purchaseOrder: 83,
     name: "Pokemon: battle academy",
@@ -1840,7 +2010,8 @@ export const games: Game[] = [
     acquisitionDate: "17/11/2025",
     aproxDate: false,
     bgg:7.2,
-    complexity: "2.0/5" 
+    complexity: "2.0/5",
+    bggLink: null
   },{
     id: 84,
     purchaseOrder: 84,
@@ -1860,6 +2031,238 @@ export const games: Game[] = [
     acquisitionDate: "17/11/2025",
     aproxDate: false,
     bgg:6.4,
-    complexity: "1.50/5" 
-  },
+    complexity: "1.50/5",
+    bggLink: null
+  },{
+    id: 85,
+    purchaseOrder: 85,
+    name: "Spectrum",
+    publisher: "Novelty",
+    categories: ["Conecta fichas","Tablero"],
+    minPlayers: 2,
+    maxPlayers: 4,
+    averageDuration: 30, 
+    mode: ["Competitivo"],
+    description: "Un juego para 2 a 4 jugadores cuyo objetivo es ser el primero en formar dos secuencias de cinco fichas conectadas. Para ello, los jugadores deben usar sus cartas estratégicamente, colocando sus fichas en un cuadrado que coincida con la forma y el color de la carta que jugaron en ese turno. También se incluyen cartas especiales con efectos que cambian el rumbo del juego, incentivando a los jugadores a usarlas en el momento oportuno para frustrar el plan del oponente y obtener ventaja.",
+    rules: "En cada ronda, los jugadores se enfrentan a decisiones cruciales que alteran el curso de la partida, eligiendo caminos que combinan astucia y un toque de azar.\nEn tu turno, juegas una carta de tu mano para colocar una ficha en el tablero en la posición que corresponda a esa carta (por color y forma). El objetivo es encadenar 5 fichas en una secuencia válida, y lograrlo dos veces para ganar.\nLas cartas de acción involucran a todos los participantes, generando sorpresas inesperadas. Estas cartas pueden interrumpir, bloquear o afectar las secuencias de los otros jugadores, así que también hay que estar atento a lo que hacen los rivales.\n🏆 ¿Cómo se gana?\nSolo los más astutos y audaces podrán alcanzar la victoria. Cada movimiento cuenta. Gana el primer jugador en completar las 2 secuencias de 5 fichas con coincidencia de color y forma.\n💡 Consejo clave\nEs un juego que mezcla estrategia y azar: no basta con construir tus propias secuencias, también necesitas usar las cartas de acción para frenar a tus oponentes antes de que completen las suyas.",
+    videoUrl: "",
+    mainImage: spectrum1,
+    secondaryImages: [],
+    rankValue: 87,
+    acquisitionDate: "24/12/2025",
+    aproxDate: false,
+    bgg:7.4,
+    complexity: "1.0/5",
+    bggLink: "https://boardgamegeek.com/boardgame/419143/spectrum"
+  },{
+    id: 86,
+    purchaseOrder: 86,
+    name: "UNO Teams!",
+    publisher: "Mattel",
+    categories: ["Cartas", "Party", "Clásico","Equipos"],
+    minPlayers: 4,
+    maxPlayers: 8,
+    averageDuration: 15, 
+    mode: ["Competitivo de equipos"],
+    description: "UNO Teams es una nueva forma de jugar al clásico juego. Los jugadores siguen combinando color, número y símbolo, pero en lugar de jugar individualmente, forman equipos de dos y juegan juntos para ganar. Cartas y reglas especiales ayudan a los compañeros a colaborar, pero ambos jugadores deben deshacerse de todas las cartas de su mano para ganar. Y recuerda, cuando tú (¡o tu compañero!) solo quede una carta, ¡no olvides gritar «UNO»!",
+    rules: "Aquí tienes el string listo para tu JSON, basado en las instrucciones oficiales de Mattel:```"UNO Teams se juega igual que el UNO clásico: debes hacer coincidir cartas del mismo color, número o símbolo, pero en lugar de jugar individualmente, juegas en equipos de dos. Antes de empezar, cada jugador elige un compañero y juegan juntos durante todo el juego. Se reparten 7 cartas a cada jugador y, al inicio, todos pasan una carta de su mano a su compañero.\nEn tu turno, juga una carta que coincida en color, número o símbolo con la carta superior de la pila de descarte. Si no tienes ninguna que coincida, roba una carta de la pila. Las cartas especiales (Roba dos, Pierde el turno, Cambio de sentido) afectan al siguiente jugador. Los comodines permiten elegir el color con el que continúa el juego.\n🃏 Cartas exclusivas de equipos\nEl Comodín Juego en equipo salta el turno directamente a tu compañero; si él no puede jugar, tú robas 2 cartas como penalización. El Comodín El equipo roba cuatro hace que el siguiente jugador y su compañero roben 2 cartas cada uno. Algunas cartas tienen un símbolo de pasar: cuando las juegas, tú y tu compañero se intercambian una carta en secreto, sin dar pistas.\n⚠️ Salir y volver al juego\nSi te quedas sin cartas, tu compañero te pasa la mitad de las suyas y sigues jugando. Si estás fuera del juego y tu compañero roba cartas por cualquier razón, te pasa la mitad inmediatamente y vuelves a jugar.\n🏆 ¿Cómo se gana?\nGana el equipo cuyos dos integrantes se queden sin cartas primero. Recuerda: cuando a ti o a tu compañero les quede solo una carta, ¡cualquiera de los dos debe gritar UNO! Si nadie lo grita antes de que el siguiente jugador comience su turno, debes robar 2 cartas.\n💡 Consejo clave\nPueden hablar con su compañero durante el juego, pero está prohibido dar pistas sobre las cartas que tienen en la mano. La coordinación y la confianza son la clave para ganar."```",
+    videoUrl: "",
+    mainImage: unoTeams1,
+    secondaryImages: [],
+    rankValue: 87,
+    acquisitionDate: "24/12/2025",
+    aproxDate: false,
+    bgg:5.9,
+    complexity: "1.0/5",
+    bggLink: "https://boardgamegeek.com/boardgame/428030/uno-teams" 
+  },{
+    id: 87,
+    purchaseOrder: 87,
+    name: "Coffee Rush",
+    publisher: "Mar Ludico / Korea Boardgames", 
+    categories: ["Tablero", "Estrategia","Recursos"],
+    minPlayers: 2,
+    maxPlayers: 4,
+    averageDuration: 30, 
+    mode: ["Competitivo"],
+    description: "Una taza de café es, sin duda, relajante para el cliente. Sin embargo, para la cafetería, los pedidos suelen acumularse durante las horas pico, y hoy en Coffee Rush no es la excepción . Tu objetivo: ¡Completar los pedidos de los clientes para aumentar tu calificación y ser reconocido como el mejor barista! En detalle, cada jugador avanza por el tablero de ingredientes para recolectar los necesarios para completar los pedidos. Completar pedidos aumenta tu puntuación. Los pedidos que no se completan a tiempo se convierten en penalizaciones que restan puntos a tu puntuación. Si un jugador ha completado tres pedidos, puede activar una mejora que le permite adquirir ingredientes con mayor facilidad. El juego termina cuando se agotan todas las tarjetas de pedido o cuando un barista recibe su quinta tarjeta de penalización. ¡El jugador con la puntuación más alta gana!",
+    rules: "En Coffee Rush cada jugador gestiona su propia cafetería compitiendo por ser el mejor barista. Los pedidos de los clientes llegan en forma de cartas y se acumulan en una cola de espera de 4 niveles en tu tablero personal. Cada turno, todos los pedidos pendientes bajan un nivel, así que el tiempo siempre está corriendo en tu contra.\nEn tu turno mueves tu peón por el tablero central de ingredientes (una cuadrícula de 4x4 casillas) hasta 3 casillas en línea recta. Por cada casilla que atraviesas obtienes ese ingrediente: café, leche, vapor, hielo, chocolate, caramelo, hojas de té o agua. Los ingredientes recolectados los distribuyes entre tus 3 tazas. Cuando una taza tiene exactamente la combinación que pide una carta de pedido, ¡completas ese pedido y sumas puntos!\nCuando completas ciertos pedidos también puedes desbloquear Losetas de Mejora, que te dan habilidades especiales como movimientos extra o ingredientes adicionales. Los pedidos con banda amarilla otorgan recompensas adicionales al completarlos.\n⚠️ Pedidos fallidos\nSi un pedido llega al último nivel de la cola sin ser completado, sale por la puerta: es un pedido perdido y te resta puntos. Acumular 5 pedidos fallidos termina la partida de inmediato para ese jugador.\n🏆 ¿Cómo se gana?\nLa partida termina cuando un jugador acumula 5 pedidos fallidos o se agota el mazo de cartas. Gana el jugador con más puntos, sumando los pedidos completados y restando los pedidos fallidos.\n💡 Consejo clave\nNo intentes abarcar demasiados pedidos a la vez. Planifica la ruta de tu peón para recolectar varios ingredientes en un solo movimiento y prioriza completar primero los pedidos que ya llevan más turnos esperando.",
+    videoUrl: "",
+    mainImage: coffeeRush1,
+    secondaryImages: [],
+    rankValue: 87,
+    acquisitionDate: "24/12/2025",
+    aproxDate: false,
+    bgg:7.1,
+    complexity: "1.79/5",
+    bggLink: "https://boardgamegeek.com/boardgame/377061/coffee-rush"
+  },{
+    id: 88,
+    purchaseOrder: 88,
+    name: "Carcassonne",
+    publisher: "Devir",
+    categories: ["Tablero", "Colocación de losetas", "Estrategia","Colocación de trabajadores"],
+    minPlayers: 2,
+    maxPlayers: 5,
+    averageDuration: 45, 
+    mode: ["Competitivo"],
+    description: "Carcassonne es un juego de colocación de losetas en el que los jugadores roban y colocan una loseta con un paisaje del sur de Francia representado en ella. La loseta puede mostrar una ciudad, un camino, un claustro, una pradera o una combinación de estos, y debe colocarse junto a las losetas ya colocadas, de manera que las ciudades se conecten entre sí, los caminos entre sí, etc. Tras colocar una loseta, el jugador puede decidir colocar uno de sus peones en una de las áreas que representa: en la ciudad como caballero, en el camino como bandido, en el claustro como monje o en el campo como campesino. Cuando esa área está completa, el peón otorga puntos a su dueño.Durante una partida de Carcassonne , los jugadores se enfrentan a decisiones como: ¿Realmente vale la pena colocar mi último peón ahí? o ¿Debería usar esta loseta para expandir mi ciudad, o debería colocarla cerca de mi oponente, dificultándole así completarla y obtener puntos?. Dado que los jugadores solo colocan una loseta y tienen la opción de colocar un peón en ella, los turnos transcurren rápidamente, incluso si se trata de un juego lleno de opciones y posibilidades. Primer juego de la serie Carcassonne .",
+    rules: "Aquí tienes el string listo para tu JSON, basado en el reglamento oficial:Carcassonne es un juego de colocación de losetas ambientado en la Francia medieval. En cada turno robas una loseta de terreno al azar y la colocas junto a las ya existentes, de forma que los caminos conecten con caminos, las ciudades con ciudades y los campos con campos. Así, entre todos los jugadores, van construyendo un mapa único en cada partida.\nTras colocar tu loseta, puedes poner uno de tus seguidores (meeples) en ella para reclamar ese territorio. Según dónde lo pongas, ese seguidor tomará un rol: ladrón (en un camino), caballero (en una ciudad), monje (en un monasterio) o granjero (en un campo). Solo puedes colocar un seguidor por turno, y no puedes ponerlo en un territorio que ya esté conectado con otro seguidor, sea tuyo o de otro jugador.\n☑️ Puntuación durante la partida\nCuando se completa un camino, ciudad o monasterio, se puntúa de inmediato y los seguidores vuelven a la mano del jugador. Un camino cerrado da 1 punto por loseta. Una ciudad completa da 2 puntos por loseta (más 2 extra por cada escudo). Un monasterio totalmente rodeado da 9 puntos. Si varios jugadores tienen seguidores en el mismo territorio, solo el que tenga más suma los puntos (en empate, todos suman).\n🏁 Puntuación final\nAl agotarse todas las losetas termina la partida. Los territorios incompletos con seguidores puntúan la mitad: 1 punto por loseta en ciudades y caminos, y 1 punto por loseta en monasterios incompletos. Los granjeros, que no puntúan durante la partida, puntúan ahora: cada granjero da 3 puntos por cada ciudad completa que su campo abastezca.\n🏆 ¿Cómo se gana?\nGana el jugador con más puntos al final del recuento. Los granjeros suelen ser decisivos, ya que se quedan en el tablero toda la partida y puntúan al final.\n💡 Consejo clave\nAdministra bien tus seguidores: solo tienes 7 disponibles y los que estén en granjas no vuelven nunca. Intenta unirte a construcciones de otros jugadores colocando losetas estratégicamente, así sumas puntos sin gastar un seguidor propio.",
+    videoUrl: "",
+    mainImage: carcassonne1,
+    secondaryImages: [],
+    rankValue: 87,
+    acquisitionDate: "07/01/2026",
+    aproxDate: false,
+    bgg:7.4,
+    complexity: "1.89/5",
+    bggLink: "https://boardgamegeek.com/boardgame/822/carcassonne" 
+  },{
+    id: 89,
+    purchaseOrder: 89,
+    name: "Hombres lobo de Castronegro",
+    publisher: "Ystari Games",
+    categories: ["Roles ocultos","Party"],
+    minPlayers: 8,
+    maxPlayers: 18,
+    averageDuration: 30, 
+    mode: ["Competitivo de equipos"],
+    description: "Werewolves of Miller's Hollow es un juego que se desarrolla en un pequeño pueblo embrujado por hombres lobo. A cada jugador se le asigna secretamente un rol: hombre lobo, aldeano común o un personaje especial como el sheriff, el cazador, la bruja, la niña, la adivina, etc. También hay un moderador que controla el desarrollo del juego. El juego alterna entre fases de día y noche. Por la noche, los hombres lobo eligen secretamente a un aldeano para matarlo. Durante el día, se revela la identidad del aldeano asesinado, quien queda fuera del juego. Los aldeanos restantes (tanto los normales como los especiales) deliberan y votan por un jugador que sospechan que es un hombre lobo, con la ayuda (o el obstáculo) de las pistas que aportan los personajes especiales. El jugador elegido es linchado, revela su rol y queda fuera del juego. Werewolves es un juego social que no requiere equipo y puede ser jugado por casi cualquier grupo grande de jugadores.",
+    rules: "Los Hombres Lobo de Castronegro es un juego de roles ocultos para grupos. Antes de empezar, se elige a un Narrador que no juega sino que dirige la partida. El resto de jugadores recibe en secreto una carta con su rol: la mayoría serán Aldeanos, pero algunos serán Hombres Lobo infiltrados. Nadie sabe quién es quién, excepto los propios lobos entre sí.\nEl juego se repite en ciclos de Noche y Día. Durante la Noche, todos cierran los ojos y el Narrador llama a los personajes especiales en orden. Los Hombres Lobo abren los ojos, se reconocen y señalan en silencio a una víctima. Luego cierran los ojos y el Narrador puede llamar a otros personajes especiales para que actúen.\nDurante el Día, todos abren los ojos y el Narrador anuncia quién murió en la noche. Ese jugador revela su carta y queda eliminado. Entonces empieza el debate: los jugadores se acusan, argumentan y tratan de identificar a los lobos. Al final del debate se vota, y el jugador con más votos es linchado y eliminado (también revela su carta). Si hay empate, el Alguacil decide.\n🐺 Personajes especiales\nLa Vidente: cada noche señala a un jugador y el Narrador le revela en secreto si es lobo o aldeano. La Bruja: tiene una poción de vida para salvar a la víctima de la noche y una de muerte para eliminar a cualquier jugador. El Cazador: al morir puede arrastrar consigo a otro jugador. El Alguacil: elegido por votación al inicio, su voto vale doble y decide empates.\n🏆 ¿Cómo se gana?\nGanan los Aldeanos si logran linchar a todos los Hombres Lobo. Ganan los Hombres Lobo si devoran a suficientes aldeanos hasta quedar en igual número o superarlos. Las fases de noche y día se alternan hasta que uno de los dos bandos logre su objetivo.\n💡 Consejo clave\nLos lobos deben hablar y comportarse como aldeanos durante el día para no levantar sospechas. Los aldeanos deben observar quién vota a quién, quién acusa demasiado rápido y quién guarda silencio, porque en esos detalles está la clave para descubrir a los lobos.",
+    videoUrl: "",
+    mainImage: hombresLoboCastronegro1,
+    secondaryImages: [],
+    rankValue: 87,
+    acquisitionDate: "25/01/2026",
+    aproxDate: false,
+    bgg:6.7,
+    complexity: "1.31/5",
+    bggLink: "https://boardgamegeek.com/image/7203269/the-werewolves-of-millers-hollow" 
+  },{
+    id: 90,
+    purchaseOrder: 90,
+    name: "Flip 7",
+    publisher: "The Op Games",
+    categories: ["Cartas","Party","Apuestas","Forzar la suerte","Filler","Deduccion"],
+    minPlayers: 3,
+    maxPlayers: 18,
+    averageDuration: 20, 
+    mode: ["Competitivo"],
+    description: "Voltea las cartas una por una sin voltear el mismo número dos veces. ¿Suena fácil? ¡Piénsalo de nuevo! Esta no es una baraja de cartas cualquiera… En Flip 7 solo hay una carta de 1, dos de 2, tres de 3, etc., además de un montón de cartas especiales que pueden darte puntos extra, una segunda oportunidad o dejarte a ti o a tus oponentes paralizados. ¿Eres de los que prefieren ir a lo seguro y acumular puntos antes de perder, o te arriesgas y buscas los puntos extra sacando siete cartas seguidas? ¡Pon a prueba tu suerte y combina estrategia en este adictivo juego de cartas que seguro será el mejor que hayas jugado jamás!",
+    rules: "Flip 7 es un juego de cartas de forzar la suerte. La baraja tiene cartas numeradas del 0 al 12, con una particularidad: cuanto más alto es el número, más copias hay de esa carta en el mazo. Eso significa que las cartas grandes suman más puntos, pero también hay más probabilidad de sacarlas repetidas.\nEl juego se juega por rondas. En tu turno decides: plantarte y quedarte con lo que tienes, o pedir una carta más. Si la nueva carta tiene un número diferente a los que ya tienes, la añades a tu zona y sigues jugando en el siguiente turno. Si la nueva carta repite un número que ya tenías, quedas eliminado de esa ronda y no sumas ningún punto.\n🃏 Cartas especiales\nCongelar: el jugador que la recibe pasa automáticamente. Revelar 3 Cartas: el jugador escoge a alguien para recibir 3 cartas de golpe; si ninguna se repite, sigue activo. Segunda Oportunidad: si recibes una carta repetida, descartas la segunda oportunidad junto con esa carta y sigues jugando. Cartas de modificador (+2 a +10): añaden puntos extra a tu total al final de la ronda. Carta x2: dobla la suma de tus cartas de número antes de sumar los modificadores.\n✨ Flip 7\nSi logras reunir exactamente 7 cartas de número diferentes, consigues un Flip 7: la ronda termina de inmediato, sumas todos tus puntos y recibes un bonus de 15 puntos extra.\n📊 Puntuación\nAl final de cada ronda, los jugadores que no fueron eliminados suman el valor de sus cartas de número (aplicando primero el x2 si lo tienen, luego los modificadores). Los eliminados no suman nada. Las cartas jugadas se dejan a un lado y el mazo pasa al jugador de la izquierda, que será el nuevo repartidor.\n🏆 ¿Cómo se gana?\nLa partida termina al final de la ronda en que al menos un jugador llegue a 200 puntos. Gana el jugador con más puntos en ese momento, aunque no sea quien llegó primero a 200.\n💡 Consejo clave\nRecuerda que los números altos tienen más copias en el mazo, así que cuantas más cartas pidas, más riesgo corres de repetir. Saber cuándo plantarse es todo.",
+    videoUrl: "",
+    mainImage: flip7_1,
+    secondaryImages: [],
+    rankValue: 87,
+    acquisitionDate: "14/03/2026",
+    aproxDate: false,
+    bgg:7.2,
+    complexity: "1..03/5",
+    bggLink: "https://boardgamegeek.com/boardgame/420087/flip-7"
+  },{
+    id: 91,
+    purchaseOrder: 91,
+    name: "Heat: Pedal to the metal",
+    publisher: "Days of Wonder",
+    categories: ["Estrategia","Carreras","Tablero"],
+    minPlayers: 1,
+    maxPlayers: 6,
+    averageDuration: 45,
+    mode: ["Competitivo"],
+    description: "Con un control manual sencillo e intuitivo, Heat: Pedal to the Metal pone a los jugadores al volante de intensas carreras de coches, luchando por la primera posición para cruzar la meta en primer lugar, mientras controlan la velocidad de su vehículo para evitar el sobrecalentamiento. Seleccionar las mejoras adecuadas les ayudará a trazar las curvas con precisión y a mantener el motor a la temperatura óptima para alcanzar la máxima velocidad. ¡En definitiva, su habilidad al volante será la clave de la victoria! Los pilotos pueden competir en una sola carrera o usar el Sistema de Campeonato para jugar una temporada completa en una sola noche, personalizando su coche antes de cada carrera para alcanzar lo más alto del podio. Deben tener cuidado, ya que el clima, las condiciones de la carretera y los eventos cambiarán en cada carrera para darle emoción al campeonato. Los jugadores también pueden disfrutar de un modo individual con el Módulo Leyendas o añadir pilotos automáticos como oponentes adicionales en partidas multijugador.",
+    rules: "Heat: Pedal to the Metal es un juego de carreras de autos ambientado en los años 60 de la Fórmula 1. Cada jugador controla un coche en un circuito con curvas, rectas y límites de velocidad. El núcleo del juego es la gestión de tu mazo de cartas: tus cartas de velocidad (valores del 1 al 4) determinan cuántos espacios avanzas cada turno.\nAl inicio de cada ronda, todos los jugadores eligen simultáneamente en qué marcha van (del 1 al 4). La marcha define cuántas cartas puedes jugar ese turno. Luego, en orden de posición en la pista, cada jugador revela sus cartas y avanza tantos espacios como la suma de sus valores. Si vas justo detrás de otro coche o a su lado, obtienes rebufo y avanzas un espacio extra gratis.\n⚠️ Las curvas y el motor forzado\nCada curva tiene un límite de velocidad. Si tu velocidad total al cruzarla supera ese límite, debes forzar el motor: por cada punto de exceso tomas una carta de Motor Forzado y la añades a tu mazo. Esas cartas no tienen valor de movimiento, solo te ocupan espacio en la mano. Para deshacerte de ellas debes enfriar el motor rodando en marchas bajas (1ª o 2ª). Si no tienes más cartas de Motor Forzado disponibles cuando deberías tomar una, haces un trompo: retrocedes a antes de la curva y pierdes un turno, lo cual es muy difícil de remontar.\nTambién puedes forzar el motor voluntariamente para subir dos marchas de golpe en lugar de una, o para jugar una carta extra en tu turno, a cambio de añadir penalizaciones a tu mazo.\n🔧 Cartas de Estrés y Mejoras\nLas cartas de Estrés actúan como comodín: al jugarlas robas la carta superior de tu mazo y sumas su valor, pero no sabes si saldrá un 1 o un 4. Las cartas de Mejora se añaden al mazo entre carreras (en modo Campeonato) y otorgan habilidades especiales como enfriamiento extra, velocidad variable o recuperar cartas del descarte.\n🏆 ¿Cómo se gana?\nGana el jugador que cruce primero la línea de meta. Si varios coches cruzan la meta en la misma ronda, gana el que haya avanzado más lejos tras cruzarla. En el modo Campeonato se disputan varias carreras y gana quien acumule más puntos al final de la temporada.\n💡 Consejo clave\nNo intentes ir siempre a tope. Llegar a una curva con demasiada velocidad te llena el mazo de penalizaciones y puede costarte la carrera. La clave está en saber cuándo apretar y cuándo conservar el motor para el sprint final.",
+    videoUrl: "",
+    mainImage: heat1,
+    secondaryImages: [],
+    rankValue: 87,
+    acquisitionDate: "18/05/2026",
+    aproxDate: false,
+    bgg: 8.0,
+    complexity: "2.20/5",
+    bggLink: "https://boardgamegeek.com/boardgame/366013/heat-pedal-to-the-metal" 
+  },{
+    id: 92,
+    purchaseOrder: 92,
+    name: "One night ultimate werewolf",
+    publisher: "Bezier games",
+    categories: ["Roles ocultos","Party","Deduccion","Filler"],
+    minPlayers: 3,
+    maxPlayers: 10,
+    averageDuration: 10, 
+    mode: ["Competitivo de equipos"],
+    description: "One Night Ultimate Werewolf es un juego rápido para 3 a 10 jugadores en el que cada uno recibe un rol: uno de los malvados hombres lobo, el astuto alborotador, el servicial vidente o uno de una docena de personajes diferentes, cada uno con una habilidad especial. En el transcurso de una sola mañana, tu aldea decidirá quién es un hombre lobo... ¡porque basta con linchar a uno para ganar!Como One Night Ultimate Werewolf es tan rápido, divertido y adictivo, querrás jugarlo una y otra vez, y no habrá dos partidas iguales. Este juego se puede combinar con One Night Ultimate Werewolf: Daybreak .",
+    rules: "One Night Ultimate Werewolf es una versión ultrarrápida del clásico juego de roles ocultos. A diferencia del Hombres Lobo tradicional, aquí no hay narrador humano, nadie es eliminado durante la partida y cada sesión dura solo unos 10 minutos. La app oficial (gratuita para iOS y Android) hace el rol de narrador.\nAntes de empezar se reparten las cartas de rol en secreto: siempre deben haber 3 cartas más que jugadores, que se colocan boca abajo en el centro de la mesa. Cada jugador mira su carta sin mostrarla.\nDurante la noche todos cierran los ojos y la app va llamando a cada rol en orden. Cada personaje abre los ojos en su turno y realiza su acción en silencio: los Hombres Lobo se reconocen entre sí, la Vidente puede ver la carta de otro jugador o una del centro, el Ladrón puede cambiar su carta por la de otro jugador, la Follonera intercambia las cartas de otros dos jugadores sin verlas, el Borracho cambia su carta por una del centro sin mirarla, y así con cada rol.\n⚠️ Clave del juego\nLas cartas pueden cambiar de mano durante la noche, lo que significa que al amanecer un jugador puede tener un rol completamente diferente al que recibió al inicio, sin saberlo. Esto genera confusión, debates y acusaciones cruzadas.\nAl amanecer todos abren los ojos. Hay exactamente 5 minutos de debate donde cada quien argumenta, acusa, miente o defiende su identidad. Al terminar el tiempo, todos señalan simultáneamente a quién quieren eliminar. El jugador con más votos muere.\n🏆 ¿Cómo se gana?\nSi muere al menos un Hombre Lobo, ganan los Aldeanos. Si no muere ningún Hombre Lobo, ganan los Hombres Lobo. Si no hay Hombres Lobo en juego y nadie muere, también ganan los Aldeanos. Algunos roles especiales tienen condiciones de victoria propias.\n💡 Consejo clave\nComo las cartas se mueven durante la noche, nadie puede estar seguro de su propio rol al amanecer. La clave no es solo acusar a otros, sino también defender de forma convincente quién eres tú, porque podrías haber cambiado sin saberlo.",
+    videoUrl: "",
+    mainImage: werewolfOneNight1,
+    secondaryImages: [],
+    rankValue: 87,
+    acquisitionDate: "TBD",
+    aproxDate: false,
+    bgg:7.0,
+    complexity: "1.38/5",
+    bggLink: "https://boardgamegeek.com/boardgame/147949/one-night-ultimate-werewolf" 
+  },{
+    id: 93,
+    purchaseOrder: 93,
+    name: "Forest shuffle",
+    publisher: "Lookout Games",
+    categories: ["Estrategia","Cartas"],
+    minPlayers: 2,
+    maxPlayers: 5,
+    averageDuration: 50, 
+    mode: ["Competitivo"],
+    description: "En Forest Shuffle , los jugadores compiten por recolectar los árboles más valiosos y luego atraer especies a esos árboles, creando así un hábitat ecológicamente equilibrado para la flora y la fauna. Para empezar, cada jugador tiene seis cartas en la mano, que representan un tipo particular de árbol o dos habitantes del bosque (animal, planta, hongo, etc.). Estas últimas cartas están divididas por la mitad, ya sea vertical u horizontalmente, con un habitante en cada mitad. En tu turno, roba dos cartas (ya sean boca abajo del mazo o boca arriba del claro) y añádelas a tu mano, o juega una carta de tu mano pagando el coste y poniéndola en juego. Durante la preparación, se colocaron tres cartas de invierno en el tercio inferior del mazo. Al robar la tercera carta de invierno, el juego termina inmediatamente. A continuación, los jugadores suman sus puntos según los árboles y habitantes de su bosque. Gana quien obtenga la mayor puntuación. Forest Shuffle es el primero de una serie de juegos de Lookout que llevan la etiqueta Lookout Greenline, producidos en papel con certificación FSC y sin utilizar plástico en absoluto.",
+    rules: "Forest Shuffle es un juego de cartas en el que cada jugador construye su propio bosque, colocando árboles y atrayendo hacia ellos animales, plantas, hongos e insectos. El objetivo es crear el ecosistema más valioso en puntos al final de la partida.\nCada turno tienes dos opciones: robar dos cartas (del mazo o del claro, que es la zona central de cartas boca arriba disponibles para todos) y añadirlas a tu mano, o jugar una carta de tu mano pagando su costo. El costo se paga descartando otras cartas de tu mano al claro boca arriba. Si al final de tu turno hay más de 9 cartas en el claro, todas se eliminan del juego, así que el claro se va renovando constantemente.\nHay dos tipos de cartas: árboles y habitantes. Los árboles se colocan frente a ti formando tu bosque. Los habitantes (animales, plantas, hongos, insectos) son cartas divididas por la mitad, ya sea vertical u horizontalmente, con un ser diferente en cada mitad. Cada mitad se coloca en un árbol específico: arriba, abajo, izquierda o derecha del árbol. Un árbol puede albergar hasta 4 habitantes, uno en cada posición.\n🎴 Efectos y bonificaciones\nAl jugar una carta puedes activar su efecto especial (robar cartas extra, jugar una carta adicional, etc.). Además, si pagaste esa carta usando cartas del mismo color, obtienes una bonificación adicional. Ambas cosas pueden combinarse.\n❄️ Fin de la partida\nAl preparar el juego se insertan 3 cartas de Invierno en el tercio inferior del mazo. Cuando se roba la tercera carta de Invierno, la partida termina de inmediato. Entonces cada jugador suma los puntos de sus árboles y todos los habitantes que tienen en su bosque.\n🏆 ¿Cómo se gana?\nGana el jugador con más puntos. Las combinaciones de especies que forman ecosistemas cohesionados suelen dar más puntos, así que construir un bosque variado y equilibrado es más rentable que acumular muchos de lo mismo.\n💡 Consejo clave\nVigila el claro: a veces conviene robar cartas del claro no solo por las que te interesan, sino también para no dejarle a tus rivales cartas valiosas. Y nunca pierdas de vista cuántas cartas de Invierno han salido, porque la partida puede terminar en cualquier momento.",
+    videoUrl: "",
+    mainImage: forestShuffle1,
+    secondaryImages: [],
+    rankValue: 87,
+    acquisitionDate: "TBD",
+    aproxDate: false,
+    bgg:7.7,
+    complexity: "2.21/5",
+    bggLink: "https://boardgamegeek.com/boardgame/391163/forest-shuffle" 
+  },{
+    id: 94,
+    purchaseOrder: 94,
+    name: "Skull king",
+    publisher: "Grandpa Beck's Games",
+    categories: ["Cartas","Bazas","Apuestas","Party"],
+    minPlayers: 2,
+    maxPlayers: 8,
+    averageDuration: 30, 
+    mode: ["Cooperativo"],
+    description: "Skull King es un juego de bazas similar a Oh Hell!, Wizard, Euchre y Spades, donde los jugadores deben indicar cuántas bazas creen que ganarán en cada ronda. Un elemento único de este juego es que las pujas se realizan simultáneamente, lo que da lugar a rondas en las que a veces se superan o se quedan cortas las pujas. Como los jugadores deben ganar el número exacto de bazas que han apostado para obtener puntos, ganar demasiadas bazas es tan malo como ganar muy pocas, lo que genera una competencia intensa donde perder una baza puede ser tan emocionante como ganarla.\nSkull King utiliza una baraja de 66 cartas que consta de cinco cartas de Escape, cuatro palos numerados del 1 al 13, dos cartas de Sirena, cinco cartas de Pirata, una carta de Tigresa y una carta de Rey Calavera. El juego dura diez rondas, y en cada ronda, a cada jugador se le reparten tantas cartas como el número de la ronda. Todos los jugadores apuestan simultáneamente por el número de bazas que creen que ganarán, extendiendo el puño y, a la cuenta de tres, mostrando un número determinado de dedos.\nSe aplican las reglas estándar para jugar a las cartas: un jugador comienza con una carta y los demás siguen el palo, si es posible, o juegan otra cosa si no. El palo de la Jolly Roger negra supera a los otros tres palos, la Sirena supera a todas las cartas numeradas, el Pirata supera a la Sirena, y el Rey Calavera supera a todas las demás, excepto si aparece en la misma baza que una Sirena, en cuyo caso ella lo captura y gana. La carta de Escape pierde contra cualquier otra carta, y la carta de la Tigresa funciona como carta de pirata o de escape según lo desee el jugador.\n📊 Puntuación\nSi un jugador cumple su apuesta al pie de la letra, obtiene 20 puntos por baza. Si consigue más o menos bazas, pierde 10 puntos por cada baza que le falte o sobre. Si un jugador apuesta a cero bazas, gana puntos equivalentes a diez veces el número de ronda actual; pero si consigue incluso una sola baza, pierde esa misma cantidad. Capturar piratas con el Rey Calavera, o al Rey con una Sirena, otorga puntos extra.\n🏆 ¿Cómo se gana?\nGana quien tenga más puntos después de diez rondas.",
+    rules: "Skull King es un juego de bazas con temática pirata. Una baza es una ronda en la que cada jugador pone una carta sobre la mesa y quien tenga la carta más alta se lleva todas. Lo que hace especial a Skull King es que antes de cada ronda debes predecir exactamente cuántas bazas vas a ganar, ni más ni menos.\nLa partida dura 10 rondas. En la primera ronda se reparte 1 carta a cada jugador, en la segunda 2, en la tercera 3, y así hasta la décima en que cada uno tiene 10 cartas. Al recibir tus cartas, decides cuántas bazas crees que ganarás. Cuando todos han decidido, a la cuenta de Yo-Ho-Ho todos revelan su apuesta simultáneamente con los dedos. Luego se juegan las bazas una a una.\nEl mazo tiene 4 palos de cartas numeradas del 1 al 13: amarillo, morado, verde y negro. El negro es el palo más alto y siempre gana a los demás palos. Dentro de cada baza debes seguir el palo de la primera carta jugada si puedes; si no puedes, puedes jugar cualquier carta pero no ganarás la baza a menos que sea del palo negro.\n🃏 Cartas especiales\nHuida: quien la juega no puede ganar la baza (se rinde). Sirena: gana a cualquier carta numerada pero pierde ante el Skull King y los Piratas. Pirata: gana a todo excepto al Skull King. Skull King: la carta más poderosa del juego, gana a todo. Si el Skull King y una Sirena están en la misma baza, ¡la Sirena gana! También hay cartas avanzadas como el Kraken (anula la baza, nadie gana), la Ballena Blanca (elimina las cartas especiales de esa baza) y cartas de Botín (si ganas la baza con ellas, te alías con ese jugador para una bonificación).\n📊 Puntuación\nSi aciertas tu apuesta: ganas 20 puntos por cada baza que predijiste. Si apostaste 0 y cumples: ganas 10 puntos por ronda. Si no aciertas: pierdes 10 puntos por cada baza de diferencia con tu apuesta. Hay puntos de bonificación por capturar al Skull King con una Sirena o por ganar bazas extra con Piratas.\n🏆 ¿Cómo se gana?\nAl terminar las 10 rondas, gana el jugador con más puntos. Los errores acumulados pueden llevar a puntuaciones negativas, así que la precisión es tan importante como ganar bazas.\n💡 Consejo clave\nNo siempre conviene ganar bazas: a veces es más rentable apostar 0 y no ganar ninguna que apostar 3 y quedarte en 2. Leer bien tu mano antes de apostar marca toda la diferencia.",
+    videoUrl: "",
+    mainImage: skullKing1,
+    secondaryImages: [],
+    rankValue: 87,
+    acquisitionDate: "TBD",
+    aproxDate: false,
+    bgg: 7.5,
+    complexity: "1.73/5",
+    bggLink: "https://boardgamegeek.com/boardgame/150145/skull-king" 
+  },{
+    id: 95,
+    purchaseOrder: 95,
+    name: "Black stories",
+    publisher: "Moses",
+    categories: ["Acertijos","Party","Deduccion"],
+    minPlayers: 2,
+    maxPlayers: 99,
+    averageDuration: 20, 
+    mode: ["Cooperativo"],
+    description: "50 historias oscuras, 31 crímenes, 49 cadáveres, 11 asesinatos, 12 suicidios y una comida mortal. ¿Cómo pudo suceder? Historias Oscuras son acertijos complejos, macabros y misteriosos para adolescentes y adultos. Los jugadores intentan reconstruir el crimen preguntando, adivinando y manipulando las cartas. Un juego de cartas escalofriante, perfecto para cualquier fiesta.",
+    rules: "Black Stories son historias desconcertantes, morbosas y macabras que los jugadores deben resolver usando solo preguntas de Sí o No. Cada carta tiene una situación misteriosa en el frente (generalmente una muerte o suceso inexplicable) y la solución completa en el reverso.\nUn jugador toma el rol de Guardián del Misterio. Lee primero en secreto el reverso de la carta para conocer la solución, luego lee en voz alta solo el frente, que describe el misterio de forma escueta y perturbadora. El resto de jugadores no ven el reverso.\nA partir de ahí, los demás jugadores hacen preguntas libremente al Guardián, quien solo puede responder con tres opciones: Sí, No, o No es relevante. No hay turnos fijos ni orden estricto, todos pueden preguntar cuando quieran. El Guardián puede además dar una pista si el grupo está completamente perdido, pero es decisión suya.\nLos jugadores van acumulando información con cada respuesta, construyendo poco a poco la historia completa hasta llegar a la solución. La clave está en hacer preguntas inteligentes que descarten posibilidades y abran nuevos caminos.\n🏆 ¿Cómo se gana?\nNo hay un sistema de puntuación fijo en la versión básica. Gana quien logre reconstruir la historia con suficiente precisión según el criterio del Guardián. En versiones con tablero existe un sistema de fichas de sangre para llevar el puntaje.\n💡 Consejo clave\nEmpezar con preguntas amplias (¿murió solo?, ¿fue un accidente?, ¿había más personas?) antes de ir a los detalles. Las historias suelen tener un giro lógico pero inesperado, así que no te quedes con la primera interpretación obvia.",
+    videoUrl: "",
+    mainImage: blackStories1,
+    secondaryImages: [],
+    rankValue: 87,
+    acquisitionDate: "TBD",
+    aproxDate: false,
+    bgg:6.0,
+    complexity: "1.26/5",
+    bggLink: "https://boardgamegeek.com/boardgame/18803/black-stories" 
+  }
 ];

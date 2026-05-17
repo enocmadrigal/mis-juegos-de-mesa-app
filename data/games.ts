@@ -2266,14 +2266,4 @@ export const games: Game[] = [
     bggLink: "https://boardgamegeek.com/boardgame/18803/black-stories" 
   }
 ];
-`,
-    videoUrl: "",
-    mainImage: undefined,
-    secondaryImages: [],
-    rankValue: 0,
-    acquisitionDate: "",
-    aproxDate: false,
-    bgg: null,
-    complexity: "",
-    bggLink: null
-  }
+

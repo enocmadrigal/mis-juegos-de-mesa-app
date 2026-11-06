@@ -265,7 +265,7 @@ export const games: Game[] = [
     bgg: null,
     complexity: "NA/5",
     bggLink: null 
-  }
+  },
   {
     id: 1,
     purchaseOrder: 1,
@@ -2338,7 +2338,7 @@ export const games: Game[] = [
     complexity: "1.26/5",
     bggLink: "https://boardgamegeek.com/boardgame/18803/black-stories" 
   },
-];  {
+  {
     id: 96,
     purchaseOrder: 96,
     name: "Wingspan",

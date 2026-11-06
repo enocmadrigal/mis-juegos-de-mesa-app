@@ -60,17 +60,19 @@ export default function DetailScreen({
     // Cambia aquí para mostrar solo averageDuration
     const durationText = `${game.averageDuration} mins`;
 
-    // Helper para videoUrl: si es un link, abrirlo; si es local, mostrar texto
-    const isWebUrl = typeof game.videoUrl === 'string' && (game.videoUrl.startsWith('http://') || game.videoUrl.startsWith('https://'));
+    // Helper para video: si es un link, abrirlo; si es local, mostrar texto
+    const isWebUrl = (url: string) => typeof url === 'string' && (url.startsWith('http://') || url.startsWith('https://'));
 
     // Helper para saber si es un link embebible (YouTube, Facebook, etc.)
-    const canEmbed =
-        isWebUrl &&
-        (game.videoUrl.includes("youtube.com") ||
-         game.videoUrl.includes("youtu.be") ||
-         game.videoUrl.includes("facebook.com") ||
-         game.videoUrl.includes("tiktok.com") ||
-         game.videoUrl.includes("instagram.com"));
+    const canEmbed = (url: string) =>
+        isWebUrl(url) &&
+        (url.includes("youtube.com") ||
+         url.includes("youtu.be") ||
+         url.includes("facebook.com") ||
+         url.includes("tiktok.com") ||
+         url.includes("instagram.com"));
+
+    const isTiktokUrl = (url: string) => isWebUrl(url) && typeof url === "string" && url.includes("tiktok.com");
 
     // Helper para obtener el embed URL de YouTube
     function getEmbedUrl(url: string) {
@@ -154,8 +156,72 @@ export default function DetailScreen({
         };
     };
 
-    // Agrega esta línea:
-    const isTiktokUrl = isWebUrl && typeof game.videoUrl === "string" && game.videoUrl.includes("tiktok.com");
+    // Renderiza un video (vistazo o reglas) a partir de su URL.
+    // TikTok se muestra como miniatura con enlace; YouTube y demás se incrustan.
+    const renderVideo = (url: string, title: string) => {
+        if (isTiktokUrl(url)) {
+            return (
+                <Pressable
+                    style={styles.tiktokThumbContainer}
+                    onPress={() => Linking.openURL(url)}
+                >
+                    <View style={styles.tiktokThumbWrapper}>
+                        <Image
+                            source={getTiktokThumbnail()}
+                            style={styles.tiktokThumb}
+                            resizeMode="contain"
+                        />
+                    </View>
+                    <Text style={styles.tiktokLabel}>Ver en TikTok</Text>
+                </Pressable>
+            );
+        }
+        if (canEmbed(url)) {
+            return Platform.OS === 'web' ? (
+                <View style={styles.videoContainer}>
+                    <iframe
+                        width="100%"
+                        height="100%"
+                        src={getEmbedUrl(url)}
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        title={title}
+                        style={{
+                            borderRadius: 12,
+                            overflow: 'hidden',
+                            width: '100%',
+                            height: '100%',
+                            minHeight: 220,
+                            maxHeight: 360,
+                            display: 'block',
+                            background: '#000'
+                        }}
+                    />
+                </View>
+            ) : (
+                <View style={styles.videoContainer}>
+                    <WebView
+                        source={{ uri: getEmbedUrl(url) }}
+                        style={styles.webview}
+                        javaScriptEnabled
+                        domStorageEnabled
+                    />
+                </View>
+            );
+        }
+        if (isWebUrl(url)) {
+            return (
+                <Text
+                    style={styles.link}
+                    onPress={() => Linking.openURL(url)}
+                >
+                    {url}
+                </Text>
+            );
+        }
+        return <Text style={styles.videoText}>{url}</Text>;
+    };
 
     // Estado para la vista de imagen grande
     const [isImageModalVisible, setIsImageModalVisible] = useState(false);
@@ -247,68 +313,18 @@ export default function DetailScreen({
                     </View>
                     <Text style={styles.subtitle}>Descripción</Text>
                     <Text style={styles.description}>{game.description}</Text>
-                    <Text style={styles.subtitle}>¿De qué va el juego?</Text>
+                    {game.videoOverviewUrl ? (
+                        <>
+                            <Text style={styles.subtitle}>¿De qué va el juego?</Text>
+                            {renderVideo(game.videoOverviewUrl, "De qué va el juego")}
+                        </>
+                    ) : null}
                     {game.videoUrl ? (
-                        isTiktokUrl ? (
-                            <Pressable
-                                style={styles.tiktokThumbContainer}
-                                onPress={() => Linking.openURL(game.videoUrl)}
-                            >
-                                <View style={styles.tiktokThumbWrapper}>
-                                    <Image
-                                        source={getTiktokThumbnail()}
-                                        style={styles.tiktokThumb}
-                                        resizeMode="contain"
-                                    />
-                                </View>
-                                <Text style={styles.tiktokLabel}>Ver en TikTok</Text>
-                            </Pressable>
-                        ) : canEmbed ? (
-                            Platform.OS === 'web' ? (
-                                <View style={styles.videoContainer}>
-                                    <iframe
-                                        width="100%"
-                                        height="100%"
-                                        src={getEmbedUrl(game.videoUrl)}
-                                        frameBorder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowFullScreen
-                                        title="Tutorial"
-                                        style={{
-                                            borderRadius: 12,
-                                            overflow: 'hidden',
-                                            width: '100%',
-                                            height: '100%',
-                                            minHeight: 220,
-                                            maxHeight: 360,
-                                            display: 'block',
-                                            background: '#000'
-                                        }}
-                                    />
-                                </View>
-                            ) : (
-                                <View style={styles.videoContainer}>
-                                    <WebView
-                                        source={{ uri: getEmbedUrl(game.videoUrl) }}
-                                        style={styles.webview}
-                                        javaScriptEnabled
-                                        domStorageEnabled
-                                    />
-                                </View>
-                            )
-                        ) : isWebUrl ? (
-                            <Text
-                                style={styles.link}
-                                onPress={() => Linking.openURL(game.videoUrl)}
-                            >
-                                {game.videoUrl}
-                            </Text>
-                        ) : (
-                            <Text style={styles.videoText}>{game.videoUrl}</Text>
-                        )
-                    ) : (
-                        <Text style={styles.videoText}>No hay tutorial disponible.</Text>
-                    )}
+                        <>
+                            <Text style={styles.subtitle}>Reglas</Text>
+                            {renderVideo(game.videoUrl, "Reglas")}
+                        </>
+                    ) : null}
                 </ScrollView>
             </View>
             <View style={globalStyles.buttonsContainer}>

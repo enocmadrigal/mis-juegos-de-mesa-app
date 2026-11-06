@@ -14,7 +14,8 @@ export interface Game {
   mode: Mode[];
   description: string;
   rules: string;
-  videoUrl: string;
+  videoUrl: string; // Video de reglas/tutorial (puede ser "")
+  videoOverviewUrl?: string; // Video corto de vistazo ("de qué va el juego", máx 2 min). Opcional: si no existe, no se muestra esa sección.
   mainImage: any;
   secondaryImages: any[];
   rankValue: number;

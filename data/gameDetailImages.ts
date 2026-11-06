@@ -338,7 +338,8 @@ import wingspan1 from '../assets/img/wingspan/wingspan1.jpg';
 import wingspan2 from '../assets/img/wingspan/wingspan2.jpg';
 import wingspan3 from '../assets/img/wingspan/wingspan3.jpg';
 import wingspan4 from '../assets/img/wingspan/wingspan4.jpg';
-import wingspan5 from '../assets/img/wingspan/wingspan5.jpg';
+import wingspan6 from '../assets/img/wingspan/wingspan6.jpg';
+import wingspan7 from '../assets/img/wingspan/wingspan7.jpg';
 
 //Heat: Visión de Túnel
 import heatTunnelVision1 from '../assets/img/heatTunnelVision/heatTunnelVision1.jpg';
@@ -347,6 +348,8 @@ import heatTunnelVision3 from '../assets/img/heatTunnelVision/heatTunnelVision3.
 import heatTunnelVision4 from '../assets/img/heatTunnelVision/heatTunnelVision4.jpg';
 import heatTunnelVision5 from '../assets/img/heatTunnelVision/heatTunnelVision5.jpg';
 import heatTunnelVision6 from '../assets/img/heatTunnelVision/heatTunnelVision6.jpg';
+import heatTunnelVision7 from '../assets/img/heatTunnelVision/heatTunnelVision7.jpg';
+import heatTunnelVision8 from '../assets/img/heatTunnelVision/heatTunnelVision8.jpg';
 
 //Heat: Rocky Roads
 import heatRockyRoads1 from '../assets/img/heatRockyRoads/heatRockyRoads1.jpg';
@@ -373,11 +376,11 @@ import starRealms6 from '../assets/img/starRealms/starRealms6.jpg';
 
 //Splendor
 import splendor1 from '../assets/img/splendor/splendor1.jpg';
-import splendor2 from '../assets/img/splendor/splendor2.jpg';
 import splendor3 from '../assets/img/splendor/splendor3.jpg';
 import splendor4 from '../assets/img/splendor/splendor4.jpg';
 import splendor5 from '../assets/img/splendor/splendor5.jpg';
 import splendor6 from '../assets/img/splendor/splendor6.jpg';
+import splendor7 from '../assets/img/splendor/splendor7.jpg';
 
 export const gameDetailImages: { [key: number]: any[] } = {
   0: [prueba1, prueba2, prueba3],
@@ -476,10 +479,10 @@ export const gameDetailImages: { [key: number]: any[] } = {
   93: [forestShuffle1, forestShuffle2, forestShuffle3, forestShuffle4, forestShuffle5, forestShuffle6, forestShuffle7],
   94: [skullKing1, skullKing2, skullKing3, skullKing4, skullKing5, skullKing6],
   95: [blackStories1, blackStories2, blackStories3, blackStories4, blackStories5],
-  96: [wingspan1, wingspan2, wingspan3, wingspan4, wingspan5],
-  97: [heatTunnelVision1, heatTunnelVision2, heatTunnelVision3, heatTunnelVision4, heatTunnelVision5, heatTunnelVision6],
+  96: [wingspan1, wingspan2, wingspan3, wingspan4, wingspan6, wingspan7],
+  97: [heatTunnelVision1, heatTunnelVision2, heatTunnelVision3, heatTunnelVision4, heatTunnelVision5, heatTunnelVision6, heatTunnelVision7, heatTunnelVision8],
   98: [heatRockyRoads1, heatRockyRoads2, heatRockyRoads3, heatRockyRoads4, heatRockyRoads5, heatRockyRoads6],
   99: [azul1, azul2, azul3, azul4, azul5],
   100: [starRealms1, starRealms2, starRealms3, starRealms4, starRealms5, starRealms6],
-  101: [splendor1, splendor2, splendor3, splendor4, splendor5, splendor6]
+  101: [splendor1, splendor3, splendor4, splendor5, splendor6, splendor7]
 };

@@ -192,6 +192,11 @@ import blackStories3 from '../assets/img/blackStories/blackStories3.jpg';
 import blackStories4 from '../assets/img/blackStories/blackStories4.jpg';
 import blackStories5 from '../assets/img/blackStories/blackStories5.jpg';
 
+//Prueba
+import prueba1 from '../assets/img/prueba/prueba1.jpg';
+import prueba2 from '../assets/img/prueba/prueba2.jpg';
+import prueba3 from '../assets/img/prueba/prueba3.jpg';
+
 export const games: Game[] = [
   {
     id: 1,
@@ -2264,6 +2269,28 @@ export const games: Game[] = [
     bgg:6.0,
     complexity: "1.26/5",
     bggLink: "https://boardgamegeek.com/boardgame/18803/black-stories" 
+  },
+  {
+    id: 96,
+    purchaseOrder: 96,
+    name: "Prueba",
+    publisher: "Prueba",
+    categories: ["Party"],
+    minPlayers: 2,
+    maxPlayers: 6,
+    averageDuration: 30, 
+    mode: ["Risas"],
+    description: "Juego de prueba para verificar que agregar juegos nuevos funciona. No es un juego real de la colección.",
+    rules: "Juego de prueba. Reglas de prueba: se juega con las cartas y los dados de Prueba. Gana quien complete primero el reto.",
+    videoUrl: "",
+    mainImage: prueba1,
+    secondaryImages: [],
+    rankValue: 87,
+    acquisitionDate: "TBD",
+    aproxDate: false,
+    bgg: null,
+    complexity: "NA/5",
+    bggLink: null 
   }
 ];
 

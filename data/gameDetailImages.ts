@@ -328,6 +328,11 @@ import blackStories3 from '../assets/img/blackStories/blackStories3.jpg';
 import blackStories4 from '../assets/img/blackStories/blackStories4.jpg';
 import blackStories5 from '../assets/img/blackStories/blackStories5.jpg';
 
+//Prueba
+import prueba1 from '../assets/img/prueba/prueba1.jpg';
+import prueba2 from '../assets/img/prueba/prueba2.jpg';
+import prueba3 from '../assets/img/prueba/prueba3.jpg';
+
 export const gameDetailImages: { [key: number]: any[] } = {
   1: [img_ajedrez_1, img_ajedrez_2, img_ajedrez_3, img_ajedrez_4],
   2: [img_turistaDragonBall_1, img_turistaDragonBall_2],
@@ -423,5 +428,6 @@ export const gameDetailImages: { [key: number]: any[] } = {
   92: [werewolfOneNight1, werewolfOneNight2, werewolfOneNight3, werewolfOneNight4, werewolfOneNight5, werewolfOneNight6, werewolfOneNight7, werewolfOneNight8, werewolfOneNight9],
   93: [forestShuffle1, forestShuffle2, forestShuffle3, forestShuffle4, forestShuffle5, forestShuffle6, forestShuffle7],
   94: [skullKing1, skullKing2, skullKing3, skullKing4, skullKing5, skullKing6],
-  95: [blackStories1, blackStories2, blackStories3, blackStories4, blackStories5]
+  95: [blackStories1, blackStories2, blackStories3, blackStories4, blackStories5],
+  96: [prueba1, prueba2, prueba3]
 };

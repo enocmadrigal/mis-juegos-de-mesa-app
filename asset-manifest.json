@@ -1,11 +1,14 @@
 {
   "files": {
-    "main.js": "/static/js/main.4e50f863.js",
+    "main.js": "/static/js/main.51c06d93.js",
     "static/js/856.75379f01.js": "/static/js/856.75379f01.js",
     "static/media/sharingan.png": "/static/media/sharingan.79816b622865f8c8b1c2.png",
     "static/media/monopolyGuy.png": "/static/media/monopolyGuy.75faa14413c2bdee2db5.png",
+    "static/media/prueba1.jpg": "/static/media/prueba1.c8bcc56647f85b1f82cb.jpg",
+    "static/media/prueba2.jpg": "/static/media/prueba2.b1301ccdf1299cc33ec3.jpg",
     "static/media/unoTeams3.jpg": "/static/media/unoTeams3.18fe56f3f4ef4342b237.jpg",
     "static/media/unoTeams4.jpg": "/static/media/unoTeams4.117145b29820ef09d836.jpg",
+    "static/media/prueba3.jpg": "/static/media/prueba3.8033bca44301863bec59.jpg",
     "static/media/unoTeams6.jpg": "/static/media/unoTeams6.d9947832c507de2cee5d.jpg",
     "static/media/heat2.jpg": "/static/media/heat2.2186d1995e1d46553d1d.jpg",
     "static/media/werewolfOneNight4.jpg": "/static/media/werewolfOneNight4.0d572976cbe91ed92843.jpg",
@@ -281,11 +284,11 @@
     "favicon-16.png": "/favicon-16.png",
     "manifest.json": "/manifest.json",
     "serve.json": "/serve.json",
-    "main.4e50f863.js.map": "/static/js/main.4e50f863.js.map",
+    "main.51c06d93.js.map": "/static/js/main.51c06d93.js.map",
     "856.75379f01.js.map": "/static/js/856.75379f01.js.map"
   },
   "entrypoints": [
     "static/js/856.75379f01.js",
-    "static/js/main.4e50f863.js"
+    "static/js/main.51c06d93.js"
   ]
 }

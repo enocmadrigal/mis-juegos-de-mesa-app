@@ -197,7 +197,75 @@ import prueba1 from '../assets/img/prueba/prueba1.jpg';
 import prueba2 from '../assets/img/prueba/prueba2.jpg';
 import prueba3 from '../assets/img/prueba/prueba3.jpg';
 
+//Wingspan
+import wingspan1 from '../assets/img/wingspan/wingspan1.jpg';
+import wingspan2 from '../assets/img/wingspan/wingspan2.jpg';
+import wingspan3 from '../assets/img/wingspan/wingspan3.jpg';
+import wingspan4 from '../assets/img/wingspan/wingspan4.jpg';
+import wingspan5 from '../assets/img/wingspan/wingspan5.jpg';
+
+//Heat: Visión de Túnel
+import heatTunnelVision1 from '../assets/img/heatTunnelVision/heatTunnelVision1.jpg';
+import heatTunnelVision2 from '../assets/img/heatTunnelVision/heatTunnelVision2.jpg';
+import heatTunnelVision3 from '../assets/img/heatTunnelVision/heatTunnelVision3.jpg';
+import heatTunnelVision4 from '../assets/img/heatTunnelVision/heatTunnelVision4.jpg';
+import heatTunnelVision5 from '../assets/img/heatTunnelVision/heatTunnelVision5.jpg';
+import heatTunnelVision6 from '../assets/img/heatTunnelVision/heatTunnelVision6.jpg';
+
+//Heat: Rocky Roads
+import heatRockyRoads1 from '../assets/img/heatRockyRoads/heatRockyRoads1.jpg';
+import heatRockyRoads2 from '../assets/img/heatRockyRoads/heatRockyRoads2.jpg';
+import heatRockyRoads3 from '../assets/img/heatRockyRoads/heatRockyRoads3.jpg';
+import heatRockyRoads4 from '../assets/img/heatRockyRoads/heatRockyRoads4.jpg';
+import heatRockyRoads5 from '../assets/img/heatRockyRoads/heatRockyRoads5.jpg';
+import heatRockyRoads6 from '../assets/img/heatRockyRoads/heatRockyRoads6.jpg';
+
+//Azul
+import azul1 from '../assets/img/azul/azul1.jpg';
+import azul2 from '../assets/img/azul/azul2.jpg';
+import azul3 from '../assets/img/azul/azul3.jpg';
+import azul4 from '../assets/img/azul/azul4.jpg';
+import azul5 from '../assets/img/azul/azul5.jpg';
+
+//Star Realms
+import starRealms1 from '../assets/img/starRealms/starRealms1.jpg';
+import starRealms2 from '../assets/img/starRealms/starRealms2.jpg';
+import starRealms3 from '../assets/img/starRealms/starRealms3.jpg';
+import starRealms4 from '../assets/img/starRealms/starRealms4.jpg';
+import starRealms5 from '../assets/img/starRealms/starRealms5.jpg';
+import starRealms6 from '../assets/img/starRealms/starRealms6.jpg';
+
+//Splendor
+import splendor1 from '../assets/img/splendor/splendor1.jpg';
+import splendor2 from '../assets/img/splendor/splendor2.jpg';
+import splendor3 from '../assets/img/splendor/splendor3.jpg';
+import splendor4 from '../assets/img/splendor/splendor4.jpg';
+import splendor5 from '../assets/img/splendor/splendor5.jpg';
+import splendor6 from '../assets/img/splendor/splendor6.jpg';
+
 export const games: Game[] = [
+  {
+    id: 0,
+    purchaseOrder: 0,
+    name: "Prueba",
+    publisher: "Prueba",
+    categories: ["Party"],
+    minPlayers: 2,
+    maxPlayers: 6,
+    averageDuration: 30, 
+    mode: ["Risas"],
+    description: "Juego de prueba para verificar que agregar juegos nuevos funciona. No es un juego real de la colección.",
+    rules: "Juego de prueba. Reglas de prueba: se juega con las cartas y los dados de Prueba. Gana quien complete primero el reto.",
+    videoUrl: "",
+    mainImage: prueba1,
+    secondaryImages: [],
+    rankValue: 87,
+    acquisitionDate: "TBD",
+    aproxDate: false,
+    bgg: null,
+    complexity: "NA/5",
+    bggLink: null 
+  }
   {
     id: 1,
     purchaseOrder: 1,
@@ -2201,7 +2269,7 @@ export const games: Game[] = [
     mainImage: werewolfOneNight1,
     secondaryImages: [],
     rankValue: 87,
-    acquisitionDate: "TBD",
+    acquisitionDate: "01/06/2026",
     aproxDate: false,
     bgg:7.0,
     complexity: "1.38/5",
@@ -2222,7 +2290,7 @@ export const games: Game[] = [
     mainImage: forestShuffle1,
     secondaryImages: [],
     rankValue: 87,
-    acquisitionDate: "TBD",
+    acquisitionDate: "01/06/2026",
     aproxDate: false,
     bgg:7.7,
     complexity: "2.21/5",
@@ -2243,7 +2311,7 @@ export const games: Game[] = [
     mainImage: skullKing1,
     secondaryImages: [],
     rankValue: 87,
-    acquisitionDate: "TBD",
+    acquisitionDate: "01/06/2026",
     aproxDate: false,
     bgg: 7.5,
     complexity: "1.73/5",
@@ -2264,33 +2332,139 @@ export const games: Game[] = [
     mainImage: blackStories1,
     secondaryImages: [],
     rankValue: 87,
-    acquisitionDate: "TBD",
+    acquisitionDate: "01/06/2026",
     aproxDate: false,
     bgg:6.0,
     complexity: "1.26/5",
     bggLink: "https://boardgamegeek.com/boardgame/18803/black-stories" 
   },
-  {
+];  {
     id: 96,
     purchaseOrder: 96,
-    name: "Prueba",
-    publisher: "Prueba",
-    categories: ["Party"],
-    minPlayers: 2,
-    maxPlayers: 6,
-    averageDuration: 30, 
-    mode: ["Risas"],
-    description: "Juego de prueba para verificar que agregar juegos nuevos funciona. No es un juego real de la colección.",
-    rules: "Juego de prueba. Reglas de prueba: se juega con las cartas y los dados de Prueba. Gana quien complete primero el reto.",
-    videoUrl: "",
-    mainImage: prueba1,
+    name: "Wingspan",
+    publisher: "Stonemaier Games",
+    categories: ["Estrategia","Cartas","Recursos"],
+    minPlayers: 1,
+    maxPlayers: 5,
+    averageDuration: 55, 
+    mode: ["Competitivo"],
+    description: "Wingspan es un juego competitivo de estrategia, de complejidad media, basado en cartas y en la construcción de motores. Eres un entusiasta de las aves —investigador, observador, ornitólogo o coleccionista— que busca descubrir y atraer a las mejores aves a su red de reservas naturales. Cada ave amplía una cadena de combinaciones poderosas en uno de tus hábitats. Gana quien tenga más puntos después de 4 rondas.",
+    rules: "La partida dura 4 rondas, con 8, 7, 6 y 5 acciones por ronda. Cada jugador tiene su propio tablero con tres hábitats: Bosque, Pradera y Humedal.\nEn tu turno gastas un cubo de acción para hacer una de cuatro acciones: (1) jugar una carta de ave en el hábitat que indica, pagando su coste en comida y, en las columnas avanzadas, huevos; (2) ganar comida del comedero, tirando los dados de la torre con forma de comedero; (3) poner huevos sobre tus aves; (4) robar cartas de ave.\nAl activar un hábitat se disparan, de derecha a izquierda, las habilidades marrones de todas las aves que ya están ahí, creando cadenas de combinaciones. Al final de cada ronda se puntúa el objetivo de esa ronda.\nAl final de la partida se suman los puntos de las aves jugadas, las cartas de bonificación, los objetivos de ronda, los huevos, la comida guardada y las cartas metidas debajo de otras aves. Gana quien tenga más puntos. Incluye modo en solitario oficial (Automa).",
+    videoUrl: "https://www.youtube.com/watch?v=k-Q1565_Y-8",
+    mainImage: wingspan1,
     secondaryImages: [],
     rankValue: 87,
-    acquisitionDate: "TBD",
+    acquisitionDate: "03/06/2026",
+    aproxDate: true,
+    bgg: 8.0,
+    complexity: "2.48/5",
+    bggLink: "https://boardgamegeek.com/boardgame/266192/wingspan" 
+  },{
+    id: 97,
+    purchaseOrder: 97,
+    name: "Heat: Visión de Túnel",
+    publisher: "Days of Wonder",
+    categories: ["Estrategia","Carreras","Tablero","Expansión"],
+    minPlayers: 1,
+    maxPlayers: 7,
+    averageDuration: 45, 
+    mode: ["Competitivo"],
+    description: "¡ES UNA EXPANSIÓN! Necesitas una copia de Heat: Pedal to the Metal para jugar. Heat: Visión de Túnel traslada la competición a dos nuevos circuitos: el Gran Premio de España, plagado de túneles traicioneros cuya oscuridad te obligará a confiar más en tus instintos que en tu pericia al volante, y el circuito de los Países Bajos, que permite acelerar a tope antes de entrar en un entramado de curvas peligrosas. Participa en la temporada de 1965 con tu nuevo alerón delantero y sé el primer piloto en cruzar la línea de meta. Esta expansión también incluye los componentes necesarios para jugar con un piloto adicional (el séptimo; octavo si tienes Lluvia Torrencial).",
+    rules: "Se juega igual que el juego base, con dos tableros nuevos a doble cara: España y Países Bajos.\nTúneles (España): dentro de un túnel no se pueden descartar cartas de la mano, ni las de velocidad al final del turno ni por efectos de descarte; hay que planificarlos con antelación.\nPaíses Bajos: no tiene regla especial propia, pero incluye chicanes y rectas largas para ir a tope antes de las curvas.\nAlerón delantero: nuevas cartas de mejora con el símbolo Ráfaga, que permite avanzar el coche ese número de espacios antes de aplicar el rebufo, siempre que atraviese casillas vacías.\nTemporada 1965: nuevas cartas de evento y de patrocinio para el modo Campeonato.\nSéptimo jugador: incluye coche morado con su peón de caja de cambios, tablero de piloto y sus cartas de velocidad, motor forzado y estrés (octavo jugador si se combina con Lluvia Torrencial).",
+    videoUrl: "https://www.youtube.com/watch?v=OKQb4O0cP_g",
+    mainImage: heatTunnelVision1,
+    secondaryImages: [],
+    rankValue: 87,
+    acquisitionDate: "03/06/2026",
+    aproxDate: true,
+    bgg: 8.2,
+    complexity: "2.10/5",
+    bggLink: "https://boardgamegeek.com/boardgameexpansion/436904/heat-tunnel-vision" 
+  },{
+    id: 98,
+    purchaseOrder: 98,
+    name: "Heat: Rocky Roads",
+    publisher: "Days of Wonder",
+    categories: ["Expansión","Carreras","Estrategia","Tablero"],
+    minPlayers: 1,
+    maxPlayers: 7,
+    averageDuration: 90, 
+    mode: ["Competitivo"],
+    description: "¡ES UNA EXPANSIÓN! Necesitas una copia de Heat: Pedal to the Metal para jugar. El calor del desierto es implacable, pero tú también... ¡Pisa a fondo el acelerador! Heat: Rocky Roads añade dos circuitos nuevos: en el Gran Premio de Sudáfrica tendrás que vértelas con una pista llena de grava traicionera que te exigirá un control cuidadoso de tu coche y unos nervios de acero, mientras que en el Circuito de Alemania la victoria dependerá de tu dominio del ritmo, debido a las chicanes recién construidas a lo largo de la recta principal. Participa en la temporada de 1966 y aprovecha una nueva mejora, los faldones deslizantes, para sorprender a tus rivales y lanzarte a toda velocidad hasta la línea de meta. Esta expansión también incluye los componentes necesarios para jugar con un piloto adicional.",
+    rules: "Se juega igual que el juego base, con dos tableros nuevos a doble cara: Sudáfrica y Alemania.\nGrava (Sudáfrica): muchas casillas tienen grava. Al final de tu turno, si tu coche está en una casilla con grava y tienes cartas de Motor forzado en tu Motor, debes pagar 1 carta de Motor forzado.\nChicanes (Alemania): dos líneas de curva consecutivas con la misma velocidad máxima y uno o más espacios entre ellas; obligan a planear el ritmo en la recta larga.\nFaldones deslizantes (nueva mejora): permiten encadenar rebufos: el nuevo símbolo de Rebufo extra te deja hacer movimientos de rebufo en cadena si vas justo detrás de tus rivales.\nTemporada 1966: 4 cartas de Evento nuevas para jugar la temporada de 1966 o añadirlas a tu mazo de eventos y crear una temporada personalizada.\nSéptimo jugador: el coche blanco con su tablero y cartas permite carreras de hasta 7 jugadores.",
+    videoUrl: "https://www.youtube.com/watch?v=lmNhXu_Lwl4",
+    mainImage: heatRockyRoads1,
+    secondaryImages: [],
+    rankValue: 87,
+    acquisitionDate: "03/06/2026",
+    aproxDate: true,
+    bgg: 8.3,
+    complexity: "2.17/5",
+    bggLink: "https://boardgamegeek.com/boardgameexpansion/459763/heat-rocky-roads" 
+  },{
+    id: 99,
+    purchaseOrder: 99,
+    name: "Azul",
+    publisher: "Plan B Games",
+    categories: ["Estrategia","Colocación de losetas","Puzzle"],
+    minPlayers: 2,
+    maxPlayers: 4,
+    averageDuration: 45, 
+    mode: ["Competitivo"],
+    description: "Inspirados por los azulejos que el rey Manuel I vio en la Alhambra, los jugadores son artistas que deben embellecer las paredes del Palacio Real de Évora. En cada ronda, los jugadores toman azulejos de colores de las fábricas y los colocan en su tablero para formar el mosaico más bonito y con más puntos. Los azulejos sobrantes o mal colocados restan puntos. Gana quien tenga más puntos al final de la partida.",
+    rules: "El juego se juega en varias rondas, cada una con 3 fases.\n1) Oferta de fábrica: por turnos, cada jugador toma TODOS los azulejos de un mismo color de una fábrica (los demás van al centro de la mesa) o del centro, y los coloca en una sola línea de patrón de su tablero, de derecha a izquierda; cada línea solo acepta un color y los que sobren van a la línea de suelo y restan puntos. Quien toma del centro por primera vez se lleva también la ficha de jugador inicial.\n2) Alicatado: cuando ya no quedan azulejos, las líneas de patrón completas pasan un azulejo a su lugar en el muro (cuadrícula 5x5) y se puntúa: 1 punto por azulejo sin vecinos, más 1 por cada azulejo adyacente en horizontal y en vertical.\n3) Preparación: se reponen las fábricas con azulejos de la bolsa y empieza otra ronda.\nLa partida termina en la ronda en que un jugador completa una fila horizontal de su muro. Bonus final: +2 por fila horizontal completa, +7 por columna completa y +10 por tener los 5 azulejos de un mismo color. Gana el mayor puntaje. El tablero tiene dos caras: una con el patrón de colores fijo y otra sin patrón (variante más difícil).",
+    videoUrl: "https://www.youtube.com/watch?v=j1DlqFPqZMY",
+    mainImage: azul1,
+    secondaryImages: [],
+    rankValue: 87,
+    acquisitionDate: "26/06/2026",
+    aproxDate: true,
+    bgg: 7.7,
+    complexity: "1.77/5",
+    bggLink: "https://boardgamegeek.com/boardgame/230802/azul" 
+  },{
+    id: 100,
+    purchaseOrder: 100,
+    name: "Star Realms",
+    publisher: "Wise Wizard Games",
+    categories: ["Cartas","Construcción de mazos","Estrategia"],
+    minPlayers: 2,
+    maxPlayers: 2,
+    averageDuration: 20, 
+    mode: ["Competitivo"],
+    description: "Star Realms es un juego de cartas de construcción de mazos y combate espacial. Dos jugadores comandan flotas rivales en una batalla por la supremacía de la galaxia: cada uno empieza con un mazo pequeño y débil, y durante la partida va comprando naves y bases cada vez más poderosas de un mercado central compartido. Las cartas pertenecen a cuatro facciones —Federación de Comercio, Blobs, Star Empire y Culto a las Máquinas— y combinar cartas de la misma facción activa habilidades de aliado más potentes. Es fácil de aprender pero con mucha profundidad estratégica, y cada partida es distinta.",
+    rules: "Cada jugador empieza con 50 puntos de Autoridad (su 'vida') y un mazo personal de 10 cartas (8 Exploradores y 2 Vipéridos). En el centro se coloca el mazo de Comercio con 5 cartas boca arriba (la Fila Comercial).\nEn tu turno juegas las cartas de tu mano: generan Comercio (para comprar cartas de la Fila Comercial) y Combate (para atacar al rival o sus bases). Las cartas compradas van a tu descarte y luego se barajan en tu mazo, así tu flota mejora partida a partida.\nLas bases se quedan en juego frente a ti y pueden usarse una vez por turno; los Puestos de Avanzada del rival deben destruirse antes de poder atacar su Autoridad directamente.\nAl final del turno descartas lo jugado y robas 5 cartas nuevas. Gana quien reduzca a cero la Autoridad del oponente.",
+    videoUrl: "https://www.youtube.com/watch?v=eSOLVQCSUj0",
+    mainImage: starRealms1,
+    secondaryImages: [],
+    rankValue: 87,
+    acquisitionDate: "29/06/2026",
     aproxDate: false,
-    bgg: null,
-    complexity: "NA/5",
-    bggLink: null 
+    bgg: 7.6,
+    complexity: "1.91/5",
+    bggLink: "https://boardgamegeek.com/boardgame/147020/star-realms" 
+  },{
+    id: 101,
+    purchaseOrder: 101,
+    name: "Splendor",
+    publisher: "Space Cowboys",
+    categories: ["Estrategia","Recursos","Cartas"],
+    minPlayers: 2,
+    maxPlayers: 4,
+    averageDuration: 30, 
+    mode: ["Competitivo"],
+    description: "Eres un rico mercader del Renacimiento. Reúne gemas, compra minas, medios de transporte y artesanos, y conviértete en el comerciante más prestigioso de Europa. Un juego rápido y elegante de coleccionar gemas y desarrollar cartas: fácil de aprender, difícil de dominar.",
+    rules: "En el centro de la mesa hay 12 cartas de desarrollo boca arriba, en 3 niveles, y 6 pilas de fichas de gemas (diamante, zafiro, esmeralda, rubí, ónix y oro comodín).\nEn tu turno haces UNA acción: tomar 3 gemas de colores distintos, tomar 2 gemas del mismo color (si quedan al menos 4), reservar una carta y tomar 1 oro, o comprar una carta pagando su coste en gemas.\nCada carta comprada te da un descuento permanente de su color y, algunas, puntos de prestigio. Si cumples los requisitos de un noble, te visita y te da sus puntos.\nGana quien llega primero a 15 puntos de prestigio (se completa la ronda y gana quien tenga más puntos).",
+    videoUrl: "https://www.youtube.com/watch?v=EVvOYBgNTII",
+    mainImage: splendor1,
+    secondaryImages: [],
+    rankValue: 87,
+    acquisitionDate: "11/08/2026",
+    aproxDate: false,
+    bgg: 7.4,
+    complexity: "1.78/5",
+    bggLink: "https://boardgamegeek.com/boardgame/148228/splendor" 
   }
+
 ];
 

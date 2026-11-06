@@ -333,7 +333,54 @@ import prueba1 from '../assets/img/prueba/prueba1.jpg';
 import prueba2 from '../assets/img/prueba/prueba2.jpg';
 import prueba3 from '../assets/img/prueba/prueba3.jpg';
 
+//Wingspan
+import wingspan1 from '../assets/img/wingspan/wingspan1.jpg';
+import wingspan2 from '../assets/img/wingspan/wingspan2.jpg';
+import wingspan3 from '../assets/img/wingspan/wingspan3.jpg';
+import wingspan4 from '../assets/img/wingspan/wingspan4.jpg';
+import wingspan5 from '../assets/img/wingspan/wingspan5.jpg';
+
+//Heat: Visión de Túnel
+import heatTunnelVision1 from '../assets/img/heatTunnelVision/heatTunnelVision1.jpg';
+import heatTunnelVision2 from '../assets/img/heatTunnelVision/heatTunnelVision2.jpg';
+import heatTunnelVision3 from '../assets/img/heatTunnelVision/heatTunnelVision3.jpg';
+import heatTunnelVision4 from '../assets/img/heatTunnelVision/heatTunnelVision4.jpg';
+import heatTunnelVision5 from '../assets/img/heatTunnelVision/heatTunnelVision5.jpg';
+import heatTunnelVision6 from '../assets/img/heatTunnelVision/heatTunnelVision6.jpg';
+
+//Heat: Rocky Roads
+import heatRockyRoads1 from '../assets/img/heatRockyRoads/heatRockyRoads1.jpg';
+import heatRockyRoads2 from '../assets/img/heatRockyRoads/heatRockyRoads2.jpg';
+import heatRockyRoads3 from '../assets/img/heatRockyRoads/heatRockyRoads3.jpg';
+import heatRockyRoads4 from '../assets/img/heatRockyRoads/heatRockyRoads4.jpg';
+import heatRockyRoads5 from '../assets/img/heatRockyRoads/heatRockyRoads5.jpg';
+import heatRockyRoads6 from '../assets/img/heatRockyRoads/heatRockyRoads6.jpg';
+
+//Azul
+import azul1 from '../assets/img/azul/azul1.jpg';
+import azul2 from '../assets/img/azul/azul2.jpg';
+import azul3 from '../assets/img/azul/azul3.jpg';
+import azul4 from '../assets/img/azul/azul4.jpg';
+import azul5 from '../assets/img/azul/azul5.jpg';
+
+//Star Realms
+import starRealms1 from '../assets/img/starRealms/starRealms1.jpg';
+import starRealms2 from '../assets/img/starRealms/starRealms2.jpg';
+import starRealms3 from '../assets/img/starRealms/starRealms3.jpg';
+import starRealms4 from '../assets/img/starRealms/starRealms4.jpg';
+import starRealms5 from '../assets/img/starRealms/starRealms5.jpg';
+import starRealms6 from '../assets/img/starRealms/starRealms6.jpg';
+
+//Splendor
+import splendor1 from '../assets/img/splendor/splendor1.jpg';
+import splendor2 from '../assets/img/splendor/splendor2.jpg';
+import splendor3 from '../assets/img/splendor/splendor3.jpg';
+import splendor4 from '../assets/img/splendor/splendor4.jpg';
+import splendor5 from '../assets/img/splendor/splendor5.jpg';
+import splendor6 from '../assets/img/splendor/splendor6.jpg';
+
 export const gameDetailImages: { [key: number]: any[] } = {
+  0: [prueba1, prueba2, prueba3],
   1: [img_ajedrez_1, img_ajedrez_2, img_ajedrez_3, img_ajedrez_4],
   2: [img_turistaDragonBall_1, img_turistaDragonBall_2],
   3: [img_100mexicanosDijeron_1, img_100mexicanosDijeron_2],
@@ -429,5 +476,10 @@ export const gameDetailImages: { [key: number]: any[] } = {
   93: [forestShuffle1, forestShuffle2, forestShuffle3, forestShuffle4, forestShuffle5, forestShuffle6, forestShuffle7],
   94: [skullKing1, skullKing2, skullKing3, skullKing4, skullKing5, skullKing6],
   95: [blackStories1, blackStories2, blackStories3, blackStories4, blackStories5],
-  96: [prueba1, prueba2, prueba3]
+  96: [wingspan1, wingspan2, wingspan3, wingspan4, wingspan5],
+  97: [heatTunnelVision1, heatTunnelVision2, heatTunnelVision3, heatTunnelVision4, heatTunnelVision5, heatTunnelVision6],
+  98: [heatRockyRoads1, heatRockyRoads2, heatRockyRoads3, heatRockyRoads4, heatRockyRoads5, heatRockyRoads6],
+  99: [azul1, azul2, azul3, azul4, azul5],
+  100: [starRealms1, starRealms2, starRealms3, starRealms4, starRealms5, starRealms6],
+  101: [splendor1, splendor2, splendor3, splendor4, splendor5, splendor6]
 };

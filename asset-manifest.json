@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.e804432b.js",
+    "main.js": "/static/js/main.3a1f17c1.js",
     "static/js/856.75379f01.js": "/static/js/856.75379f01.js",
     "static/media/sharingan.png": "/static/media/sharingan.79816b622865f8c8b1c2.png",
     "static/media/monopolyGuy.png": "/static/media/monopolyGuy.75faa14413c2bdee2db5.png",
@@ -22,6 +22,7 @@
     "static/media/azul1.jpg": "/static/media/azul1.96b6e982082f9468393c.jpg",
     "static/media/skullKing3.jpg": "/static/media/skullKing3.5e806d822241254d1d46.jpg",
     "static/media/forestShuffle5.jpg": "/static/media/forestShuffle5.0efc7015d06fc1382952.jpg",
+    "static/media/splendor1.jpg": "/static/media/splendor1.b218c0c4175277372807.jpg",
     "static/media/forestShuffle4.jpg": "/static/media/forestShuffle4.657cdbf70ff5ad42bf36.jpg",
     "static/media/azul3.jpg": "/static/media/azul3.54482f2087334cec25d3.jpg",
     "static/media/heatTunnelVision1.jpg": "/static/media/heatTunnelVision1.947cc4fe80b3b6967bf7.jpg",
@@ -66,10 +67,10 @@
     "static/media/pokemonBattleAcademy7.jpg": "/static/media/pokemonBattleAcademy7.f4f781bd21243e397cc1.jpg",
     "static/media/starRealms2.jpg": "/static/media/starRealms2.43578436c8fc6d27253c.jpg",
     "static/media/pinturaColores.png": "/static/media/pinturaColores.6403b3d8d7855ddc09e8.png",
+    "static/media/wingspan8.jpg": "/static/media/wingspan8.256231092ff22d26a269.jpg",
     "static/media/forestShuffle6.jpg": "/static/media/forestShuffle6.48c1f0d938caaf2ee178.jpg",
     "static/media/splendor3.jpg": "/static/media/splendor3.bdc972ab6e5fbfef5285.jpg",
     "static/media/heat9.jpg": "/static/media/heat9.5d21988593e45e9caf7b.jpg",
-    "static/media/splendor1.jpg": "/static/media/splendor1.4fa3f6395fdedb411cd5.jpg",
     "static/media/startups1.jpg": "/static/media/startups1.103b48720ea855482a2d.jpg",
     "static/media/returnRedButton.png": "/static/media/returnRedButton.d2e404a3cacadfa09aff.png",
     "static/media/niSiNiNo1.jpg": "/static/media/niSiNiNo1.b616395ec203aa9b7abe.jpg",
@@ -87,6 +88,7 @@
     "static/media/splendor7.jpg": "/static/media/splendor7.72aed69b1ea556e209d8.jpg",
     "static/media/mejorPeorAmigo2.jpg": "/static/media/mejorPeorAmigo2.886011d4a637bcc08270.jpg",
     "static/media/coffeeRush7.jpg": "/static/media/coffeeRush7.8c0b5c1653c9b079538b.jpg",
+    "static/media/wingspan9.jpg": "/static/media/wingspan9.78f515e710834b51284b.jpg",
     "static/media/coffeeRush4.jpg": "/static/media/coffeeRush4.ed80a9132ba5f36e1a5b.jpg",
     "static/media/mejorPeorAmigo1.jpg": "/static/media/mejorPeorAmigo1.0920102efcc7b0a6567b.jpg",
     "static/media/turistaDragonBall1.jpg": "/static/media/turistaDragonBall1.2cb3b3edbbcf03cbac64.jpg",
@@ -321,11 +323,11 @@
     "favicon-16.png": "/favicon-16.png",
     "manifest.json": "/manifest.json",
     "serve.json": "/serve.json",
-    "main.e804432b.js.map": "/static/js/main.e804432b.js.map",
+    "main.3a1f17c1.js.map": "/static/js/main.3a1f17c1.js.map",
     "856.75379f01.js.map": "/static/js/856.75379f01.js.map"
   },
   "entrypoints": [
     "static/js/856.75379f01.js",
-    "static/js/main.e804432b.js"
+    "static/js/main.3a1f17c1.js"
   ]
 }

@@ -340,6 +340,8 @@ import wingspan3 from '../assets/img/wingspan/wingspan3.jpg';
 import wingspan4 from '../assets/img/wingspan/wingspan4.jpg';
 import wingspan6 from '../assets/img/wingspan/wingspan6.jpg';
 import wingspan7 from '../assets/img/wingspan/wingspan7.jpg';
+import wingspan8 from '../assets/img/wingspan/wingspan8.jpg';
+import wingspan9 from '../assets/img/wingspan/wingspan9.jpg';
 
 //Heat: Visión de Túnel
 import heatTunnelVision1 from '../assets/img/heatTunnelVision/heatTunnelVision1.jpg';
@@ -479,7 +481,7 @@ export const gameDetailImages: { [key: number]: any[] } = {
   93: [forestShuffle1, forestShuffle2, forestShuffle3, forestShuffle4, forestShuffle5, forestShuffle6, forestShuffle7],
   94: [skullKing1, skullKing2, skullKing3, skullKing4, skullKing5, skullKing6],
   95: [blackStories1, blackStories2, blackStories3, blackStories4, blackStories5],
-  96: [wingspan1, wingspan2, wingspan3, wingspan4, wingspan6, wingspan7],
+  96: [wingspan1, wingspan8, wingspan9, wingspan2, wingspan3, wingspan4, wingspan6, wingspan7],
   97: [heatTunnelVision1, heatTunnelVision2, heatTunnelVision3, heatTunnelVision4, heatTunnelVision5, heatTunnelVision6, heatTunnelVision7, heatTunnelVision8],
   98: [heatRockyRoads1, heatRockyRoads2, heatRockyRoads3, heatRockyRoads4, heatRockyRoads5, heatRockyRoads6],
   99: [azul1, azul2, azul3, azul4, azul5],

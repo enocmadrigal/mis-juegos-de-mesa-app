@@ -2429,7 +2429,7 @@ export const games: Game[] = [
     mode: ["Competitivo"],
     description: "Wingspan es un juego competitivo de estrategia, de complejidad media, basado en cartas y en la construcción de motores. Eres un entusiasta de las aves —investigador, observador, ornitólogo o coleccionista— que busca descubrir y atraer a las mejores aves a su red de reservas naturales. Cada ave amplía una cadena de combinaciones poderosas en uno de tus hábitats. Gana quien tenga más puntos después de 4 rondas.",
     rules: "La partida dura 4 rondas, con 8, 7, 6 y 5 acciones por ronda. Cada jugador tiene su propio tablero con tres hábitats: Bosque, Pradera y Humedal.\nEn tu turno gastas un cubo de acción para hacer una de cuatro acciones: (1) jugar una carta de ave en el hábitat que indica, pagando su coste en comida y, en las columnas avanzadas, huevos; (2) ganar comida del comedero, tirando los dados de la torre con forma de comedero; (3) poner huevos sobre tus aves; (4) robar cartas de ave.\nAl activar un hábitat se disparan, de derecha a izquierda, las habilidades marrones de todas las aves que ya están ahí, creando cadenas de combinaciones. Al final de cada ronda se puntúa el objetivo de esa ronda.\nAl final de la partida se suman los puntos de las aves jugadas, las cartas de bonificación, los objetivos de ronda, los huevos, la comida guardada y las cartas metidas debajo de otras aves. Gana quien tenga más puntos. Incluye modo en solitario oficial (Automa).",
-    videoUrl: "https://www.youtube.com/watch?v=Y70BEduacXM",
+    videoUrl: "https://www.youtube.com/watch?v=k-Q1565_Y-8",
     videoOverviewUrl: "https://www.youtube.com/watch?v=MBYpd1wIpAA",
     mainImage: wingspan1,
     secondaryImages: [],
